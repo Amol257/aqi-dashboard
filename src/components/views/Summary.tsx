@@ -310,6 +310,14 @@ export default function Summary({
           <p className="text-lg text-ink/60 mt-4 max-w-4xl leading-relaxed">
             Real-time environmental intelligence across the subcontinent. Monitoring high-density urban areas and regional atmospheric shifts.
           </p>
+          {lastUpdated && (
+            <div className="flex items-center gap-2 mt-4">
+              <div className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
+              <span className="label-caps !text-[9px] opacity-40 tracking-widest">
+                Last Grid Refresh: {new Date(lastUpdated).toLocaleString()}
+              </span>
+            </div>
+          )}
         </div>
         <div className="flex bg-surface rounded-none p-1 border border-ink/10 self-start">
           <button

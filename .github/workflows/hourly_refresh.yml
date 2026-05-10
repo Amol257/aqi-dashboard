@@ -90,7 +90,7 @@ jobs:
       - name: Build
         run: npm run build
         env:
-          VITE_BASE_PATH: /india-aqi-dashboard/
+          VITE_BASE_PATH: /aqi-dashboard/
 
       - name: Add .nojekyll
         run: touch dist/.nojekyll

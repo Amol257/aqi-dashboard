@@ -358,16 +358,16 @@ export default function Stations({
 
           <div className="md:col-span-6 card p-8 md:p-12 shadow-none border-ink relative overflow-hidden group flex flex-col justify-center rounded-none">
             <div className="relative z-10">
-              <h4 className="font-headline-sm text-ink mb-8">Grid Health Status</h4>
+              <h4 className="font-headline-sm text-ink mb-8">Network Health Status</h4>
               <div className="grid grid-cols-3 gap-10">
                 {[
-                  { l: 'Nominal', v: goodAqiCount, o: 0.4 },
-                  { l: 'Moderate', v: mediumAqiCount, o: 0.7 },
-                  { l: 'Critical', v: highAqiCount, o: 1 },
+                  { l: 'Operational', v: activeCount, o: 1, c: 'text-ink' },
+                  { l: 'Maintenance', v: serviceCount, o: 0.4, c: 'text-ink/40' },
+                  { l: 'Offline', v: offlineCount, o: 0.4, c: 'text-ink/40' },
                 ].map(i => (
-                  <div key={i.l}>
-                    <div className="font-mono text-4xl font-black text-ink" style={{ opacity: i.o + 0.5 }}>{i.v}</div>
-                    <div className="label-caps !text-[10px] opacity-90 mt-2">{i.l}</div>
+                  <div key={i.l} className={cn("transition-all", i.c)}>
+                    <div className="font-mono text-4xl font-black tracking-tighter" style={{ opacity: i.o }}>{i.v}</div>
+                    <div className="label-caps !text-[10px] opacity-70 mt-2">{i.l}</div>
                   </div>
                 ))}
               </div>
@@ -379,7 +379,12 @@ export default function Stations({
       <section className="card border-ink mt-16 overflow-hidden rounded-none">
         <div className="px-10 py-8 border-b border-ink/5 flex justify-between items-center bg-ink/5">
           <div className="flex items-center gap-10">
-            <h3 className="font-headline-sm text-ink">Global Node Inventory</h3>
+            <div className="flex items-baseline gap-4">
+              <h3 className="font-headline-sm text-ink">Global Node Inventory</h3>
+              <span className="label-caps !text-[9px] opacity-40 font-black tracking-widest">
+                {activeCount} LIVE / {offlineCount} OFFLINE
+              </span>
+            </div>
             <div className="flex items-center gap-4 border-l border-ink/10 pl-10">
               <span className="label-caps !text-[10px] opacity-30">Yield</span>
               <select 
@@ -444,10 +449,15 @@ export default function Stations({
                   </td>
                   <td className="px-10 py-6">
                     <span className={cn(
-                      "label-caps !text-[9px] px-3 py-1 rounded-none",
-                      s.status === 'ACTIVE' ? "bg-ink text-surface" : "bg-ink/5 text-ink/40"
+                      "label-caps !text-[9px] px-3 py-1 rounded-none flex items-center gap-2 w-fit font-black",
+                      s.status === 'ACTIVE' ? "bg-ink !text-surface" : "bg-ink/10 text-ink"
                     )}>
-                      {s.status}
+                      {s.status === 'ACTIVE' ? (
+                        <div className="w-1 h-1 rounded-full bg-surface animate-pulse" />
+                      ) : (
+                        <div className="w-1 h-1 rounded-full bg-ink/40" />
+                      )}
+                      {s.status === 'ACTIVE' ? 'LIVE' : s.status}
                     </span>
                   </td>
                 </tr>

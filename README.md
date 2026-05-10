@@ -2,7 +2,7 @@
 
 > **National air quality dashboard with real-time health impact analysis and monitoring telemetry.**
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-amol257.github.io-brightgreen?style=flat-square&logo=github)](https://amol257.github.io/india-aqi-dashboard/)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-amol257.github.io-brightgreen?style=flat-square&logo=github)](https://amol257.github.io/aqi-dashboard/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-94%25-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![React](https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react&logoColor=black)](https://react.dev/)
 [![Vite](https://img.shields.io/badge/Vite-6-646CFF?style=flat-square&logo=vite&logoColor=white)](https://vitejs.dev/)
@@ -121,11 +121,12 @@ india-aqi-dashboard/
 
 ## 🌐 Deployment
 
-This project is optimized for deployment on **Vercel**.
+This project is optimized for deployment on **GitHub Pages**.
 
-1. Connect your GitHub repository to Vercel.
-2. The `vercel.json` file handles SPA routing automatically.
-3. Ensure your `VITE_GEMINI_API_KEY` is set in the Vercel Environment Variables.
+1. **Automated**: Every push to `main` (and every hour) triggers the [Hourly AQI Data Refresh + Deploy](.github/workflows/hourly_refresh.yml) workflow.
+2. **Manual**: You can deploy manually using `npm run deploy`.
+3. **Configuration**: Ensure you go to **Settings > Pages** in your GitHub repository and set the source to **GitHub Actions**.
+4. **Environment**: Add your `DATA_GOV_API_KEY` to **Settings > Secrets and variables > Actions** for the data refresh script to function in CI.
 
 ---
 
