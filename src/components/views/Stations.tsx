@@ -1,22 +1,23 @@
 import React from 'react';
 import { 
-  BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, 
-  Cell, ScatterChart, Scatter
+  BarChart, Bar, XAxis, YAxis, CartesianGrid, ResponsiveContainer
 } from 'recharts';
-import { Radio, Search, SlidersHorizontal, Map, Settings2, Download, Plus, MapPin, FileDown } from 'lucide-react';
+import { Radio, Search, SlidersHorizontal, Map, Settings2, Download, FileDown, ChevronDown } from 'lucide-react';
 import { MapContainer, TileLayer, CircleMarker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
-import { TOTAL_STATIONS, STATIONS_DATA, HISTOGRAM_DATA } from '../../constants';
+import { STATIONS_DATA } from '../../constants';
 import { cn, exportToCSV } from '../../lib/utils';
 
 export default function Stations({ 
-  onNavigate, 
+  onNavigate: _onNavigate,
   stations: initialStations = STATIONS_DATA, 
-  lastUpdated: initialLastUpdated = null 
+  lastUpdated: initialLastUpdated = null,
+  isDarkMode = false
 }: { 
   onNavigate?: (view: any, context?: any) => void,
   stations?: any[],
-  lastUpdated?: string | null
+  lastUpdated?: string | null,
+  isDarkMode?: boolean
 }) {
   const [stations, setStations] = React.useState(initialStations);
   const [lastUpdated, setLastUpdated] = React.useState<string | null>(initialLastUpdated);
@@ -57,12 +58,12 @@ export default function Stations({
   };
 
   const getAqiColor = (aqi: number) => {
-    if (aqi <= 50) return '#22C55E';
-    if (aqi <= 100) return '#84CC16';
-    if (aqi <= 150) return '#EAB308';
-    if (aqi <= 200) return '#F97316';
-    if (aqi <= 250) return '#EF4444';
-    return '#A855F7';
+    if (aqi <= 50) return 'var(--aqi-good)';
+    if (aqi <= 100) return 'var(--aqi-moderate)';
+    if (aqi <= 200) return 'var(--aqi-poor)';
+    if (aqi <= 300) return 'var(--aqi-unhealthy)';
+    if (aqi <= 400) return 'var(--aqi-very-poor)';
+    return 'var(--aqi-hazardous)';
   };
 
   // Base filtering (Region, Status, Search)
@@ -111,134 +112,155 @@ export default function Stations({
   const highAqiCount = baseFilteredStations.filter(s => s.aqi > 200).length;
 
   const histogramData = [
-    { range: '0-50', count: baseFilteredStations.filter(s => s.aqi <= 50).length, color: '#22C55E', isActive: mapAqiFilters.length === 0 || mapAqiFilters.includes('0-50') },
-    { range: '51-100', count: baseFilteredStations.filter(s => s.aqi > 50 && s.aqi <= 100).length, color: '#84CC16', isActive: mapAqiFilters.length === 0 || mapAqiFilters.includes('51-100') },
-    { range: '101-150', count: baseFilteredStations.filter(s => s.aqi > 100 && s.aqi <= 150).length, color: '#EAB308', isActive: mapAqiFilters.length === 0 || mapAqiFilters.includes('101-150') },
-    { range: '151-200', count: baseFilteredStations.filter(s => s.aqi > 150 && s.aqi <= 200).length, color: '#F97316', isActive: mapAqiFilters.length === 0 || mapAqiFilters.includes('151-200') },
-    { range: '201-250', count: baseFilteredStations.filter(s => s.aqi > 200 && s.aqi <= 250).length, color: '#EF4444', isActive: mapAqiFilters.length === 0 || mapAqiFilters.includes('201-250') },
-    { range: '250+', count: baseFilteredStations.filter(s => s.aqi > 250).length, color: '#A855F7', isActive: mapAqiFilters.length === 0 || mapAqiFilters.includes('250+') }
+    { range: '0-50', count: baseFilteredStations.filter(s => s.aqi <= 50).length, color: 'var(--aqi-good)', isActive: mapAqiFilters.length === 0 || mapAqiFilters.includes('0-50') },
+    { range: '51-100', count: baseFilteredStations.filter(s => s.aqi > 50 && s.aqi <= 100).length, color: 'var(--aqi-moderate)', isActive: mapAqiFilters.length === 0 || mapAqiFilters.includes('51-100') },
+    { range: '101-150', count: baseFilteredStations.filter(s => s.aqi > 100 && s.aqi <= 150).length, color: 'var(--aqi-poor)', isActive: mapAqiFilters.length === 0 || mapAqiFilters.includes('101-150') },
+    { range: '151-200', count: baseFilteredStations.filter(s => s.aqi > 150 && s.aqi <= 200).length, color: 'var(--aqi-unhealthy)', isActive: mapAqiFilters.length === 0 || mapAqiFilters.includes('151-200') },
+    { range: '201-250', count: baseFilteredStations.filter(s => s.aqi > 200 && s.aqi <= 250).length, color: 'var(--aqi-very-poor)', isActive: mapAqiFilters.length === 0 || mapAqiFilters.includes('201-250') },
+    { range: '250+', count: baseFilteredStations.filter(s => s.aqi > 250).length, color: 'var(--aqi-hazardous)', isActive: mapAqiFilters.length === 0 || mapAqiFilters.includes('250+') }
   ];
 
   return (
-    <div className="space-y-8 pb-10">
+    <div className="space-y-12 pb-20">
       {/* Header */}
       <section className="flex flex-col md:flex-row md:items-end justify-between gap-4">
         <div>
-          <h1 className="text-3xl font-bold tracking-tight text-[#181c22] dark:text-slate-100">Stations Analysis</h1>
-          <p className="text-[#414753] dark:text-slate-400 mt-2 max-w-2xl font-medium tracking-tight">
-            Real-time telemetry and distribution analysis of {activeCount} active monitoring sites.
-            {lastUpdated && <span className="block text-[10px] text-blue-500 font-black mt-2 uppercase tracking-[0.2em]">Live Sync: {new Date(lastUpdated).toLocaleString()}</span>}
+          <h1 className="font-display-lg text-ink">Network Infrastructure</h1>
+          <p className="font-body-lg text-ink/60 mt-1 max-w-2xl">
+            Real-time telemetry and distribution analysis of {activeCount} active monitoring nodes across the national sensor grid.
+            {lastUpdated && <span className="block label-caps !text-[9px] mt-4 opacity-80">Grid Sync: {new Date(lastUpdated).toLocaleString()}</span>}
           </p>
         </div>
-        <div className="flex items-center gap-3 bg-white dark:bg-slate-800 p-1 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm self-start group transition-all hover:border-[#1275e2]">
-          <div className="bg-[#1275e2] text-white p-2 rounded-lg group-hover:scale-110 transition-transform">
-             <Radio size={16} />
+        <div className="flex items-center gap-3 card-subtle p-3 pr-6 self-start rounded-none">
+          <div className="bg-ink text-surface p-2 rounded-none">
+             <Radio size={14} />
           </div>
-          <span className="text-xs font-black text-[#181c22] dark:text-slate-100 pr-5 uppercase tracking-widest">{activeCount} Active Sites</span>
+          <span className="label-caps !text-ink font-black">{activeCount} Monitoring Nodes</span>
         </div>
       </section>
 
       {/* Filter Dock */}
-      <div className="bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl border border-white dark:border-slate-800 rounded-3xl p-3 md:p-1.5 flex flex-col md:flex-row items-center gap-6 shadow-lg shadow-[#ebedf7]/50 dark:shadow-none sticky top-20 z-30 transition-all hover:shadow-2xl">
-        <div className="flex items-center gap-4 w-full md:w-auto px-4 md:border-r border-[#c1c6d5]/30 dark:border-slate-700/50">
-          <span className="text-[10px] font-black text-[#717785] dark:text-slate-500 uppercase tracking-widest leading-none">Region</span>
-          <select 
-            value={region}
-            onChange={(e) => setRegion(e.target.value)}
-            className="bg-transparent border-none text-sm font-black text-[#181c22] dark:text-slate-100 focus:ring-0 cursor-pointer min-w-[120px]"
-          >
-            <option className="dark:bg-slate-900">All India</option>
-            <option className="dark:bg-slate-900">North India</option>
-            <option className="dark:bg-slate-900">South India</option>
-            <option className="dark:bg-slate-900">West India</option>
-            <option className="dark:bg-slate-900">East India</option>
-            <option className="dark:bg-slate-900">Central India</option>
-          </select>
-        </div>
-
-        <div className="flex items-center gap-4 w-full md:w-auto px-4 md:border-r border-[#c1c6d5]/30 dark:border-slate-700/50">
-          <span className="text-[10px] font-black text-[#717785] dark:text-slate-500 uppercase tracking-widest leading-none">Status</span>
-          <select 
-            value={statusFilter}
-            onChange={(e) => setStatusFilter(e.target.value)}
-            className="bg-transparent border-none text-sm font-black text-[#181c22] dark:text-slate-100 focus:ring-0 cursor-pointer min-w-[120px]"
-          >
-            <option value="All" className="dark:bg-slate-900">All ({totalSites})</option>
-            <option value="ACTIVE" className="dark:bg-slate-900">Live ({activeCount})</option>
-            <option value="SERVICE" className="dark:bg-slate-900">Service ({serviceCount})</option>
-            <option value="OFFLINE" className="dark:bg-slate-900">Offline ({offlineCount})</option>
-          </select>
-        </div>
-
-        <div className="flex items-center gap-4 w-full md:w-auto px-4 md:border-r border-[#c1c6d5]/30 dark:border-slate-700/50">
-          <span className="text-[10px] font-black text-[#717785] dark:text-slate-500 uppercase tracking-widest leading-none">Sort</span>
-          <select 
-            value={sortOrder}
-            onChange={(e) => setSortOrder(e.target.value as any)}
-            className="bg-transparent border-none text-sm font-black text-[#181c22] dark:text-slate-100 focus:ring-0 cursor-pointer min-w-[120px]"
-          >
-            <option value="none" className="dark:bg-slate-900">Default</option>
-            <option value="asc" className="dark:bg-slate-900">AQI (Low to High)</option>
-            <option value="desc" className="dark:bg-slate-900">AQI (High to Low)</option>
-          </select>
-        </div>
-
-        <div className="flex flex-1 items-center gap-3 px-4 w-full group">
-          <Search size={18} className="text-[#c1c6d5] group-focus-within:text-[#1275e2] transition-colors" />
+      <div className="card p-8 flex flex-col md:flex-row items-stretch md:items-center gap-8 rounded-none sticky top-20 z-30 transition-all shadow-none border-ink">
+        {/* Left: Search */}
+        <div className="w-64 flex items-center gap-4 px-2 group shrink-0">
+          <Search size={18} className="text-ink/20 group-focus-within:text-ink transition-colors" />
           <input 
             type="text" 
-            placeholder="Search stations..." 
-            className="bg-transparent border-none outline-none text-sm font-bold w-full placeholder:text-[#c1c6d5] dark:text-slate-100"
+            placeholder="Search monitoring nodes..." 
+            className="bg-transparent border-none p-0 outline-none font-headline-sm !text-lg w-full placeholder:text-ink/20 text-ink tracking-normal"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
           />
         </div>
 
-        <button className="w-full md:w-auto bg-[#1275e2] text-white px-8 py-3 rounded-2xl flex items-center justify-center gap-2 font-black text-[11px] uppercase tracking-[0.2em] shadow-lg shadow-blue-100 dark:shadow-none hover:scale-[1.02] transition-all">
-          <SlidersHorizontal size={14} /> 
-          Filters
-        </button>
+        {/* Divider */}
+        <div className="hidden md:block w-px h-16 bg-ink/10"></div>
+
+        {/* Right: Filters & Action */}
+        <div className="flex items-center justify-between gap-6 flex-1 w-full">
+          <div className="flex items-center gap-8 flex-wrap">
+            {/* Region Filter */}
+            <div className="flex items-center gap-3 border-b border-ink/5 pb-1">
+              <span className="label-caps !text-[8px] opacity-40">Region</span>
+              <div className="flex items-center gap-1">
+                <select 
+                  value={region}
+                  onChange={(e) => setRegion(e.target.value)}
+                  className="bg-transparent border-none p-0 label-caps !text-[10px] text-ink focus:ring-0 cursor-pointer font-black text-left appearance-none"
+                >
+                  <option>All India</option>
+                  <option>North India</option>
+                  <option>South India</option>
+                  <option>West India</option>
+                  <option>East India</option>
+                  <option>Central India</option>
+                </select>
+                <ChevronDown size={10} className="text-ink/40" />
+              </div>
+            </div>
+
+            {/* Status Filter */}
+            <div className="flex items-center gap-3 border-b border-ink/5 pb-1">
+              <span className="label-caps !text-[8px] opacity-40">Status</span>
+              <div className="flex items-center gap-1">
+                <select 
+                  value={statusFilter}
+                  onChange={(e) => setStatusFilter(e.target.value)}
+                  className="bg-transparent border-none p-0 label-caps !text-[10px] text-ink focus:ring-0 cursor-pointer font-black text-left appearance-none"
+                >
+                  <option value="All">All ({totalSites})</option>
+                  <option value="ACTIVE">Live ({activeCount})</option>
+                  <option value="SERVICE">Service ({serviceCount})</option>
+                  <option value="OFFLINE">Offline ({offlineCount})</option>
+                </select>
+                <ChevronDown size={10} className="text-ink/40" />
+              </div>
+            </div>
+
+            {/* Order Filter */}
+            <div className="flex items-center gap-3 border-b border-ink/5 pb-1">
+              <span className="label-caps !text-[8px] opacity-40">Order</span>
+              <div className="flex items-center gap-1">
+                <select 
+                  value={sortOrder}
+                  onChange={(e) => setSortOrder(e.target.value as any)}
+                  className="bg-transparent border-none p-0 label-caps !text-[10px] text-ink focus:ring-0 cursor-pointer font-black text-left appearance-none"
+                >
+                  <option value="none">Standard</option>
+                  <option value="asc">AQI Asc.</option>
+                  <option value="desc">AQI Desc.</option>
+                </select>
+                <ChevronDown size={10} className="text-ink/40" />
+              </div>
+            </div>
+          </div>
+
+          <button className="btn-primary !bg-ink !text-surface !py-2.5 px-4 rounded-none shadow-none flex items-center justify-center gap-2 hover:!bg-ink/90 transition-all shrink-0 whitespace-nowrap ml-auto">
+            <SlidersHorizontal size={12} /> 
+            <span className="label-caps !text-[9px]">Advanced</span>
+          </button>
+        </div>
       </div>
 
       {/* Bento Grid */}
       <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
-        <div className="md:col-span-8 bg-white dark:bg-slate-900 rounded-3xl p-8 shadow-sm border border-slate-100 dark:border-slate-800 flex flex-col">
-          <div className="flex justify-between items-start mb-6">
+        <div className="md:col-span-8 card p-10 flex flex-col rounded-none">
+          <div className="flex justify-between items-start mb-10">
             <div>
-              <h3 className="text-xl font-black text-[#181c22] dark:text-slate-100 tracking-tight">Station Distribution</h3>
-              <p className="text-xs font-bold text-[#717785] dark:text-slate-500 uppercase tracking-widest mt-1">Network density across major clusters</p>
+              <h3 className="font-headline-sm text-ink">Spatial Intelligence</h3>
+              <p className="label-caps !text-[10px] opacity-70 mt-2">Grid density across major metropolitan clusters</p>
             </div>
-            <Map size={24} className="text-[#1275e2] dark:text-blue-400" />
+            <Map size={24} className="text-ink opacity-40" />
           </div>
 
           {/* Interactive Legend Above Map - 6 Ranges */}
-          <div className="flex flex-wrap gap-2 mb-6">
+          <div className="flex flex-wrap gap-3 mb-8">
             {[
-              { id: '0-50', color: 'bg-[#22C55E]', label: '0-50', count: baseFilteredStations.filter(s => s.aqi <= 50).length },
-              { id: '51-100', color: 'bg-[#84CC16]', label: '51-100', count: baseFilteredStations.filter(s => s.aqi > 50 && s.aqi <= 100).length },
-              { id: '101-150', color: 'bg-[#EAB308]', label: '101-150', count: baseFilteredStations.filter(s => s.aqi > 100 && s.aqi <= 150).length },
-              { id: '151-200', color: 'bg-[#F97316]', label: '151-200', count: baseFilteredStations.filter(s => s.aqi > 150 && s.aqi <= 200).length },
-              { id: '201-250', color: 'bg-[#EF4444]', label: '201-250', count: baseFilteredStations.filter(s => s.aqi > 200 && s.aqi <= 250).length },
-              { id: '250+', color: 'bg-[#A855F7]', label: '250+', count: baseFilteredStations.filter(s => s.aqi > 250).length },
+              { id: '0-50', color: 'bg-aqi-good', label: '0-50', count: baseFilteredStations.filter(s => s.aqi <= 50).length },
+              { id: '51-100', color: 'bg-aqi-moderate', label: '51-100', count: baseFilteredStations.filter(s => s.aqi > 50 && s.aqi <= 100).length },
+              { id: '101-150', color: 'bg-aqi-poor', label: '101-150', count: baseFilteredStations.filter(s => s.aqi > 100 && s.aqi <= 150).length },
+              { id: '151-200', color: 'bg-aqi-unhealthy', label: '151-200', count: baseFilteredStations.filter(s => s.aqi > 150 && s.aqi <= 200).length },
+              { id: '201-250', color: 'bg-aqi-very-poor', label: '201-250', count: baseFilteredStations.filter(s => s.aqi > 200 && s.aqi <= 250).length },
+              { id: '250+', color: 'bg-aqi-hazardous', label: '250+', count: baseFilteredStations.filter(s => s.aqi > 250).length },
             ].map(item => (
               <button
                 key={item.id}
                 onClick={() => toggleAqiFilter(item.id)}
                 className={cn(
-                  "flex items-center gap-2 px-3 py-1.5 rounded-xl border transition-all active:scale-95",
+                  "flex items-center gap-3 px-4 py-2 card-subtle transition-all active:scale-95 rounded-none",
                   mapAqiFilters.includes(item.id) 
-                    ? "bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-700 shadow-sm ring-1 ring-slate-100 dark:ring-slate-700" 
-                    : "bg-slate-50 dark:bg-slate-900 border-transparent opacity-40 grayscale"
+                    ? "bg-ink text-surface border-ink" 
+                    : "opacity-40"
                 )}
               >
-                <div className={cn("w-2 h-2 rounded-full", item.color)} />
-                <span className="text-[9px] font-black text-slate-600 dark:text-slate-400 uppercase tracking-widest">{item.label}</span>
-                <span className="text-[9px] font-bold text-slate-300 dark:text-slate-600 ml-1">{item.count}</span>
+                <div className={cn("w-1.5 h-1.5", mapAqiFilters.includes(item.id) ? "bg-surface" : item.color)} />
+                <span className="label-caps !text-[9px]">{item.label}</span>
+                <span className="font-mono text-[10px] font-black opacity-60 ml-2">{item.count}</span>
               </button>
             ))}
           </div>
 
-          <div className="h-[320px] w-full rounded-2xl bg-[#ebedf7]/40 dark:bg-slate-800/20 relative overflow-hidden group shadow-inner border border-[#c1c6d5]/10 dark:border-slate-700/50 z-0">
+          <div className="h-[400px] w-full card-subtle relative overflow-hidden group border-none z-0 rounded-none">
             <MapContainer 
               center={[22.5937, 78.9629]} 
               zoom={4} 
@@ -247,7 +269,10 @@ export default function Stations({
               scrollWheelZoom={false}
             >
               <TileLayer
-                url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
+                url={isDarkMode 
+                  ? "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
+                  : "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
+                }
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
               />
               {filteredStations.map(s => (
@@ -256,15 +281,15 @@ export default function Stations({
                   center={[s.lat, s.lng]}
                   radius={8}
                   fillColor={getAqiColor(s.aqi)}
-                  color="#ffffff"
-                  weight={2}
+                  color="var(--surface)"
+                  weight={1}
                   fillOpacity={0.8}
                 >
-                  <Popup className="rounded-xl overflow-hidden shadow-xl">
-                    <div className="text-center p-1">
-                      <p className="font-black text-sm text-[#181c22] leading-tight">{s.location}</p>
-                      <p className="text-[10px] font-bold text-[#717785] mt-1">{s.city}</p>
-                      <div className="mt-2 inline-block px-2 py-0.5 rounded-md text-[10px] font-black uppercase tracking-widest text-white" style={{ backgroundColor: getAqiColor(s.aqi) }}>
+                  <Popup className="card border-ink p-0">
+                    <div className="text-center p-4">
+                      <p className="font-bold text-sm text-ink leading-tight mb-1">{s.location}</p>
+                      <p className="label-caps !text-[9px] opacity-70 mb-3">{s.city}</p>
+                      <div className="inline-block px-4 py-1.5 bg-ink text-surface font-mono text-xs font-black">
                         {s.aqi} AQI
                       </div>
                     </div>
@@ -275,150 +300,163 @@ export default function Stations({
           </div>
         </div>
 
-        <div className="md:col-span-4 bg-white dark:bg-slate-900 rounded-3xl p-8 shadow-sm border border-slate-100 dark:border-slate-800 flex flex-col">
-          <h3 className="text-xs font-black text-slate-400 dark:text-slate-500 uppercase tracking-widest mb-10">AQI Range Histogram</h3>
+        <div className="md:col-span-4 card p-10 flex flex-col rounded-none">
+          <h3 className="label-caps opacity-70 mb-12">Network Range Dist.</h3>
           <div className="flex-1 min-h-[250px]">
             <ResponsiveContainer width="100%" height="100%">
-              <BarChart data={histogramData}>
-                <Bar dataKey="count" radius={[6, 6, 0, 0]}>
-                  {histogramData.map((entry, index) => (
-                    <Cell 
-                      key={`cell-${index}`} 
-                      fill={entry.color} 
-                      fillOpacity={entry.isActive ? 0.6 : 0.05} 
-                    />
-                  ))}
-                </Bar>
+              <BarChart data={histogramData} margin={{ top: 0, right: 0, left: 0, bottom: 0 }}>
+                <defs>
+                  <linearGradient id="barGradient" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="5%" stopColor="var(--accent-light)" stopOpacity={0.9}/>
+                    <stop offset="95%" stopColor="var(--accent-dark)" stopOpacity={0.3}/>
+                  </linearGradient>
+                </defs>
+                <CartesianGrid strokeDasharray="1 4" vertical={false} stroke="var(--ink)" opacity={0.1} />
+                <Bar 
+                  dataKey="count" 
+                  fill="url(#barGradient)"
+                  stroke="var(--accent)"
+                  strokeWidth={1}
+                  isAnimationActive={false}
+                />
                 <XAxis dataKey="range" hide />
                 <YAxis hide />
               </BarChart>
             </ResponsiveContainer>
           </div>
-          <div className="flex justify-between mt-4 px-2">
-            <span className="text-[10px] font-black text-slate-400 dark:text-slate-500">GOOD</span>
-            <span className="text-[10px] font-black text-slate-400 dark:text-slate-500">SEVERE</span>
+          <div className="flex justify-between mt-8 border-t border-ink/5 pt-4">
+            <span className="label-caps !text-[9px] opacity-70">Grid Minimum</span>
+            <span className="label-caps !text-[9px] opacity-70">Critical Density</span>
           </div>
         </div>
+      </div>
 
-        <div className="md:col-span-3 bg-[#0a73e0] text-white rounded-3xl p-8 shadow-xl shadow-blue-100 dark:shadow-none flex flex-col justify-between group">
+      {/* Secondary Metrics Row */}
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-8 mt-8">
+        <div className="md:col-span-3 card p-8 !bg-ink !text-surface flex flex-col justify-between group rounded-none">
           <div>
-            <p className="text-[10px] font-black uppercase tracking-widest opacity-60">Network Uptime</p>
-            <div className="text-5xl font-black mt-2 tracking-tighter">99.2%</div>
+            <p className="label-caps !text-surface opacity-60">Network Integrity</p>
+            <div className="font-data-huge !text-5xl !text-surface mt-4">99.2%</div>
           </div>
-          <div className="h-2 w-full bg-white/20 rounded-full overflow-hidden mt-6">
-            <div className="h-full bg-white transition-all duration-1000" style={{ width: '99.2%' }}></div>
+          <div className="h-1 w-full bg-surface/10 rounded-none overflow-hidden mt-8">
+            <div className="h-full bg-accent transition-all duration-1000" style={{ width: '99.2%', backgroundColor: 'var(--accent)' }}></div>
           </div>
-          <p className="text-[9px] font-bold mt-4 uppercase opacity-60 tracking-wider">Target: 99.5%</p>
+          <p className="label-caps !text-[9px] !text-surface mt-6 opacity-60">Optimization Target: 99.5%</p>
         </div>
 
-        <div className="md:col-span-3 bg-[#ebedf7] dark:bg-slate-800 rounded-3xl p-8 border border-[#c1c6d5]/20 dark:border-slate-700 flex flex-col justify-between">
+        <div className="md:col-span-3 card p-8 flex flex-col justify-between rounded-none">
           <div>
-            <p className="text-[10px] font-black text-slate-400 dark:text-slate-500 uppercase tracking-widest">Avg Latency</p>
-            <div className="text-5xl font-black text-[#1275e2] dark:text-blue-400 mt-2 tracking-tighter">1.2s</div>
+            <p className="label-caps opacity-90">Avg Latency</p>
+            <div className="font-data-huge !text-5xl text-ink mt-4">1.2s</div>
           </div>
-          <div className="flex items-baseline gap-1.5 mt-6 h-10">
+          <div className="flex items-baseline gap-1 mt-8 h-12">
             {[30, 50, 40, 90].map((h, i) => (
-              <div key={i} className="flex-1 bg-[#1275e2]/30 dark:bg-blue-400/30 rounded-t-sm" style={{ height: `${h}%` }} />
+              <div key={i} className="flex-1" style={{ height: `${h}%`, backgroundColor: 'var(--accent)', opacity: 0.3 + (i * 0.2) }} />
             ))}
           </div>
         </div>
 
-        <div className="md:col-span-6 bg-white dark:bg-slate-900 rounded-3xl p-8 shadow-sm border border-slate-100 dark:border-slate-800 relative overflow-hidden group">
-          <div className="relative z-10">
-            <h4 className="text-lg font-black tracking-tight dark:text-slate-100 mb-6">System Health Status</h4>
-            <div className="grid grid-cols-3 gap-8">
-              {[
-                { l: 'Good AQI', v: goodAqiCount, c: 'text-emerald-500', darkC: 'dark:text-emerald-400' },
-                { l: 'Medium AQI', v: mediumAqiCount, c: 'text-amber-500', darkC: 'dark:text-amber-400' },
-                { l: 'High AQI', v: highAqiCount, c: 'text-red-500', darkC: 'dark:text-red-400' },
-              ].map(i => (
-                <div key={i.l}>
-                  <div className={cn("text-3xl font-black", i.c, i.darkC)}>{i.v}</div>
-                  <div className="text-[10px] font-black text-slate-400 dark:text-slate-500 uppercase mt-1 tracking-widest">{i.l}</div>
-                </div>
-              ))}
+          <div className="md:col-span-6 card p-8 md:p-12 shadow-none border-ink relative overflow-hidden group flex flex-col justify-center rounded-none">
+            <div className="relative z-10">
+              <h4 className="font-headline-sm text-ink mb-8">Grid Health Status</h4>
+              <div className="grid grid-cols-3 gap-10">
+                {[
+                  { l: 'Nominal', v: goodAqiCount, o: 0.4 },
+                  { l: 'Moderate', v: mediumAqiCount, o: 0.7 },
+                  { l: 'Critical', v: highAqiCount, o: 1 },
+                ].map(i => (
+                  <div key={i.l}>
+                    <div className="font-mono text-4xl font-black text-ink" style={{ opacity: i.o + 0.5 }}>{i.v}</div>
+                    <div className="label-caps !text-[10px] opacity-90 mt-2">{i.l}</div>
+                  </div>
+                ))}
+              </div>
             </div>
+            <Settings2 size={160} className="absolute -bottom-8 -right-8 text-ink opacity-[0.03] group-hover:rotate-12 transition-transform duration-1000" />
           </div>
-          <Settings2 size={160} className="absolute -bottom-8 -right-8 text-[#1275e2] opacity-[0.03] dark:opacity-[0.05] group-hover:rotate-12 transition-transform duration-1000" />
-        </div>
       </div>
 
-      <section className="bg-white dark:bg-slate-900 rounded-4xl border border-slate-100 dark:border-slate-800 mt-12 overflow-hidden shadow-sm">
-        <div className="px-8 py-6 border-b border-slate-50 dark:border-slate-800 flex justify-between items-center bg-slate-50/50 dark:bg-slate-800/30">
-          <div className="flex items-center gap-6">
-            <h3 className="font-black text-lg tracking-tight px-2 dark:text-slate-100">Station Inventory</h3>
-            <div className="flex items-center gap-3 px-4 border-l border-slate-200 dark:border-slate-700">
-              <span className="text-[10px] font-black text-slate-400 dark:text-slate-500 uppercase tracking-widest">Show</span>
+      <section className="card border-ink mt-16 overflow-hidden rounded-none">
+        <div className="px-10 py-8 border-b border-ink/5 flex justify-between items-center bg-ink/5">
+          <div className="flex items-center gap-10">
+            <h3 className="font-headline-sm text-ink">Global Node Inventory</h3>
+            <div className="flex items-center gap-4 border-l border-ink/10 pl-10">
+              <span className="label-caps !text-[10px] opacity-30">Yield</span>
               <select 
                 value={itemsPerPage}
                 onChange={(e) => {
                   setItemsPerPage(Number(e.target.value));
                   setCurrentPage(1);
                 }}
-                className="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg text-xs font-black px-2 py-1 focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 dark:text-slate-100 transition-all cursor-pointer"
+                className="bg-transparent border-none label-caps !text-[11px] text-ink focus:ring-0 cursor-pointer"
               >
-                <option value={10}>1-10</option>
-                <option value={25}>1-25</option>
-                <option value={50}>1-50</option>
-                <option value={100}>1-100</option>
+                <option value={10}>10</option>
+                <option value={25}>25</option>
+                <option value={50}>50</option>
+                <option value={100}>100</option>
               </select>
             </div>
           </div>
-          <div className="flex gap-2">
+          <div className="flex gap-3">
             <button 
               onClick={() => exportToCSV(filteredStations, 'aqi_stations_data')}
-              className="px-4 py-2 border dark:border-slate-700 rounded-xl text-[10px] font-black uppercase tracking-widest hover:bg-white dark:hover:bg-slate-800 dark:text-slate-300 transition-all flex items-center gap-2"
+              className="btn-secondary !py-2 rounded-none"
             >
-              <Download size={12} />
-              CSV
+              <Download size={14} /> CSV
             </button>
             <button 
               onClick={() => exportToCSV(filteredStations, 'aqi_stations_full_report')}
-              className="px-4 py-2 bg-[#1275e2] text-white rounded-xl text-[10px] font-black uppercase tracking-widest shadow-lg shadow-blue-50 dark:shadow-none flex items-center gap-2 hover:bg-[#1066c7] transition-all"
+              className="btn-primary !py-2 rounded-none"
             >
-              <FileDown size={12} />
-              Export
+              <FileDown size={14} /> Export Dataset
             </button>
           </div>
         </div>
-        <div className="overflow-x-auto p-4">
+        <div className="overflow-x-auto">
           <table className="w-full text-left">
             <thead>
-              <tr className="text-slate-400 dark:text-slate-500 text-[10px] font-black uppercase tracking-widest">
-                <th className="px-6 py-4">ID</th>
-                <th className="px-6 py-4">Location</th>
-                <th className="px-6 py-4">Pollutants</th>
-                <th className="px-6 py-4">AQI</th>
-                <th className="px-6 py-4">Status</th>
+              <tr className="border-b border-ink/5">
+                <th className="px-10 py-6 label-caps opacity-80">Identifier</th>
+                <th className="px-10 py-6 label-caps opacity-80">Location Node</th>
+                <th className="px-10 py-6 label-caps opacity-80">Telemetry Array</th>
+                <th className="px-10 py-6 label-caps opacity-80">Index Result</th>
+                <th className="px-10 py-6 label-caps opacity-80">Node Status</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-slate-50 dark:divide-slate-800">
+            <tbody className="divide-y divide-ink/5">
               {paginatedStations.length > 0 ? paginatedStations.map(s => (
-                <tr key={s.id} className="hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors group cursor-pointer">
-                  <td className="px-6 py-4 font-mono text-xs font-black text-slate-400 dark:text-slate-500 tracking-tighter">#{s.id}</td>
-                  <td className="px-6 py-4">
-                    <p className="font-black text-sm text-[#181c22] dark:text-slate-100">{s.location}</p>
-                    <p className="text-[10px] font-bold text-slate-400 dark:text-slate-500 mt-0.5">{s.city}</p>
+                <tr key={s.id} className="hover:bg-ink/5 transition-colors group cursor-pointer">
+                  <td className="px-10 py-6 font-mono text-xs font-black text-ink/40 tracking-tighter">#{s.id}</td>
+                  <td className="px-10 py-6">
+                    <p className="font-bold text-sm text-ink">{s.location}</p>
+                    <p className="label-caps !text-[9px] opacity-70 mt-1">{s.city}</p>
                   </td>
-                  <td className="px-6 py-4 flex gap-1 pt-6">
-                    {s.pollutants.map((p: string) => <span key={p} className="px-2 py-0.5 bg-blue-50 dark:bg-blue-900/30 text-[#1275e2] dark:text-blue-400 text-[9px] font-black rounded-md">{p}</span>)}
-                  </td>
-                  <td className="px-6 py-4">
-                    <div className="flex items-center gap-2">
-                      <div className="w-2 h-2 rounded-full shadow-sm" style={{ backgroundColor: getAqiColor(s.aqi) }} />
-                      <span className="font-black text-lg tracking-tighter dark:text-slate-100">{s.aqi}</span>
+                  <td className="px-10 py-6">
+                    <div className="flex gap-2">
+                      {s.pollutants.map((p: string) => <span key={p} className="px-2 py-1 bg-ink/5 text-ink label-caps !text-[8px] rounded-none">{p}</span>)}
                     </div>
                   </td>
-                  <td className="px-6 py-4">
-                    <span className={cn("px-2.5 py-1 rounded-lg text-[9px] font-black uppercase tracking-widest", s.status === 'ACTIVE' ? "bg-emerald-50 dark:bg-emerald-900/30 text-emerald-600 dark:text-emerald-400" : "bg-red-50 dark:bg-red-900/30 text-red-600 dark:text-red-400")}>{s.status}</span>
+                  <td className="px-10 py-6">
+                    <div className="flex items-center gap-3">
+                      <div className="w-1.5 h-1.5 bg-ink" style={{ opacity: s.aqi > 200 ? 1 : 0.2 }} />
+                      <span className="font-mono text-xl font-black text-ink tracking-tighter">{s.aqi}</span>
+                    </div>
+                  </td>
+                  <td className="px-10 py-6">
+                    <span className={cn(
+                      "label-caps !text-[9px] px-3 py-1 rounded-none",
+                      s.status === 'ACTIVE' ? "bg-ink text-surface" : "bg-ink/5 text-ink/40"
+                    )}>
+                      {s.status}
+                    </span>
                   </td>
                 </tr>
               )) : (
                 <tr>
-                  <td colSpan={5} className="px-6 py-20 text-center">
-                    <div className="flex flex-col items-center gap-3 text-slate-300 dark:text-slate-700">
-                      <Search size={48} strokeWidth={1.5} />
-                      <p className="text-sm font-bold uppercase tracking-widest">No stations found matching your filters</p>
+                  <td colSpan={5} className="px-10 py-32 text-center">
+                    <div className="flex flex-col items-center gap-6 opacity-20">
+                      <Search size={64} strokeWidth={1} />
+                      <p className="label-caps">Null Reference: No nodes match parameters</p>
                     </div>
                   </td>
                 </tr>
@@ -429,20 +467,20 @@ export default function Stations({
 
         {/* Pagination Controls */}
         {totalPages > 1 && (
-          <div className="px-8 py-6 bg-slate-50/50 dark:bg-slate-800/30 border-t border-slate-50 dark:border-slate-800 flex items-center justify-between">
-            <p className="text-xs font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest">
-              Showing <span className="text-slate-900 dark:text-slate-100">{(currentPage - 1) * itemsPerPage + 1}</span> to <span className="text-slate-900 dark:text-slate-100">{Math.min(currentPage * itemsPerPage, filteredStations.length)}</span> of <span className="text-slate-900 dark:text-slate-100">{filteredStations.length}</span> stations
+          <div className="px-10 py-10 border-t border-ink/5 flex items-center justify-between">
+            <p className="label-caps !text-[9px] opacity-80">
+              Rendering Node <span className="text-ink">{(currentPage - 1) * itemsPerPage + 1}</span> — <span className="text-ink">{Math.min(currentPage * itemsPerPage, filteredStations.length)}</span> of <span className="text-ink">{filteredStations.length}</span>
             </p>
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-6">
               <button 
                 onClick={() => setCurrentPage(prev => Math.max(1, prev - 1))}
                 disabled={currentPage === 1}
-                className="p-2 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700 transition-all disabled:opacity-30 disabled:cursor-not-allowed group"
+                className="btn-secondary !p-2 disabled:opacity-10"
               >
-                <Radio size={16} className="rotate-90 text-slate-400 dark:text-slate-500 group-hover:text-blue-500 dark:group-hover:text-blue-400" />
+                <Radio size={14} className="rotate-90" />
               </button>
               
-              <div className="flex items-center gap-1">
+              <div className="flex items-center gap-3">
                 {Array.from({ length: Math.min(5, totalPages) }, (_, i) => {
                   let pageNum;
                   if (totalPages <= 5) pageNum = i + 1;
@@ -455,10 +493,10 @@ export default function Stations({
                       key={pageNum}
                       onClick={() => setCurrentPage(pageNum)}
                       className={cn(
-                        "w-10 h-10 rounded-xl text-[10px] font-black transition-all",
+                        "font-mono text-[10px] font-black w-8 h-8 rounded-none transition-all",
                         currentPage === pageNum 
-                          ? "bg-[#1275e2] text-white shadow-lg shadow-blue-100 dark:shadow-none" 
-                          : "border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-400 dark:text-slate-500 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-slate-900 dark:hover:text-slate-100"
+                          ? "bg-ink text-surface" 
+                          : "text-ink/40 hover:bg-ink/5"
                       )}
                     >
                       {pageNum}
@@ -470,9 +508,9 @@ export default function Stations({
               <button 
                 onClick={() => setCurrentPage(prev => Math.min(totalPages, prev + 1))}
                 disabled={currentPage === totalPages}
-                className="p-2 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700 transition-all disabled:opacity-30 disabled:cursor-not-allowed group"
+                className="btn-secondary !p-2 disabled:opacity-10"
               >
-                <Radio size={16} className="-rotate-90 text-slate-400 dark:text-slate-500 group-hover:text-blue-500 dark:group-hover:text-blue-400" />
+                <Radio size={14} className="-rotate-90" />
               </button>
             </div>
           </div>

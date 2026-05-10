@@ -1,10 +1,9 @@
 import React from 'react';
 import {
-  AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
-  BarChart, Bar, Cell, PieChart, Pie, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar, Legend
+  AreaChart, Area, XAxis, YAxis, Tooltip, ResponsiveContainer,
+  BarChart, Bar, Cell, PieChart, Pie, RadarChart, PolarGrid, PolarAngleAxis, Radar
 } from 'recharts';
 import {
-  Activity,
   Heart,
   Wind,
   Brain,
@@ -13,7 +12,6 @@ import {
   ShieldCheck,
   Baby,
   UserRound,
-  MoreHorizontal,
   TrendingUp,
   Stethoscope,
   RefreshCw,
@@ -25,8 +23,7 @@ import {
   ChevronRight
 } from 'lucide-react';
 import {
-  MAJOR_CITIES_COMPARISON,
-  POLLUTANT_STATS
+  MAJOR_CITIES_COMPARISON
 } from '../../constants';
 import { cn } from '../../lib/utils';
 
@@ -91,7 +88,7 @@ const RealtimeWeatherWarning = () => {
         coordsRef.current = { lat: pos.coords.latitude, lon: pos.coords.longitude };
         fetchWeatherAndCity(pos.coords.latitude, pos.coords.longitude);
       },
-      (err) => {
+      (_err) => {
         setGeoState('denied');
         coordsRef.current = { lat: 28.6139, lon: 77.2090 };
         fetchWeatherAndCity(28.6139, 77.2090);
@@ -120,13 +117,13 @@ const RealtimeWeatherWarning = () => {
 
   const getSeverityData = (maxTemp: number) => {
     if (maxTemp < 40) {
-      return { severity: 'green', label: 'No Active Warning', message: 'No heat warning for your area today. Stay hydrated.', color: 'bg-emerald-500', text: 'text-emerald-500', glow: 'bg-emerald-500/20' };
+      return { severity: 'nominal', label: 'Thermal Equilibrium', message: 'Atmospheric temperature remains within standard physiological bounds. Hydration recommended.', color: 'bg-aqi-good', text: 'text-aqi-good', glow: 'bg-aqi-good/20' };
     } else if (maxTemp <= 43) {
-      return { severity: 'yellow', label: 'Heat Advisory', message: 'High temperatures in your area. Limit outdoor exertion for children and elderly.', color: 'bg-amber-500', text: 'text-amber-500', glow: 'bg-amber-500/20' };
+      return { severity: 'elevated', label: 'Thermal Advisory', message: 'Elevated thermal load detected. Minimize metabolic exertion for sensitive demographics.', color: 'bg-aqi-moderate', text: 'text-aqi-moderate', glow: 'bg-aqi-moderate/20' };
     } else if (maxTemp <= 46) {
-      return { severity: 'orange', label: 'Active Heat Warning', message: 'Severe heatwave likely in your vicinity. Avoid outdoor activity between 12pm–3pm.', color: 'bg-orange-500', text: 'text-orange-500', glow: 'bg-orange-500/20' };
+      return { severity: 'severe', label: 'Active Thermal Warning', message: 'Significant heatwave conditions. Suspend all outdoor activity during peak radiation hours.', color: 'bg-aqi-poor', text: 'text-aqi-poor', glow: 'bg-aqi-poor/20' };
     } else {
-      return { severity: 'red', label: 'Extreme Heat Warning', message: 'Extreme heatwave in your area. Avoid all outdoor activity. Seek cool shelter immediately.', color: 'bg-red-500', text: 'text-red-500', glow: 'bg-red-500/20' };
+      return { severity: 'critical', label: 'Critical Thermal State', message: 'Extreme thermal risk. Total avoidance of atmospheric exposure mandatory. Seek cool shelter.', color: 'bg-aqi-unhealthy', text: 'text-aqi-unhealthy', glow: 'bg-aqi-unhealthy/20' };
     }
   };
 
@@ -136,14 +133,14 @@ const RealtimeWeatherWarning = () => {
     content = (
       <div className="animate-pulse space-y-4 relative z-10">
         <div className="flex items-center gap-3 mb-6">
-          <div className="w-9 h-9 bg-slate-700 rounded-lg"></div>
-          <div className="h-6 w-40 bg-slate-700 rounded"></div>
+          <div className="w-9 h-9 bg-ink/5 rounded-none"></div>
+          <div className="h-6 w-40 bg-ink/5 rounded-none"></div>
         </div>
-        <div className="h-16 w-full bg-slate-700 rounded-lg"></div>
+        <div className="h-16 w-full bg-ink/5 rounded-none"></div>
         <div className="flex gap-2">
-          <div className="h-16 flex-1 bg-slate-700 rounded-lg"></div>
-          <div className="h-16 flex-1 bg-slate-700 rounded-lg"></div>
-          <div className="h-16 flex-1 bg-slate-700 rounded-lg"></div>
+          <div className="h-16 flex-1 bg-ink/5 rounded-none"></div>
+          <div className="h-16 flex-1 bg-ink/5 rounded-none"></div>
+          <div className="h-16 flex-1 bg-ink/5 rounded-none"></div>
         </div>
         {geoState === 'pending' && <p className="text-sm text-slate-400 mt-4 text-center">Detecting your location...</p>}
       </div>
@@ -152,8 +149,8 @@ const RealtimeWeatherWarning = () => {
     content = (
       <div className="text-center py-6 relative z-10 flex flex-col items-center justify-center h-full">
         <AlertTriangle className="mx-auto text-red-500 mb-3" size={32} />
-        <p className="text-slate-300 mb-4">Could not load weather data. Tap refresh to try again.</p>
-        <button onClick={refreshData} className="px-4 py-2 bg-slate-800 rounded-lg text-sm font-bold flex items-center justify-center gap-2 mx-auto hover:bg-slate-700 transition-colors">
+        <p className="text-ink/60 mb-4">Could not load weather data. Tap refresh to try again.</p>
+        <button onClick={refreshData} className="px-4 py-2 border border-ink text-sm font-bold flex items-center justify-center gap-2 mx-auto hover:bg-ink hover:text-surface transition-colors rounded-none">
           <RefreshCw size={14} /> Refresh
         </button>
       </div>
@@ -162,45 +159,45 @@ const RealtimeWeatherWarning = () => {
     const sev = getSeverityData(weatherData.maxTemp);
     
     content = (
-      <div className="relative z-10">
-        <div className="flex items-start justify-between mb-4">
-          <div className="flex items-center gap-3">
-            <div className={cn("p-2 rounded-lg text-white", sev.color)}>
+      <>
+        <div className="flex items-start justify-between mb-8">
+          <div className="flex items-center gap-4">
+            <div className={cn("p-2.5 rounded-none text-surface", sev.color)}>
               <AlertTriangle size={18} />
             </div>
-            <h4 className={cn("font-bold tracking-tight text-lg", sev.text)}>{sev.label}</h4>
+            <h4 className={cn("font-headline-sm", sev.text)}>{sev.label}</h4>
           </div>
-          <button onClick={refreshData} disabled={loading} className="p-2 text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors disabled:opacity-50">
+          <button onClick={refreshData} disabled={loading} className="p-2 text-ink/40 hover:text-ink transition-colors disabled:opacity-50">
             <RefreshCw size={16} className={cn(loading && "animate-spin")} />
           </button>
         </div>
 
-        <p className="text-base font-medium mb-6 text-slate-700 dark:text-white/90">
+        <p className="font-body-md mb-8 text-ink/80 leading-relaxed">
           {sev.message}
         </p>
 
-        <div className="grid grid-cols-3 gap-3 mb-6">
-          <div className="bg-slate-50 dark:bg-white/10 rounded-xl p-3 flex flex-col items-center justify-center text-center">
-            <Thermometer size={16} className="text-slate-600 dark:text-slate-300 mb-1" />
-            <span className="text-lg font-bold">{weatherData.temperature}°C</span>
-            <span className="text-[10px] text-slate-400 uppercase tracking-widest mt-0.5">Current</span>
+        <div className="grid grid-cols-3 gap-4 mb-8">
+          <div className="card-subtle p-4 flex flex-col items-center text-center">
+            <Thermometer size={14} className="text-ink/40 mb-2" />
+            <span className="font-mono text-xl font-black text-ink">{weatherData.temperature}°</span>
+            <span className="label-caps !text-[8px] opacity-70 mt-1">Ambient</span>
           </div>
-          <div className="bg-slate-50 dark:bg-white/10 rounded-xl p-3 flex flex-col items-center justify-center text-center">
-            <TrendingUp size={16} className="text-red-400 mb-1" />
-            <span className="text-lg font-bold">{weatherData.maxTemp}°C</span>
-            <span className="text-[10px] text-slate-400 uppercase tracking-widest mt-0.5">Max Today</span>
+          <div className="card-subtle p-4 flex flex-col items-center text-center">
+            <TrendingUp size={14} className="text-ink/40 mb-2" />
+            <span className="font-mono text-xl font-black text-ink">{weatherData.maxTemp}°</span>
+            <span className="label-caps !text-[8px] opacity-70 mt-1">Peak</span>
           </div>
-          <div className="bg-slate-50 dark:bg-white/10 rounded-xl p-3 flex flex-col items-center justify-center text-center">
-            <Wind size={16} className="text-blue-500 dark:text-blue-300 mb-1" />
-            <span className="text-lg font-bold">{weatherData.windSpeed} <span className="text-[10px]">km/h</span></span>
-            <span className="text-[10px] text-slate-400 uppercase tracking-widest mt-0.5">Wind</span>
+          <div className="card-subtle p-4 flex flex-col items-center text-center">
+            <Wind size={14} className="text-ink/40 mb-2" />
+            <span className="font-mono text-xl font-black text-ink">{weatherData.windSpeed}<span className="text-[10px] ml-0.5">km/h</span></span>
+            <span className="label-caps !text-[8px] opacity-70 mt-1">Velocity</span>
           </div>
         </div>
 
-        <div className="flex flex-wrap gap-2 mb-6">
-          <span className="px-2.5 py-1 rounded-full bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-xs font-medium text-slate-600 dark:text-slate-300">Drink water regularly</span>
-          <span className="px-2.5 py-1 rounded-full bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-xs font-medium text-slate-600 dark:text-slate-300">Avoid 12pm–3pm outdoors</span>
-          <span className="px-2.5 py-1 rounded-full bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-xs font-medium text-slate-600 dark:text-slate-300">ORS at public spots</span>
+        <div className="flex flex-wrap gap-2 mb-8">
+          {['Hydrate Regularly', 'Avoid UV Peak', 'Public Shelter'].map(t => (
+            <span key={t} className="px-3 py-1 bg-ink/5 border border-ink/5 text-[9px] font-bold text-ink uppercase tracking-wider rounded-none">{t}</span>
+          ))}
         </div>
 
         <a 
@@ -208,47 +205,55 @@ const RealtimeWeatherWarning = () => {
           download="Heat_Bulletin.pdf"
           target="_blank"
           rel="noopener noreferrer"
-          className="block text-center w-full py-3 bg-slate-900 dark:bg-white text-white dark:text-black font-black text-xs uppercase tracking-widest rounded-xl hover:bg-slate-800 dark:hover:bg-slate-100 transition-colors shadow-lg mb-6"
+          className="btn-primary w-full !py-4"
         >
           Download Health Protocol
         </a>
 
-        <div className="mt-6 space-y-3 pt-4 border-t border-white/10">
+        <div className="mt-8 space-y-3 pt-6 border-t border-ink/5">
           {geoState === 'denied' && (
-            <p className="text-[10px] text-amber-400/80 font-medium">Location access denied — showing Delhi data</p>
+            <p className="label-caps !text-[9px] text-ink/70">Reference Location: New Delhi Cluster</p>
           )}
           
-          <div className="flex items-center justify-between text-xs text-slate-400">
-            <div className="flex items-center gap-1.5">
-              <MapPin size={12} />
-              <span className="truncate max-w-[140px]">{weatherData.cityName}</span>
+          <div className="flex items-center justify-between text-[10px] font-mono text-ink/40">
+            <div className="flex items-center gap-2">
+              <MapPin size={10} />
+              <span className="truncate max-w-[140px] uppercase">{weatherData.cityName}</span>
             </div>
-            <div className="flex items-center gap-1.5">
-              <Clock size={12} />
+            <div className="flex items-center gap-2">
+              <Clock size={10} />
               <span>{weatherData.lastUpdated.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</span>
             </div>
           </div>
           
-          <div className="flex items-center gap-1.5 text-xs text-slate-400 bg-slate-800/50 p-2 rounded-lg">
-            <Phone size={12} className="text-red-400" />
-            <span>Emergency: <span className="font-bold text-white">1077 / 1070 / 112</span></span>
+          <div className="flex items-center gap-2 text-[10px] font-bold text-ink/80 bg-ink/5 p-3 rounded-none border border-ink/10">
+            <Phone size={10} className="text-ink" />
+            <span className="label-caps !text-[9px]">Emergency: <span className="font-mono text-ink font-black ml-2">1077 / 112</span></span>
           </div>
         </div>
-      </div>
+      </>
     );
   }
 
   const glowColor = weatherData ? getSeverityData(weatherData.maxTemp).glow : 'bg-slate-500/20';
 
   return (
-    <div className="bg-white dark:bg-[#181c22] text-slate-800 dark:text-white border border-slate-100 dark:border-slate-800 rounded-2xl p-6 shadow-xl relative overflow-hidden group">
-      <div className={cn("absolute top-0 right-0 w-64 h-64 rounded-full blur-3xl -mr-32 -mt-32 transition-colors duration-1000", glowColor)}></div>
+    <div className="card p-8 shadow-none border-ink relative overflow-hidden group min-h-[480px] flex flex-col justify-center rounded-none">
+      <div className={cn("absolute top-0 right-0 w-64 h-64 blur-[100px] -mr-32 -mt-32 transition-colors duration-1000 opacity-20", glowColor)}></div>
       {content}
     </div>
   );
 };
 
-export default function Health({ onNavigate, cities = MAJOR_CITIES_COMPARISON }: { onNavigate?: (view: any, context?: any) => void, cities?: any[] }) {
+export default function Health({ 
+  onNavigate: _onNavigate,
+  cities = MAJOR_CITIES_COMPARISON,
+  isDarkMode: _isDarkMode
+}: { 
+  onNavigate?: (view: any, context?: any) => void,
+  cities?: any[],
+  isDarkMode?: boolean
+}) {
   const avgAqiTotal = React.useMemo(() => {
     return cities.length > 0 ? cities.reduce((acc, c) => acc + c.aqi, 0) / cities.length : 100;
   }, [cities]);
@@ -276,9 +281,9 @@ export default function Health({ onNavigate, cities = MAJOR_CITIES_COMPARISON }:
   ], [avgAqiTotal]);
 
   const vulnerabilityData = [
-    { name: 'Infants', value: 35, color: '#f43f5e' },
-    { name: 'Seniors', value: 45, color: '#6366f1' },
-    { name: 'Adults', value: 20, color: '#10b981' },
+    { name: 'Pediatric', value: 35, color: 'var(--accent-light)' },
+    { name: 'Geriatric', value: 45, color: 'var(--accent)' },
+    { name: 'Standard', value: 20, color: 'var(--accent-dark)' },
   ];
 
   const symptomPrevalence = [
@@ -289,47 +294,42 @@ export default function Health({ onNavigate, cities = MAJOR_CITIES_COMPARISON }:
     { symptom: 'Nausea', level: 30 },
   ];
 
-  const pollutantRisks = [
-    { name: 'PM 2.5', impact: 'High', systems: ['Cardiovascular', 'Respiratory'], color: 'bg-red-500' },
-    { name: 'PM 10', impact: 'Moderate', systems: ['Respiratory', 'Eye Irritation'], color: 'bg-amber-500' },
-    { name: 'NO2', impact: 'High', systems: ['Asthma', 'Immunity'], color: 'bg-red-400' },
-    { name: 'O3', impact: 'Low', systems: ['Lungs', 'Throat'], color: 'bg-blue-400' },
-  ];
+
 
   return (
-    <div className="space-y-8 pb-20">
+    <div className="space-y-12 pb-20">
       {/* Header */}
       <section className="flex flex-col md:flex-row md:items-end justify-between gap-4">
         <div>
-          <h1 className="text-3xl font-bold tracking-tight text-[#181c22] dark:text-slate-100">Health Impact Assessment</h1>
-          <p className="text-[#414753] dark:text-slate-400 mt-2 max-w-2xl font-medium">
-            Advanced medical diagnostics mapping respiratory load, toxicity profiles, and age-group vulnerabilities against regional AQI levels.
+          <h1 className="font-display-lg text-ink">Biological Response Matrix</h1>
+          <p className="font-body-lg text-ink/60 mt-1 max-w-2xl">
+            Advanced medical diagnostics mapping respiratory load, toxicity profiles, and demographic vulnerabilities against regional atmospheric density.
           </p>
         </div>
-        <div className="flex bg-white dark:bg-slate-800 rounded-lg p-1 border border-slate-200 dark:border-slate-700 shadow-sm self-start">
-          <div className="px-4 py-2 flex items-center gap-2 text-emerald-600 dark:text-emerald-400">
-            <ShieldCheck size={18} />
-            <span className="text-xs font-bold uppercase tracking-wider text-slate-900 dark:text-slate-100 leading-none">Medical Data Verified</span>
+        <div className="card-subtle p-3 pr-6 self-start flex items-center gap-3 rounded-none">
+          <div className="bg-ink text-surface p-2 rounded-none">
+             <ShieldCheck size={14} />
           </div>
+          <span className="label-caps !text-ink font-black">Clinical Data Verified</span>
         </div>
       </section>
 
       {/* Body Systems Section */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {[
-          { icon: Wind, label: 'Respiratory', status: avgAqiTotal > 200 ? 'Extreme' : avgAqiTotal > 150 ? 'High' : 'Moderate', color: 'text-red-500', darkColor: 'dark:text-red-400', bg: 'bg-red-50', darkBg: 'dark:bg-red-900/30' },
-          { icon: Heart, label: 'Cardiovascular', status: avgAqiTotal > 180 ? 'Severe' : 'Elevated', color: 'text-amber-500', darkColor: 'dark:text-amber-400', bg: 'bg-amber-50', darkBg: 'dark:bg-amber-900/30' },
-          { icon: Brain, label: 'Neurovascular', status: 'Moderate', color: 'text-blue-500', darkColor: 'dark:text-blue-400', bg: 'bg-blue-50', darkBg: 'dark:bg-blue-900/30' },
-          { icon: Eye, label: 'Ocular Health', status: avgAqiTotal > 250 ? 'Irritant' : 'Normal', color: 'text-emerald-500', darkColor: 'dark:text-emerald-400', bg: 'bg-emerald-50', darkBg: 'dark:bg-emerald-900/30' },
+          { icon: Wind, label: 'Respiratory', status: avgAqiTotal > 200 ? 'Extreme' : avgAqiTotal > 150 ? 'Severe' : 'Nominal', opacity: 1 },
+          { icon: Heart, label: 'Cardiovascular', status: avgAqiTotal > 180 ? 'Critical' : 'Elevated', opacity: 0.9 },
+          { icon: Brain, label: 'Neurovascular', status: 'Moderate', opacity: 0.8 },
+          { icon: Eye, label: 'Ocular Health', status: avgAqiTotal > 250 ? 'Irritant' : 'Stable', opacity: 0.7 },
         ].map((system) => (
-          <div key={system.label} className="bg-white dark:bg-slate-900 p-6 rounded-3xl shadow-sm border border-slate-100 dark:border-slate-800 flex flex-col items-center text-center group hover:shadow-md transition-all">
-            <div className={cn("p-4 rounded-2xl mb-4 transition-transform group-hover:scale-110 shadow-inner", system.bg, system.darkBg, system.color, system.darkColor)}>
-              <system.icon size={32} />
+          <div key={system.label} className="card p-10 flex flex-col items-center text-center group rounded-none">
+            <div className="p-6 bg-ink/5 rounded-none mb-6 group-hover:bg-ink group-hover:text-surface transition-all duration-500">
+              <system.icon size={32} strokeWidth={1} />
             </div>
-            <h3 className="font-bold text-slate-800 dark:text-slate-100">{system.label}</h3>
-            <p className={cn("text-[10px] font-black uppercase tracking-widest mt-2 px-3 py-1 rounded-full", system.bg, system.darkBg, system.color, system.darkColor)}>
+            <h3 className="font-headline-sm text-ink mb-4">{system.label}</h3>
+            <span className="label-caps !text-[10px] text-ink font-black border border-ink/10 px-4 py-1.5 rounded-none" style={{ opacity: system.opacity }}>
               {system.status}
-            </p>
+            </span>
           </div>
         ))}
       </div>
@@ -337,76 +337,71 @@ export default function Health({ onNavigate, cities = MAJOR_CITIES_COMPARISON }:
       {/* Analytics Matrix */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
         {/* Medical Admissions Chart */}
-        <div className="lg:col-span-8 bg-white dark:bg-slate-900 rounded-[2.5rem] p-8 shadow-sm border border-slate-100 dark:border-slate-800 flex flex-col">
-          <div className="flex justify-between items-center mb-8">
+        <div className="lg:col-span-8 card p-10 flex flex-col">
+          <div className="flex justify-between items-start mb-12">
             <div>
-              <h3 className="text-xl font-black dark:text-slate-100 uppercase tracking-tight">ER Admissions Forecast</h3>
-              <p className="text-xs text-slate-500 dark:text-slate-400 font-medium mt-1">Projected increase in respiratory distress cases based on current PM2.5 levels.</p>
+              <h3 className="font-headline-sm text-ink">ER Admissions Projection</h3>
+              <p className="label-caps !text-[10px] opacity-70 mt-2">Modeled correlation between PM2.5 density and clinical respiratory arrivals.</p>
             </div>
           </div>
 
           <div className="h-[350px] w-full">
             <ResponsiveContainer width="100%" height="100%">
               <AreaChart data={admissionsData} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
-                <defs>
-                  <linearGradient id="healthGradient" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="5%" stopColor="#f43f5e" stopOpacity={0.2} />
-                    <stop offset="95%" stopColor="#f43f5e" stopOpacity={0} />
-                  </linearGradient>
-                </defs>
-                <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#94a3b8" opacity={0.1} />
-                <XAxis dataKey="time" axisLine={false} tickLine={false} tick={{ fontSize: 10, fontWeight: 900, fill: '#64748b' }} />
-                <YAxis axisLine={false} tickLine={false} tick={{ fontSize: 10, fontWeight: 900, fill: '#64748b' }} />
+                <XAxis dataKey="time" axisLine={false} tickLine={false} tick={{ fontSize: 10, fontStyle: 'italic', fill: 'var(--ink)', opacity: 0.7 }} />
+                <YAxis axisLine={false} tickLine={false} tick={{ fontSize: 10, fontStyle: 'italic', fill: 'var(--ink)', opacity: 0.7 }} />
                 <Tooltip
-                  cursor={{ stroke: '#f43f5e', strokeWidth: 2, strokeDasharray: '5 5' }}
                   contentStyle={{ 
-                    borderRadius: '24px', 
-                    border: 'none', 
-                    boxShadow: '0 25px 50px -12px rgb(0 0 0 / 0.25)',
-                    backgroundColor: 'rgba(15, 23, 42, 0.95)',
-                    color: '#fff',
-                    padding: '16px'
+                    borderRadius: '0', 
+                    border: '1px solid var(--ink)', 
+                    boxShadow: 'none',
+                    backgroundColor: 'var(--background)',
+                    padding: '12px'
                   }}
-                  itemStyle={{ fontSize: '12px', fontWeight: 'bold', color: '#fff' }}
+                  itemStyle={{ fontSize: '10px', fontWeight: 'bold', textTransform: 'uppercase', color: 'var(--ink)' }}
                 />
-                <Area type="monotone" dataKey="baseline" stroke="#64748b" strokeWidth={2} fill="transparent" strokeDasharray="8 8" opacity={0.3} />
-                <Area type="monotone" dataKey="admissions" stroke="#f43f5e" strokeWidth={4} fillOpacity={1} fill="url(#healthGradient)" />
+                <Area type="monotone" dataKey="baseline" stroke="var(--ink)" strokeWidth={1} fill="transparent" strokeDasharray="4 4" opacity={0.1} />
+                <Area type="monotone" dataKey="admissions" stroke="var(--ink)" strokeWidth={3} fill="var(--ink)" fillOpacity={0.05} />
               </AreaChart>
             </ResponsiveContainer>
           </div>
 
-          <div className="mt-8 grid grid-cols-3 gap-4 border-t border-slate-100 dark:border-slate-800 pt-8">
-            <div className="flex flex-col gap-1">
-              <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Surge Level</span>
-              <span className="text-lg font-black text-red-500">+{Math.round((avgAqiTotal/100) * 45)}%</span>
+          <div className="mt-12 grid grid-cols-3 gap-10 border-t border-ink/5 pt-10">
+            <div className="flex flex-col gap-2">
+              <span className="label-caps !text-[9px] opacity-90">Load Delta</span>
+              <span className="font-mono text-3xl font-black text-ink">+{Math.round((avgAqiTotal/100) * 45)}%</span>
             </div>
-            <div className="flex flex-col gap-1">
-              <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Peak Load Time</span>
-              <span className="text-lg font-black dark:text-slate-100">12:00 PM</span>
+            <div className="flex flex-col gap-2">
+              <span className="label-caps !text-[9px] opacity-90">Peak Intervals</span>
+              <span className="font-mono text-3xl font-black text-ink">1200h</span>
             </div>
-            <div className="flex flex-col gap-1">
-              <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Confidence</span>
-              <span className="text-lg font-black text-emerald-500">92%</span>
+            <div className="flex flex-col gap-2">
+              <span className="label-caps !text-[9px] opacity-90">Model Confidence</span>
+              <span className="font-mono text-3xl font-black text-ink">92%</span>
             </div>
           </div>
         </div>
 
         {/* Radar & Pie Breakdown */}
-        <div className="lg:col-span-4 space-y-6 flex flex-col">
-          <div className="bg-white dark:bg-[#181c22] text-slate-900 dark:text-white border border-slate-100 dark:border-slate-800 rounded-[2.5rem] p-8 shadow-2xl flex-1 flex flex-col items-center text-center overflow-hidden relative">
-            <div className="absolute top-0 left-0 w-full h-full opacity-10 bg-[radial-gradient(circle_at_center,var(--tw-gradient-stops))] from-blue-500 to-transparent"></div>
-            <h4 className="text-xs font-black uppercase tracking-[0.2em] mb-6 text-slate-400 relative z-10">Toxicity Profile</h4>
+        <div className="lg:col-span-4 space-y-8 flex flex-col">
+          <div className="card p-10 flex-1 flex flex-col items-center text-center overflow-hidden relative">
+            <h4 className="label-caps opacity-90 mb-10">Toxicity Spectrum</h4>
             <div className="h-64 w-full relative z-10">
               <ResponsiveContainer width="100%" height="100%">
                 <RadarChart cx="50%" cy="50%" outerRadius="80%" data={toxicityData}>
-                  <PolarGrid stroke="#334155" />
-                  <PolarAngleAxis dataKey="subject" tick={{ fill: '#94a3b8', fontSize: 10, fontWeight: 700 }} />
-                  <Radar name="Toxicity" dataKey="A" stroke="#1275e2" fill="#1275e2" fillOpacity={0.5} />
+                  <PolarGrid stroke="var(--ink)" strokeOpacity={0.1} />
+                  <PolarAngleAxis dataKey="subject" tick={{ fill: 'var(--ink)', fontSize: 8, fontStyle: 'bold' }} />
+                  <Radar
+                    name="Risk"
+                    dataKey="A"
+                    fill="var(--accent)"
+                    fillOpacity={0.3}
+                  />
                 </RadarChart>
               </ResponsiveContainer>
             </div>
-            <p className="text-[10px] text-slate-500 mt-4 font-bold relative z-10 leading-relaxed uppercase tracking-wider">
-              {toxicityData[0].A > 100 ? 'Warning: High particulate toxicity detected' : 'Pollutant levels within diagnostic bounds'}
+            <p className="label-caps !text-[9px] opacity-90 mt-8 leading-relaxed max-w-[200px]">
+              {toxicityData[0].A > 100 ? 'Caution: Elevated concentration detected' : 'Concentration within standard bounds'}
             </p>
           </div>
 
@@ -417,8 +412,8 @@ export default function Health({ onNavigate, cities = MAJOR_CITIES_COMPARISON }:
       {/* Secondary Analytics Row */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         {/* Age Group Vulnerability */}
-        <div className="bg-white dark:bg-slate-900 rounded-[2.5rem] p-8 shadow-sm border border-slate-100 dark:border-slate-800">
-          <h4 className="text-xs font-black text-slate-400 uppercase tracking-widest mb-6">Age-Group Vulnerability</h4>
+        <div className="card p-10">
+          <h4 className="label-caps opacity-90 mb-10">Demographic Risk</h4>
           <div className="h-48 w-full">
             <ResponsiveContainer width="100%" height="100%">
               <PieChart>
@@ -428,72 +423,73 @@ export default function Health({ onNavigate, cities = MAJOR_CITIES_COMPARISON }:
                   cy="50%"
                   innerRadius={50}
                   outerRadius={80}
-                  paddingAngle={8}
+                  paddingAngle={4}
                   dataKey="value"
                 >
                   {vulnerabilityData.map((entry, index) => (
-                    <Cell key={`cell-${index}`} fill={entry.color} />
+                    <Cell key={`cell-${index}`} fill={entry.color} stroke="none" />
                   ))}
                 </Pie>
-                <Tooltip />
+                <Tooltip contentStyle={{ borderRadius: 0, border: '1px solid var(--ink)', backgroundColor: 'var(--background)' }} />
               </PieChart>
             </ResponsiveContainer>
           </div>
-          <div className="mt-4 space-y-2">
+          <div className="mt-8 space-y-3">
             {vulnerabilityData.map(v => (
-              <div key={v.name} className="flex items-center justify-between">
-                <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 rounded-full" style={{ backgroundColor: v.color }}></div>
-                  <span className="text-xs font-bold dark:text-slate-200">{v.name}</span>
+              <div key={v.name} className="flex items-center justify-between border-b border-ink/5 pb-2 last:border-0">
+                <div className="flex items-center gap-3">
+                  <div className="w-1.5 h-1.5" style={{ backgroundColor: v.color }}></div>
+                  <span className="label-caps !text-[10px] text-ink">{v.name}</span>
                 </div>
-                <span className="text-xs font-black dark:text-slate-400">{v.value}% Risk</span>
+                <span className="font-mono text-[11px] font-black text-ink">{v.value}%</span>
               </div>
             ))}
           </div>
         </div>
 
         {/* Symptom Severity */}
-        <div className="bg-white dark:bg-slate-900 rounded-[2.5rem] p-8 shadow-sm border border-slate-100 dark:border-slate-800">
-          <h4 className="text-xs font-black text-slate-400 uppercase tracking-widest mb-6">Symptom Prevalence</h4>
+        <div className="card p-10">
+          <h4 className="label-caps opacity-90 mb-10">Symptom Prevalence</h4>
           <div className="h-48 w-full">
             <ResponsiveContainer width="100%" height="100%">
               <BarChart data={symptomPrevalence} layout="vertical" margin={{ left: -20 }}>
                 <XAxis type="number" hide />
-                <YAxis dataKey="symptom" type="category" axisLine={false} tickLine={false} tick={{ fontSize: 10, fontWeight: 900, fill: '#64748b' }} width={80} />
-                <Tooltip cursor={{ fill: 'transparent' }} />
-                <Bar dataKey="level" radius={[0, 10, 10, 0]}>
-                  {symptomPrevalence.map((entry, index) => (
-                    <Cell key={index} fill={entry.level > 70 ? '#f43f5e' : entry.level > 50 ? '#6366f1' : '#10b981'} />
+                <YAxis dataKey="symptom" type="category" axisLine={false} tickLine={false} tick={{ fontSize: 9, fontWeight: 900, fill: 'var(--ink)', opacity: 0.8 }} width={80} />
+                <Bar dataKey="level" radius={0}>
+                  {symptomPrevalence.map((_entry, index) => (
+                    <Cell 
+                      key={index} 
+                      fill="var(--accent)" 
+                      fillOpacity={0.8}
+                    />
                   ))}
                 </Bar>
               </BarChart>
             </ResponsiveContainer>
           </div>
-          <p className="text-[10px] text-slate-400 font-bold mt-4 text-center italic">Reported population symptoms (Sample Size: 10k)</p>
+          <p className="label-caps !text-[8px] opacity-60 mt-8 text-center italic">Observational Data / N=10,000</p>
         </div>
 
         {/* Guardian Protocol Advice */}
-        <div className="bg-white dark:bg-slate-950 text-slate-900 dark:text-white border border-slate-100 dark:border-slate-800 rounded-[2.5rem] p-8 shadow-2xl">
-          <div className="flex items-center gap-3 mb-6">
-            <div className="w-10 h-10 rounded-2xl bg-blue-600 flex items-center justify-center">
-              <ShieldCheck size={20} />
-            </div>
-            <h4 className="text-sm font-black uppercase tracking-widest">Medical Protocol</h4>
+        <div className="card p-10 !bg-ink !text-surface">
+          <div className="flex items-center gap-4 mb-10">
+            <ShieldCheck size={20} strokeWidth={1} className="text-surface" />
+            <h4 className="label-caps !text-surface opacity-90">Clinical Protocol</h4>
           </div>
           <div className="space-y-4">
             {[
-              { label: 'Indoors', status: 'Safest', desc: 'Use HEPA air purifiers consistently.' },
-              { label: 'Outdoor Workout', status: 'Danger', desc: 'Cardiovascular load exceeds safe limits.' },
-              { label: 'Commute', status: 'Warning', desc: 'Use N95 grade filtration masks.' }
+              { label: 'Indoors', status: 'Optimal', desc: 'Sustained HEPA filtration active.' },
+              { label: 'Outdoor', status: 'Danger', desc: 'Critical metabolic threshold reached.' },
+              { label: 'Transit', status: 'Caution', desc: 'N95 filtration required.' }
             ].map(p => (
-              <div key={p.label} className="p-4 bg-slate-50 dark:bg-slate-900/50 rounded-2xl border border-slate-200 dark:border-slate-800 hover:border-blue-500 transition-colors">
+              <div key={p.label} className="p-4 border border-surface/10 hover:border-surface transition-colors rounded-none">
                 <div className="flex justify-between items-center mb-1">
-                  <span className="text-xs font-black">{p.label}</span>
-                  <span className={cn("text-[10px] font-black uppercase px-2 py-0.5 rounded", p.status === 'Danger' ? 'bg-red-500 text-white' : 'bg-slate-200 dark:bg-slate-700 text-slate-600 dark:text-slate-300')}>
+                  <span className="label-caps !text-[10px] !text-surface opacity-60">{p.label}</span>
+                  <span className={cn("label-caps !text-[8px] px-2 py-0.5 rounded-none", p.status === 'Danger' ? 'bg-surface text-ink' : 'bg-surface/20 text-surface')}>
                     {p.status}
                   </span>
                 </div>
-                <p className="text-[10px] text-slate-500 font-medium">{p.desc}</p>
+                <p className="text-[10px] text-surface font-bold mt-2">{p.desc}</p>
               </div>
             ))}
           </div>
@@ -501,58 +497,52 @@ export default function Health({ onNavigate, cities = MAJOR_CITIES_COMPARISON }:
       </div>
 
       {/* Vulnerable Groups */}
-      <section className="mt-12">
-        <div className="flex items-center gap-3 mb-8">
-          <Info size={24} className="text-[#1275e2]" />
-          <h3 className="text-2xl font-black text-[#181c22] dark:text-slate-100 tracking-tight">Population Advisory</h3>
+      <section className="mt-20">
+        <div className="flex items-center gap-4 mb-12">
+          <Info size={24} className="text-ink opacity-40" />
+          <h3 className="font-headline-sm text-ink">Population Advisory</h3>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {[
             {
               title: 'Pediatric Care',
               icon: Baby,
-              desc: 'Developing lungs are 3x more sensitive. Respiratory load in children peaks during evening AQI inversion.',
+              desc: 'Developing lungs are 3x more sensitive. Respiratory load peaks during nocturnal inversion periods.',
               action: 'School Safety PDF',
               url: 'https://www.healthygallatin.org/wp-content/uploads/2024/06/ActivityGuidelinesWildfireSmokeEventsSchools.pdf',
-              color: 'text-pink-500',
-              bg: 'bg-pink-50',
-              darkBg: 'dark:bg-pink-900/30'
+              opacity: 0.8
             },
             {
               title: 'Geriatric Support',
               icon: UserRound,
-              desc: 'High correlation with cardio-distress in 60+ age group. Monitor nocturnal breathing and hydration.',
+              desc: 'High correlation with cardio-distress in 60+ demographics. Monitor nocturnal saturation levels.',
               action: 'Elderline Support',
               url: 'https://scw.dosje.gov.in/elderline',
-              color: 'text-indigo-500',
-              bg: 'bg-indigo-50',
-              darkBg: 'dark:bg-indigo-900/30'
+              opacity: 1
             },
             {
-              title: 'High Exposure Group',
+              title: 'Occupational Risk',
               icon: Stethoscope,
-              desc: 'Industrial-grade protection mandatory. Cumulative PM exposure risks lung function over 4-hour shifts.',
+              desc: 'Industrial-grade filtration mandatory. Cumulative PM exposure risks lung function over 4-hour intervals.',
               action: 'OHS Standards',
               url: 'https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.134',
-              color: 'text-amber-500',
-              bg: 'bg-amber-50',
-              darkBg: 'dark:bg-amber-900/30'
+              opacity: 0.9
             },
           ].map((item) => (
-            <div key={item.title} className="bg-white dark:bg-slate-900 rounded-[2.5rem] shadow-sm border border-slate-100 dark:border-slate-800 overflow-hidden group hover:shadow-lg transition-all flex flex-col">
-              <div className="p-8 flex-1">
-                <div className={cn("w-14 h-14 rounded-[1.2rem] flex items-center justify-center mb-6 shadow-sm", item.bg, item.darkBg, item.color)}>
-                  <item.icon size={28} />
+            <div key={item.title} className="card p-10 flex flex-col group">
+              <div className="flex-1">
+                <div className="w-14 h-14 bg-ink/10 rounded-none flex items-center justify-center mb-8" style={{ opacity: item.opacity }}>
+                  <item.icon size={28} strokeWidth={1} className="text-ink" />
                 </div>
-                <h4 className="text-xl font-black mb-3 dark:text-slate-100">{item.title}</h4>
-                <p className="text-sm text-slate-500 dark:text-slate-400 mb-8 leading-relaxed font-medium">
+                <h4 className="font-headline-sm text-ink mb-4">{item.title}</h4>
+                <p className="font-body-sm text-ink/60 mb-10 leading-relaxed">
                   {item.desc}
                 </p>
                 <a
                   href={item.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-3 px-6 py-3 rounded-xl bg-slate-50 dark:bg-slate-800 text-[10px] font-black uppercase tracking-widest hover:bg-[#1275e2] hover:text-white dark:hover:bg-blue-600 transition-all group/btn"
+                  className="btn-secondary !py-3 !px-6 group/btn w-full justify-center"
                 >
                   {item.action} <ChevronRight size={14} className="group-hover/btn:translate-x-1 transition-transform" />
                 </a>

@@ -1,40 +1,42 @@
 {
-  "C:\\Users\\Amol\\Desktop\\Antigravity\\AQI project\\fix_regions.js": 1777380010.269652,
-  "C:\\Users\\Amol\\Desktop\\Antigravity\\AQI project\\parse_data.js": 1777379992.948256,
-  "C:\\Users\\Amol\\Desktop\\Antigravity\\AQI project\\vite.config.ts": 1777383612.8116257,
-  "C:\\Users\\Amol\\Desktop\\Antigravity\\AQI project\\scratch\\extract_stations.py": 1777371026.6007092,
-  "C:\\Users\\Amol\\Desktop\\Antigravity\\AQI project\\scratch\\merge_stations.py": 1777370588.7974567,
-  "C:\\Users\\Amol\\Desktop\\Antigravity\\AQI project\\scratch\\update_local_aqi.py": 1777371219.2740555,
-  "C:\\Users\\Amol\\Desktop\\Antigravity\\AQI project\\src\\App.tsx": 1777382624.9865403,
-  "C:\\Users\\Amol\\Desktop\\Antigravity\\AQI project\\src\\constants.ts": 1777379043.1244898,
-  "C:\\Users\\Amol\\Desktop\\Antigravity\\AQI project\\src\\main.tsx": 1777380329.5268683,
-  "C:\\Users\\Amol\\Desktop\\Antigravity\\AQI project\\src\\types.d.ts": 1777374994.94893,
-  "C:\\Users\\Amol\\Desktop\\Antigravity\\AQI project\\src\\components\\views\\CityDive.tsx": 1777380875.0064318,
-  "C:\\Users\\Amol\\Desktop\\Antigravity\\AQI project\\src\\components\\views\\Composite.tsx": 1777381194.37396,
-  "C:\\Users\\Amol\\Desktop\\Antigravity\\AQI project\\src\\components\\views\\Health.tsx": 1777381016.5458908,
-  "C:\\Users\\Amol\\Desktop\\Antigravity\\AQI project\\src\\components\\views\\Stations.tsx": 1777381085.349517,
-  "C:\\Users\\Amol\\Desktop\\Antigravity\\AQI project\\src\\components\\views\\Summary.tsx": 1777380804.4293735,
-  "C:\\Users\\Amol\\Desktop\\Antigravity\\AQI project\\src\\lib\\utils.ts": 1777335518.0,
-  "C:\\Users\\Amol\\Desktop\\Antigravity\\AQI project\\index.html": 1777379351.144112,
-  "C:\\Users\\Amol\\Desktop\\Antigravity\\AQI project\\README.md": 1777383612.7780514,
-  "C:\\Users\\Amol\\Desktop\\Antigravity\\AQI project\\public\\heat_bulletin.pdf": 1777364415.0522032,
-  "C:\\Users\\Amol\\Desktop\\Antigravity\\AQI project\\public\\aqi_analysis.png": 1777248672.9350324,
-  "C:\\Users\\Amol\\Desktop\\Antigravity\\AQI project\\public\\composite_vs_pm25.png": 1777249029.7263305,
-  "C:\\Users\\Amol\\Desktop\\Antigravity\\AQI project\\public\\db\\cities\\Baddi\\Baddi.jpg": 1777365981.463716,
-  "C:\\Users\\Amol\\Desktop\\Antigravity\\AQI project\\public\\db\\cities\\Bengaluru\\Bengaluru.jpg": 1777356615.7308128,
-  "C:\\Users\\Amol\\Desktop\\Antigravity\\AQI project\\public\\db\\cities\\Charkhi Dadri\\Charkhi Dadri.jpg": 1777365678.579036,
-  "C:\\Users\\Amol\\Desktop\\Antigravity\\AQI project\\public\\db\\cities\\Chennai\\Chennai.jpg": 1777356690.5713809,
-  "C:\\Users\\Amol\\Desktop\\Antigravity\\AQI project\\public\\db\\cities\\Delhi\\Delhi.jpg": 1777356483.5856774,
-  "C:\\Users\\Amol\\Desktop\\Antigravity\\AQI project\\public\\db\\cities\\Hajipur\\Hajipur.jpg": 1777365977.6992602,
-  "C:\\Users\\Amol\\Desktop\\Antigravity\\AQI project\\public\\db\\cities\\Hyderabad\\Hyderabad.jpg": 1777356725.8254478,
-  "C:\\Users\\Amol\\Desktop\\Antigravity\\AQI project\\public\\db\\cities\\Jind\\Jind.png": 1777366025.0872838,
-  "C:\\Users\\Amol\\Desktop\\Antigravity\\AQI project\\public\\db\\cities\\Khora\\Khora.jpg": 1777365593.8997543,
-  "C:\\Users\\Amol\\Desktop\\Antigravity\\AQI project\\public\\db\\cities\\Kolkata\\Kolkata.jpg": 1777356665.7341232,
-  "C:\\Users\\Amol\\Desktop\\Antigravity\\AQI project\\public\\db\\cities\\Mandi Gobindgarh\\Mandi Gobindgarh.jpg": 1777365981.6986113,
-  "C:\\Users\\Amol\\Desktop\\Antigravity\\AQI project\\public\\db\\cities\\Modinagar\\Modinagar.jpg": 1777366002.5312927,
-  "C:\\Users\\Amol\\Desktop\\Antigravity\\AQI project\\public\\db\\cities\\Mumbai\\Mumbai.jpg": 1777356535.935925,
-  "C:\\Users\\Amol\\Desktop\\Antigravity\\AQI project\\public\\db\\cities\\Rohtak\\Rohtak.jpg": 1777365980.7476408,
-  "C:\\Users\\Amol\\Desktop\\Antigravity\\AQI project\\public\\db\\cities\\Suakati\\Suakati.jpg": 1777366028.7133708,
-  "C:\\Users\\Amol\\Desktop\\Antigravity\\AQI project\\public\\db\\cities\\Surat\\Surat.jpg": 1777367036.7156549,
-  "C:\\Users\\Amol\\Desktop\\Antigravity\\AQI project\\public\\db\\cities\\Tirupati\\Tirupati.jpg": 1777366032.8641326
+  "C:\\Users\\Amol\\Desktop\\Data Analysis Project\\src\\App.tsx": {
+    "mtime": 1778339973.3925762,
+    "hash": "84c544e0c9534e97e5c74985c90242ae"
+  },
+  "C:\\Users\\Amol\\Desktop\\Data Analysis Project\\src\\constants.ts": {
+    "mtime": 1778340384.256508,
+    "hash": "074494df1d2c85791a83b3cd7c7d281a"
+  },
+  "C:\\Users\\Amol\\Desktop\\Data Analysis Project\\src\\main.tsx": {
+    "mtime": 1777380329.5268683,
+    "hash": "7de2bf61cf1545c04d315e358e2e3219"
+  },
+  "C:\\Users\\Amol\\Desktop\\Data Analysis Project\\src\\types.d.ts": {
+    "mtime": 1777374994.94893,
+    "hash": "597a40d71897aac25a64b694ba42fc1a"
+  },
+  "C:\\Users\\Amol\\Desktop\\Data Analysis Project\\src\\components\\views\\CityDive.tsx": {
+    "mtime": 1778340384.3465023,
+    "hash": "05a79a1f5d78306b73438101cb918833"
+  },
+  "C:\\Users\\Amol\\Desktop\\Data Analysis Project\\src\\components\\views\\Composite.tsx": {
+    "mtime": 1778340384.347552,
+    "hash": "f3e308005ebe356eb8477d7e6cca1b38"
+  },
+  "C:\\Users\\Amol\\Desktop\\Data Analysis Project\\src\\components\\views\\Health.tsx": {
+    "mtime": 1778249004.848591,
+    "hash": "f1dd643f37f48219e2fa213956fb3e85"
+  },
+  "C:\\Users\\Amol\\Desktop\\Data Analysis Project\\src\\components\\views\\Stations.tsx": {
+    "mtime": 1778340872.83707,
+    "hash": "a352e52e3d3fd854942cd2d94ec7144e"
+  },
+  "C:\\Users\\Amol\\Desktop\\Data Analysis Project\\src\\components\\views\\Summary.tsx": {
+    "mtime": 1778248328.8195245,
+    "hash": "428e7eb2d6c7a6a59401d447f63189b8"
+  },
+  "C:\\Users\\Amol\\Desktop\\Data Analysis Project\\src\\lib\\utils.ts": {
+    "mtime": 1778340384.3495588,
+    "hash": "216c2cf0f96265fd980625e4c66f4949"
+  }
 }

@@ -6,3 +6,10 @@ coverage/
 *.log
 .env*
 !.env.example
+graphify-out/
+tsc_output.txt
+zip.zip
+.agents/
+backups/
+scratch/
+.graphify_uncached.txt

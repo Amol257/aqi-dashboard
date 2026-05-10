@@ -133,6 +133,16 @@ export const TOP_POLLUTED_CITIES: CityData[] = [
   }
 ];
 
+export const WEEKLY_FORECAST = [
+  { day: "MON", aqi: 184, label: "Poor", color: "var(--aqi-poor)" },
+  { day: "TUE", aqi: 192, label: "Poor", color: "var(--aqi-poor)" },
+  { day: "WED", aqi: 215, label: "Very Poor", color: "var(--aqi-very-poor)" },
+  { day: "THU", aqi: 142, label: "Poor", color: "var(--aqi-poor)" },
+  { day: "FRI", aqi: 88, label: "Moderate", color: "var(--aqi-moderate)" },
+  { day: "SAT", aqi: 74, label: "Moderate", color: "var(--aqi-moderate)" },
+  { day: "SUN", aqi: 112, label: "Poor", color: "var(--aqi-poor)" },
+];
+
 export const MAJOR_CITIES_COMPARISON: CityData[] = [
   {
     "name": "Delhi",
@@ -13791,15 +13801,7 @@ export const AQI_DISTRIBUTION = [
   }
 ];
 
-export const WEEKLY_FORECAST = [
-  { day: 'MON', value: 420 },
-  { day: 'TUE', value: 380 },
-  { day: 'WED', value: 510 },
-  { day: 'THU', value: 680 },
-  { day: 'FRI', value: 890 },
-  { day: 'SAT', value: 620 },
-  { day: 'SUN', value: 450 },
-];
+
 
 export const CITY_DIVE_PIE_DATA = [
   {

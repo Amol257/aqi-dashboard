@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react';
+import { useMemo, useState } from 'react';
 import { 
   ScatterChart, Scatter, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, 
   Cell
@@ -7,19 +7,20 @@ import { Cloud, Factory, Sun, Download, Filter, Shield, Activity, Wind, Layers, 
 import { 
   MAJOR_CITIES_COMPARISON, 
   STATIONS_DATA, 
-  POLLUTANTS_SUMMARY,
-  getAllCities 
+  POLLUTANTS_SUMMARY
 } from '../../constants';
 import { cn, exportToCSV } from '../../lib/utils';
 
 export default function Composite({ 
   onNavigate,
   stations = STATIONS_DATA,
-  cities = MAJOR_CITIES_COMPARISON
+  cities = MAJOR_CITIES_COMPARISON,
+  isDarkMode: _isDarkMode
 }: { 
   onNavigate?: (view: any, context?: any) => void,
   stations?: any[],
-  cities?: any[]
+  cities?: any[],
+  isDarkMode?: boolean
 }) {
   const [activePollutant, setActivePollutant] = useState('pm25');
   const [selectedRegion, setSelectedRegion] = useState('All');
@@ -86,48 +87,48 @@ export default function Composite({
   }, [selectedRegion, stations]);
 
   return (
-    <div className="space-y-8 pb-10">
+    <div className="space-y-12 pb-20">
       {/* Header */}
       <section className="flex flex-col md:flex-row md:items-end justify-between gap-4">
         <div>
-          <h1 className="text-3xl font-bold tracking-tight text-[#181c22] dark:text-slate-100">Composite Air Quality Index</h1>
-          <p className="text-[#414753] dark:text-slate-400 mt-1 max-w-2xl font-medium">
-            Real-time weighted integration of {stations.length} monitoring stations across India.
+          <h1 className="font-display-lg text-ink">Composite Intelligence</h1>
+          <p className="font-body-lg text-ink/60 mt-1 max-w-2xl">
+            Real-time weighted integration of {stations.length} monitoring stations across the national sensor grid.
           </p>
         </div>
-        <div className="flex gap-2 self-start">
+        <div className="flex gap-3 self-start">
           <button 
             onClick={() => exportToCSV(stations, 'aqi_composite_data')}
-            className="flex items-center gap-2 px-6 py-2.5 rounded-lg bg-[#0a73e0] text-white font-bold text-xs shadow-lg shadow-blue-100 dark:shadow-none hover:bg-[#005ab4] transition-all"
+            className="btn-primary rounded-none shadow-none"
           >
-            <Download size={16} /> Export Data
+            <Download size={14} /> Export Dataset
           </button>
           <div className="relative">
             <button 
               onClick={() => setIsRegionDropdownOpen(!isRegionDropdownOpen)}
-              className="flex items-center gap-2 px-6 py-2.5 rounded-lg bg-white dark:bg-slate-800 border border-[#c1c6d5] dark:border-slate-700 font-bold text-xs text-[#181c22] dark:text-slate-100 hover:bg-slate-50 dark:hover:bg-slate-700 transition-all"
+              className="btn-secondary rounded-none shadow-none"
             >
-              <Filter size={16} /> {selectedRegion === 'All' ? 'Region' : selectedRegion}
+              <Filter size={14} /> {selectedRegion === 'All' ? 'National Grid' : selectedRegion}
             </button>
             {isRegionDropdownOpen && (
-              <div className="absolute right-0 top-full mt-2 w-48 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl shadow-2xl z-30 overflow-hidden py-2 animate-in fade-in slide-in-from-top-2 duration-200">
+              <div className="absolute right-0 top-full mt-2 w-56 card z-30 py-4 animate-in fade-in slide-in-from-top-2 duration-200 rounded-none shadow-none border-ink">
+                <div className="px-6 mb-2">
+                  <span className="label-caps !text-[9px] opacity-30">Select Sector</span>
+                </div>
                 {['All', 'North', 'South', 'East', 'West', 'Central'].map(region => (
                   <button 
                     key={region}
                     className={cn(
-                      "w-full text-left px-4 py-2 text-xs font-bold hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors flex items-center justify-between group/item",
-                      selectedRegion === region ? "bg-blue-50 dark:bg-blue-900/30 text-[#005ab4] dark:text-blue-400" : "text-slate-700 dark:text-slate-300"
+                      "w-full text-left px-6 py-2 label-caps !text-[11px] hover:bg-ink/5 transition-colors flex items-center justify-between",
+                      selectedRegion === region ? "text-ink font-black bg-ink/5" : "text-ink/60"
                     )}
                     onClick={() => {
                       setSelectedRegion(region);
                       setIsRegionDropdownOpen(false);
                     }}
                   >
-                    {region === 'All' ? 'All Regions' : `${region} India`}
-                    <div className={cn(
-                      "w-2 h-2 rounded-full transition-colors",
-                      selectedRegion === region ? "bg-blue-500" : "bg-slate-200 dark:bg-slate-700 group-hover/item:bg-blue-300 dark:group-hover/item:bg-blue-500"
-                    )} />
+                    {region === 'All' ? 'National' : `${region} Sector`}
+                    {selectedRegion === region && <div className="w-1.5 h-1.5 bg-ink" />}
                   </button>
                 ))}
               </div>
@@ -139,25 +140,25 @@ export default function Composite({
       {/* Main Grid */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
         {/* Correlation Plot Area */}
-        <div className="lg:col-span-8 bg-white dark:bg-slate-900 rounded-2xl p-8 shadow-sm border border-slate-100 dark:border-slate-800 flex flex-col group">
-          <div className="flex items-center justify-between mb-8">
-            <h3 className="text-xl font-black text-[#181c22] dark:text-slate-100 tracking-tight">Pollutant vs AQI Correlation</h3>
-            <div className="flex items-center gap-4">
-              <div className="flex items-center gap-1.5">
-                <div className="w-2.5 h-2.5 rounded-full bg-[#ba1a1a]"></div>
-                <span className="text-[9px] font-black text-slate-400 dark:text-slate-500 uppercase">Hazardous</span>
+        <div className="lg:col-span-8 card p-10 flex flex-col group">
+          <div className="flex items-center justify-between mb-10">
+            <h3 className="font-headline-sm text-ink">Variable Distribution</h3>
+            <div className="flex items-center gap-6">
+              <div className="flex items-center gap-2">
+                <div className="w-2 h-2 bg-ink"></div>
+                <span className="label-caps !text-ink/40">Critical Density</span>
               </div>
-              <div className="flex items-center gap-1.5">
-                <div className="w-2.5 h-2.5 rounded-full bg-[#005ab4]"></div>
-                <span className="text-[9px] font-black text-slate-400 dark:text-slate-500 uppercase">Stable</span>
-              </div>
+                <div className="relative flex h-2 w-2">
+                  <span className="animate-ping absolute inline-flex h-full w-full bg-ink/40 opacity-75"></span>
+                  <span className="relative inline-flex h-2 w-2 bg-ink"></span>
+                </div>
             </div>
           </div>
 
-          <div className="relative w-full aspect-video bg-[#ebedf7]/40 dark:bg-slate-800/40 rounded-2xl overflow-hidden px-4 py-6 border border-[#c1c6d5]/20 dark:border-slate-700/30 shadow-inner">
+          <div className="relative w-full aspect-video card-subtle overflow-hidden px-4 py-6 border-none rounded-none">
             <ResponsiveContainer width="100%" height="100%">
               <ScatterChart margin={{ top: 20, right: 20, left: 0, bottom: 20 }}>
-                <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#c1c6d5" strokeOpacity={0.3} />
+                <CartesianGrid strokeDasharray="1 4" vertical={false} stroke="var(--ink)" opacity={0.1} />
                 <XAxis type="number" dataKey="x" hide domain={[0, 'auto']} />
                 <YAxis type="number" dataKey="y" hide domain={[0, 500]} />
                 <Tooltip 
@@ -172,13 +173,17 @@ export default function Composite({
                       const unit = POLLUTANTS_SUMMARY.find(p => p.id === activePollutant)?.unit || '';
                       
                       return (
-                        <div className="bg-white dark:bg-slate-800 p-3 border border-slate-100 dark:border-slate-700 shadow-xl rounded-lg">
-                          <p className="text-xs font-black text-slate-800 dark:text-slate-100">{data.city}</p>
-                          <div className="mt-2 space-y-1">
-                            <p className="text-[10px] font-bold text-blue-600 dark:text-blue-400">AQI: {data.y}</p>
-                            <p className="text-[10px] font-bold text-emerald-600 dark:text-emerald-400 uppercase tracking-tighter">
-                              {csvId}: {data.x} {unit}
-                            </p>
+                        <div className="card p-4 border-ink shadow-none min-w-[140px] rounded-none">
+                          <p className="label-caps !text-ink opacity-40 mb-2">{data.city}</p>
+                          <div className="space-y-1">
+                            <div className="flex justify-between items-baseline">
+                              <span className="font-mono text-[9px] text-ink/40">AQI</span>
+                              <span className="font-mono text-xs font-black text-ink">{data.y}</span>
+                            </div>
+                            <div className="flex justify-between items-baseline">
+                              <span className="font-mono text-[9px] text-ink/40">{csvId}</span>
+                              <span className="font-mono text-xs font-bold text-ink">{data.x} {unit}</span>
+                            </div>
                           </div>
                         </div>
                       );
@@ -188,14 +193,15 @@ export default function Composite({
                 />
                 <Scatter name="National Telemetry" data={correlationData}>
                   {correlationData.map((entry, index) => {
-                    const color = entry.y > 300 ? '#ba1a1a' : entry.y > 200 ? '#bd5700' : entry.y > 100 ? '#bd8b00' : '#005ab4';
+                    const ratio = entry.y / 500;
+                    const fill = ratio > 0.6 ? 'var(--accent-light)' : ratio > 0.3 ? 'var(--accent)' : 'var(--accent-dark)';
                     return (
                       <Cell 
                         key={`cell-${index}`} 
-                        fill={color} 
-                        fillOpacity={0.5}
-                        stroke={color}
-                        strokeWidth={1}
+                        fill={fill} 
+                        fillOpacity={0.7}
+                        stroke={fill}
+                        strokeWidth={0.5}
                       />
                     );
                   })}
@@ -203,22 +209,21 @@ export default function Composite({
               </ScatterChart>
             </ResponsiveContainer>
             
-            <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-6 bg-white/90 dark:bg-slate-800/90 backdrop-blur-md px-5 py-1.5 rounded-full border border-[#c1c6d5]/30 dark:border-slate-700/40 shadow-sm">
-              <div className="text-[9px] font-black text-[#717785] dark:text-slate-400 tracking-widest uppercase">X: {activePollutant.toUpperCase()} Conc.</div>
-              <div className="w-px h-3 bg-[#c1c6d5] dark:bg-slate-700"></div>
-              <div className="text-[9px] font-black text-[#717785] dark:text-slate-400 tracking-widest uppercase">Y: Composite AQI</div>
+            <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-8 px-6 py-2 border-t border-ink/5">
+              <div className="label-caps !text-[9px] opacity-40">Axis X: {activePollutant.toUpperCase()} Density</div>
+              <div className="label-caps !text-[9px] opacity-40">Axis Y: Composite Result</div>
             </div>
           </div>
 
-          <div className="mt-8 grid grid-cols-3 gap-6">
+          <div className="mt-10 grid grid-cols-3 gap-8">
             {[
-              { label: 'Correlation', value: '0.89' },
-              { label: 'Active Stations', value: stations.length.toString() },
-              { label: 'Data Quality', value: '98%' },
+              { label: 'Pearson R', value: '0.89' },
+              { label: 'Sensor Yield', value: stations.length.toString() },
+              { label: 'Confid. Int.', value: '98%' },
             ].map(stat => (
-              <div key={stat.label} className="bg-[#f1f3fc] dark:bg-slate-800 p-4 rounded-xl border border-[#c1c6d5]/20 dark:border-slate-700/30 text-center">
-                <div className="text-[10px] font-black text-[#717785] dark:text-slate-500 uppercase tracking-widest leading-none mb-2">{stat.label}</div>
-                <div className="text-2xl font-black text-[#005ab4] dark:text-blue-400">{stat.value}</div>
+              <div key={stat.label} className="text-center border-r border-ink/5 last:border-0">
+                <div className="label-caps !text-[10px] opacity-40 mb-3">{stat.label}</div>
+                <div className="font-mono text-3xl font-black text-ink">{stat.value}</div>
               </div>
             ))}
           </div>
@@ -234,46 +239,47 @@ export default function Composite({
                 key={poll.id} 
                 onClick={() => setActivePollutant(poll.id)}
                 className={cn(
-                  "bg-white dark:bg-slate-900 rounded-2xl p-6 shadow-sm border border-slate-100 dark:border-slate-800 border-l-4 transition-all text-left group",
-                  isActive ? "ring-2 ring-blue-100 dark:ring-blue-900/30 scale-[1.02] shadow-lg" : "hover:translate-x-1 hover:shadow-md"
+                  "card p-6 border-l-4 transition-all text-left group rounded-none shadow-none",
+                  isActive ? "border-l-ink bg-ink/5" : "border-l-transparent hover:bg-ink/5"
                 )}
-                style={{ borderLeftColor: poll.color }}
+                style={{ 
+                  borderLeftColor: isActive ? 'var(--ink)' : 'var(--ink)' 
+                }}
               >
-                <div className="flex justify-between items-start mb-4">
+                <div className="flex justify-between items-start mb-6">
                   <div className={cn(
-                    "p-2 rounded-xl transition-colors",
-                    isActive ? "bg-blue-100 dark:bg-blue-900/40 text-[#005ab4] dark:text-blue-400" : "bg-slate-50 dark:bg-slate-800 text-slate-400 dark:text-slate-500 group-hover:text-[#005ab4] dark:group-hover:text-blue-400"
+                    "p-2 rounded-none transition-colors",
+                    isActive ? "bg-ink text-surface" : "bg-ink/5 text-ink/40"
                   )}>
-                    <Icon size={20} />
+                    <Icon size={18} />
                   </div>
                   <span className={cn(
-                    "px-2.5 py-1 rounded text-[10px] font-black uppercase tracking-[0.15em]",
-                    poll.status === 'Poor' ? "bg-red-50 dark:bg-red-900/30 text-[#ba1a1a] dark:text-red-400" : poll.status === 'Moderate' ? "bg-blue-50 dark:bg-blue-900/30 text-[#465f88] dark:text-blue-300" : "bg-emerald-50 dark:bg-emerald-900/30 text-emerald-600 dark:text-emerald-400"
+                    "label-caps !text-[9px] px-2 py-1 text-ink",
                   )}>
                     {poll.status}
                   </span>
                 </div>
                 
-                <div className="text-3xl font-black text-[#181c22] dark:text-slate-100">
-                  {poll.value} <span className="text-sm font-bold text-slate-400 dark:text-slate-500 ml-1">{poll.unit}</span>
+                <div className="font-mono text-3xl font-black text-ink mb-1">
+                  {poll.value} <span className="text-xs opacity-40 font-bold">{poll.unit}</span>
                 </div>
-                <div className={cn("text-sm font-black mb-4", poll.id === 'pm25' ? "text-[#005ab4] dark:text-blue-400" : poll.id === 'pm10' ? "text-[#465f88] dark:text-blue-300" : "text-[#763400] dark:text-orange-400")}>
+                <div className="label-caps opacity-60 mb-4">
                   {poll.name}
                 </div>
                 
-                <div className="h-1.5 w-full bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden mb-3">
+                <div className="flex-1 h-2 bg-ink/5 rounded-none overflow-hidden mt-6">
                   <div 
-                    className="h-full rounded-full transition-all duration-1000" 
+                    className="h-full bg-ink transition-all duration-1000" 
                     style={{ 
                       width: `${Math.min(100, (poll.value / (poll.id === 'pm25' ? 300 : poll.id === 'pm10' ? 400 : poll.id === 'co' ? 10 : 200)) * 100)}%`,
-                      backgroundColor: poll.color 
+                      opacity: isActive ? 1 : 0.6
                     }}
                   />
                 </div>
                 
-                <div className="flex justify-between items-center text-[10px] font-black uppercase tracking-tight">
-                  <span className="text-slate-400 dark:text-slate-500">National Average</span>
-                  <span className={cn(poll.change.includes('+') ? "text-[#ba1a1a] dark:text-red-400" : "text-emerald-500 dark:text-emerald-400")}>{poll.change}</span>
+                <div className="flex justify-between items-center mt-4">
+                  <span className="label-caps !text-[8px] opacity-30">Avg Grid Shift</span>
+                  <span className={cn("font-mono text-[10px] font-bold", poll.change.includes('+') ? "text-ink" : "text-ink/40")}>{poll.change}</span>
                 </div>
               </button>
             );
@@ -282,51 +288,51 @@ export default function Composite({
       </div>
 
       {/* Health Impact Highlights */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {[
-          { label: 'Recommended: N95', sub: 'Active protection advised in hotspots', icon: Shield, color: 'text-[#005ab4]', bg: 'bg-[#005ab4]/5' },
-          { label: 'Indoor Air: Medium', sub: 'HEPA filtration recommended indoors', icon: Wind, color: 'text-[#465f88]', bg: 'bg-[#465f88]/5' },
-          { label: 'Outdoor Activity: Limited', sub: 'Minimize strenuous aerobic exercise', icon: Activity, color: 'text-[#964400]', bg: 'bg-[#964400]/5' },
+          { label: 'Protection: N95', sub: 'Mandatory in high-density sectors', icon: Shield },
+          { label: 'Filtration: HEPA', sub: 'Indoor atmospheric isolation advised', icon: Wind },
+          { label: 'Activity: Limited', sub: 'Suspend aerobic exertion in hotspots', icon: Activity },
         ].map((item) => (
-          <div key={item.label} className="bg-white/60 dark:bg-slate-900/60 backdrop-blur-md rounded-2xl p-6 border border-white dark:border-slate-800 shadow-sm flex items-center gap-6 hover:scale-[1.02] transition-transform cursor-default">
-            <div className={cn("w-14 h-14 rounded-2xl flex items-center justify-center shadow-inner", item.bg, item.color)}>
-              <item.icon size={28} />
+          <div key={item.label} className="card p-8 flex items-center gap-8 hover:bg-ink/5 transition-colors cursor-default rounded-none shadow-none">
+            <div className="w-14 h-14 bg-ink/5 flex items-center justify-center rounded-none group-hover:bg-ink group-hover:text-surface transition-all duration-500">
+              <item.icon size={32} strokeWidth={1.5} />
             </div>
             <div>
-              <div className="text-sm font-black text-[#181c22] dark:text-slate-100 leading-tight mb-1">{item.label}</div>
-              <div className="text-[11px] font-bold text-[#717785] dark:text-slate-400 tracking-tight">{item.sub}</div>
+              <div className="font-bold text-base text-ink leading-tight mb-1">{item.label}</div>
+              <div className="label-caps !text-[10px] opacity-40">{item.sub}</div>
             </div>
           </div>
         ))}
       </div>
 
       {/* National Geographic Dispersion */}
-      <div className="bg-white dark:bg-slate-900 rounded-3xl p-10 shadow-sm border border-slate-100 dark:border-slate-800 relative overflow-hidden group">
-        <div className="absolute top-0 right-0 p-8 text-neutral-100 dark:text-slate-800">
-           <Layers size={140} className="rotate-[-15deg] opacity-[0.03] dark:opacity-[0.1]" />
+      <div className="card p-12 relative overflow-hidden group">
+        <div className="absolute -top-10 -right-10 text-ink opacity-[0.03]">
+           <Layers size={240} className="rotate-[-15deg]" />
         </div>
         
         <div className="relative z-10">
-          <h3 className="text-2xl font-black text-[#181c22] dark:text-slate-100 mb-10 tracking-tight">National Geographic Dispersion</h3>
+          <h3 className="font-headline-lg text-ink mb-12">Geographic Dispersion</h3>
           
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-x-12 gap-y-10">
             {allCities.slice(0, 12).map((city) => (
               <div 
                 key={city.name} 
                 className="flex flex-col gap-3 group/chip cursor-pointer"
                 onClick={() => onNavigate?.('city-dive', city.name)}
               >
-                <div className="text-[10px] font-black text-slate-400 dark:text-slate-500 uppercase tracking-widest leading-none flex items-center justify-between">
+                <div className="label-caps !text-[9px] opacity-40 flex items-center justify-between">
                   {city.name.replace(' NCR', '')}
-                  <TrendingUp size={12} className={cn("opacity-0 group-hover/chip:opacity-100 transition-opacity", city.aqi > 200 ? "text-red-500" : "text-amber-500")} />
+                  <TrendingUp size={10} className="opacity-0 group-hover/chip:opacity-100 transition-opacity" />
                 </div>
-                <div className="flex items-end justify-between gap-2 border-b border-transparent group-hover/chip:border-slate-100 dark:group-hover/chip:border-slate-800 pb-2 transition-all">
-                  <span className="text-4xl font-black tracking-tighter leading-none dark:text-slate-100">{city.aqi}</span>
+                <div className="flex items-end justify-between gap-4 border-b border-ink/5 pb-3 transition-all group-hover/chip:border-ink">
+                  <span className="font-mono text-3xl font-black tracking-tighter text-ink leading-none">{city.aqi}</span>
                   <div 
-                    className="w-1.5 rounded-full mb-1 transition-all duration-500" 
+                    className="w-1 bg-ink transition-all duration-700" 
                     style={{ 
-                      height: `${Math.min(40, (city.aqi / 500) * 40)}px`,
-                      backgroundColor: city.aqi > 300 ? '#ba1a1a' : city.aqi > 200 ? '#bd5700' : city.aqi > 100 ? '#bd8b00' : '#005ab4'
+                      height: `${Math.min(30, (city.aqi / 500) * 30)}px`,
+                      opacity: city.aqi > 200 ? 1 : 0.3
                     }}
                   />
                 </div>
@@ -334,12 +340,12 @@ export default function Composite({
             ))}
           </div>
           
-          <div className="mt-8 flex justify-center">
+          <div className="mt-16 flex justify-center">
             <button 
               onClick={() => onNavigate?.('stations')}
-              className="px-8 py-3 bg-[#f1f3fc] dark:bg-slate-800 hover:bg-[#e6e8f1] dark:hover:bg-slate-700 text-[#005ab4] dark:text-blue-400 font-black text-[11px] uppercase tracking-[0.2em] rounded-2xl transition-all"
+              className="btn-secondary !px-12 !py-4 !text-xs"
             >
-              View All {stations.length} Stations
+              Examine All {stations.length} Monitoring Nodes
             </button>
           </div>
         </div>

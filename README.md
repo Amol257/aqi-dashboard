@@ -14,8 +14,6 @@
 
 **India AQI Dashboard** is a full-featured web application for visualizing and understanding air quality across India. It combines an interactive map, AI-powered health insights via Google Gemini, pollution trend charts, and a curated news feed — all in one clean, responsive interface.
 
-🔗 **Live:** https://amol257.github.io/india-aqi-dashboard/
-
 ---
 
 ## ✨ Features
@@ -43,7 +41,7 @@
 | Data Processing | Python 3.12, Requests |
 | Build Tool | Vite 6 |
 | Icons | Lucide React |
-| Deployment | GitHub Pages, GitHub Actions |
+| Deployment | Vercel |
 
 ---
 
@@ -123,15 +121,11 @@ india-aqi-dashboard/
 
 ## 🌐 Deployment
 
-This project deploys to **GitHub Pages** using the `gh-pages` package.
+This project is optimized for deployment on **Vercel**.
 
-```bash
-npm run deploy
-```
-
-This runs `npm run build` then publishes the `dist/` folder to the `gh-pages` branch. The app is served from the `/india-aqi-dashboard/` base path as configured in `vite.config.ts`.
-
-**Live:** https://amol257.github.io/india-aqi-dashboard/
+1. Connect your GitHub repository to Vercel.
+2. The `vercel.json` file handles SPA routing automatically.
+3. Ensure your `VITE_GEMINI_API_KEY` is set in the Vercel Environment Variables.
 
 ---
 

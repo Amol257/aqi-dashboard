@@ -2,29 +2,30 @@ import React from 'react';
 import {
   ScatterChart, Scatter, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell,
   AreaChart, Area,
-  Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis,
+  Radar, RadarChart, PolarGrid, PolarAngleAxis,
   BarChart, Bar
 } from 'recharts';
-import { TrendingDown, TrendingUp, Info, Activity, MapPin, ChevronLeft, ChevronRight } from 'lucide-react';
+import { TrendingDown, TrendingUp, Info, Activity, MapPin, ChevronLeft, ChevronRight, ArrowRight, ShieldAlert, Wind, Zap } from "lucide-react";
 import {
   STATIONS_DATA,
   MAJOR_CITIES_COMPARISON,
-  POLLUTANTS_SUMMARY,
-  getAllCities
+  WEEKLY_FORECAST
 } from '../../constants';
 import { cn, getCityImage } from '../../lib/utils';
 import newsCsvRaw from '../../assets/news.csv?raw';
 
 export default function Summary({ 
   onNavigate, 
-  stations = STATIONS_DATA, 
+  stations: _stations = STATIONS_DATA,
   cities = MAJOR_CITIES_COMPARISON, 
-  lastUpdated: initialLastUpdated = null 
+  lastUpdated: initialLastUpdated = null,
+  isDarkMode: _isDarkMode
 }: { 
   onNavigate?: (view: 'summary' | 'city-dive' | 'composite' | 'stations' | 'health', context?: any) => void,
   stations?: any[],
   cities?: any[],
-  lastUpdated?: string | null
+  lastUpdated?: string | null,
+  isDarkMode?: boolean
 }) {
   const scrollRef = React.useRef<HTMLDivElement>(null);
   const [lastUpdated, setLastUpdated] = React.useState<string | null>(initialLastUpdated);
@@ -232,12 +233,12 @@ export default function Summary({
   }, [citiesList]);
 
   const getAqiColor = (aqi: number) => {
-    if (aqi <= 50) return '#22C55E';
-    if (aqi <= 100) return '#EAB308';
-    if (aqi <= 200) return '#F97316';
-    if (aqi <= 300) return '#EF4444';
-    if (aqi <= 400) return '#A855F7';
-    return '#7C3AED';
+    if (aqi <= 50) return 'var(--aqi-good)';
+    if (aqi <= 100) return 'var(--aqi-moderate)';
+    if (aqi <= 200) return 'var(--aqi-poor)';
+    if (aqi <= 300) return 'var(--aqi-unhealthy)';
+    if (aqi <= 400) return 'var(--aqi-very-poor)';
+    return 'var(--aqi-hazardous)';
   };
 
   const summaryStats = React.useMemo(() => {
@@ -259,10 +260,10 @@ export default function Summary({
     const healthRiskIndex = ((highExposureCount / processedData.length) * 100).toFixed(1);
     
     const distribution = [
-      { name: 'Good',     value: scaledCityAqis.filter(a => a <= 50).length,              color: '#22C55E' },
-      { name: 'Moderate', value: scaledCityAqis.filter(a => a > 50  && a <= 100).length,  color: '#EAB308' },
-      { name: 'Poor',     value: scaledCityAqis.filter(a => a > 100 && a <= 200).length,  color: '#F97316' },
-      { name: 'Severe',   value: scaledCityAqis.filter(a => a > 200).length,              color: '#EF4444' }
+      { name: 'Good',     value: scaledCityAqis.filter(a => a <= 50).length,              color: 'var(--aqi-good)' },
+      { name: 'Moderate', value: scaledCityAqis.filter(a => a > 50  && a <= 100).length,  color: 'var(--aqi-moderate)' },
+      { name: 'Poor',     value: scaledCityAqis.filter(a => a > 100 && a <= 200).length,  color: 'var(--aqi-poor)' },
+      { name: 'Severe',   value: scaledCityAqis.filter(a => a > 200).length,              color: 'var(--aqi-unhealthy)' }
     ].filter(d => d.value > 0);
 
     const pollutants = [
@@ -297,31 +298,25 @@ export default function Summary({
     };
   }, [processedData, timeframe]);
 
-  const getAqiStatusLabel = (aqi: number) => {
-    if (aqi <= 50) return 'Good Air Quality';
-    if (aqi <= 100) return 'Moderate Air Quality';
-    if (aqi <= 200) return 'Poor Air Quality';
-    if (aqi <= 300) return 'Very Poor Air Quality';
-    return 'Severe Air Quality';
-  };
+
 
   return (
-    <div className="space-y-8 pb-10">
+    <div className="space-y-section-margin pb-10">
       {/* Header */}
       <section className="flex flex-col md:flex-row md:items-end justify-between gap-4">
-        <div>
-          <h1 className="text-3xl font-bold tracking-tight text-[#181c22] dark:text-slate-100">National AQI Health Overview</h1>
-          <p className="text-[#414753] dark:text-slate-400 mt-2 max-w-2xl font-medium tracking-tight">
-            Real-time synchronization with Central Pollution Control Board (CPCB) telemetry.
-            {lastUpdated && <span className="block text-xs text-blue-500 font-bold mt-1 uppercase tracking-widest">Last Updated: {new Date(lastUpdated).toLocaleString()}</span>}
+        <div className="flex flex-col">
+          <p className="label-caps !text-ink opacity-40 mb-2">Executive Overview</p>
+          <h1 className="text-5xl md:text-6xl font-black font-display text-ink tracking-tight">India Air Quality Dashboard</h1>
+          <p className="text-lg text-ink/60 mt-4 max-w-4xl leading-relaxed">
+            Real-time environmental intelligence across the subcontinent. Monitoring high-density urban areas and regional atmospheric shifts.
           </p>
         </div>
-        <div className="flex bg-white dark:bg-slate-800 rounded-lg p-1 border border-slate-200 dark:border-slate-700 shadow-sm self-start">
+        <div className="flex bg-surface rounded-none p-1 border border-ink/10 self-start">
           <button
             onClick={() => setTimeframe('daily')}
             className={cn(
-              "px-5 py-2 rounded-md text-sm font-semibold transition-all",
-              timeframe === 'daily' ? "bg-[#1275e2] text-white shadow-sm" : "text-slate-500 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-700"
+              "px-5 py-2 rounded-none text-[10px] font-mono uppercase tracking-widest transition-all",
+              timeframe === 'daily' ? "bg-ink text-surface" : "text-ink/70 hover:bg-ink/5"
             )}
           >
             Daily
@@ -329,8 +324,8 @@ export default function Summary({
           <button
             onClick={() => setTimeframe('weekly')}
             className={cn(
-              "px-5 py-2 rounded-md text-sm font-semibold transition-all",
-              timeframe === 'weekly' ? "bg-[#1275e2] text-white shadow-sm" : "text-slate-500 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-700"
+              "px-5 py-2 rounded-none text-[10px] font-mono uppercase tracking-widest transition-all",
+              timeframe === 'weekly' ? "bg-ink text-surface" : "text-ink/70 hover:bg-ink/5"
             )}
           >
             Weekly
@@ -338,8 +333,8 @@ export default function Summary({
           <button
             onClick={() => setTimeframe('monthly')}
             className={cn(
-              "px-5 py-2 rounded-md text-sm font-semibold transition-all",
-              timeframe === 'monthly' ? "bg-[#1275e2] text-white shadow-sm" : "text-slate-500 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-700"
+              "px-5 py-2 rounded-none text-[10px] font-mono uppercase tracking-widest transition-all",
+              timeframe === 'monthly' ? "bg-ink text-surface" : "text-ink/70 hover:bg-ink/5"
             )}
           >
             Monthly
@@ -349,41 +344,55 @@ export default function Summary({
 
 
       {/* Top Section - Command Center */}
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
-        <div className="lg:col-span-12 bg-white/70 dark:bg-slate-900/80 backdrop-blur-3xl rounded-[2.5rem] p-8 md:p-10 border border-white dark:border-slate-800 shadow-2xl relative overflow-hidden transition-all duration-700 hover:shadow-indigo-500/5">
-          <div className="absolute top-0 right-0 p-8 opacity-20 pointer-events-none">
-            <Activity size={180} className="text-indigo-500/10" />
-          </div>
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-card-gap">
+        <div className="lg:col-span-12 card p-8 md:p-10 relative overflow-hidden transition-all duration-700">
+
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center relative z-10">
             {/* Left Column: Master Gauge */}
-            <div className="lg:col-span-7 flex flex-col items-center lg:items-start lg:pl-10">
+            <div className="lg:col-span-7 flex flex-col items-center">
               <div className="relative group">
-                <div className="absolute inset-0 bg-indigo-500/10 dark:bg-indigo-400/5 rounded-full blur-3xl group-hover:bg-indigo-500/20 transition-all duration-700"></div>
-                <div className="w-64 h-64 md:w-80 md:h-80 rounded-full border-18 border-slate-100 dark:border-slate-800/40 relative flex items-center justify-center shadow-inner bg-white/50 dark:bg-slate-900/50 backdrop-blur-sm">
-                  <svg className="absolute inset-0 w-full h-full -rotate-90">
+                <div className="w-64 h-64 md:w-96 md:h-96 relative flex items-center justify-center">
+                  <svg className="absolute inset-0 w-full h-full -rotate-90" viewBox="0 0 100 100">
+                    <defs>
+                      <linearGradient id="gaugeGradient" x1="0" y1="1" x2="1" y2="0">
+                        <stop offset="0%" stopColor="var(--accent-dark)" />
+                        <stop offset="50%" stopColor="var(--accent)" />
+                        <stop offset="100%" stopColor="var(--accent-light)" />
+                      </linearGradient>
+                    </defs>
                     <circle
-                      cx="50%" cy="50%" r="46%"
+                      cx="50" cy="50" r="45"
                       fill="none"
-                      stroke={getAqiColor(summaryStats?.avgAqi || 0)}
-                      strokeWidth="18"
-                      strokeDasharray={`${((summaryStats?.avgAqi || 0) / 500) * 580} 1000`}
+                      stroke="var(--ink)"
+                      strokeWidth="10"
+                      strokeOpacity="0.05"
+                    />
+                    <circle
+                      cx="50" cy="50" r="45"
+                      fill="none"
+                      stroke="url(#gaugeGradient)"
+                      strokeWidth="10"
+                      strokeDasharray={`${2 * Math.PI * 45}`}
+                      strokeDashoffset={`${2 * Math.PI * 45 * (1 - (summaryStats?.avgAqi || 0) / 500)}`}
+                      strokeLinecap="square"
                       className="transition-all duration-1000 ease-out"
-                      strokeLinecap="round"
                     />
                   </svg>
                   <div className="text-center z-10">
-                    <span className="text-7xl md:text-8xl font-black text-[#181c22] dark:text-slate-100 tracking-tighter">
-                      {summaryStats?.avgAqi}
-                    </span>
-                    <div className="flex flex-col items-center mt-1">
-                      <p className="text-[10px] font-black text-[#717785] dark:text-slate-400 uppercase tracking-widest">PM 2.5 Index</p>
-                      <div className={cn(
-                        "mt-2 px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest",
-                        getAqiStatus(summaryStats?.avgAqi || 0) === 'Good' ? "bg-emerald-500/10 text-emerald-500" :
-                        getAqiStatus(summaryStats?.avgAqi || 0) === 'Moderate' ? "bg-amber-500/10 text-amber-500" :
-                        "bg-rose-500/10 text-rose-500"
-                      )}>
+                    <div className="flex flex-col items-center">
+                      <span className="text-8xl md:text-9xl font-black text-ink leading-none tracking-tighter">
+                        {summaryStats?.avgAqi}
+                      </span>
+                      <p className="label-caps !text-[11px] !text-ink/80 mt-4">PM 2.5 Index</p>
+                      <div 
+                        className="mt-6 px-6 py-2 rounded-none font-mono text-[11px] font-black uppercase tracking-widest"
+                        style={{ 
+                          backgroundColor: `${getAqiColor(summaryStats?.avgAqi || 0).replace(')', '-bg)')}`,
+                          color: getAqiColor(summaryStats?.avgAqi || 0),
+                          border: `1px solid ${getAqiColor(summaryStats?.avgAqi || 0)}`
+                        }}
+                      >
                         {getAqiStatus(summaryStats?.avgAqi || 0)}
                       </div>
                     </div>
@@ -395,22 +404,28 @@ export default function Summary({
             {/* Right Column: Mini Dashboard */}
             <div className="lg:col-span-5 space-y-8">
               {/* Sparkline 1: Trend */}
-              <div className="bg-slate-50/50 dark:bg-slate-800/30 p-6 rounded-3xl border border-slate-100 dark:border-slate-700/50">
+              <div className="card-subtle p-6 rounded-none">
                 <div className="flex justify-between items-center mb-4">
-                  <h4 className="text-[11px] font-black text-slate-400 uppercase tracking-widest flex items-center gap-2">
-                    <TrendingUp size={12} className="text-indigo-500" /> National Momentum
+                  <h4 className="label-caps flex items-center gap-2">
+                    <TrendingUp size={12} className="text-ink" /> National Momentum
                   </h4>
-                  <span className="text-[10px] font-bold text-indigo-500 bg-indigo-50 dark:bg-indigo-500/10 px-2 py-0.5 rounded-full">LIVE</span>
+                  <span className="label-caps !text-[10px] bg-ink/10 px-2 py-0.5 rounded-none text-ink/70">LIVE</span>
                 </div>
                 <div className="h-24 w-full">
                   <ResponsiveContainer width="100%" height="100%">
                     <AreaChart data={nationalTrend}>
+                      <defs>
+                        <linearGradient id="trendGradient" x1="0" y1="0" x2="0" y2="1">
+                          <stop offset="5%" stopColor="var(--accent-light)" stopOpacity={0.8}/>
+                          <stop offset="95%" stopColor="var(--accent-dark)" stopOpacity={0.2}/>
+                        </linearGradient>
+                      </defs>
                       <Area 
                         type="monotone" 
                         dataKey="val" 
-                        stroke="#6366f1" 
-                        fill="#6366f1" 
-                        fillOpacity={0.1} 
+                        stroke="var(--accent)" 
+                        fill="url(#trendGradient)" 
+                        fillOpacity={1} 
                         strokeWidth={3} 
                       />
                     </AreaChart>
@@ -418,25 +433,27 @@ export default function Summary({
                 </div>
               </div>
 
-              {/* Sparkline 2: Top Rankings */}
-              <div className="bg-slate-50/50 dark:bg-slate-800/30 p-6 rounded-3xl border border-slate-100 dark:border-slate-700/50">
+              <div className="card-subtle p-6 rounded-none">
                 <div className="flex justify-between items-center mb-4">
-                  <h4 className="text-[11px] font-black text-slate-400 uppercase tracking-widest flex items-center gap-2">
-                    <MapPin size={12} className="text-rose-500" /> Critical Regions
+                  <h4 className="label-caps flex items-center gap-2">
+                    <MapPin size={12} className="text-ink" /> Critical Regions
                   </h4>
-                  <span className="text-[10px] font-bold text-slate-400">TOP 4</span>
+                  <span className="label-caps !text-[10px]">TOP 4</span>
                 </div>
                 <div className="space-y-3">
                   {citiesList.slice().sort((a, b) => b.aqi - a.aqi).slice(0, 4).map((city) => (
                     <div key={city.name} className="flex items-center gap-4">
-                      <span className="text-[10px] font-bold text-slate-500 w-20 truncate">{city.name}</span>
-                      <div className="flex-1 h-1.5 bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden">
+                      <span className="font-mono text-[10px] font-bold text-ink w-20 truncate">{city.name}</span>
+                      <div className="flex-1 h-1.5 bg-ink/5 overflow-hidden">
                         <div 
-                          className="h-full bg-rose-500 rounded-full" 
-                          style={{ width: `${(city.aqi / 500) * 100}%` }}
+                          className="h-full transition-all duration-500" 
+                          style={{ 
+                            width: `${(city.aqi / 500) * 100}%`,
+                            backgroundColor: 'var(--accent)'
+                          }}
                         />
                       </div>
-                      <span className="text-[10px] font-black text-slate-800 dark:text-slate-200">{city.aqi}</span>
+                      <span className="font-mono text-[10px] font-black text-ink">{city.aqi}</span>
                     </div>
                   ))}
                 </div>
@@ -444,92 +461,90 @@ export default function Summary({
             </div>
           </div>
 
-          {/* Bottom Belt: Integrated Metrics */}
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mt-12 pt-10 border-t border-slate-100 dark:border-slate-800/60 relative z-10">
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mt-12 pt-10 border-t border-ink/10 relative z-10">
             <div className="text-center group transition-transform hover:scale-105">
-              <p className="text-[10px] text-slate-400 font-black uppercase tracking-widest mb-2">Medical Alert</p>
+              <p className="label-caps mb-2">Medical Alert</p>
               <div className="flex flex-col items-center">
-                <p className="text-2xl font-black text-rose-500">
+                <p className="font-display-md !text-2xl text-ink">
                   {summaryStats?.totalAdmissions && summaryStats.totalAdmissions > 1000 
                     ? `${(summaryStats.totalAdmissions / 1000).toFixed(1)}k` 
                     : summaryStats?.totalAdmissions}
                 </p>
-                <span className="text-[9px] font-bold text-emerald-500 flex items-center gap-0.5">
+                <span className="label-caps !text-[9px] flex items-center gap-0.5">
                   <TrendingDown size={8} /> STABLE
                 </span>
               </div>
             </div>
 
-            <div className="text-center group transition-transform hover:scale-105 border-l border-slate-100 dark:border-slate-800">
-              <p className="text-[10px] text-slate-400 font-black uppercase tracking-widest mb-2">Growth Index</p>
+            <div className="text-center group transition-transform hover:scale-105 border-l border-ink/10">
+              <p className="label-caps mb-2">Growth Index</p>
               <div className="flex flex-col items-center">
-                <p className="text-2xl font-black text-amber-500">+2.4%</p>
-                <span className="text-[9px] font-bold text-amber-500 flex items-center gap-0.5">
+                <p className="font-display-md !text-2xl text-ink">+2.4%</p>
+                <span className="label-caps !text-[9px] flex items-center gap-0.5 text-ink/70">
                   <TrendingUp size={8} /> MOMENTUM
                 </span>
               </div>
             </div>
 
-            <div className="text-center group transition-transform hover:scale-105 border-l border-slate-100 dark:border-slate-800">
-              <p className="text-[10px] text-slate-400 font-black uppercase tracking-widest mb-2">Regional Peak</p>
-              <p className="text-2xl font-black text-slate-800 dark:text-slate-100">{summaryStats?.maxAqiCity.aqi}</p>
-              <p className="text-[10px] font-bold text-slate-400 truncate px-2">{summaryStats?.maxAqiCity.name}</p>
+            <div className="text-center group transition-transform hover:scale-105 border-l border-ink/10">
+              <p className="label-caps mb-2">Regional Peak</p>
+              <p className="font-display-md !text-2xl text-ink">{summaryStats?.maxAqiCity.aqi}</p>
+              <p className="font-body-sm text-ink/80 truncate px-2">{summaryStats?.maxAqiCity.name}</p>
             </div>
 
-            <div className="text-center group transition-transform hover:scale-105 border-l border-slate-100 dark:border-slate-800">
-              <p className="text-[10px] text-slate-400 font-black uppercase tracking-widest mb-2">Pristine Zone</p>
-              <p className="text-2xl font-black text-emerald-500">{summaryStats?.minAqiCity.aqi}</p>
-              <p className="text-[10px] font-bold text-slate-400 truncate px-2">{summaryStats?.minAqiCity.name}</p>
+            <div className="text-center group transition-transform hover:scale-105 border-l border-ink/10">
+              <p className="label-caps mb-2">Pristine Zone</p>
+              <p className="font-display-md !text-2xl text-ink">{summaryStats?.minAqiCity.aqi}</p>
+              <p className="font-body-sm text-ink/80 truncate px-2">{summaryStats?.minAqiCity.name}</p>
             </div>
 
-            <div className="text-center group transition-transform hover:scale-105 border-l border-slate-100 dark:border-slate-800">
-              <p className="text-[10px] text-slate-400 font-black uppercase tracking-widest mb-2">Live Sensors</p>
-              <p className="text-2xl font-black text-indigo-500">{summaryStats?.activeStations}</p>
+            <div className="text-center group transition-transform hover:scale-105 border-l border-ink/10">
+              <p className="label-caps mb-2">Live Sensors</p>
+              <p className="font-display-md !text-2xl text-ink">{summaryStats?.activeStations}</p>
               <div className="flex items-center justify-center gap-1">
                 <span className="relative flex h-1.5 w-1.5">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-emerald-500"></span>
+                  <span className="animate-ping absolute inline-flex h-full w-full bg-ink/40 opacity-75"></span>
+                  <span className="relative inline-flex h-1.5 w-1.5 bg-ink"></span>
                 </span>
-                <span className="text-[9px] font-black text-emerald-500 uppercase tracking-widest">Active</span>
+                <span className="label-caps !text-[9px]">Active</span>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Analytics Section - Health Focus */}
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-          {/* Health Chart 1: Medical Impact Trend */}
-          <div className="bg-white/60 dark:bg-slate-900/60 backdrop-blur-xl rounded-2xl p-6 border border-white dark:border-slate-800 shadow-sm transition-transform hover:scale-[1.005]">
-            <div className="flex items-center justify-between mb-6">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-card-gap">
+          <div className="card p-8 transition-transform hover:scale-[1.005] rounded-none">
+            <div className="flex items-center justify-between mb-8">
               <div className="flex items-center gap-2">
-                <Activity size={18} className="text-rose-500" />
-                <h3 className="text-lg font-bold dark:text-slate-100">Medical Load</h3>
+                <Activity size={18} className="text-ink/40" />
+                <h3 className="text-2xl font-black font-display text-ink">Medical Load</h3>
               </div>
-              <span className="text-[9px] font-black text-slate-400 uppercase tracking-widest">Est. Admissions</span>
+              <span className="label-caps !text-[9px] opacity-40">EST. ADMISSIONS</span>
             </div>
             <div className="h-[200px] w-full">
               <ResponsiveContainer width="100%" height="100%">
-                <AreaChart data={nationalTrend}>
+                <AreaChart data={nationalTrend} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
                   <defs>
-                    <linearGradient id="medGrad" x1="0" y1="0" x2="0" y2="1">
-                      <stop offset="5%" stopColor="#f43f5e" stopOpacity={0.2}/>
-                      <stop offset="95%" stopColor="#f43f5e" stopOpacity={0}/>
+                    <linearGradient id="medicalGradient" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="5%" stopColor="var(--accent-light)" stopOpacity={0.8}/>
+                      <stop offset="95%" stopColor="var(--accent-dark)" stopOpacity={0.2}/>
                     </linearGradient>
                   </defs>
+                  <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="var(--ink)" opacity={0.05} />
                   <XAxis 
-                    dataKey="name" 
-                    axisLine={false} 
-                    tickLine={false} 
-                    tick={{fontSize: 8, fontWeight: 700, fill: '#94a3b8'}} 
+                    dataKey="name"
+                    tick={{fontSize: 8, fontWeight: 700, fill: 'var(--ink)', opacity: 0.3}} 
+                    tickLine={false}
+                    axisLine={false}
                     interval="preserveStartEnd"
                   />
                   <Area 
                     type="monotone" 
                     dataKey="val" 
-                    stroke="#f43f5e" 
+                    stroke="var(--accent)" 
                     strokeWidth={2} 
-                    fill="url(#medGrad)" 
+                    fill="url(#medicalGradient)"
                     animationDuration={1500}
                   />
                 </AreaChart>
@@ -537,77 +552,72 @@ export default function Summary({
             </div>
           </div>
 
-          {/* Health Chart 2: Respiratory Vulnerability */}
-          <div className="bg-white/60 dark:bg-slate-900/60 backdrop-blur-xl rounded-2xl p-6 border border-white dark:border-slate-800 shadow-sm transition-transform hover:scale-[1.005]">
-            <div className="flex items-center justify-between mb-6">
+          <div className="card p-8 transition-transform hover:scale-[1.005] rounded-none">
+            <div className="flex items-center justify-between mb-8">
               <div className="flex items-center gap-2">
-                <Info size={18} className="text-indigo-500" />
-                <h3 className="text-lg font-bold dark:text-slate-100">Vulnerability Index</h3>
+                <Info size={18} className="text-ink/40" />
+                <h3 className="text-2xl font-black font-display text-ink">Vulnerability</h3>
               </div>
-              <span className="text-[9px] font-black text-slate-400 uppercase tracking-widest">Risk Score</span>
+              <span className="label-caps !text-[9px] opacity-40">RISK SCORE</span>
             </div>
             <div className="h-[200px] w-full">
               <ResponsiveContainer width="100%" height="100%">
                 <BarChart data={summaryStats?.vulnerability || []} layout="vertical">
                   <XAxis type="number" hide domain={[0, 100]} />
                   <YAxis dataKey="name" type="category" hide />
-                  <Tooltip cursor={{fill: 'transparent'}} contentStyle={{ backgroundColor: '#1e293b', border: 'none', borderRadius: '4px', fontSize: '10px' }} />
-                  <Bar dataKey="val" radius={[0, 4, 4, 0]} barSize={24}>
-                    {summaryStats?.vulnerability?.map((entry: any, index: number) => (
-                      <Cell key={`cell-${index}`} fill={entry.color} />
-                    ))}
+                  <Tooltip cursor={{fill: 'transparent'}} contentStyle={{ backgroundColor: 'var(--ink)', border: 'none', fontSize: '10px', color: 'var(--surface)' }} />
+                  <Bar dataKey="val" barSize={24}>
+                    {summaryStats?.vulnerability?.map((entry: any, index: number) => {
+                      const colors = ['var(--accent-light)', 'var(--accent)', 'var(--accent-dark)'];
+                      return <Cell key={`cell-${index}`} fill={colors[index % 3]} fillOpacity={0.9} />;
+                    })}
                   </Bar>
                 </BarChart>
               </ResponsiveContainer>
             </div>
-            <div className="grid grid-cols-3 gap-2 mt-2">
+            <div className="grid grid-cols-3 gap-2 mt-4">
               {summaryStats?.vulnerability?.map((v: any) => (
-                <div key={v.name} className="flex flex-col items-center bg-slate-50 dark:bg-slate-800/50 p-2 rounded-lg border border-slate-100 dark:border-slate-800/60">
-                  <span className="text-[8px] font-black text-slate-400 uppercase tracking-widest mb-1">{v.name}</span>
-                  <span className="text-xs font-bold dark:text-slate-200">{v.val}%</span>
+                <div key={v.name} className="flex flex-col items-center border border-ink/5 bg-ink/[0.02] p-3 rounded-none">
+                  <span className="label-caps !text-[7px] mb-2 opacity-50">{v.name}</span>
+                  <span className="font-display text-lg font-black text-ink">{v.val}%</span>
                 </div>
               ))}
             </div>
           </div>
 
-          {/* Health Chart 3: Pollutant Exposure */}
-          <div className="bg-white/60 dark:bg-slate-900/60 backdrop-blur-xl rounded-2xl p-6 border border-white dark:border-slate-800 shadow-sm transition-transform hover:scale-[1.005]">
-            <div className="flex items-center justify-between mb-6">
+          <div className="card p-8 transition-transform hover:scale-[1.005] rounded-none">
+            <div className="flex items-center justify-between mb-8">
               <div className="flex items-center gap-2">
-                <Activity size={18} className="text-emerald-500" />
-                <h3 className="text-lg font-bold dark:text-slate-100">Pollutant Profile</h3>
+                <Activity size={18} className="text-ink/40" />
+                <h3 className="text-2xl font-black font-display text-ink">Exposure</h3>
               </div>
-              <span className="text-[9px] font-black text-slate-400 uppercase tracking-widest">Concentration</span>
+              <span className="label-caps !text-[9px] opacity-40">CONCENTRATION</span>
             </div>
             <div className="h-[200px] w-full">
               <ResponsiveContainer width="100%" height="100%">
-                <RadarChart cx="50%" cy="50%" outerRadius="80%" data={summaryStats?.pollutants || []}>
-                  <PolarGrid stroke="#e2e8f0" strokeDasharray="3 3" />
-                  <PolarAngleAxis dataKey="subject" tick={{ fontSize: 10, fontWeight: 700, fill: '#64748b' }} />
-                  <Radar name="AQI" dataKey="A" stroke="#10b981" fill="#10b981" fillOpacity={0.6} />
+                <RadarChart cx="50%" cy="50%" outerRadius="75%" data={summaryStats?.pollutants || []}>
+                  <PolarGrid stroke="var(--ink)" opacity={0.1} />
+                  <PolarAngleAxis dataKey="subject" tick={{ fontSize: 9, fontWeight: 800, fill: 'var(--ink)', opacity: 0.4 }} />
+                  <Radar name="AQI" dataKey="A" stroke="var(--accent)" strokeWidth={2} fill="var(--accent-light)" fillOpacity={0.3} />
                 </RadarChart>
               </ResponsiveContainer>
             </div>
           </div>
       </div>
 
-
-
-      {/* Bento Grid Bottom */}
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
-        {/* Scatter Plot Card */}
-        <div className="lg:col-span-7 bg-white/60 dark:bg-slate-900/60 backdrop-blur-xl rounded-4xl p-8 border border-white dark:border-slate-800 shadow-2xl relative overflow-hidden transition-all duration-700 hover:shadow-indigo-500/10">
-          <div className="flex justify-between items-center mb-8 relative z-10">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-card-gap">
+        <div className="lg:col-span-7 card p-10 relative overflow-hidden transition-all duration-700 rounded-none">
+          <div className="flex justify-between items-center mb-10 relative z-10">
             <div>
-              <h3 className="text-xl font-black dark:text-slate-100 tracking-tight">Pollutant vs AQI Correlation</h3>
-              <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest mt-1">Cross-Parameter Sensitivity Analysis</p>
+              <h3 className="text-3xl font-black font-display text-ink">Pollutant Correlation</h3>
+              <p className="label-caps mt-1 opacity-40">CROSS PARAMETER SENSITIVITY ANALYSIS</p>
             </div>
             <div className="flex gap-2">
-              <span className="flex items-center gap-1.5 px-3 py-1 bg-slate-100 dark:bg-slate-800 rounded-full text-[9px] font-black text-slate-500 uppercase tracking-widest border border-slate-200 dark:border-slate-700">
-                <div className="w-1.5 h-1.5 rounded-full bg-rose-500 animate-pulse"></div> HAZARDOUS
+              <span className="flex items-center gap-1.5 px-3 py-1 bg-ink/5 rounded-none label-caps !text-[9px] border border-ink/10">
+                <div className="w-1.5 h-1.5 bg-accent-dark animate-pulse"></div> CRITICAL
               </span>
-              <span className="flex items-center gap-1.5 px-3 py-1 bg-slate-100 dark:bg-slate-800 rounded-full text-[9px] font-black text-slate-500 uppercase tracking-widest border border-slate-200 dark:border-slate-700">
-                <div className="w-1.5 h-1.5 rounded-full bg-indigo-500"></div> STABLE
+              <span className="flex items-center gap-1.5 px-3 py-1 bg-ink/5 rounded-none label-caps !text-[9px] border border-ink/10">
+                <div className="w-1.5 h-1.5 bg-accent-light opacity-50"></div> STABLE
               </span>
             </div>
           </div>
@@ -615,50 +625,47 @@ export default function Summary({
           <div className="h-[320px] w-full relative z-10">
             <ResponsiveContainer width="100%" height="100%">
               <ScatterChart margin={{ top: 20, right: 30, bottom: 20, left: 10 }}>
-                <defs>
-                  <filter id="pointGlow" x="-50%" y="-50%" width="200%" height="200%">
-                    <feGaussianBlur stdDeviation="2" result="blur" />
-                    <feComposite in="SourceGraphic" in2="blur" operator="over" />
-                  </filter>
-                </defs>
                 <CartesianGrid 
                   strokeDasharray="4 4" 
-                  stroke={document.documentElement.classList.contains('dark') ? "rgba(255,255,255,0.05)" : "rgba(0,0,0,0.05)"} 
+                  stroke="var(--ink)"
+                  opacity={0.05}
                   vertical={false}
                 />
                 <XAxis 
                   type="number" 
                   dataKey="x" 
-                  name="Concentration" 
-                  stroke="#94a3b8" 
+                  name="PM2.5" 
+                  stroke="var(--ink)" 
+                  opacity={0.4} 
                   fontSize={10} 
                   tickLine={false} 
                   axisLine={false} 
-                  tick={{fontWeight: 700}}
+                  tick={{fontWeight: 700, fontFamily: 'monospace'}}
                 />
                 <YAxis 
                   type="number" 
                   dataKey="y" 
                   name="AQI" 
-                  stroke="#94a3b8" 
+                  stroke="var(--ink)" 
+                  opacity={0.4} 
                   fontSize={10} 
                   tickLine={false} 
                   axisLine={false}
-                  tick={{fontWeight: 700}}
+                  tick={{fontWeight: 700, fontFamily: 'monospace'}}
                 />
                 <Tooltip 
-                  cursor={{ strokeDasharray: '3 3', stroke: '#6366f1' }} 
+                  cursor={{ strokeDasharray: '3 3', stroke: 'var(--ink)' }} 
                   content={({ active, payload }) => {
                     if (active && payload && payload.length) {
                       const data = payload[0].payload;
                       return (
-                        <div className="bg-slate-900/90 backdrop-blur-md p-4 border border-slate-700 rounded-2xl shadow-2xl text-xs">
-                          <div className="text-white font-black mb-2 uppercase tracking-widest border-b border-slate-700 pb-2">{data.name}</div>
-                          <div className="text-slate-400 font-bold flex justify-between gap-8">
-                            AQI <span className="text-indigo-400">{data.y}</span>
+                        <div className="bg-ink p-4 text-xs">
+                          <div className="text-surface font-mono font-black mb-2 uppercase tracking-widest border-b border-surface/20 pb-2">{data.name}</div>
+                          <div className="text-surface/60 font-mono font-bold flex justify-between gap-8">
+                            AQI <span className="text-surface">{data.y}</span>
                           </div>
-                          <div className="text-slate-400 font-bold flex justify-between gap-8 mt-1">
-                            PM2.5 <span className="text-rose-400">{data.x} µg/m³</span>
+                          <div className="text-surface/60 font-mono font-bold flex justify-between gap-8 mt-1">
+                            PM2.5 <span className="text-surface">{data.x} µg/m³</span>
                           </div>
                         </div>
                       );
@@ -666,99 +673,194 @@ export default function Summary({
                     return null;
                   }} 
                 />
-                <Scatter name="Tier 1" data={tier1Data} fill="#6366f1" fillOpacity={0.6} stroke="#6366f1" strokeWidth={1} filter="url(#pointGlow)" />
-                <Scatter name="Tier 2" data={tier2Data} fill="#818cf8" fillOpacity={0.4} stroke="#818cf8" strokeWidth={1} />
-                <Scatter name="Industrial" data={industrialData} fill="#f43f5e" fillOpacity={0.7} stroke="#f43f5e" strokeWidth={1} filter="url(#pointGlow)" />
+                <Scatter name="Tier 1" data={tier1Data} fill="var(--accent-light)" fillOpacity={0.8} stroke="var(--accent-dark)" strokeWidth={1} />
+                <Scatter name="Tier 2" data={tier2Data} fill="var(--accent)" fillOpacity={0.6} stroke="var(--accent-dark)" strokeWidth={1} />
+                <Scatter name="Industrial" data={industrialData} fill="var(--accent-dark)" fillOpacity={0.9} stroke="var(--ink)" strokeWidth={1} />
               </ScatterChart>
             </ResponsiveContainer>
             
-            {/* Axis Label Pills */}
-            <div className="absolute left-1/2 bottom-0 -translate-x-1/2 flex items-center gap-4 bg-white/50 dark:bg-slate-800/50 backdrop-blur-md px-4 py-1.5 rounded-full border border-white dark:border-slate-700 shadow-sm">
-              <span className="text-[9px] font-black text-slate-400 uppercase tracking-widest">X: PM2.5 Conc.</span>
-              <div className="w-px h-3 bg-slate-300 dark:bg-slate-600"></div>
-              <span className="text-[9px] font-black text-slate-400 uppercase tracking-widest">Y: Composite AQI</span>
+            <div className="absolute left-1/2 bottom-4 -translate-x-1/2 flex items-center gap-4 bg-surface/80 backdrop-blur-md px-4 py-1.5 border border-ink/10">
+              <span className="label-caps !text-[9px]">X: PM2.5 Conc.</span>
+              <div className="w-px h-3 bg-ink/10"></div>
+              <span className="label-caps !text-[9px]">Y: Composite AQI</span>
             </div>
           </div>
         </div>
 
-        {/* Critical Hotspots Card */}
-        <div className="lg:col-span-5 bg-white/60 dark:bg-slate-900/60 backdrop-blur-xl rounded-2xl overflow-hidden border border-white dark:border-slate-800 shadow-sm flex flex-col animate-in fade-in slide-in-from-right-4 duration-500">
-          <div className="p-6 bg-red-50/50 dark:bg-red-500/10 border-b border-red-100 dark:border-red-500/20">
-            <p className="text-[10px] font-black uppercase tracking-[0.2em] text-red-600 dark:text-red-400">Regional Alert Level: High</p>
-            <h3 className="text-lg font-bold mt-1 text-[#181c22] dark:text-slate-100">
-              {citiesList.filter(c => c.aqi > 200).length} regions requiring attention
-            </h3>
-          </div>
-
-          <div className="flex-1 overflow-y-auto p-4 space-y-3">
-            {citiesList.slice().sort((a, b) => b.aqi - a.aqi).slice(0, 5).map((city) => {
-              const isSevere = city.aqi > 300;
-              const colorClass = isSevere ? 'text-red-600 dark:text-red-400' : 'text-amber-600 dark:text-amber-400';
-              const bgClass = isSevere ? 'bg-red-50 dark:bg-red-500/10' : 'bg-amber-50 dark:bg-amber-500/10';
-
-              return (
-                <div
-                  key={city.name}
-                  onClick={() => onNavigate && onNavigate('city-dive', city.name)}
-                  className="flex items-center justify-between p-3 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors cursor-pointer group border border-transparent hover:border-slate-100 dark:hover:border-slate-700"
-                >
-                  <div className="flex items-center gap-4">
-                    <div className="relative">
-                      <div className={cn("w-10 h-10 rounded-full flex items-center justify-center relative z-10 bg-slate-100 dark:bg-slate-700 border border-white dark:border-slate-800 shadow-sm overflow-hidden")}>
-                        <img 
-                          src={getCityImage(city.name, city.imageUrl, city.state)} 
-                          alt={city.name} 
-                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" 
-                          onError={(e) => {
-                            (e.target as HTMLImageElement).src = 'https://images.unsplash.com/photo-1564507592333-c60657451dd6?auto=format&fit=crop&q=80&w=400';
-                          }}
-                        />
-                      </div>
-                      <div className={cn("absolute -top-1 -right-1 w-4 h-4 rounded-full flex items-center justify-center z-20 shadow-sm", bgClass, colorClass)}>
-                        <MapPin size={8} />
-                      </div>
-                    </div>
-                    <div>
-                      <h4 className="font-bold text-sm dark:text-slate-100">{city.name}</h4>
-                      <p className="text-[11px] font-bold text-[#717785] dark:text-slate-400 line-clamp-2 max-w-[240px] leading-tight mt-0.5">{city.description || `${city.aqi} AQI - ${city.status}`}</p>
-                    </div>
+        <div className="lg:col-span-5 flex flex-col gap-card-gap">
+          <div className="card p-10 flex-1 relative overflow-hidden group rounded-none">
+            <div className="relative z-10">
+              <p className="label-caps !text-ink opacity-40 mb-2">Atmospheric Intelligence</p>
+              <h3 className="text-3xl font-black font-display text-ink leading-tight mb-6">Strategic Air Briefing</h3>
+              
+              <div className="space-y-8">
+                <div className="flex gap-4">
+                  <div className="w-12 h-12 bg-ink/5 flex items-center justify-center flex-shrink-0">
+                    <ShieldAlert size={20} className="text-ink" />
                   </div>
-                  <div className="flex flex-col items-end gap-1">
-                    <span className={cn("text-xs font-black", colorClass)}>{city.aqi}</span>
-                    <TrendingUp size={14} className={cn("transition-transform group-hover:translate-x-1", colorClass)} />
+                  <div>
+                    <h4 className="font-bold text-ink mb-1">Risk Assessment</h4>
+                    <p className="text-xs text-ink/50 leading-relaxed">
+                      Sustained PM2.5 elevation detected in Northern corridors. Tier 1 cities showing 14% higher density than seasonal norms.
+                    </p>
                   </div>
                 </div>
-              );
-            })}
+
+                <div className="flex gap-4">
+                  <div className="w-12 h-12 bg-ink/5 flex items-center justify-center flex-shrink-0">
+                    <Wind size={20} className="text-ink" />
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-ink mb-1">Dispersion Velocity</h4>
+                    <p className="text-xs text-ink/50 leading-relaxed">
+                      Low-pressure systems over Central India are inhibiting vertical dispersion. Stagnation predicted for next 48 hours.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex gap-4">
+                  <div className="w-12 h-12 bg-ink/5 flex items-center justify-center flex-shrink-0">
+                    <Zap size={20} className="text-ink" />
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-ink mb-1">Operational Priority</h4>
+                    <p className="text-xs text-ink/50 leading-relaxed">
+                      Deploying high-frequency telemetry nodes in Industrial clusters to monitor point-source emissions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="absolute -bottom-10 -right-10 opacity-[0.03] group-hover:opacity-[0.05] transition-opacity duration-700">
+              <Activity size={300} />
+            </div>
           </div>
         </div>
       </div>
 
-      {/* Strategic Summary */}
+      <div className="space-y-6">
+        <div className="flex items-center justify-between mb-2 px-2">
+          <div>
+            <p className="label-caps !text-ink opacity-60">Regional Alert Level: High</p>
+            <h3 className="text-3xl md:text-4xl font-black text-ink tracking-tight">
+              {citiesList.filter(c => c.aqi > 150).length} Regions Requiring Attention
+            </h3>
+          </div>
+          <button 
+            onClick={() => onNavigate && onNavigate('stations')}
+            className="text-ink font-mono text-[10px] uppercase font-black tracking-widest flex items-center gap-2 hover:translate-x-1 transition-transform"
+          >
+            Network Status <ArrowRight size={14} />
+          </button>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-card-gap">
+          {citiesList.slice().sort((a, b) => b.aqi - a.aqi).slice(0, 4).map((city) => {
+            return (
+              <div
+                key={city.name}
+                onClick={() => onNavigate && onNavigate('city-dive', city.name)}
+                className="bg-surface border border-ink/5 overflow-hidden group cursor-pointer hover:border-ink/20 transition-all duration-500"
+              >
+                <div className="h-48 w-full relative overflow-hidden">
+                  <img
+                    src={getCityImage(city.name, city.imageUrl, city.state)}
+                    alt={city.name}
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    onError={(e) => {
+                      (e.target as HTMLImageElement).src = 'https://images.unsplash.com/photo-1564507592333-c60657451dd6?auto=format&fit=crop&q=80&w=400';
+                    }}
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-surface via-surface/20 to-transparent"></div>
+                  <div className="absolute bottom-6 left-6">
+                    <span
+                      className="font-mono text-[9px] font-bold uppercase px-2.5 py-1 bg-ink/10 text-ink border border-ink/10"
+                    >
+                      AQI {city.aqi}
+                    </span>
+                  </div>
+                </div>
+                <div className="px-8 pb-8 -mt-2 relative z-10 bg-surface pt-2">
+                  <h4 className="text-xl font-black font-display text-ink tracking-tight mb-1">
+                    {city.name}
+                  </h4>
+                  <p className="font-body text-[11px] text-ink/40 leading-relaxed">
+                    {city.description || `${city.status} condition reported in the last 24h.`}
+                  </p>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      <div className="card p-8 md:p-10 relative overflow-hidden rounded-none">
+        <div className="flex flex-col md:flex-row md:items-center justify-between mb-10 gap-6 relative z-10">
+          <div>
+            <p className="label-caps !text-ink opacity-60 mb-1">Seasonal Projection</p>
+            <h3 className="text-3xl md:text-4xl font-black text-ink tracking-tight">Weekly Air Forecast</h3>
+            <p className="font-body-sm text-ink/40 mt-1">
+              Predictive modeling based on current satellite telemetry and historical trends
+            </p>
+          </div>
+          <div className="flex gap-2">
+            <button className="px-4 py-2 bg-ink text-surface text-[10px] font-mono font-black uppercase tracking-widest">
+              7-Day View
+            </button>
+            <button className="px-4 py-2 bg-ink/5 border border-ink/10 text-ink/40 text-[10px] font-mono font-black uppercase tracking-widest cursor-not-allowed">
+              30-Day
+            </button>
+          </div>
+        </div>
+        <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-4 relative z-10">
+          {WEEKLY_FORECAST.map((day) => {
+            return (
+              <div
+                key={day.day}
+                className="flex flex-col items-center p-6 border border-ink/5 bg-ink/5 hover:bg-ink/[0.08] transition-all duration-300 group"
+              >
+                <p className="label-caps !text-[10px] mb-4 text-ink/40 group-hover:text-ink transition-colors">
+                  {day.day}
+                </p>
+                <p className="font-display text-3xl md:text-4xl font-black text-ink tracking-tighter">
+                  {day.aqi}
+                </p>
+                <div 
+                  className="mt-4 px-3 py-1 text-[8px] font-mono font-black uppercase tracking-widest border border-ink/5"
+                >
+                  {day.label}
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
       <div className="space-y-4">
         <div className="flex justify-between items-center px-2">
           <div>
             <div className="flex items-center gap-3">
-              <h4 className="text-xl font-bold text-[#181c22] dark:text-slate-100">Executive Insights</h4>
+              <h4 className="font-headline-lg text-ink">Executive Insights</h4>
               {isLiveNews && (
-                <span className="flex items-center gap-1 px-2 py-0.5 bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-400 text-[9px] font-black rounded-full animate-pulse uppercase tracking-widest border border-emerald-200 dark:border-emerald-500/30">
-                  <span className="w-1 h-1 bg-emerald-500 rounded-full"></span> Live Feed
+                <span className="flex items-center gap-1 px-2 py-0.5 bg-ink text-surface label-caps !text-[9px] animate-pulse">
+                  <span className="w-1 h-1 bg-surface"></span> Live Feed
                 </span>
               )}
             </div>
-            <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 mt-1">Latest Environmental Briefings</p>
+            <p className="label-caps mt-1">Latest Environmental Briefings</p>
           </div>
           <div className="flex gap-2">
             <button 
               onClick={() => scroll('left')}
-              className="p-2 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-400 hover:text-[#1275e2] dark:hover:text-blue-400 hover:border-[#1275e2] dark:hover:border-blue-400 transition-all shadow-sm active:scale-95"
+              className="p-2 bg-surface border border-ink/20 text-ink/40 hover:text-ink hover:border-ink transition-all active:scale-95"
               aria-label="Scroll left"
             >
               <ChevronLeft size={20} />
             </button>
             <button 
               onClick={() => scroll('right')}
-              className="p-2 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-400 hover:text-[#1275e2] dark:hover:text-blue-400 hover:border-[#1275e2] dark:hover:border-blue-400 transition-all shadow-sm active:scale-95"
+              className="p-2 bg-surface border border-ink/20 text-ink/40 hover:text-ink hover:border-ink transition-all active:scale-95"
               aria-label="Scroll right"
             >
               <ChevronRight size={20} />
@@ -775,11 +877,11 @@ export default function Summary({
               key={idx} 
               onClick={() => news.link !== '#' && window.open(news.link, '_blank')}
               className={cn(
-                "min-w-[320px] md:min-w-[480px] bg-white/60 dark:bg-slate-900/60 backdrop-blur-xl rounded-2xl p-4 border border-white dark:border-slate-800 shadow-sm flex gap-4 snap-start hover:bg-white/80 dark:hover:bg-slate-800/80 transition-all hover:scale-[1.02] duration-300",
+                "min-w-[320px] md:min-w-[480px] card p-4 flex gap-4 snap-start hover:bg-ink/5 transition-all hover:scale-[1.02] duration-300",
                 news.link !== '#' && "cursor-pointer"
               )}
             >
-              <div className="w-24 h-24 md:w-32 md:h-32 rounded-xl overflow-hidden shadow-sm shrink-0 bg-slate-100 dark:bg-slate-800 flex items-center justify-center">
+              <div className="w-24 h-24 md:w-32 md:h-32 overflow-hidden shrink-0 bg-ink/5 flex items-center justify-center">
                 {news.image_url ? (
                   <img 
                     src={news.image_url} 
@@ -790,19 +892,19 @@ export default function Summary({
                     }}
                   />
                 ) : (
-                  <Info size={40} className="text-blue-200 dark:text-blue-900" />
+                  <Info size={40} className="text-ink/20" />
                 )}
               </div>
               <div className="flex-1 flex flex-col justify-between py-1">
                 <div>
-                  <h5 className="font-bold text-sm md:text-base line-clamp-2 text-[#181c22] dark:text-slate-100 leading-tight mb-2 group-hover:text-[#1275e2] dark:group-hover:text-blue-400 transition-colors">{news.title}</h5>
-                  <p className="text-xs text-[#717785] dark:text-slate-400 line-clamp-2 leading-relaxed">
+                  <h5 className="font-headline-sm !text-base line-clamp-2 text-ink leading-tight mb-2 group-hover:underline transition-all">{news.title}</h5>
+                  <p className="font-body-sm text-ink/60 line-clamp-2 leading-relaxed">
                     {news.description}
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-1 mt-3">
                   {(news.keywords || []).slice(0, 3).map((tag: string) => (
-                    <span key={tag} className="px-2 py-0.5 bg-blue-50 dark:bg-blue-900/30 text-[#1275e2] dark:text-blue-400 text-[9px] font-bold rounded-md border border-blue-100 dark:border-blue-900/50 uppercase tracking-tighter">
+                    <span key={tag} className="label-caps !text-[8px] bg-ink/5 px-2 py-0.5 rounded">
                       {tag}
                     </span>
                   ))}

@@ -1,39 +1,172 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import "tailwindcss";
 
-@theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+:root {
+  --background: #f8f7f4;
+  --surface: #ffffff;
+  --ink: #1a1a1a;
+  --ink-rgb: 26, 26, 26;
+  --paper-grain: url("https://www.transparenttextures.com/patterns/natural-paper.png");
+  
+  /* AQI Functional Colors */
+  --aqi-good: #10b981;
+  --aqi-good-bg: rgba(16, 185, 129, 0.1);
+  --aqi-moderate: #f59e0b;
+  --aqi-moderate-bg: rgba(245, 158, 11, 0.1);
+  --aqi-poor: #f97316;
+  --aqi-poor-bg: rgba(249, 115, 22, 0.1);
+  --aqi-unhealthy: #ef4444;
+  --aqi-unhealthy-bg: rgba(239, 68, 68, 0.1);
+  --aqi-very-poor: #8b5cf6;
+  --aqi-very-poor-bg: rgba(139, 92, 246, 0.1);
+  --aqi-hazardous: #7f1d1d;
+  --aqi-hazardous-bg: rgba(127, 29, 29, 0.1);
+
+  /* Accent Color for Charts */
+  --accent: #00e5ff;
+  --accent-light: #a5f3fc;
+  --accent-dark: #0044ff;
+  --accent-rgb: 0, 229, 255;
 }
 
-@custom-variant dark (&:where(.dark, .dark *));
+.dark {
+  --background: #121212;
+  --surface: #1a1a1a;
+  --ink: #f8f7f4;
+  --ink-rgb: 248, 247, 244;
+  --accent: #00f2ff;
+  --accent-light: #80f9ff;
+  --accent-dark: #0088ff;
+  --accent-rgb: 0, 242, 255;
+  
+  --aqi-good: #34d399;
+  --aqi-good-bg: rgba(52, 211, 153, 0.1);
+  --aqi-moderate: #fbbf24;
+  --aqi-moderate-bg: rgba(251, 191, 36, 0.1);
+  --aqi-poor: #fb923c;
+  --aqi-poor-bg: rgba(251, 146, 60, 0.1);
+  --aqi-unhealthy: #f87171;
+  --aqi-unhealthy-bg: rgba(248, 113, 113, 0.1);
+  --aqi-very-poor: #a78bfa;
+  --aqi-very-poor-bg: rgba(167, 139, 250, 0.1);
+  --aqi-hazardous: #f87171;
+  --aqi-hazardous-bg: rgba(248, 113, 113, 0.1);
+}
+
+@theme {
+  /* Colors mapping to CSS variables */
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-ink: var(--ink);
+  --color-error: #ef4444;
+  
+  --color-aqi-good: var(--aqi-good);
+  --color-aqi-moderate: var(--aqi-moderate);
+  --color-aqi-poor: var(--aqi-poor);
+  --color-aqi-unhealthy: var(--aqi-unhealthy);
+  --color-aqi-very-poor: var(--aqi-very-poor);
+  --color-aqi-hazardous: var(--aqi-hazardous);
+  
+  /* Font families */
+  --font-sans: 'Inter', sans-serif;
+  --font-serif: 'Playfair Display', serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Semantic type roles */
+  --font-display: var(--font-serif);
+  --font-headline: var(--font-serif);
+  --font-body: var(--font-sans);
+  --font-label: var(--font-mono);
+
+  --spacing-section-margin: 3rem;
+  --spacing-card-gap: 1.5rem;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-ink antialiased selection:bg-ink selection:text-background;
+    font-family: var(--font-sans);
+    background-image: var(--paper-grain);
+    background-attachment: fixed;
+  }
+}
 
 @layer utilities {
-  .no-scrollbar::-webkit-scrollbar {
-    display: none;
-  }
-  .no-scrollbar {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  
+  /* Layout Rhythm */
+  .section-rhythm { @apply py-20 md:py-32; }
+  .container-tight { @apply max-w-5xl mx-auto px-6; }
 }
 
-/* Optimized smooth transitions for theme switching - simpler targeting to avoid lag */
-body, 
-header, 
-aside, 
-main, 
-.transition-theme {
-  transition: background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.4s cubic-bezier(0.4, 0, 0.2, 1), color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+/* Component Patterns */
+.card {
+  @apply bg-surface border border-ink/10 rounded-none overflow-hidden transition-all duration-500;
+  box-shadow: none;
 }
 
-/* Enable cross-fade for View Transitions API */
+.card:hover {
+  @apply border-ink/40;
+}
+
+.card-subtle {
+  @apply bg-ink/[0.02] border border-ink/5 rounded-none;
+}
+
+.glass-panel {
+  @apply bg-background/80 backdrop-blur-xl border-b border-ink/10;
+}
+
+.label-caps {
+  @apply font-mono text-[10px] uppercase tracking-[0.25em] text-ink/70 font-bold;
+}
+
+.btn-primary {
+  @apply bg-ink text-background font-mono text-[11px] font-black uppercase tracking-widest px-8 py-4 transition-all duration-300 hover:opacity-90 active:scale-95 flex items-center justify-center gap-2;
+}
+
+.btn-secondary {
+  @apply bg-transparent border border-ink/20 text-ink font-mono text-[10px] font-bold uppercase tracking-widest px-6 py-3 transition-all duration-300 hover:bg-ink hover:text-background flex items-center justify-center gap-2;
+}
+
+/* Typography Hierarchy */
+.font-display-lg { @apply font-display text-5xl md:text-7xl font-black leading-[0.95] tracking-tight; }
+.font-display-md { @apply font-display text-4xl md:text-5xl font-black leading-none tracking-tight; }
+.font-headline-lg { @apply font-headline text-2xl md:text-3xl font-bold leading-tight; }
+.font-headline-sm { @apply font-headline text-xl font-bold; }
+.font-body-md { @apply font-body text-base leading-relaxed; }
+.font-body-sm { @apply font-body text-sm leading-relaxed; }
+.font-mono-data { @apply font-mono text-xs font-bold tracking-tighter; }
+
+/* Visual Flourishes */
+.ink-gradient {
+  background: linear-gradient(180deg, var(--ink) 0%, transparent 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Animation Bridges */
 ::view-transition-old(root),
 ::view-transition-new(root) {
-  animation-duration: 0.4s;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  animation-duration: 0.6s;
+  animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* Prevent transitions on initial load if possible, or just keep them smooth */
-.no-transition {
-  transition: none !important;
+/* Recharts Customizations via CSS */
+.recharts-cartesian-grid-horizontal line,
+.recharts-cartesian-grid-vertical line {
+  stroke: var(--ink);
+  opacity: 0.1;
+}
+
+.recharts-text {
+  fill: var(--ink);
+  opacity: 0.8;
+  font-family: var(--font-mono);
+  font-weight: 700;
+}
+
+.recharts-tooltip-cursor {
+  stroke: var(--ink);
+  stroke-opacity: 0.1;
 }
