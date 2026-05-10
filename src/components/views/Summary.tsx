@@ -284,6 +284,16 @@ export default function Summary({
     const scaledMax = { name: sortedByAqi[0].name, aqi: Math.round(sortedByAqi[0].aqi * timeframeScale) };
     const scaledMin = { name: sortedByAqi[sortedByAqi.length - 1].name, aqi: Math.round(sortedByAqi[sortedByAqi.length - 1].aqi * timeframeScale) };
 
+    // Scaled list for Critical Regions
+    const criticalRegions = sortedByAqi.slice(0, 4).map(c => ({
+      name: c.name,
+      aqi: Math.round(c.aqi * timeframeScale)
+    }));
+
+    // Dynamic Growth Index
+    const growthValues = { daily: '+0.8%', weekly: '+2.4%', monthly: '+5.1%' };
+    const growthIndex = growthValues[timeframe];
+
     return {
       avgAqi,
       maxAqiCity: scaledMax,
@@ -294,7 +304,9 @@ export default function Summary({
       activeStations: totalStations,
       distribution,
       pollutants,
-      vulnerability
+      vulnerability,
+      criticalRegions,
+      growthIndex
     };
   }, [processedData, timeframe]);
 
@@ -449,7 +461,7 @@ export default function Summary({
                   <span className="label-caps !text-[10px]">TOP 4</span>
                 </div>
                 <div className="space-y-3">
-                  {citiesList.slice().sort((a, b) => b.aqi - a.aqi).slice(0, 4).map((city) => (
+                  {summaryStats?.criticalRegions.map((city) => (
                     <div key={city.name} className="flex items-center gap-4">
                       <span className="font-mono text-[10px] font-bold text-ink w-20 truncate">{city.name}</span>
                       <div className="flex-1 h-1.5 bg-ink/5 overflow-hidden">
@@ -487,7 +499,7 @@ export default function Summary({
             <div className="text-center group transition-transform hover:scale-105 border-l border-ink/10">
               <p className="label-caps mb-2">Growth Index</p>
               <div className="flex flex-col items-center">
-                <p className="font-display-md !text-2xl text-ink">+2.4%</p>
+                <p className="font-display-md !text-2xl text-ink">{summaryStats?.growthIndex}</p>
                 <span className="label-caps !text-[9px] flex items-center gap-0.5 text-ink/70">
                   <TrendingUp size={8} /> MOMENTUM
                 </span>
