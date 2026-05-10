@@ -122,11 +122,11 @@
 }
 
 .btn-primary {
-  @apply bg-ink text-background font-mono text-[11px] font-black uppercase tracking-widest px-8 py-4 transition-all duration-300 hover:opacity-90 active:scale-95 flex items-center justify-center gap-2;
+  @apply bg-ink text-surface font-mono text-[11px] font-black uppercase tracking-widest px-8 py-4 rounded-none transition-all duration-300 hover:opacity-90 active:scale-95 flex items-center justify-center gap-2;
 }
 
 .btn-secondary {
-  @apply bg-transparent border border-ink/20 text-ink font-mono text-[10px] font-bold uppercase tracking-widest px-6 py-3 transition-all duration-300 hover:bg-ink hover:text-background flex items-center justify-center gap-2;
+  @apply bg-transparent border border-ink/20 text-ink font-mono text-[10px] font-bold uppercase tracking-widest px-6 py-3 rounded-none transition-all duration-300 hover:bg-ink hover:text-background flex items-center justify-center gap-2;
 }
 
 /* Typography Hierarchy */
