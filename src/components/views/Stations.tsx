@@ -215,9 +215,9 @@ export default function Stations({
             </div>
           </div>
 
-          <button className="btn-primary !bg-ink !text-surface !py-2 px-4 rounded-none shadow-none flex items-center justify-center gap-2 hover:!bg-ink/90 transition-all shrink-0 whitespace-nowrap ml-auto group">
-            <SlidersHorizontal size={12} className="opacity-70 group-hover:opacity-100 transition-opacity" /> 
-            <span className="label-caps !text-[9px] !text-inherit">Advanced</span>
+          <button className="btn-primary !bg-ink !text-surface !py-2.5 px-5 rounded-none shadow-none flex items-center justify-center gap-2 hover:!bg-ink/90 transition-all shrink-0 whitespace-nowrap ml-auto group">
+            <SlidersHorizontal size={14} className="opacity-80 group-hover:opacity-100 transition-opacity" /> 
+            <span className="label-caps !text-[10px] !text-surface font-black tracking-widest">Advanced</span>
           </button>
         </div>
       </div>
