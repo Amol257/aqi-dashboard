@@ -36,8 +36,8 @@ export default function Stations({
 
   // Dynamic counts derived from stations data
   const totalSites = stations.length;
-  const activeCount = stations.filter(s => s.status === 'ACTIVE').length;
-  const offlineCount = stations.filter(s => s.status !== 'ACTIVE').length;
+  const activeCount = stations.filter(s => s.status === 'ACTIVE' && s.aqi > 0).length;
+  const offlineCount = stations.filter(s => s.status !== 'ACTIVE' || s.aqi === 0).length;
   const serviceCount = 0; // future implementation
 
   const toggleAqiFilter = (filter: string) => {
@@ -236,7 +236,7 @@ export default function Stations({
           {/* Interactive Legend Above Map - 6 Ranges */}
           <div className="flex flex-wrap gap-3 mb-8">
             {[
-              { id: '0-50', color: 'bg-aqi-good', label: '0-50', count: baseFilteredStations.filter(s => s.aqi <= 50).length },
+              { id: '0-50', color: 'bg-aqi-good', label: '0-50', count: baseFilteredStations.filter(s => s.aqi > 0 && s.aqi <= 50).length },
               { id: '51-100', color: 'bg-aqi-moderate', label: '51-100', count: baseFilteredStations.filter(s => s.aqi > 50 && s.aqi <= 100).length },
               { id: '101-150', color: 'bg-aqi-poor', label: '101-150', count: baseFilteredStations.filter(s => s.aqi > 100 && s.aqi <= 150).length },
               { id: '151-200', color: 'bg-aqi-unhealthy', label: '151-200', count: baseFilteredStations.filter(s => s.aqi > 150 && s.aqi <= 200).length },
@@ -336,12 +336,14 @@ export default function Stations({
         <div className="md:col-span-3 card p-8 !bg-ink !text-surface flex flex-col justify-between group rounded-none">
           <div>
             <p className="label-caps !text-surface opacity-60">Network Integrity</p>
-            <div className="font-data-huge !text-5xl !text-surface mt-4">99.2%</div>
+            <div className="font-data-huge !text-5xl !text-surface mt-4">
+              {((activeCount / totalSites) * 100).toFixed(1)}%
+            </div>
           </div>
           <div className="h-1 w-full bg-surface/10 rounded-none overflow-hidden mt-8">
-            <div className="h-full bg-accent transition-all duration-1000" style={{ width: '99.2%', backgroundColor: 'var(--accent)' }}></div>
+            <div className="h-full bg-accent transition-all duration-1000" style={{ width: `${(activeCount / totalSites) * 100}%`, backgroundColor: 'var(--accent)' }}></div>
           </div>
-          <p className="label-caps !text-[9px] !text-surface mt-6 opacity-60">Optimization Target: 99.5%</p>
+          <p className="label-caps !text-[9px] !text-surface mt-6 opacity-60">Nodes Active: {activeCount} / {totalSites}</p>
         </div>
 
         <div className="md:col-span-3 card p-8 flex flex-col justify-between rounded-none">
@@ -450,14 +452,14 @@ export default function Stations({
                   <td className="px-10 py-6">
                     <span className={cn(
                       "label-caps !text-[9px] px-3 py-1 rounded-none flex items-center gap-2 w-fit font-black",
-                      s.status === 'ACTIVE' ? "bg-ink !text-surface" : "bg-ink/10 text-ink"
+                      (s.status === 'ACTIVE' && s.aqi > 0) ? "bg-ink !text-surface" : "bg-ink/10 text-ink"
                     )}>
-                      {s.status === 'ACTIVE' ? (
+                      {(s.status === 'ACTIVE' && s.aqi > 0) ? (
                         <div className="w-1 h-1 rounded-full bg-surface animate-pulse" />
                       ) : (
                         <div className="w-1 h-1 rounded-full bg-ink/40" />
                       )}
-                      {s.status === 'ACTIVE' ? 'LIVE' : s.status}
+                      {(s.status === 'ACTIVE' && s.aqi > 0) ? 'LIVE' : 'OFFLINE'}
                     </span>
                   </td>
                 </tr>
