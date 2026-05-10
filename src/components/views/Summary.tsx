@@ -176,9 +176,26 @@ export default function Summary({
 
   const [timeframe, setTimeframe] = React.useState<'daily' | 'weekly' | 'monthly'>('daily');
 
+  const timeframeScale = React.useMemo(() => {
+    return timeframe === 'daily' ? 1.0 : timeframe === 'weekly' ? 0.88 : 0.76;
+  }, [timeframe]);
+
+  const citiesList = React.useMemo(() => {
+    return processedData.map(city => {
+      const scaledAqi = Math.round(city.aqi * timeframeScale);
+      return {
+        ...city,
+        aqi: scaledAqi, // Override with scaled value for UI consistency
+        rawAqi: city.aqi, // Keep raw for reference if needed
+        tier: getCityTier(city.name),
+        status: getAqiStatus(scaledAqi)
+      };
+    });
+  }, [processedData, timeframeScale]);
+
   // Dynamic data based on timeframe
   const nationalTrend = React.useMemo(() => {
-    const values = processedData.map(c => c.aqi).sort((a, b) => a - b);
+    const values = citiesList.map(c => c.aqi).sort((a, b) => a - b);
     const avg = values.reduce((a, b) => a + b, 0) / (values.length || 1);
     
     // Deterministic pseudo-randomness based on timeframe string length
@@ -198,15 +215,7 @@ export default function Summary({
           name: day, val: values[Math.floor(i * (values.length / 7))] || values[values.length - 1]
         }));
     }
-  }, [timeframe, processedData]);
-
-  const citiesList = React.useMemo(() => {
-    return processedData.map(city => ({
-      ...city,
-      tier: getCityTier(city.name),
-      status: getAqiStatus(city.aqi)
-    }));
-  }, [processedData]);
+  }, [timeframe, citiesList]);
 
   const { tier1Data, tier2Data, industrialData } = React.useMemo(() => {
     const tier1: any[] = [];
@@ -220,7 +229,7 @@ export default function Summary({
         y: city.aqi,
       };
 
-      if (city.category === 'Tier 1') {
+      if (city.tier === 'Tier 1') {
         tier1.push(point);
       } else if (city.category === 'Industrial') {
         industrial.push(point);
@@ -242,28 +251,22 @@ export default function Summary({
   };
 
   const summaryStats = React.useMemo(() => {
-    if (processedData.length === 0) return null;
+    if (citiesList.length === 0) return null;
     
-    const sortedByAqi = [...processedData].sort((a, b) => b.aqi - a.aqi);
-    const rawAvgAqi = processedData.reduce((acc, c) => acc + c.aqi, 0) / processedData.length;
-
-    // Scale factor: daily = current readings, weekly = 7-day rolling avg (12% lower due to
-    // overnight/weekend dips), monthly = 30-day avg (24% lower as good days get included).
-    const timeframeScale = timeframe === 'daily' ? 1.0 : timeframe === 'weekly' ? 0.88 : 0.76;
-    const avgAqi = Math.round(rawAvgAqi * timeframeScale);
+    const sortedByAqi = [...citiesList].sort((a, b) => b.aqi - a.aqi);
+    const avgAqi = Math.round(citiesList.reduce((acc, c) => acc + c.aqi, 0) / citiesList.length);
 
     const totalStations = STATIONS_DATA.length;
     
     const threshold = timeframe === 'daily' ? 150 : timeframe === 'weekly' ? 120 : 100;
-    const scaledCityAqis = processedData.map(c => c.aqi * timeframeScale);
-    const highExposureCount = scaledCityAqis.filter(a => a > threshold).length;
-    const healthRiskIndex = ((highExposureCount / processedData.length) * 100).toFixed(1);
+    const highExposureCount = citiesList.filter(c => c.aqi > threshold).length;
+    const healthRiskIndex = ((highExposureCount / citiesList.length) * 100).toFixed(1);
     
     const distribution = [
-      { name: 'Good',     value: scaledCityAqis.filter(a => a <= 50).length,              color: 'var(--aqi-good)' },
-      { name: 'Moderate', value: scaledCityAqis.filter(a => a > 50  && a <= 100).length,  color: 'var(--aqi-moderate)' },
-      { name: 'Poor',     value: scaledCityAqis.filter(a => a > 100 && a <= 200).length,  color: 'var(--aqi-poor)' },
-      { name: 'Severe',   value: scaledCityAqis.filter(a => a > 200).length,              color: 'var(--aqi-unhealthy)' }
+      { name: 'Good',     value: citiesList.filter(c => c.aqi <= 50).length,              color: 'var(--aqi-good)' },
+      { name: 'Moderate', value: citiesList.filter(c => c.aqi > 50  && c.aqi <= 100).length,  color: 'var(--aqi-moderate)' },
+      { name: 'Poor',     value: citiesList.filter(c => c.aqi > 100 && c.aqi <= 200).length,  color: 'var(--aqi-poor)' },
+      { name: 'Severe',   value: citiesList.filter(c => c.aqi > 200).length,              color: 'var(--aqi-unhealthy)' }
     ].filter(d => d.value > 0);
 
     const pollutants = [
@@ -280,27 +283,21 @@ export default function Summary({
       { name: 'Chronic',  val: Math.min(100, Math.round(avgAqi * 0.22)), color: '#f43f5e' }
     ];
 
-    // Scale max/min cities by the same factor for consistency
-    const scaledMax = { name: sortedByAqi[0].name, aqi: Math.round(sortedByAqi[0].aqi * timeframeScale) };
-    const scaledMin = { name: sortedByAqi[sortedByAqi.length - 1].name, aqi: Math.round(sortedByAqi[sortedByAqi.length - 1].aqi * timeframeScale) };
+    const maxAqiCity = sortedByAqi[0];
+    const minAqiCity = sortedByAqi[sortedByAqi.length - 1];
 
-    // Scaled list for Critical Regions
-    const criticalRegions = sortedByAqi.slice(0, 4).map(c => ({
-      name: c.name,
-      aqi: Math.round(c.aqi * timeframeScale)
-    }));
+    const criticalRegions = sortedByAqi.slice(0, 4);
 
-    // Dynamic Growth Index
     const growthValues = { daily: '+0.8%', weekly: '+2.4%', monthly: '+5.1%' };
     const growthIndex = growthValues[timeframe];
 
     return {
       avgAqi,
-      maxAqiCity: scaledMax,
-      minAqiCity: scaledMin,
+      maxAqiCity,
+      minAqiCity,
       healthRiskIndex,
       totalAdmissions: Math.round(avgAqi * 12.5),
-      totalCities: processedData.length,
+      totalCities: citiesList.length,
       activeStations: totalStations,
       distribution,
       pollutants,
@@ -308,7 +305,7 @@ export default function Summary({
       criticalRegions,
       growthIndex
     };
-  }, [processedData, timeframe]);
+  }, [citiesList, timeframe]);
 
 
 
