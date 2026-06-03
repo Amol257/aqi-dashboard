@@ -24,9 +24,9 @@ export const TOP_POLLUTED_CITIES: CityData[] = [
   {
     "name": "Khora",
     "state": "Uttar Pradesh",
-    "aqi": 257,
-    "status": "Very Poor",
-    "pm25": 118,
+    "aqi": 197,
+    "status": "Poor",
+    "pm25": 123,
     "trend": "up",
     "admissions": 3078,
     "imageUrl": "./db/cities/Khora/Khora.jpg",
@@ -35,9 +35,9 @@ export const TOP_POLLUTED_CITIES: CityData[] = [
   {
     "name": "Charkhi Dadri",
     "state": "Haryana",
-    "aqi": 133,
+    "aqi": 150,
     "status": "Poor",
-    "pm25": 133,
+    "pm25": 150,
     "trend": "up",
     "admissions": 2762,
     "imageUrl": "./db/cities/Charkhi Dadri/Charkhi Dadri.jpg",
@@ -46,9 +46,9 @@ export const TOP_POLLUTED_CITIES: CityData[] = [
   {
     "name": "Hajipur",
     "state": "Bihar",
-    "aqi": 138,
+    "aqi": 104,
     "status": "Poor",
-    "pm25": 93,
+    "pm25": 92,
     "trend": "up",
     "admissions": 2877,
     "imageUrl": "./db/cities/Hajipur/Hajipur.jpg",
@@ -57,9 +57,9 @@ export const TOP_POLLUTED_CITIES: CityData[] = [
   {
     "name": "Rohtak",
     "state": "Haryana",
-    "aqi": 88,
+    "aqi": 64,
     "status": "Moderate",
-    "pm25": 61,
+    "pm25": 64,
     "trend": "up",
     "admissions": 2986,
     "imageUrl": "./db/cities/Rohtak/Rohtak.jpg",
@@ -79,9 +79,9 @@ export const TOP_POLLUTED_CITIES: CityData[] = [
   {
     "name": "Tirupati",
     "state": "Andhra Pradesh",
-    "aqi": 44,
-    "status": "Good",
-    "pm25": 26,
+    "aqi": 57,
+    "status": "Moderate",
+    "pm25": 42,
     "trend": "up",
     "admissions": 2629,
     "imageUrl": "./db/cities/Tirupati/Tirupati.jpg",
@@ -90,9 +90,9 @@ export const TOP_POLLUTED_CITIES: CityData[] = [
   {
     "name": "Jind",
     "state": "Haryana",
-    "aqi": 178,
+    "aqi": 173,
     "status": "Poor",
-    "pm25": 178,
+    "pm25": 173,
     "trend": "up",
     "admissions": 2735,
     "imageUrl": "./db/cities/Jind/Jind.jpg",
@@ -101,7 +101,7 @@ export const TOP_POLLUTED_CITIES: CityData[] = [
   {
     "name": "Baddi",
     "state": "Himachal Pradesh",
-    "aqi": 158,
+    "aqi": 123,
     "status": "Poor",
     "pm25": 82,
     "trend": "up",
@@ -123,9 +123,9 @@ export const TOP_POLLUTED_CITIES: CityData[] = [
   {
     "name": "Suakati",
     "state": "Odisha",
-    "aqi": 70,
+    "aqi": 67,
     "status": "Moderate",
-    "pm25": 50,
+    "pm25": 47,
     "trend": "up",
     "admissions": 2675,
     "imageUrl": "./db/cities/Suakati/Suakati.jpg",
@@ -147,9 +147,9 @@ export const MAJOR_CITIES_COMPARISON: CityData[] = [
   {
     "name": "Delhi",
     "state": "Delhi",
-    "aqi": 285,
+    "aqi": 205,
     "status": "Very Poor",
-    "pm25": 96,
+    "pm25": 106,
     "trend": "up",
     "trendValue": "18%",
     "admissions": 8760,
@@ -159,9 +159,9 @@ export const MAJOR_CITIES_COMPARISON: CityData[] = [
   {
     "name": "Mumbai",
     "state": "Maharashtra",
-    "aqi": 91,
+    "aqi": 90,
     "status": "Moderate",
-    "pm25": 31,
+    "pm25": 30,
     "trend": "down",
     "trendValue": "12%",
     "admissions": 7885,
@@ -171,9 +171,9 @@ export const MAJOR_CITIES_COMPARISON: CityData[] = [
   {
     "name": "Bengaluru",
     "state": "Karnataka",
-    "aqi": 111,
-    "status": "Poor",
-    "pm25": 29,
+    "aqi": 94,
+    "status": "Moderate",
+    "pm25": 28,
     "trend": "stable",
     "trendValue": "STABLE",
     "admissions": 5737,
@@ -183,9 +183,9 @@ export const MAJOR_CITIES_COMPARISON: CityData[] = [
   {
     "name": "Kolkata",
     "state": "West Bengal",
-    "aqi": 100,
-    "status": "Moderate",
-    "pm25": 53,
+    "aqi": 101,
+    "status": "Poor",
+    "pm25": 55,
     "trend": "up",
     "trendValue": "8%",
     "admissions": 6115,
@@ -195,9 +195,9 @@ export const MAJOR_CITIES_COMPARISON: CityData[] = [
   {
     "name": "Chennai",
     "state": "Tamil Nadu",
-    "aqi": 72,
-    "status": "Moderate",
-    "pm25": 31,
+    "aqi": 302,
+    "status": "Severe",
+    "pm25": 32,
     "trend": "stable",
     "admissions": 5490,
     "imageUrl": "./db/cities/Chennai/Chennai.jpg",
@@ -206,9 +206,9 @@ export const MAJOR_CITIES_COMPARISON: CityData[] = [
   {
     "name": "Hyderabad",
     "state": "Telangana",
-    "aqi": 86,
+    "aqi": 87,
     "status": "Moderate",
-    "pm25": 51,
+    "pm25": 48,
     "trend": "stable",
     "admissions": 5498,
     "imageUrl": "./db/cities/Hyderabad/Hyderabad.jpg",
@@ -253,7 +253,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 27.23711,
     "lng": 78.01936,
-    "aqi": 91,
+    "aqi": 94,
     "pollutants": [
       "CO",
       "PM10",
@@ -264,13 +264,12 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
-          "PM10": 91.0,
-          "SO2": 90.0,
-          "OZONE": 5.0,
-          "PM2.5": 40.0,
+          "PM2.5": 39.0,
+          "PM10": 94.0,
           "NH3": 2.0,
           "NO2": 21.0,
-          "CO": 20.0
+          "CO": 21.0,
+          "OZONE": 5.0
     }
   },
   {
@@ -281,7 +280,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 27.106972,
     "lng": 78.000111,
-    "aqi": 109,
+    "aqi": 113,
     "pollutants": [
       "NO2",
       "OZONE",
@@ -291,13 +290,13 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "PM10": 109.0,
-          "NO2": 14.0,
-          "OZONE": 10.0,
-          "CO": 15.0,
-          "PM2.5": 74.0,
           "NH3": 5.0,
-          "SO2": 9.0
+          "OZONE": 10.0,
+          "PM2.5": 79.0,
+          "SO2": 10.0,
+          "PM10": 113.0,
+          "NO2": 14.0,
+          "CO": 21.0
     }
   },
   {
@@ -308,7 +307,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 27.19865833,
     "lng": 78.00598056,
-    "aqi": 98,
+    "aqi": 95,
     "pollutants": [
       "CO",
       "PM10",
@@ -318,12 +317,12 @@ export const STATIONS_DATA = [
       "NO2"
     ],
     "pollutant_values": {
-          "SO2": 20.0,
-          "CO": 32.0,
-          "OZONE": 89.0,
-          "PM10": 98.0,
           "NO2": 10.0,
-          "PM2.5": 80.0
+          "SO2": 20.0,
+          "PM2.5": 79.0,
+          "PM10": 95.0,
+          "CO": 32.0,
+          "OZONE": 59.0
     }
   },
   {
@@ -334,7 +333,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 27.19862,
     "lng": 77.92066,
-    "aqi": 98,
+    "aqi": 100,
     "pollutants": [
       "SO2",
       "CO",
@@ -345,13 +344,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "NO2": 39.0,
-          "CO": 7.0,
-          "SO2": 6.0,
-          "PM10": 98.0,
+          "PM2.5": 56.0,
           "NH3": 3.0,
-          "OZONE": 20.0,
-          "PM2.5": 55.0
+          "OZONE": 19.0,
+          "CO": 11.0,
+          "PM10": 100.0,
+          "NO2": 39.0,
+          "SO2": 6.0
     }
   },
   {
@@ -362,7 +361,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 27.169338,
     "lng": 78.03582,
-    "aqi": 90,
+    "aqi": 99,
     "pollutants": [
       "NH3",
       "SO2",
@@ -372,13 +371,13 @@ export const STATIONS_DATA = [
       "PM10"
     ],
     "pollutant_values": {
-          "OZONE": 1.0,
-          "PM2.5": 84.0,
-          "PM10": 90.0,
-          "CO": 20.0,
-          "NO2": 8.0,
           "NH3": 1.0,
-          "SO2": 25.0
+          "PM2.5": 90.0,
+          "NO2": 9.0,
+          "OZONE": 1.0,
+          "CO": 20.0,
+          "PM10": 99.0,
+          "SO2": 26.0
     }
   },
   {
@@ -389,7 +388,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 27.19412,
     "lng": 77.96237,
-    "aqi": 84,
+    "aqi": 96,
     "pollutants": [
       "OZONE",
       "NH3",
@@ -398,13 +397,13 @@ export const STATIONS_DATA = [
       "NO2"
     ],
     "pollutant_values": {
+          "CO": 20.0,
           "NH3": 10.0,
-          "SO2": 13.0,
-          "CO": 12.0,
-          "PM2.5": 61.0,
-          "PM10": 84.0,
-          "OZONE": 12.0,
-          "NO2": 20.0
+          "PM2.5": 73.0,
+          "NO2": 20.0,
+          "OZONE": 13.0,
+          "PM10": 96.0,
+          "SO2": 13.0
     }
   },
   {
@@ -415,7 +414,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 23.023389,
     "lng": 72.515201,
-    "aqi": 90,
+    "aqi": 91,
     "pollutants": [
       "SO2",
       "PM10",
@@ -427,12 +426,12 @@ export const STATIONS_DATA = [
     ],
     "pollutant_values": {
           "NO2": 15.0,
-          "CO": 30.0,
-          "OZONE": 64.0,
           "PM2.5": 76.0,
+          "PM10": 91.0,
           "NH3": 4.0,
-          "PM10": 90.0,
-          "SO2": 2.0
+          "CO": 44.0,
+          "SO2": 2.0,
+          "OZONE": 55.0
     }
   },
   {
@@ -443,7 +442,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 23.076793,
     "lng": 72.627874,
-    "aqi": 103,
+    "aqi": 105,
     "pollutants": [
       "PM2.5",
       "NO2",
@@ -454,13 +453,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "PM2.5": 58.0,
-          "CO": 34.0,
-          "SO2": 5.0,
-          "OZONE": 52.0,
-          "PM10": 103.0,
-          "NO2": 24.0,
-          "NH3": 1.0
+          "NO2": 21.0,
+          "NH3": 1.0,
+          "CO": 35.0,
+          "OZONE": 32.0,
+          "PM2.5": 55.0,
+          "PM10": 105.0,
+          "SO2": 4.0
     }
   },
   {
@@ -471,7 +470,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 23.107969,
     "lng": 72.574648,
-    "aqi": 91,
+    "aqi": 93,
     "pollutants": [
       "NH3",
       "PM2.5",
@@ -482,13 +481,13 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
-          "SO2": 6.0,
-          "NO2": 20.0,
-          "PM2.5": 59.0,
-          "OZONE": 40.0,
-          "PM10": 91.0,
-          "NH3": 19.0,
-          "CO": 43.0
+          "NO2": 21.0,
+          "CO": 49.0,
+          "OZONE": 28.0,
+          "PM2.5": 63.0,
+          "NH3": 18.0,
+          "SO2": 7.0,
+          "PM10": 93.0
     }
   },
   {
@@ -499,7 +498,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 23.020509,
     "lng": 72.579261,
-    "aqi": 81,
+    "aqi": 78,
     "pollutants": [
       "NH3",
       "PM10",
@@ -510,13 +509,13 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
-          "PM2.5": 47.0,
+          "NO2": 12.0,
+          "CO": 35.0,
           "NH3": 4.0,
-          "NO2": 15.0,
           "SO2": 3.0,
-          "OZONE": 13.0,
-          "PM10": 81.0,
-          "CO": 38.0
+          "PM10": 78.0,
+          "PM2.5": 44.0,
+          "OZONE": 12.0
     }
   },
   {
@@ -527,7 +526,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 23.041137,
     "lng": 72.456691,
-    "aqi": 87,
+    "aqi": 89,
     "pollutants": [
       "PM10",
       "PM2.5",
@@ -537,13 +536,13 @@ export const STATIONS_DATA = [
       "NH3"
     ],
     "pollutant_values": {
-          "NO2": 17.0,
-          "PM10": 87.0,
-          "OZONE": 49.0,
-          "PM2.5": 77.0,
+          "PM2.5": 78.0,
+          "PM10": 89.0,
           "NH3": 3.0,
           "SO2": 2.0,
-          "CO": 11.0
+          "NO2": 14.0,
+          "CO": 11.0,
+          "OZONE": 32.0
     }
   },
   {
@@ -574,7 +573,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 23.002657,
     "lng": 72.591912,
-    "aqi": 128,
+    "aqi": 109,
     "pollutants": [
       "PM2.5",
       "CO",
@@ -584,12 +583,12 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
-          "SO2": 68.0,
-          "PM10": 112.0,
-          "CO": 54.0,
-          "PM2.5": 128.0,
-          "NO2": 61.0,
-          "OZONE": 66.0
+          "PM2.5": 109.0,
+          "PM10": 106.0,
+          "NO2": 54.0,
+          "SO2": 70.0,
+          "CO": 44.0,
+          "OZONE": 58.0
     }
   },
   {
@@ -600,7 +599,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 23.016834,
     "lng": 72.625775,
-    "aqi": 102,
+    "aqi": 104,
     "pollutants": [
       "NO2",
       "SO2",
@@ -611,13 +610,13 @@ export const STATIONS_DATA = [
       "NH3"
     ],
     "pollutant_values": {
-          "NO2": 30.0,
+          "NO2": 28.0,
+          "SO2": 15.0,
+          "OZONE": 11.0,
           "NH3": 7.0,
           "PM2.5": 42.0,
-          "PM10": 102.0,
-          "CO": 42.0,
-          "OZONE": 12.0,
-          "SO2": 16.0
+          "PM10": 104.0,
+          "CO": 42.0
     }
   },
   {
@@ -628,7 +627,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 19.10122,
     "lng": 74.73339,
-    "aqi": 38,
+    "aqi": 26,
     "pollutants": [
       "PM10",
       "NH3",
@@ -638,7 +637,7 @@ export const STATIONS_DATA = [
       "NO2"
     ],
     "pollutant_values": {
-          "OZONE": 38.0,
+          "OZONE": 26.0,
           "CO": 22.0
     }
   },
@@ -659,12 +658,12 @@ export const STATIONS_DATA = [
       "PM10"
     ],
     "pollutant_values": {
-          "PM2.5": 7.0,
-          "SO2": 15.0,
-          "PM10": 52.0,
           "NO2": 1.0,
+          "SO2": 15.0,
           "OZONE": 4.0,
-          "CO": 3.0
+          "CO": 3.0,
+          "PM2.5": 8.0,
+          "PM10": 52.0
     }
   },
   {
@@ -675,7 +674,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 26.470859,
     "lng": 74.646594,
-    "aqi": 150,
+    "aqi": 160,
     "pollutants": [
       "PM2.5",
       "SO2",
@@ -686,13 +685,13 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "PM2.5": 84.0,
-          "NO2": 24.0,
+          "PM2.5": 85.0,
+          "CO": 18.0,
           "NH3": 9.0,
           "SO2": 12.0,
-          "OZONE": 32.0,
-          "PM10": 150.0,
-          "CO": 20.0
+          "PM10": 160.0,
+          "NO2": 24.0,
+          "OZONE": 25.0
     }
   },
   {
@@ -703,7 +702,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 20.719516,
     "lng": 77.000253,
-    "aqi": 74,
+    "aqi": 67,
     "pollutants": [
       "PM10",
       "SO2",
@@ -714,13 +713,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "SO2": 19.0,
-          "CO": 18.0,
-          "OZONE": 74.0,
-          "PM2.5": 48.0,
-          "NO2": 14.0,
+          "PM10": 67.0,
           "NH3": 8.0,
-          "PM10": 69.0
+          "CO": 21.0,
+          "OZONE": 58.0,
+          "PM2.5": 45.0,
+          "NO2": 13.0,
+          "SO2": 19.0
     }
   },
   {
@@ -731,7 +730,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 27.554793,
     "lng": 76.611536,
-    "aqi": 78,
+    "aqi": 80,
     "pollutants": [
       "NO2",
       "SO2",
@@ -742,13 +741,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "PM2.5": 62.0,
-          "PM10": 78.0,
+          "CO": 47.0,
+          "PM10": 80.0,
+          "SO2": 40.0,
+          "PM2.5": 61.0,
+          "NO2": 74.0,
           "NH3": 10.0,
-          "OZONE": 20.0,
-          "NO2": 73.0,
-          "CO": 41.0,
-          "SO2": 40.0
+          "OZONE": 9.0
     }
   },
   {
@@ -759,7 +758,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 16.5150833,
     "lng": 80.5181667,
-    "aqi": 86,
+    "aqi": 89,
     "pollutants": [
       "NO2",
       "PM10",
@@ -770,13 +769,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "NH3": 4.0,
-          "PM2.5": 49.0,
-          "PM10": 86.0,
-          "SO2": 22.0,
-          "OZONE": 64.0,
-          "NO2": 24.0,
-          "CO": 21.0
+          "NO2": 23.0,
+          "PM2.5": 51.0,
+          "PM10": 89.0,
+          "NH3": 5.0,
+          "SO2": 20.0,
+          "OZONE": 57.0,
+          "CO": 24.0
     }
   },
   {
@@ -787,7 +786,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 30.379589,
     "lng": 76.778328,
-    "aqi": 94,
+    "aqi": 104,
     "pollutants": [
       "OZONE",
       "PM2.5",
@@ -798,11 +797,12 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
+          "PM10": 99.0,
+          "NH3": 7.0,
+          "PM2.5": 104.0,
+          "SO2": 22.0,
           "NO2": 31.0,
-          "OZONE": 45.0,
-          "PM10": 94.0,
-          "PM2.5": 93.0,
-          "SO2": 22.0
+          "OZONE": 41.0
     }
   },
   {
@@ -813,7 +813,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 19.215784,
     "lng": 73.199781,
-    "aqi": 31,
+    "aqi": 29,
     "pollutants": [
       "PM2.5",
       "CO",
@@ -825,11 +825,11 @@ export const STATIONS_DATA = [
     ],
     "pollutant_values": {
           "NH3": 3.0,
-          "OZONE": 28.0,
-          "NO2": 25.0,
-          "PM2.5": 14.0,
-          "PM10": 31.0,
-          "CO": 8.0
+          "PM10": 29.0,
+          "NO2": 24.0,
+          "CO": 10.0,
+          "OZONE": 12.0,
+          "PM2.5": 13.0
     }
   },
   {
@@ -840,7 +840,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 20.9402359,
     "lng": 77.7895248,
-    "aqi": 61,
+    "aqi": 62,
     "pollutants": [
       "NO2",
       "PM10",
@@ -851,12 +851,13 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
-          "PM2.5": 43.0,
-          "NO2": 21.0,
+          "OZONE": 35.0,
+          "PM10": 62.0,
+          "NO2": 18.0,
+          "NH3": 6.0,
+          "PM2.5": 42.0,
           "SO2": 8.0,
-          "OZONE": 51.0,
-          "PM10": 61.0,
-          "NH3": 6.0
+          "CO": 20.0
     }
   },
   {
@@ -867,7 +868,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 20.939198,
     "lng": 77.765701,
-    "aqi": 67,
+    "aqi": 64,
     "pollutants": [
       "NH3",
       "CO",
@@ -878,11 +879,13 @@ export const STATIONS_DATA = [
       "NO2"
     ],
     "pollutant_values": {
-          "PM2.5": 48.0,
-          "CO": 31.0,
-          "OZONE": 56.0,
-          "PM10": 67.0,
-          "NH3": 7.0
+          "PM2.5": 43.0,
+          "PM10": 64.0,
+          "NH3": 7.0,
+          "SO2": 8.0,
+          "OZONE": 39.0,
+          "NO2": 17.0,
+          "CO": 45.0
     }
   },
   {
@@ -904,13 +907,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "PM10": 116.0,
+          "PM2.5": 113.0,
           "NO2": 16.0,
           "NH3": 7.0,
-          "PM2.5": 113.0,
+          "CO": 16.0,
+          "PM10": 116.0,
           "SO2": 7.0,
-          "CO": 17.0,
-          "OZONE": 50.0
+          "OZONE": 49.0
     }
   },
   {
@@ -921,7 +924,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 14.675886,
     "lng": 77.593027,
-    "aqi": 101,
+    "aqi": 90,
     "pollutants": [
       "PM10",
       "OZONE",
@@ -932,13 +935,13 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "OZONE": 35.0,
-          "NO2": 20.0,
-          "CO": 29.0,
-          "PM2.5": 101.0,
-          "PM10": 100.0,
-          "SO2": 14.0,
-          "NH3": 3.0
+          "CO": 24.0,
+          "OZONE": 24.0,
+          "PM2.5": 90.0,
+          "SO2": 13.0,
+          "PM10": 89.0,
+          "NH3": 3.0,
+          "NO2": 19.0
     }
   },
   {
@@ -949,7 +952,7 @@ export const STATIONS_DATA = [
     "region": "East India",
     "lat": 20.832874,
     "lng": 85.104082,
-    "aqi": 117,
+    "aqi": 119,
     "pollutants": [
       "PM2.5",
       "NO2",
@@ -960,13 +963,13 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "OZONE": 78.0,
+          "PM2.5": 111.0,
           "NH3": 3.0,
-          "CO": 48.0,
-          "PM2.5": 104.0,
-          "PM10": 117.0,
+          "PM10": 119.0,
+          "OZONE": 23.0,
           "NO2": 19.0,
-          "SO2": 14.0
+          "SO2": 15.0,
+          "CO": 53.0
     }
   },
   {
@@ -977,7 +980,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 21.613267,
     "lng": 73.010555,
-    "aqi": 79,
+    "aqi": 78,
     "pollutants": [
       "CO",
       "NO2",
@@ -986,13 +989,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "PM2.5": 70.0,
-          "PM10": 79.0,
-          "OZONE": 24.0,
-          "NO2": 26.0,
-          "CO": 37.0,
-          "SO2": 16.0,
-          "NH3": 7.0
+          "NH3": 7.0,
+          "SO2": 17.0,
+          "PM10": 78.0,
+          "PM2.5": 66.0,
+          "CO": 40.0,
+          "OZONE": 17.0,
+          "NO2": 28.0
     }
   },
   {
@@ -1014,13 +1017,13 @@ export const STATIONS_DATA = [
       "NH3"
     ],
     "pollutant_values": {
-          "NO2": 14.0,
-          "PM2.5": 71.0,
-          "NH3": 5.0,
+          "PM2.5": 70.0,
           "PM10": 104.0,
+          "NH3": 5.0,
           "SO2": 48.0,
-          "CO": 13.0,
-          "OZONE": 10.0
+          "NO2": 14.0,
+          "OZONE": 10.0,
+          "CO": 25.0
     }
   },
   {
@@ -1042,13 +1045,13 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
+          "NH3": 2.0,
+          "PM2.5": 28.0,
           "NO2": 7.0,
-          "PM10": 20.0,
           "SO2": 5.0,
           "CO": 55.0,
           "OZONE": 7.0,
-          "PM2.5": 22.0,
-          "NH3": 2.0
+          "PM10": 25.0
     }
   },
   {
@@ -1059,7 +1062,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 23.697936,
     "lng": 86.944395,
-    "aqi": 78,
+    "aqi": 76,
     "pollutants": [
       "NO2",
       "NH3",
@@ -1070,13 +1073,13 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
-          "OZONE": 57.0,
-          "PM2.5": 56.0,
-          "PM10": 71.0,
-          "CO": 34.0,
           "NO2": 17.0,
           "NH3": 6.0,
-          "SO2": 78.0
+          "CO": 20.0,
+          "PM10": 75.0,
+          "PM2.5": 62.0,
+          "SO2": 76.0,
+          "OZONE": 38.0
     }
   },
   {
@@ -1087,7 +1090,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 23.616515,
     "lng": 87.119133,
-    "aqi": 46,
+    "aqi": 48,
     "pollutants": [
       "SO2",
       "PM2.5",
@@ -1098,12 +1101,12 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "PM10": 46.0,
           "NH3": 7.0,
-          "PM2.5": 45.0,
+          "SO2": 14.0,
           "NO2": 12.0,
-          "SO2": 13.0,
-          "OZONE": 15.0
+          "PM10": 48.0,
+          "OZONE": 11.0,
+          "PM2.5": 44.0
     }
   },
   {
@@ -1114,7 +1117,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 23.685297,
     "lng": 86.945968,
-    "aqi": 81,
+    "aqi": 80,
     "pollutants": [
       "SO2",
       "CO",
@@ -1125,13 +1128,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "SO2": 15.0,
-          "CO": 42.0,
-          "OZONE": 81.0,
-          "PM2.5": 69.0,
-          "PM10": 75.0,
-          "NO2": 38.0,
-          "NH3": 6.0
+          "PM2.5": 74.0,
+          "PM10": 80.0,
+          "SO2": 14.0,
+          "NH3": 6.0,
+          "CO": 36.0,
+          "OZONE": 55.0,
+          "NO2": 38.0
     }
   },
   {
@@ -1142,7 +1145,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 23.618183,
     "lng": 87.105718,
-    "aqi": 63,
+    "aqi": 59,
     "pollutants": [
       "SO2",
       "PM2.5",
@@ -1153,12 +1156,12 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "PM2.5": 38.0,
           "NO2": 2.0,
+          "PM2.5": 43.0,
+          "PM10": 59.0,
           "SO2": 6.0,
-          "PM10": 57.0,
-          "CO": 13.0,
-          "OZONE": 63.0
+          "CO": 15.0,
+          "OZONE": 44.0
     }
   },
   {
@@ -1195,7 +1198,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 19.863756,
     "lng": 75.321188,
-    "aqi": 53,
+    "aqi": 56,
     "pollutants": [
       "NH3",
       "PM10",
@@ -1206,12 +1209,12 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
+          "PM2.5": 32.0,
+          "PM10": 56.0,
+          "NO2": 12.0,
+          "CO": 23.0,
           "NH3": 2.0,
-          "CO": 21.0,
-          "PM2.5": 30.0,
-          "PM10": 53.0,
           "SO2": 12.0,
-          "NO2": 11.0,
           "OZONE": 14.0
     }
   },
@@ -1223,7 +1226,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 19.8389439,
     "lng": 75.244448,
-    "aqi": 46,
+    "aqi": 44,
     "pollutants": [
       "NH3",
       "PM2.5",
@@ -1234,11 +1237,9 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
-          "OZONE": 35.0,
-          "PM10": 46.0,
-          "SO2": 28.0,
-          "CO": 45.0,
           "PM2.5": 44.0,
+          "SO2": 33.0,
+          "OZONE": 32.0,
           "NO2": 10.0,
           "NH3": 7.0
     }
@@ -1251,7 +1252,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 30.943887,
     "lng": 76.801991,
-    "aqi": 158,
+    "aqi": 123,
     "pollutants": [
       "NO2",
       "PM10",
@@ -1262,13 +1263,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "PM10": 106.0,
-          "NO2": 15.0,
-          "PM2.5": 82.0,
-          "CO": 54.0,
-          "OZONE": 158.0,
+          "CO": 61.0,
           "NH3": 5.0,
-          "SO2": 61.0
+          "PM2.5": 82.0,
+          "OZONE": 123.0,
+          "PM10": 109.0,
+          "NO2": 15.0,
+          "SO2": 56.0
     }
   },
   {
@@ -1279,7 +1280,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 19.16485,
     "lng": 73.23409,
-    "aqi": 55,
+    "aqi": 67,
     "pollutants": [
       "PM10",
       "NO2",
@@ -1290,11 +1291,11 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
+          "PM10": 67.0,
+          "PM2.5": 59.0,
           "NO2": 22.0,
           "NH3": 6.0,
-          "CO": 40.0,
-          "SO2": 7.0,
-          "OZONE": 55.0
+          "SO2": 7.0
     }
   },
   {
@@ -1316,13 +1317,13 @@ export const STATIONS_DATA = [
       "PM10"
     ],
     "pollutant_values": {
-          "PM10": 50.0,
           "NH3": 1.0,
-          "SO2": 7.0,
+          "CO": 32.0,
           "OZONE": 25.0,
-          "PM2.5": 35.0,
+          "PM10": 50.0,
           "NO2": 12.0,
-          "CO": 28.0
+          "SO2": 7.0,
+          "PM2.5": 35.0
     }
   },
   {
@@ -1333,7 +1334,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 28.964949,
     "lng": 77.278761,
-    "aqi": 51,
+    "aqi": 59,
     "pollutants": [
       "OZONE",
       "NH3",
@@ -1344,11 +1345,11 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "CO": 51.0,
-          "NH3": 5.0,
+          "OZONE": 13.0,
+          "NO2": 59.0,
+          "NH3": 6.0,
           "SO2": 36.0,
-          "OZONE": 14.0,
-          "NO2": 46.0
+          "CO": 49.0
     }
   },
   {
@@ -1359,7 +1360,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 28.6701,
     "lng": 76.9254,
-    "aqi": 110,
+    "aqi": 113,
     "pollutants": [
       "PM2.5",
       "SO2",
@@ -1370,11 +1371,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "PM10": 110.0,
+          "PM10": 113.0,
+          "SO2": 6.0,
+          "CO": 47.0,
           "NH3": 13.0,
-          "PM2.5": 103.0,
-          "NO2": 13.0,
-          "SO2": 6.0
+          "OZONE": 24.0,
+          "PM2.5": 113.0,
+          "NO2": 13.0
     }
   },
   {
@@ -1385,7 +1388,7 @@ export const STATIONS_DATA = [
     "region": "East India",
     "lat": 21.51161,
     "lng": 86.89088,
-    "aqi": 78,
+    "aqi": 82,
     "pollutants": [
       "SO2",
       "CO",
@@ -1395,13 +1398,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "PM2.5": 56.0,
+          "PM10": 82.0,
+          "PM2.5": 61.0,
           "SO2": 7.0,
-          "PM10": 78.0,
-          "OZONE": 59.0,
-          "NO2": 15.0,
           "NH3": 4.0,
-          "CO": 45.0
+          "OZONE": 33.0,
+          "NO2": 17.0,
+          "CO": 48.0
     }
   },
   {
@@ -1412,7 +1415,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 28.3419248,
     "lng": 77.319699,
-    "aqi": 182,
+    "aqi": 188,
     "pollutants": [
       "NH3",
       "PM10",
@@ -1423,13 +1426,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "PM2.5": 116.0,
-          "OZONE": 15.0,
-          "PM10": 182.0,
-          "CO": 50.0,
-          "NO2": 20.0,
+          "PM2.5": 133.0,
+          "PM10": 188.0,
           "NH3": 3.0,
-          "SO2": 12.0
+          "SO2": 13.0,
+          "OZONE": 15.0,
+          "NO2": 20.0,
+          "CO": 50.0
     }
   },
   {
@@ -1440,7 +1443,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 23.55519,
     "lng": 74.44001,
-    "aqi": 117,
+    "aqi": 110,
     "pollutants": [
       "SO2",
       "PM2.5",
@@ -1451,13 +1454,13 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "PM2.5": 81.0,
-          "NO2": 30.0,
-          "NH3": 3.0,
-          "SO2": 10.0,
-          "CO": 35.0,
-          "PM10": 117.0,
-          "OZONE": 90.0
+          "NH3": 4.0,
+          "SO2": 11.0,
+          "PM10": 110.0,
+          "OZONE": 80.0,
+          "PM2.5": 76.0,
+          "NO2": 28.0,
+          "CO": 35.0
     }
   },
   {
@@ -1468,7 +1471,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 25.106006,
     "lng": 76.469948,
-    "aqi": 99,
+    "aqi": 92,
     "pollutants": [
       "NH3",
       "SO2",
@@ -1479,13 +1482,13 @@ export const STATIONS_DATA = [
       "PM10"
     ],
     "pollutant_values": {
-          "NO2": 20.0,
           "NH3": 13.0,
+          "PM2.5": 43.0,
           "SO2": 18.0,
-          "CO": 75.0,
-          "PM2.5": 51.0,
-          "OZONE": 78.0,
-          "PM10": 99.0
+          "CO": 74.0,
+          "OZONE": 38.0,
+          "PM10": 92.0,
+          "NO2": 17.0
     }
   },
   {
@@ -1496,7 +1499,7 @@ export const STATIONS_DATA = [
     "region": "East India",
     "lat": 22.1166054,
     "lng": 85.3945546,
-    "aqi": 110,
+    "aqi": 95,
     "pollutants": [
       "PM2.5",
       "NO2",
@@ -1507,13 +1510,13 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "SO2": 19.0,
-          "PM10": 99.0,
+          "NO2": 11.0,
+          "PM10": 95.0,
+          "CO": 30.0,
+          "SO2": 18.0,
           "NH3": 1.0,
-          "CO": 31.0,
-          "OZONE": 110.0,
-          "PM2.5": 61.0,
-          "NO2": 12.0
+          "OZONE": 82.0,
+          "PM2.5": 58.0
     }
   },
   {
@@ -1524,7 +1527,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 28.359581,
     "lng": 79.414455,
-    "aqi": 66,
+    "aqi": 69,
     "pollutants": [
       "OZONE",
       "SO2",
@@ -1536,11 +1539,11 @@ export const STATIONS_DATA = [
     ],
     "pollutant_values": {
           "NO2": 8.0,
-          "SO2": 66.0,
-          "PM2.5": 41.0,
-          "PM10": 44.0,
+          "CO": 45.0,
+          "PM2.5": 43.0,
+          "PM10": 46.0,
           "NH3": 2.0,
-          "CO": 42.0
+          "SO2": 69.0
     }
   },
   {
@@ -1551,7 +1554,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 28.38910936,
     "lng": 79.42963708,
-    "aqi": 54,
+    "aqi": 57,
     "pollutants": [
       "OZONE",
       "NO2",
@@ -1562,12 +1565,12 @@ export const STATIONS_DATA = [
       "PM10"
     ],
     "pollutant_values": {
-          "NO2": 9.0,
           "PM2.5": 29.0,
-          "CO": 40.0,
-          "NH3": 1.0,
+          "NO2": 9.0,
+          "CO": 46.0,
           "SO2": 51.0,
-          "PM10": 54.0
+          "PM10": 57.0,
+          "NH3": 1.0
     }
   },
   {
@@ -1578,7 +1581,7 @@ export const STATIONS_DATA = [
     "region": "East India",
     "lat": 21.941841,
     "lng": 86.728318,
-    "aqi": 73,
+    "aqi": 74,
     "pollutants": [
       "PM10",
       "PM2.5",
@@ -1589,13 +1592,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "SO2": 8.0,
-          "OZONE": 57.0,
-          "NH3": 1.0,
+          "NO2": 14.0,
+          "OZONE": 48.0,
+          "SO2": 7.0,
           "PM2.5": 6.0,
-          "PM10": 73.0,
-          "NO2": 13.0,
-          "CO": 32.0
+          "PM10": 74.0,
+          "NH3": 1.0,
+          "CO": 31.0
     }
   },
   {
@@ -1606,7 +1609,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 25.747299,
     "lng": 71.393989,
-    "aqi": 289,
+    "aqi": 292,
     "pollutants": [
       "CO",
       "OZONE",
@@ -1617,13 +1620,13 @@ export const STATIONS_DATA = [
       "NH3"
     ],
     "pollutant_values": {
-          "CO": 20.0,
-          "PM2.5": 130.0,
-          "PM10": 289.0,
-          "NO2": 13.0,
+          "CO": 19.0,
           "NH3": 9.0,
+          "PM2.5": 131.0,
+          "PM10": 292.0,
           "SO2": 6.0,
-          "OZONE": 58.0
+          "OZONE": 43.0,
+          "NO2": 12.0
     }
   },
   {
@@ -1634,7 +1637,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 22.7605581,
     "lng": 88.3617589,
-    "aqi": 63,
+    "aqi": 62,
     "pollutants": [
       "NH3",
       "PM10",
@@ -1645,13 +1648,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "PM2.5": 55.0,
+          "PM2.5": 56.0,
           "NO2": 23.0,
-          "NH3": 8.0,
-          "PM10": 63.0,
+          "CO": 34.0,
+          "OZONE": 26.0,
           "SO2": 10.0,
-          "CO": 35.0,
-          "OZONE": 36.0
+          "NH3": 8.0,
+          "PM10": 62.0
     }
   },
   {
@@ -1662,7 +1665,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 30.233011,
     "lng": 74.907758,
-    "aqi": 94,
+    "aqi": 82,
     "pollutants": [
       "NO2",
       "SO2",
@@ -1671,11 +1674,11 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "PM2.5": 94.0,
-          "NO2": 46.0,
-          "CO": 64.0,
-          "PM10": 74.0,
-          "SO2": 25.0
+          "NO2": 47.0,
+          "PM2.5": 82.0,
+          "PM10": 69.0,
+          "SO2": 30.0,
+          "CO": 49.0
     }
   },
   {
@@ -1686,7 +1689,7 @@ export const STATIONS_DATA = [
     "region": "East India",
     "lat": 25.42742023,
     "lng": 86.13886079,
-    "aqi": 96,
+    "aqi": 95,
     "pollutants": [
       "NH3",
       "CO",
@@ -1697,12 +1700,12 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "PM10": 96.0,
-          "NO2": 13.0,
           "NH3": 16.0,
-          "CO": 14.0,
           "SO2": 69.0,
-          "PM2.5": 95.0,
+          "NO2": 13.0,
+          "PM2.5": 80.0,
+          "PM10": 95.0,
+          "CO": 15.0,
           "OZONE": 34.0
     }
   },
@@ -1714,18 +1717,19 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 19.0243902,
     "lng": 73.0406721,
-    "aqi": 86,
+    "aqi": 83,
     "pollutants": [
       "CO",
       "OZONE"
     ],
     "pollutant_values": {
-          "PM10": 86.0,
-          "NO2": 34.0,
-          "PM2.5": 60.0,
           "SO2": 14.0,
-          "CO": 13.0,
-          "OZONE": 34.0
+          "PM10": 83.0,
+          "NH3": 4.0,
+          "OZONE": 17.0,
+          "PM2.5": 58.0,
+          "CO": 12.0,
+          "NO2": 34.0
     }
   },
   {
@@ -1746,12 +1750,12 @@ export const STATIONS_DATA = [
       "PM10"
     ],
     "pollutant_values": {
-          "PM2.5": 23.0,
-          "SO2": 53.0,
-          "PM10": 30.0,
-          "NO2": 32.0,
+          "NO2": 33.0,
+          "PM10": 26.0,
+          "OZONE": 19.0,
+          "PM2.5": 20.0,
           "NH3": 4.0,
-          "OZONE": 19.0
+          "SO2": 53.0
     }
   },
   {
@@ -1762,7 +1766,7 @@ export const STATIONS_DATA = [
     "region": "South India",
     "lat": 12.920984,
     "lng": 77.584908,
-    "aqi": 38,
+    "aqi": 43,
     "pollutants": [
       "OZONE",
       "SO2",
@@ -1772,11 +1776,11 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "SO2": 26.0,
-          "OZONE": 38.0,
-          "CO": 15.0,
-          "PM2.5": 37.0,
-          "PM10": 35.0
+          "PM10": 34.0,
+          "SO2": 27.0,
+          "CO": 11.0,
+          "OZONE": 43.0,
+          "PM2.5": 34.0
     }
   },
   {
@@ -1838,7 +1842,7 @@ export const STATIONS_DATA = [
     "region": "South India",
     "lat": 12.951913,
     "lng": 77.539784,
-    "aqi": 36,
+    "aqi": 33,
     "pollutants": [
       "PM10",
       "SO2",
@@ -1849,9 +1853,9 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "CO": 27.0,
-          "OZONE": 36.0,
-          "PM2.5": 14.0
+          "PM2.5": 14.0,
+          "OZONE": 33.0,
+          "CO": 31.0
     }
   },
   {
@@ -1881,7 +1885,7 @@ export const STATIONS_DATA = [
     "region": "South India",
     "lat": 12.917348,
     "lng": 77.622813,
-    "aqi": 90,
+    "aqi": 79,
     "pollutants": [
       "CO",
       "NO2",
@@ -1892,11 +1896,11 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "CO": 39.0,
-          "SO2": 4.0,
-          "OZONE": 22.0,
-          "PM2.5": 40.0,
-          "PM10": 90.0
+          "SO2": 5.0,
+          "CO": 34.0,
+          "OZONE": 17.0,
+          "PM10": 79.0,
+          "PM2.5": 36.0
     }
   },
   {
@@ -1907,7 +1911,7 @@ export const STATIONS_DATA = [
     "region": "South India",
     "lat": 12.9135218,
     "lng": 77.5950804,
-    "aqi": 57,
+    "aqi": 53,
     "pollutants": [
       "CO",
       "PM10",
@@ -1918,13 +1922,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "OZONE": 28.0,
           "NH3": 3.0,
-          "PM10": 57.0,
-          "NO2": 20.0,
-          "SO2": 16.0,
           "CO": 52.0,
-          "PM2.5": 30.0
+          "OZONE": 28.0,
+          "NO2": 19.0,
+          "SO2": 16.0,
+          "PM2.5": 30.0,
+          "PM10": 53.0
     }
   },
   {
@@ -1946,10 +1950,10 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "PM10": 29.0,
-          "SO2": 5.0,
+          "SO2": 6.0,
+          "OZONE": 20.0,
           "CO": 37.0,
-          "OZONE": 25.0
+          "PM10": 29.0
     }
   },
   {
@@ -1986,7 +1990,7 @@ export const STATIONS_DATA = [
     "region": "South India",
     "lat": 12.938539,
     "lng": 77.5901,
-    "aqi": 28,
+    "aqi": 26,
     "pollutants": [
       "PM10",
       "NH3",
@@ -1997,13 +2001,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "NO2": 23.0,
-          "SO2": 6.0,
-          "PM2.5": 19.0,
-          "CO": 11.0,
           "NH3": 2.0,
-          "OZONE": 7.0,
-          "PM10": 28.0
+          "SO2": 5.0,
+          "PM10": 26.0,
+          "CO": 10.0,
+          "PM2.5": 17.0,
+          "NO2": 21.0,
+          "OZONE": 8.0
     }
   },
   {
@@ -2058,7 +2062,7 @@ export const STATIONS_DATA = [
     "region": "East India",
     "lat": 26.80365,
     "lng": 84.51954,
-    "aqi": 49,
+    "aqi": 51,
     "pollutants": [
       "NO2",
       "CO",
@@ -2069,11 +2073,11 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "SO2": 15.0,
-          "CO": 49.0,
-          "OZONE": 21.0,
-          "PM2.5": 39.0,
-          "PM10": 35.0
+          "PM10": 35.0,
+          "SO2": 16.0,
+          "CO": 51.0,
+          "PM2.5": 38.0,
+          "OZONE": 22.0
     }
   },
   {
@@ -2096,10 +2100,10 @@ export const STATIONS_DATA = [
     ],
     "pollutant_values": {
           "PM2.5": 71.0,
-          "CO": 13.0,
-          "OZONE": 15.0,
-          "PM10": 59.0,
-          "NO2": 7.0
+          "PM10": 60.0,
+          "NO2": 7.0,
+          "CO": 12.0,
+          "OZONE": 15.0
     }
   },
   {
@@ -2110,7 +2114,7 @@ export const STATIONS_DATA = [
     "region": "East India",
     "lat": 25.251013,
     "lng": 86.989001,
-    "aqi": 69,
+    "aqi": 70,
     "pollutants": [
       "NO2",
       "OZONE",
@@ -2120,13 +2124,13 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
-          "NO2": 12.0,
-          "SO2": 55.0,
-          "CO": 36.0,
-          "PM2.5": 69.0,
+          "PM2.5": 70.0,
+          "CO": 42.0,
+          "SO2": 48.0,
           "PM10": 66.0,
-          "NH3": 1.0,
-          "OZONE": 20.0
+          "NO2": 12.0,
+          "OZONE": 19.0,
+          "NH3": 1.0
     }
   },
   {
@@ -2137,7 +2141,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 27.215415,
     "lng": 77.50873,
-    "aqi": 182,
+    "aqi": 137,
     "pollutants": [
       "PM2.5",
       "NO2",
@@ -2148,13 +2152,13 @@ export const STATIONS_DATA = [
       "NH3"
     ],
     "pollutant_values": {
-          "NO2": 15.0,
-          "SO2": 3.0,
+          "CO": 21.0,
           "PM2.5": 24.0,
-          "PM10": 53.0,
+          "NO2": 15.0,
           "NH3": 11.0,
-          "CO": 18.0,
-          "OZONE": 182.0
+          "OZONE": 137.0,
+          "SO2": 3.0,
+          "PM10": 53.0
     }
   },
   {
@@ -2165,7 +2169,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 21.755417,
     "lng": 72.139056,
-    "aqi": 104,
+    "aqi": 68,
     "pollutants": [
       "CO",
       "OZONE",
@@ -2176,12 +2180,12 @@ export const STATIONS_DATA = [
       "NH3"
     ],
     "pollutant_values": {
-          "PM10": 104.0,
-          "NO2": 54.0,
-          "PM2.5": 67.0,
           "SO2": 5.0,
+          "OZONE": 8.0,
+          "NO2": 53.0,
+          "PM10": 68.0,
           "NH3": 4.0,
-          "OZONE": 9.0
+          "PM2.5": 60.0
     }
   },
   {
@@ -2192,7 +2196,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 21.224231,
     "lng": 81.40835,
-    "aqi": 57,
+    "aqi": 55,
     "pollutants": [
       "PM10",
       "NO2",
@@ -2203,13 +2207,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "SO2": 14.0,
-          "CO": 7.0,
-          "OZONE": 22.0,
-          "PM10": 57.0,
+          "PM10": 55.0,
+          "SO2": 15.0,
+          "OZONE": 17.0,
+          "PM2.5": 36.0,
           "NO2": 36.0,
           "NH3": 5.0,
-          "PM2.5": 36.0
+          "CO": 38.0
     }
   },
   {
@@ -2220,7 +2224,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 21.194815,
     "lng": 81.31477,
-    "aqi": 56,
+    "aqi": 44,
     "pollutants": [
       "SO2",
       "PM10",
@@ -2231,12 +2235,12 @@ export const STATIONS_DATA = [
       "NO2"
     ],
     "pollutant_values": {
-          "NO2": 25.0,
-          "SO2": 28.0,
-          "CO": 11.0,
-          "OZONE": 56.0,
-          "PM2.5": 38.0,
-          "PM10": 45.0
+          "PM10": 43.0,
+          "SO2": 23.0,
+          "PM2.5": 37.0,
+          "CO": 19.0,
+          "NO2": 19.0,
+          "OZONE": 44.0
     }
   },
   {
@@ -2247,7 +2251,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 21.185571,
     "lng": 81.343175,
-    "aqi": 34,
+    "aqi": 33,
     "pollutants": [
       "CO",
       "PM10",
@@ -2258,12 +2262,12 @@ export const STATIONS_DATA = [
       "NH3"
     ],
     "pollutant_values": {
-          "CO": 24.0,
-          "PM2.5": 34.0,
-          "OZONE": 18.0,
-          "NH3": 1.0,
+          "PM2.5": 33.0,
           "NO2": 13.0,
-          "SO2": 8.0
+          "NH3": 1.0,
+          "SO2": 8.0,
+          "OZONE": 15.0,
+          "CO": 28.0
     }
   },
   {
@@ -2274,7 +2278,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 25.339605,
     "lng": 74.618883,
-    "aqi": 116,
+    "aqi": 115,
     "pollutants": [
       "CO",
       "PM10",
@@ -2286,11 +2290,12 @@ export const STATIONS_DATA = [
     ],
     "pollutant_values": {
           "NH3": 6.0,
-          "PM10": 116.0,
-          "OZONE": 84.0,
-          "PM2.5": 47.0,
-          "NO2": 16.0,
-          "CO": 55.0
+          "SO2": 6.0,
+          "CO": 60.0,
+          "OZONE": 74.0,
+          "PM10": 115.0,
+          "PM2.5": 45.0,
+          "NO2": 15.0
     }
   },
   {
@@ -2301,7 +2306,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 28.194909,
     "lng": 76.862296,
-    "aqi": 113,
+    "aqi": 205,
     "pollutants": [
       "NH3",
       "OZONE",
@@ -2312,12 +2317,13 @@ export const STATIONS_DATA = [
       "NO2"
     ],
     "pollutant_values": {
+          "PM10": 119.0,
+          "NO2": 41.0,
+          "OZONE": 16.0,
           "NH3": 9.0,
-          "NO2": 37.0,
-          "CO": 32.0,
-          "SO2": 10.0,
-          "OZONE": 38.0,
-          "PM10": 113.0
+          "PM2.5": 205.0,
+          "SO2": 9.0,
+          "CO": 38.0
     }
   },
   {
@@ -2328,7 +2334,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 28.207266,
     "lng": 76.829265,
-    "aqi": 165,
+    "aqi": 153,
     "pollutants": [
       "PM10",
       "NO2",
@@ -2339,11 +2345,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "SO2": 22.0,
-          "PM10": 165.0,
           "NH3": 10.0,
-          "PM2.5": 143.0,
-          "OZONE": 40.0
+          "CO": 42.0,
+          "SO2": 23.0,
+          "NO2": 31.0,
+          "PM10": 153.0,
+          "PM2.5": 113.0,
+          "OZONE": 34.0
     }
   },
   {
@@ -2354,7 +2362,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 19.309073,
     "lng": 73.057223,
-    "aqi": 72,
+    "aqi": 68,
     "pollutants": [
       "CO",
       "NH3",
@@ -2365,12 +2373,13 @@ export const STATIONS_DATA = [
       "PM10"
     ],
     "pollutant_values": {
-          "NO2": 19.0,
-          "PM10": 72.0,
+          "PM2.5": 49.0,
           "NH3": 5.0,
+          "PM10": 68.0,
+          "NO2": 20.0,
           "SO2": 6.0,
-          "CO": 16.0,
-          "OZONE": 52.0
+          "CO": 17.0,
+          "OZONE": 24.0
     }
   },
   {
@@ -2392,13 +2401,13 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
+          "NH3": 9.0,
           "OZONE": 14.0,
-          "CO": 12.0,
           "PM2.5": 181.0,
-          "SO2": 10.0,
-          "NO2": 15.0,
           "PM10": 127.0,
-          "NH3": 9.0
+          "SO2": 9.0,
+          "NO2": 14.0,
+          "CO": 12.0
     }
   },
   {
@@ -2409,7 +2418,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 23.210494,
     "lng": 77.425409,
-    "aqi": 63,
+    "aqi": 70,
     "pollutants": [
       "PM10",
       "CO",
@@ -2420,13 +2429,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "CO": 27.0,
-          "PM2.5": 26.0,
+          "PM10": 70.0,
+          "OZONE": 48.0,
+          "PM2.5": 29.0,
+          "NO2": 15.0,
+          "CO": 30.0,
           "NH3": 6.0,
-          "SO2": 15.0,
-          "NO2": 14.0,
-          "OZONE": 46.0,
-          "PM10": 63.0
+          "SO2": 16.0
     }
   },
   {
@@ -2437,7 +2446,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 23.233584,
     "lng": 77.400574,
-    "aqi": 145,
+    "aqi": 120,
     "pollutants": [
       "PM10",
       "NH3",
@@ -2448,13 +2457,13 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "CO": 16.0,
-          "NH3": 6.0,
-          "OZONE": 145.0,
-          "PM10": 85.0,
+          "SO2": 10.0,
+          "CO": 23.0,
+          "PM2.5": 42.0,
+          "PM10": 91.0,
           "NO2": 20.0,
-          "SO2": 9.0,
-          "PM2.5": 40.0
+          "NH3": 6.0,
+          "OZONE": 120.0
     }
   },
   {
@@ -2493,7 +2502,7 @@ export const STATIONS_DATA = [
     "region": "East India",
     "lat": 20.24079,
     "lng": 85.836784,
-    "aqi": 85,
+    "aqi": 89,
     "pollutants": [
       "PM2.5",
       "PM10",
@@ -2504,13 +2513,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "PM2.5": 40.0,
-          "SO2": 9.0,
-          "OZONE": 83.0,
-          "PM10": 85.0,
-          "CO": 74.0,
+          "NH3": 2.0,
+          "PM2.5": 47.0,
+          "OZONE": 56.0,
+          "PM10": 86.0,
           "NO2": 7.0,
-          "NH3": 2.0
+          "SO2": 11.0,
+          "CO": 89.0
     }
   },
   {
@@ -2521,7 +2530,7 @@ export const STATIONS_DATA = [
     "region": "East India",
     "lat": 20.34652,
     "lng": 85.8163,
-    "aqi": 144,
+    "aqi": 130,
     "pollutants": [
       "PM10",
       "NH3",
@@ -2532,8 +2541,9 @@ export const STATIONS_DATA = [
       "NO2"
     ],
     "pollutant_values": {
-          "CO": 144.0,
-          "OZONE": 87.0
+          "CO": 130.0,
+          "SO2": 5.0,
+          "OZONE": 52.0
     }
   },
   {
@@ -2544,7 +2554,7 @@ export const STATIONS_DATA = [
     "region": "East India",
     "lat": 25.204762,
     "lng": 85.51496,
-    "aqi": 66,
+    "aqi": 60,
     "pollutants": [
       "SO2",
       "NO2",
@@ -2555,12 +2565,12 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "CO": 66.0,
-          "OZONE": 2.0,
-          "PM2.5": 44.0,
-          "PM10": 33.0,
-          "NH3": 3.0,
+          "PM2.5": 46.0,
           "NO2": 9.0,
+          "CO": 60.0,
+          "OZONE": 2.0,
+          "PM10": 35.0,
+          "NH3": 3.0,
           "SO2": 7.0
     }
   },
@@ -2572,17 +2582,19 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 28.018792,
     "lng": 73.292658,
-    "aqi": 119,
+    "aqi": 236,
     "pollutants": [
       "OZONE",
       "CO"
     ],
     "pollutant_values": {
-          "PM2.5": 57.0,
-          "NH3": 5.0,
-          "NO2": 31.0,
+          "PM2.5": 71.0,
+          "CO": 10.0,
+          "PM10": 236.0,
+          "NO2": 25.0,
           "SO2": 5.0,
-          "OZONE": 119.0
+          "NH3": 5.0,
+          "OZONE": 92.0
     }
   },
   {
@@ -2593,7 +2605,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 22.08815,
     "lng": 82.13737,
-    "aqi": 90,
+    "aqi": 80,
     "pollutants": [
       "PM2.5",
       "SO2",
@@ -2602,11 +2614,11 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "PM2.5": 90.0,
-          "NO2": 14.0,
-          "SO2": 12.0,
-          "CO": 50.0,
-          "PM10": 72.0
+          "NO2": 15.0,
+          "SO2": 14.0,
+          "CO": 68.0,
+          "PM2.5": 80.0,
+          "PM10": 75.0
     }
   },
   {
@@ -2617,19 +2629,19 @@ export const STATIONS_DATA = [
     "region": "East India",
     "lat": 22.06156703,
     "lng": 85.47409613,
-    "aqi": 138,
+    "aqi": 123,
     "pollutants": [
       "CO",
       "OZONE"
     ],
     "pollutant_values": {
-          "CO": 32.0,
-          "OZONE": 15.0,
-          "PM10": 93.0,
-          "NO2": 15.0,
-          "PM2.5": 138.0,
+          "PM2.5": 123.0,
           "SO2": 16.0,
-          "NH3": 5.0
+          "PM10": 91.0,
+          "OZONE": 15.0,
+          "NO2": 15.0,
+          "NH3": 5.0,
+          "CO": 31.0
     }
   },
   {
@@ -2651,12 +2663,12 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
+          "OZONE": 27.0,
           "SO2": 16.0,
-          "NO2": 19.0,
-          "CO": 16.0,
-          "PM2.5": 42.0,
+          "CO": 14.0,
           "PM10": 44.0,
-          "OZONE": 29.0
+          "PM2.5": 42.0,
+          "NO2": 19.0
     }
   },
   {
@@ -2667,7 +2679,7 @@ export const STATIONS_DATA = [
     "region": "East India",
     "lat": 21.8004996,
     "lng": 83.8396977,
-    "aqi": 75,
+    "aqi": 77,
     "pollutants": [
       "SO2",
       "PM10",
@@ -2678,13 +2690,13 @@ export const STATIONS_DATA = [
       "NH3"
     ],
     "pollutant_values": {
-          "PM10": 71.0,
-          "NO2": 75.0,
           "NH3": 8.0,
-          "OZONE": 50.0,
-          "PM2.5": 55.0,
+          "NO2": 77.0,
+          "PM2.5": 58.0,
+          "PM10": 75.0,
           "SO2": 24.0,
-          "CO": 20.0
+          "CO": 15.0,
+          "OZONE": 44.0
     }
   },
   {
@@ -2695,7 +2707,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 28.406963,
     "lng": 77.849831,
-    "aqi": 118,
+    "aqi": 126,
     "pollutants": [
       "PM2.5",
       "NO2",
@@ -2706,13 +2718,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "SO2": 13.0,
-          "PM2.5": 68.0,
-          "PM10": 118.0,
-          "OZONE": 46.0,
-          "NO2": 28.0,
+          "NO2": 29.0,
+          "CO": 48.0,
+          "PM10": 126.0,
           "NH3": 10.0,
-          "CO": 39.0
+          "OZONE": 36.0,
+          "PM2.5": 73.0,
+          "SO2": 14.0
     }
   },
   {
@@ -2723,7 +2735,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 25.435774,
     "lng": 75.644272,
-    "aqi": 106,
+    "aqi": 77,
     "pollutants": [
       "OZONE",
       "SO2",
@@ -2734,10 +2746,12 @@ export const STATIONS_DATA = [
       "NO2"
     ],
     "pollutant_values": {
-          "NO2": 46.0,
-          "PM2.5": 43.0,
-          "PM10": 79.0,
-          "OZONE": 106.0
+          "OZONE": 77.0,
+          "PM10": 70.0,
+          "PM2.5": 36.0,
+          "NO2": 35.0,
+          "SO2": 7.0,
+          "CO": 14.0
     }
   },
   {
@@ -2748,7 +2762,7 @@ export const STATIONS_DATA = [
     "region": "East India",
     "lat": 25.56752,
     "lng": 83.966379,
-    "aqi": 116,
+    "aqi": 60,
     "pollutants": [
       "NH3",
       "PM10",
@@ -2759,13 +2773,13 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
+          "PM2.5": 56.0,
           "SO2": 31.0,
-          "OZONE": 116.0,
-          "PM2.5": 55.0,
+          "CO": 24.0,
+          "PM10": 53.0,
           "NO2": 9.0,
           "NH3": 3.0,
-          "PM10": 52.0,
-          "CO": 24.0
+          "OZONE": 60.0
     }
   },
   {
@@ -2776,7 +2790,7 @@ export const STATIONS_DATA = [
     "region": "East India",
     "lat": 20.94185,
     "lng": 86.1151,
-    "aqi": 107,
+    "aqi": 79,
     "pollutants": [
       "NH3",
       "NO2",
@@ -2787,13 +2801,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "NH3": 2.0,
+          "SO2": 12.0,
           "PM2.5": 48.0,
-          "OZONE": 107.0,
-          "PM10": 64.0,
           "NO2": 13.0,
-          "CO": 76.0,
-          "SO2": 12.0
+          "PM10": 68.0,
+          "NH3": 2.0,
+          "CO": 65.0,
+          "OZONE": 79.0
     }
   },
   {
@@ -2809,9 +2823,9 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
+          "CO": 70.0,
           "PM2.5": 230.0,
-          "PM10": 199.0,
-          "CO": 41.0
+          "PM10": 196.0
     }
   },
   {
@@ -2822,7 +2836,7 @@ export const STATIONS_DATA = [
     "region": "East India",
     "lat": 26.071318,
     "lng": 91.87488,
-    "aqi": 205,
+    "aqi": 214,
     "pollutants": [
       "PM10",
       "CO",
@@ -2833,13 +2847,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "NH3": 4.0,
-          "PM10": 136.0,
+          "PM2.5": 214.0,
+          "OZONE": 54.0,
+          "PM10": 142.0,
+          "SO2": 31.0,
           "NO2": 7.0,
-          "SO2": 32.0,
-          "CO": 48.0,
-          "PM2.5": 205.0,
-          "OZONE": 59.0
+          "NH3": 4.0,
+          "CO": 50.0
     }
   },
   {
@@ -2861,13 +2875,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
+          "CO": 22.0,
+          "OZONE": 26.0,
           "PM2.5": 29.0,
-          "NO2": 24.0,
           "PM10": 43.0,
+          "NO2": 26.0,
           "NH3": 2.0,
-          "SO2": 4.0,
-          "CO": 23.0,
-          "OZONE": 30.0
+          "SO2": 4.0
     }
   },
   {
@@ -2878,7 +2892,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 30.719859,
     "lng": 76.738637,
-    "aqi": 65,
+    "aqi": 68,
     "pollutants": [
       "CO",
       "NO2",
@@ -2889,13 +2903,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "PM2.5": 35.0,
-          "CO": 44.0,
+          "NO2": 51.0,
           "NH3": 17.0,
-          "SO2": 9.0,
-          "PM10": 29.0,
-          "NO2": 65.0,
-          "OZONE": 61.0
+          "OZONE": 30.0,
+          "PM2.5": 37.0,
+          "CO": 68.0,
+          "PM10": 31.0,
+          "SO2": 9.0
     }
   },
   {
@@ -2906,7 +2920,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 30.735567,
     "lng": 76.775714,
-    "aqi": 85,
+    "aqi": 68,
     "pollutants": [
       "NO2",
       "NH3",
@@ -2917,13 +2931,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "OZONE": 85.0,
-          "NO2": 34.0,
-          "NH3": 10.0,
+          "NO2": 36.0,
           "PM10": 45.0,
-          "SO2": 11.0,
+          "SO2": 12.0,
           "PM2.5": 34.0,
-          "CO": 53.0
+          "OZONE": 55.0,
+          "NH3": 10.0,
+          "CO": 68.0
     }
   },
   {
@@ -2934,19 +2948,19 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 30.751462,
     "lng": 76.762879,
-    "aqi": 63,
+    "aqi": 66,
     "pollutants": [
       "CO",
       "OZONE"
     ],
     "pollutant_values": {
-          "PM2.5": 61.0,
-          "PM10": 63.0,
-          "NO2": 18.0,
+          "PM10": 66.0,
           "NH3": 12.0,
           "SO2": 8.0,
-          "CO": 13.0,
-          "OZONE": 43.0
+          "PM2.5": 65.0,
+          "NO2": 15.0,
+          "OZONE": 42.0,
+          "CO": 27.0
     }
   },
   {
@@ -2957,7 +2971,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 19.9775302,
     "lng": 79.2337086,
-    "aqi": 105,
+    "aqi": 82,
     "pollutants": [
       "NH3",
       "CO",
@@ -2966,13 +2980,13 @@ export const STATIONS_DATA = [
       "PM10"
     ],
     "pollutant_values": {
-          "CO": 40.0,
-          "PM10": 81.0,
+          "PM2.5": 41.0,
+          "CO": 39.0,
+          "PM10": 82.0,
           "NO2": 14.0,
-          "PM2.5": 42.0,
           "NH3": 5.0,
           "SO2": 22.0,
-          "OZONE": 105.0
+          "OZONE": 61.0
     }
   },
   {
@@ -2983,7 +2997,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 19.9629,
     "lng": 79.298714,
-    "aqi": 104,
+    "aqi": 101,
     "pollutants": [
       "PM10",
       "CO",
@@ -2992,13 +3006,12 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "NH3": 2.0,
           "SO2": 7.0,
-          "PM2.5": 60.0,
-          "PM10": 104.0,
-          "OZONE": 17.0,
-          "NO2": 33.0,
-          "CO": 29.0
+          "PM10": 101.0,
+          "NO2": 34.0,
+          "NH3": 2.0,
+          "CO": 26.0,
+          "OZONE": 17.0
     }
   },
   {
@@ -3009,7 +3022,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 28.593883,
     "lng": 76.270653,
-    "aqi": 133,
+    "aqi": 150,
     "pollutants": [
       "PM2.5",
       "SO2",
@@ -3020,13 +3033,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "PM10": 92.0,
-          "NO2": 15.0,
+          "PM10": 97.0,
           "NH3": 6.0,
-          "CO": 14.0,
-          "PM2.5": 133.0,
+          "PM2.5": 150.0,
+          "NO2": 15.0,
           "SO2": 11.0,
-          "OZONE": 33.0
+          "CO": 16.0,
+          "OZONE": 27.0
     }
   },
   {
@@ -3037,7 +3050,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 13.164544,
     "lng": 80.26285,
-    "aqi": 54,
+    "aqi": 50,
     "pollutants": [
       "NO2",
       "SO2",
@@ -3048,13 +3061,13 @@ export const STATIONS_DATA = [
       "NH3"
     ],
     "pollutant_values": {
-          "CO": 19.0,
-          "PM2.5": 33.0,
+          "PM10": 50.0,
+          "CO": 13.0,
+          "OZONE": 23.0,
           "NH3": 6.0,
-          "SO2": 13.0,
-          "OZONE": 25.0,
-          "PM10": 54.0,
-          "NO2": 10.0
+          "PM2.5": 31.0,
+          "NO2": 10.0,
+          "SO2": 15.0
     }
   },
   {
@@ -3065,7 +3078,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 12.9533,
     "lng": 80.2357,
-    "aqi": 53,
+    "aqi": 67,
     "pollutants": [
       "CO",
       "NO2",
@@ -3076,12 +3089,12 @@ export const STATIONS_DATA = [
       "PM10"
     ],
     "pollutant_values": {
-          "OZONE": 6.0,
+          "PM10": 67.0,
+          "OZONE": 4.0,
+          "PM2.5": 30.0,
           "NO2": 6.0,
           "SO2": 5.0,
-          "CO": 32.0,
-          "PM10": 53.0,
-          "PM2.5": 26.0
+          "CO": 36.0
     }
   },
   {
@@ -3092,7 +3105,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 13.0052189,
     "lng": 80.2398125,
-    "aqi": 54,
+    "aqi": 55,
     "pollutants": [
       "SO2",
       "PM10",
@@ -3102,12 +3115,12 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "SO2": 6.0,
-          "OZONE": 12.0,
-          "NO2": 12.0,
           "PM2.5": 29.0,
+          "PM10": 55.0,
           "NH3": 2.0,
-          "PM10": 54.0
+          "SO2": 6.0,
+          "NO2": 12.0,
+          "OZONE": 11.0
     }
   },
   {
@@ -3129,13 +3142,13 @@ export const STATIONS_DATA = [
       "NH3"
     ],
     "pollutant_values": {
-          "CO": 53.0,
-          "OZONE": 32.0,
           "NO2": 13.0,
-          "PM2.5": 41.0,
-          "PM10": 53.0,
-          "SO2": 5.0,
-          "NH3": 4.0
+          "CO": 53.0,
+          "PM2.5": 40.0,
+          "NH3": 4.0,
+          "PM10": 52.0,
+          "SO2": 6.0,
+          "OZONE": 30.0
     }
   },
   {
@@ -3146,7 +3159,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 13.1278,
     "lng": 80.2642,
-    "aqi": 49,
+    "aqi": 51,
     "pollutants": [
       "NO2",
       "OZONE",
@@ -3157,12 +3170,13 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
+          "PM10": 51.0,
+          "CO": 30.0,
           "NH3": 4.0,
+          "SO2": 6.0,
+          "PM2.5": 32.0,
           "NO2": 13.0,
-          "OZONE": 30.0,
-          "PM2.5": 31.0,
-          "PM10": 49.0,
-          "SO2": 6.0
+          "OZONE": 30.0
     }
   },
   {
@@ -3173,7 +3187,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 13.1662,
     "lng": 80.2584,
-    "aqi": 31,
+    "aqi": 302,
     "pollutants": [
       "CO",
       "NO2",
@@ -3184,9 +3198,9 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "OZONE": 31.0,
-          "SO2": 15.0,
-          "CO": 27.0
+          "CO": 29.0,
+          "OZONE": 302.0,
+          "SO2": 15.0
     }
   },
   {
@@ -3197,7 +3211,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 13.0664,
     "lng": 80.2112,
-    "aqi": 72,
+    "aqi": 74,
     "pollutants": [
       "SO2",
       "PM2.5",
@@ -3206,9 +3220,10 @@ export const STATIONS_DATA = [
       "NH3"
     ],
     "pollutant_values": {
-          "PM2.5": 26.0,
+          "NH3": 4.0,
           "SO2": 2.0,
-          "PM10": 72.0,
+          "PM2.5": 28.0,
+          "PM10": 74.0,
           "NO2": 15.0
     }
   },
@@ -3220,7 +3235,7 @@ export const STATIONS_DATA = [
     "region": "South India",
     "lat": 13.428828,
     "lng": 77.731418,
-    "aqi": 49,
+    "aqi": 48,
     "pollutants": [
       "PM10",
       "NH3",
@@ -3231,13 +3246,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
+          "CO": 28.0,
+          "OZONE": 48.0,
+          "PM10": 35.0,
           "NO2": 4.0,
-          "SO2": 15.0,
-          "CO": 24.0,
-          "OZONE": 49.0,
-          "PM10": 33.0,
-          "PM2.5": 23.0,
-          "NH3": 1.0
+          "NH3": 1.0,
+          "PM2.5": 22.0,
+          "SO2": 14.0
     }
   },
   {
@@ -3248,7 +3263,7 @@ export const STATIONS_DATA = [
     "region": "South India",
     "lat": 13.328028,
     "lng": 75.797056,
-    "aqi": 17,
+    "aqi": 24,
     "pollutants": [
       "NH3",
       "CO",
@@ -3256,8 +3271,11 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "CO": 17.0,
-          "OZONE": 14.0
+          "NO2": 24.0,
+          "OZONE": 11.0,
+          "NH3": 3.0,
+          "SO2": 1.0,
+          "CO": 14.0
     }
   },
   {
@@ -3268,7 +3286,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 13.20488,
     "lng": 79.097889,
-    "aqi": 90,
+    "aqi": 85,
     "pollutants": [
       "SO2",
       "CO",
@@ -3279,13 +3297,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "OZONE": 65.0,
-          "PM2.5": 90.0,
-          "PM10": 74.0,
-          "SO2": 16.0,
-          "CO": 23.0,
-          "NO2": 37.0,
-          "NH3": 7.0
+          "NO2": 36.0,
+          "PM10": 70.0,
+          "CO": 25.0,
+          "PM2.5": 85.0,
+          "OZONE": 70.0,
+          "NH3": 7.0,
+          "SO2": 15.0
     }
   },
   {
@@ -3296,7 +3314,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 24.892047,
     "lng": 74.623527,
-    "aqi": 151,
+    "aqi": 116,
     "pollutants": [
       "NH3",
       "CO",
@@ -3307,8 +3325,8 @@ export const STATIONS_DATA = [
       "PM2.5"
     ],
     "pollutant_values": {
-          "CO": 26.0,
-          "OZONE": 151.0
+          "OZONE": 116.0,
+          "CO": 28.0
     }
   },
   {
@@ -3319,7 +3337,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 28.296139,
     "lng": 74.961696,
-    "aqi": 145,
+    "aqi": 125,
     "pollutants": [
       "PM10",
       "SO2",
@@ -3330,13 +3348,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
+          "PM2.5": 59.0,
+          "NO2": 15.0,
+          "CO": 31.0,
+          "OZONE": 121.0,
           "NH3": 8.0,
           "SO2": 3.0,
-          "PM10": 122.0,
-          "NO2": 15.0,
-          "PM2.5": 55.0,
-          "CO": 20.0,
-          "OZONE": 145.0
+          "PM10": 125.0
     }
   },
   {
@@ -3358,13 +3376,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "PM2.5": 20.0,
-          "PM10": 20.0,
-          "NO2": 23.0,
-          "SO2": 24.0,
+          "PM2.5": 19.0,
           "OZONE": 20.0,
-          "NH3": 1.0,
-          "CO": 16.0
+          "PM10": 18.0,
+          "NO2": 23.0,
+          "CO": 17.0,
+          "SO2": 24.0,
+          "NH3": 1.0
     }
   },
   {
@@ -3375,7 +3393,7 @@ export const STATIONS_DATA = [
     "region": "East India",
     "lat": 20.48891,
     "lng": 85.84768,
-    "aqi": 98,
+    "aqi": 86,
     "pollutants": [
       "CO",
       "PM10",
@@ -3386,13 +3404,13 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
-          "PM2.5": 28.0,
-          "PM10": 65.0,
-          "CO": 34.0,
-          "OZONE": 98.0,
+          "NO2": 10.0,
+          "SO2": 5.0,
+          "OZONE": 86.0,
+          "PM2.5": 29.0,
+          "PM10": 67.0,
           "NH3": 2.0,
-          "SO2": 6.0,
-          "NO2": 12.0
+          "CO": 28.0
     }
   },
   {
@@ -3403,7 +3421,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 23.81748678,
     "lng": 79.446246,
-    "aqi": 65,
+    "aqi": 66,
     "pollutants": [
       "PM10",
       "SO2",
@@ -3411,10 +3429,10 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "SO2": 50.0,
-          "PM10": 58.0,
-          "CO": 18.0,
-          "PM2.5": 65.0
+          "PM2.5": 66.0,
+          "SO2": 51.0,
+          "CO": 22.0,
+          "PM10": 58.0
     }
   },
   {
@@ -3425,7 +3443,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 26.895552,
     "lng": 76.334753,
-    "aqi": 113,
+    "aqi": 114,
     "pollutants": [
       "SO2",
       "NH3",
@@ -3436,13 +3454,13 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "PM10": 113.0,
+          "OZONE": 36.0,
+          "PM2.5": 59.0,
+          "PM10": 114.0,
           "SO2": 3.0,
-          "NH3": 10.0,
-          "NO2": 35.0,
-          "OZONE": 78.0,
-          "PM2.5": 56.0,
-          "CO": 55.0
+          "CO": 62.0,
+          "NO2": 37.0,
+          "NH3": 11.0
     }
   },
   {
@@ -3453,7 +3471,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 30.269444,
     "lng": 78.044167,
-    "aqi": 64,
+    "aqi": 56,
     "pollutants": [
       "OZONE",
       "SO2",
@@ -3463,12 +3481,12 @@ export const STATIONS_DATA = [
       "NO2"
     ],
     "pollutant_values": {
-          "CO": 44.0,
-          "SO2": 1.0,
-          "PM2.5": 25.0,
-          "PM10": 35.0,
+          "PM10": 40.0,
           "NO2": 3.0,
-          "OZONE": 64.0
+          "OZONE": 56.0,
+          "PM2.5": 31.0,
+          "SO2": 1.0,
+          "CO": 47.0
     }
   },
   {
@@ -3479,7 +3497,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 28.815329,
     "lng": 77.15301,
-    "aqi": 156,
+    "aqi": 160,
     "pollutants": [
       "PM2.5",
       "OZONE",
@@ -3490,13 +3508,13 @@ export const STATIONS_DATA = [
       "PM10"
     ],
     "pollutant_values": {
+          "PM2.5": 130.0,
+          "SO2": 10.0,
+          "NO2": 30.0,
+          "PM10": 160.0,
           "NH3": 11.0,
-          "NO2": 32.0,
-          "PM2.5": 126.0,
-          "PM10": 156.0,
-          "SO2": 9.0,
-          "OZONE": 42.0,
-          "CO": 33.0
+          "CO": 44.0,
+          "OZONE": 25.0
     }
   },
   {
@@ -3507,7 +3525,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 28.647622,
     "lng": 77.315809,
-    "aqi": 186,
+    "aqi": 202,
     "pollutants": [
       "PM10",
       "CO",
@@ -3518,13 +3536,13 @@ export const STATIONS_DATA = [
       "PM2.5"
     ],
     "pollutant_values": {
-          "NO2": 54.0,
-          "NH3": 8.0,
-          "PM2.5": 122.0,
-          "SO2": 28.0,
-          "OZONE": 55.0,
-          "PM10": 186.0,
-          "CO": 38.0
+          "PM2.5": 132.0,
+          "NO2": 58.0,
+          "SO2": 29.0,
+          "PM10": 202.0,
+          "CO": 53.0,
+          "OZONE": 28.0,
+          "NH3": 8.0
     }
   },
   {
@@ -3535,7 +3553,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 28.695381,
     "lng": 77.181665,
-    "aqi": 124,
+    "aqi": 136,
     "pollutants": [
       "PM2.5",
       "PM10",
@@ -3546,13 +3564,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "NO2": 37.0,
-          "CO": 28.0,
-          "PM10": 124.0,
-          "NH3": 10.0,
-          "PM2.5": 79.0,
+          "NO2": 40.0,
+          "CO": 38.0,
+          "OZONE": 51.0,
+          "PM2.5": 90.0,
           "SO2": 24.0,
-          "OZONE": 77.0
+          "PM10": 136.0,
+          "NH3": 10.0
     }
   },
   {
@@ -3563,7 +3581,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 28.540721,
     "lng": 77.168544,
-    "aqi": 106,
+    "aqi": 116,
     "pollutants": [
       "PM2.5",
       "PM10",
@@ -3573,13 +3591,13 @@ export const STATIONS_DATA = [
       "NH3"
     ],
     "pollutant_values": {
-          "SO2": 15.0,
-          "PM2.5": 93.0,
-          "NH3": 4.0,
-          "CO": 44.0,
-          "OZONE": 34.0,
-          "PM10": 106.0,
-          "NO2": 24.0
+          "PM10": 116.0,
+          "OZONE": 22.0,
+          "PM2.5": 105.0,
+          "NO2": 24.0,
+          "NH3": 3.0,
+          "SO2": 12.0,
+          "CO": 61.0
     }
   },
   {
@@ -3590,7 +3608,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 28.73282,
     "lng": 77.170633,
-    "aqi": 138,
+    "aqi": 151,
     "pollutants": [
       "NO2",
       "OZONE",
@@ -3601,13 +3619,13 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "NO2": 56.0,
-          "CO": 40.0,
-          "OZONE": 52.0,
-          "PM2.5": 84.0,
-          "NH3": 6.0,
+          "PM2.5": 96.0,
+          "PM10": 151.0,
           "SO2": 12.0,
-          "PM10": 138.0
+          "NH3": 6.0,
+          "NO2": 56.0,
+          "CO": 63.0,
+          "OZONE": 31.0
     }
   },
   {
@@ -3618,7 +3636,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 28.58028,
     "lng": 77.233829,
-    "aqi": 127,
+    "aqi": 137,
     "pollutants": [
       "PM2.5",
       "NH3",
@@ -3629,13 +3647,13 @@ export const STATIONS_DATA = [
       "NO2"
     ],
     "pollutant_values": {
-          "PM2.5": 85.0,
-          "NH3": 21.0,
-          "PM10": 127.0,
-          "SO2": 19.0,
-          "OZONE": 96.0,
-          "NO2": 57.0,
-          "CO": 38.0
+          "PM10": 137.0,
+          "SO2": 21.0,
+          "PM2.5": 91.0,
+          "NO2": 64.0,
+          "NH3": 22.0,
+          "CO": 54.0,
+          "OZONE": 65.0
     }
   },
   {
@@ -3718,7 +3736,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 28.594169,
     "lng": 77.1251,
-    "aqi": 99,
+    "aqi": 45,
     "pollutants": [
       "PM2.5",
       "NH3",
@@ -3729,12 +3747,10 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
+          "NO2": 23.0,
+          "PM2.5": 45.0,
           "NH3": 1.0,
-          "OZONE": 99.0,
-          "PM2.5": 43.0,
-          "NO2": 24.0,
-          "SO2": 2.0,
-          "CO": 90.0
+          "SO2": 2.0
     }
   },
   {
@@ -3745,7 +3761,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 28.615828,
     "lng": 77.271992,
-    "aqi": 133,
+    "aqi": 120,
     "pollutants": [
       "NO2",
       "CO",
@@ -3756,13 +3772,13 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
-          "PM2.5": 100.0,
-          "PM10": 112.0,
-          "CO": 32.0,
+          "NO2": 55.0,
           "SO2": 8.0,
-          "NO2": 53.0,
-          "NH3": 5.0,
-          "OZONE": 133.0
+          "PM2.5": 109.0,
+          "CO": 40.0,
+          "OZONE": 74.0,
+          "PM10": 120.0,
+          "NH3": 5.0
     }
   },
   {
@@ -3773,7 +3789,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 28.54246,
     "lng": 77.191651,
-    "aqi": 156,
+    "aqi": 160,
     "pollutants": [
       "PM10",
       "CO",
@@ -3781,11 +3797,11 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "CO": 42.0,
-          "PM10": 156.0,
-          "PM2.5": 106.0,
-          "NO2": 25.0,
-          "OZONE": 70.0
+          "PM2.5": 108.0,
+          "NO2": 24.0,
+          "PM10": 160.0,
+          "CO": 60.0,
+          "OZONE": 44.0
     }
   },
   {
@@ -3796,7 +3812,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 28.628624,
     "lng": 77.24106,
-    "aqi": 121,
+    "aqi": 126,
     "pollutants": [
       "NO2",
       "PM10",
@@ -3807,13 +3823,13 @@ export const STATIONS_DATA = [
       "NH3"
     ],
     "pollutant_values": {
-          "PM2.5": 93.0,
-          "PM10": 121.0,
-          "NH3": 4.0,
-          "SO2": 15.0,
-          "CO": 61.0,
-          "OZONE": 51.0,
-          "NO2": 61.0
+          "PM10": 126.0,
+          "CO": 79.0,
+          "SO2": 16.0,
+          "OZONE": 34.0,
+          "PM2.5": 99.0,
+          "NO2": 59.0,
+          "NH3": 4.0
     }
   },
   {
@@ -3848,7 +3864,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 28.5504249,
     "lng": 77.2159377,
-    "aqi": 135,
+    "aqi": 132,
     "pollutants": [
       "NH3",
       "SO2",
@@ -3859,13 +3875,10 @@ export const STATIONS_DATA = [
       "PM10"
     ],
     "pollutant_values": {
-          "SO2": 38.0,
-          "PM10": 135.0,
-          "NH3": 11.0,
-          "OZONE": 33.0,
-          "CO": 28.0,
-          "PM2.5": 121.0,
-          "NO2": 23.0
+          "OZONE": 14.0,
+          "CO": 50.0,
+          "PM2.5": 132.0,
+          "SO2": 38.0
     }
   },
   {
@@ -3876,7 +3889,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 28.62181,
     "lng": 77.1944633,
-    "aqi": 116,
+    "aqi": 72,
     "pollutants": [
       "PM10",
       "NH3",
@@ -3887,10 +3900,10 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
-          "NO2": 19.0,
-          "CO": 61.0,
           "SO2": 32.0,
-          "OZONE": 116.0
+          "NO2": 23.0,
+          "OZONE": 60.0,
+          "CO": 72.0
     }
   },
   {
@@ -3901,7 +3914,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 28.672342,
     "lng": 77.31526,
-    "aqi": 140,
+    "aqi": 153,
     "pollutants": [
       "NO2",
       "OZONE",
@@ -3912,13 +3925,13 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "PM10": 140.0,
-          "NO2": 67.0,
-          "CO": 76.0,
+          "PM2.5": 76.0,
+          "NO2": 71.0,
+          "OZONE": 42.0,
+          "PM10": 153.0,
           "NH3": 12.0,
-          "PM2.5": 71.0,
           "SO2": 19.0,
-          "OZONE": 75.0
+          "CO": 90.0
     }
   },
   {
@@ -3929,7 +3942,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 28.699793,
     "lng": 77.165453,
-    "aqi": 158,
+    "aqi": 167,
     "pollutants": [
       "NH3",
       "OZONE",
@@ -3940,13 +3953,13 @@ export const STATIONS_DATA = [
       "PM10"
     ],
     "pollutant_values": {
-          "NO2": 48.0,
           "SO2": 11.0,
-          "OZONE": 53.0,
-          "PM2.5": 94.0,
-          "NH3": 11.0,
-          "PM10": 158.0,
-          "CO": 51.0
+          "OZONE": 34.0,
+          "PM10": 167.0,
+          "NO2": 48.0,
+          "CO": 57.0,
+          "PM2.5": 100.0,
+          "NH3": 11.0
     }
   },
   {
@@ -3957,7 +3970,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 28.611281,
     "lng": 77.237738,
-    "aqi": 122,
+    "aqi": 132,
     "pollutants": [
       "NO2",
       "NH3",
@@ -3968,13 +3981,13 @@ export const STATIONS_DATA = [
       "PM2.5"
     ],
     "pollutant_values": {
-          "PM2.5": 72.0,
-          "OZONE": 80.0,
-          "PM10": 122.0,
           "NH3": 13.0,
-          "NO2": 68.0,
-          "SO2": 18.0,
-          "CO": 34.0
+          "PM2.5": 79.0,
+          "SO2": 19.0,
+          "OZONE": 44.0,
+          "PM10": 132.0,
+          "NO2": 72.0,
+          "CO": 55.0
     }
   },
   {
@@ -3985,7 +3998,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 28.636429,
     "lng": 77.201067,
-    "aqi": 129,
+    "aqi": 139,
     "pollutants": [
       "PM2.5",
       "NO2",
@@ -3996,13 +4009,13 @@ export const STATIONS_DATA = [
       "NH3"
     ],
     "pollutant_values": {
-          "PM10": 129.0,
-          "SO2": 27.0,
-          "OZONE": 91.0,
-          "PM2.5": 63.0,
-          "NO2": 33.0,
+          "PM2.5": 69.0,
+          "OZONE": 52.0,
           "NH3": 4.0,
-          "CO": 54.0
+          "NO2": 36.0,
+          "CO": 68.0,
+          "PM10": 139.0,
+          "SO2": 29.0
     }
   },
   {
@@ -4013,7 +4026,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 28.684678,
     "lng": 77.076574,
-    "aqi": 152,
+    "aqi": 159,
     "pollutants": [
       "OZONE",
       "PM10",
@@ -4024,13 +4037,13 @@ export const STATIONS_DATA = [
       "NH3"
     ],
     "pollutant_values": {
-          "PM2.5": 92.0,
-          "NH3": 10.0,
-          "NO2": 102.0,
+          "PM10": 159.0,
+          "NO2": 101.0,
+          "OZONE": 22.0,
+          "PM2.5": 95.0,
+          "CO": 64.0,
           "SO2": 16.0,
-          "PM10": 152.0,
-          "OZONE": 34.0,
-          "CO": 54.0
+          "NH3": 9.0
     }
   },
   {
@@ -4041,7 +4054,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 28.60909,
     "lng": 77.0325413,
-    "aqi": 285,
+    "aqi": 205,
     "pollutants": [
       "PM2.5",
       "NO2",
@@ -4052,13 +4065,13 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "PM2.5": 125.0,
-          "CO": 32.0,
+          "PM10": 83.0,
+          "PM2.5": 135.0,
           "NH3": 9.0,
-          "OZONE": 285.0,
-          "NO2": 76.0,
+          "OZONE": 205.0,
+          "NO2": 71.0,
           "SO2": 14.0,
-          "PM10": 79.0
+          "CO": 26.0
     }
   },
   {
@@ -4069,7 +4082,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 28.594004,
     "lng": 76.909423,
-    "aqi": 180,
+    "aqi": 127,
     "pollutants": [
       "SO2",
       "CO",
@@ -4080,13 +4093,13 @@ export const STATIONS_DATA = [
       "PM2.5"
     ],
     "pollutant_values": {
-          "PM2.5": 105.0,
-          "SO2": 36.0,
-          "OZONE": 180.0,
-          "NO2": 15.0,
           "NH3": 3.0,
-          "CO": 48.0,
-          "PM10": 123.0
+          "OZONE": 115.0,
+          "PM10": 127.0,
+          "PM2.5": 114.0,
+          "NO2": 16.0,
+          "SO2": 36.0,
+          "CO": 61.0
     }
   },
   {
@@ -4097,7 +4110,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 28.822836,
     "lng": 77.101981,
-    "aqi": 153,
+    "aqi": 160,
     "pollutants": [
       "PM2.5",
       "NH3",
@@ -4108,13 +4121,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
+          "PM2.5": 152.0,
+          "PM10": 160.0,
+          "CO": 47.0,
+          "OZONE": 10.0,
+          "NO2": 30.0,
           "NH3": 8.0,
-          "PM2.5": 143.0,
-          "PM10": 153.0,
-          "SO2": 15.0,
-          "OZONE": 15.0,
-          "NO2": 31.0,
-          "CO": 35.0
+          "SO2": 17.0
     }
   },
   {
@@ -4125,7 +4138,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 28.56789,
     "lng": 77.250515,
-    "aqi": 144,
+    "aqi": 153,
     "pollutants": [
       "NH3",
       "PM10",
@@ -4136,13 +4149,13 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "PM2.5": 95.0,
-          "PM10": 144.0,
-          "SO2": 21.0,
-          "OZONE": 89.0,
-          "NO2": 56.0,
+          "PM2.5": 103.0,
+          "NO2": 57.0,
+          "PM10": 153.0,
           "NH3": 8.0,
-          "CO": 55.0
+          "SO2": 20.0,
+          "CO": 65.0,
+          "OZONE": 56.0
     }
   },
   {
@@ -4153,7 +4166,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 28.530785,
     "lng": 77.271255,
-    "aqi": 167,
+    "aqi": 178,
     "pollutants": [
       "PM2.5",
       "NO2",
@@ -4164,13 +4177,13 @@ export const STATIONS_DATA = [
       "NH3"
     ],
     "pollutant_values": {
-          "PM2.5": 134.0,
-          "NH3": 9.0,
-          "CO": 25.0,
-          "PM10": 167.0,
+          "NH3": 10.0,
+          "SO2": 17.0,
+          "PM2.5": 142.0,
           "NO2": 45.0,
-          "SO2": 18.0,
-          "OZONE": 71.0
+          "CO": 44.0,
+          "PM10": 178.0,
+          "OZONE": 50.0
     }
   },
   {
@@ -4181,7 +4194,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 28.623763,
     "lng": 77.287209,
-    "aqi": 149,
+    "aqi": 160,
     "pollutants": [
       "NH3",
       "PM2.5",
@@ -4192,13 +4205,13 @@ export const STATIONS_DATA = [
       "NO2"
     ],
     "pollutant_values": {
-          "SO2": 13.0,
-          "PM10": 149.0,
-          "CO": 59.0,
-          "NO2": 45.0,
+          "PM2.5": 83.0,
+          "NO2": 44.0,
           "NH3": 9.0,
-          "OZONE": 72.0,
-          "PM2.5": 79.0
+          "OZONE": 49.0,
+          "SO2": 13.0,
+          "PM10": 160.0,
+          "CO": 72.0
     }
   },
   {
@@ -4209,7 +4222,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 28.674045,
     "lng": 77.131023,
-    "aqi": 127,
+    "aqi": 139,
     "pollutants": [
       "PM10",
       "PM2.5",
@@ -4220,13 +4233,13 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
-          "NO2": 33.0,
+          "PM2.5": 104.0,
           "NH3": 4.0,
-          "OZONE": 80.0,
-          "CO": 60.0,
-          "PM2.5": 93.0,
-          "PM10": 127.0,
-          "SO2": 25.0
+          "PM10": 139.0,
+          "SO2": 24.0,
+          "NO2": 36.0,
+          "CO": 95.0,
+          "OZONE": 49.0
     }
   },
   {
@@ -4261,7 +4274,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 28.563262,
     "lng": 77.186937,
-    "aqi": 127,
+    "aqi": 137,
     "pollutants": [
       "NO2",
       "CO",
@@ -4272,13 +4285,13 @@ export const STATIONS_DATA = [
       "PM2.5"
     ],
     "pollutant_values": {
+          "NO2": 54.0,
+          "PM10": 137.0,
+          "PM2.5": 131.0,
           "NH3": 6.0,
+          "OZONE": 30.0,
           "SO2": 18.0,
-          "OZONE": 52.0,
-          "NO2": 56.0,
-          "CO": 30.0,
-          "PM2.5": 122.0,
-          "PM10": 127.0
+          "CO": 43.0
     }
   },
   {
@@ -4313,7 +4326,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 28.7762,
     "lng": 77.051074,
-    "aqi": 139,
+    "aqi": 147,
     "pollutants": [
       "PM2.5",
       "CO",
@@ -4324,13 +4337,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "CO": 24.0,
+          "OZONE": 30.0,
+          "PM10": 147.0,
           "NH3": 8.0,
-          "PM2.5": 97.0,
+          "PM2.5": 101.0,
           "NO2": 30.0,
           "SO2": 10.0,
-          "PM10": 139.0,
-          "OZONE": 49.0
+          "CO": 35.0
     }
   },
   {
@@ -4341,7 +4354,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 28.498571,
     "lng": 77.26484,
-    "aqi": 127,
+    "aqi": 134,
     "pollutants": [
       "NH3",
       "OZONE",
@@ -4352,13 +4365,13 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "NO2": 27.0,
-          "OZONE": 101.0,
-          "PM2.5": 113.0,
-          "SO2": 22.0,
-          "PM10": 127.0,
+          "PM2.5": 119.0,
+          "PM10": 134.0,
+          "CO": 41.0,
+          "NO2": 25.0,
           "NH3": 6.0,
-          "CO": 34.0
+          "SO2": 22.0,
+          "OZONE": 77.0
     }
   },
   {
@@ -4369,7 +4382,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 28.493624,
     "lng": 77.201159,
-    "aqi": 119,
+    "aqi": 125,
     "pollutants": [
       "PM2.5",
       "SO2",
@@ -4380,13 +4393,13 @@ export const STATIONS_DATA = [
       "NH3"
     ],
     "pollutant_values": {
+          "PM2.5": 125.0,
+          "PM10": 119.0,
           "NO2": 17.0,
-          "NH3": 6.0,
           "SO2": 31.0,
+          "NH3": 4.0,
           "CO": 59.0,
-          "OZONE": 78.0,
-          "PM2.5": 119.0,
-          "PM10": 113.0
+          "OZONE": 63.0
     }
   },
   {
@@ -4397,7 +4410,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 28.656756,
     "lng": 77.227234,
-    "aqi": 149,
+    "aqi": 125,
     "pollutants": [
       "NH3",
       "SO2",
@@ -4406,13 +4419,13 @@ export const STATIONS_DATA = [
       "NO2"
     ],
     "pollutant_values": {
-          "PM2.5": 90.0,
-          "PM10": 119.0,
-          "NO2": 52.0,
-          "NH3": 14.0,
-          "SO2": 31.0,
-          "CO": 79.0,
-          "OZONE": 149.0
+          "PM10": 125.0,
+          "NO2": 56.0,
+          "NH3": 13.0,
+          "SO2": 37.0,
+          "PM2.5": 92.0,
+          "CO": 93.0,
+          "OZONE": 85.0
     }
   },
   {
@@ -4423,7 +4436,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 28.639652,
     "lng": 77.146275,
-    "aqi": 126,
+    "aqi": 135,
     "pollutants": [
       "PM10",
       "NH3",
@@ -4434,13 +4447,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "PM2.5": 78.0,
-          "NO2": 43.0,
+          "PM10": 135.0,
           "NH3": 11.0,
-          "SO2": 17.0,
-          "CO": 73.0,
-          "OZONE": 49.0,
-          "PM10": 126.0
+          "CO": 82.0,
+          "NO2": 46.0,
+          "OZONE": 32.0,
+          "PM2.5": 86.0,
+          "SO2": 19.0
     }
   },
   {
@@ -4451,7 +4464,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 28.732528,
     "lng": 77.11992,
-    "aqi": 145,
+    "aqi": 156,
     "pollutants": [
       "NO2",
       "PM2.5",
@@ -4462,13 +4475,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
+          "PM2.5": 123.0,
+          "PM10": 156.0,
+          "NO2": 34.0,
+          "SO2": 10.0,
           "NH3": 9.0,
-          "OZONE": 51.0,
-          "PM10": 145.0,
-          "CO": 47.0,
-          "NO2": 35.0,
-          "PM2.5": 104.0,
-          "SO2": 10.0
+          "OZONE": 31.0,
+          "CO": 58.0
     }
   },
   {
@@ -4479,7 +4492,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 28.6514781,
     "lng": 77.1473105,
-    "aqi": 153,
+    "aqi": 172,
     "pollutants": [
       "PM10",
       "NH3",
@@ -4490,13 +4503,11 @@ export const STATIONS_DATA = [
       "NO2"
     ],
     "pollutant_values": {
-          "CO": 46.0,
-          "NO2": 41.0,
-          "PM10": 153.0,
-          "SO2": 8.0,
-          "PM2.5": 103.0,
+          "PM10": 172.0,
+          "PM2.5": 141.0,
           "NH3": 7.0,
-          "OZONE": 49.0
+          "NO2": 42.0,
+          "OZONE": 25.0
     }
   },
   {
@@ -4531,7 +4542,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 28.710508,
     "lng": 77.249485,
-    "aqi": 133,
+    "aqi": 148,
     "pollutants": [
       "PM2.5",
       "PM10",
@@ -4542,13 +4553,13 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "SO2": 24.0,
-          "PM2.5": 92.0,
-          "NO2": 37.0,
-          "OZONE": 67.0,
-          "PM10": 133.0,
+          "PM2.5": 114.0,
+          "NO2": 35.0,
           "NH3": 9.0,
-          "CO": 51.0
+          "SO2": 26.0,
+          "CO": 84.0,
+          "OZONE": 40.0,
+          "PM10": 148.0
     }
   },
   {
@@ -4559,7 +4570,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 28.7500499,
     "lng": 77.1112615,
-    "aqi": 111,
+    "aqi": 123,
     "pollutants": [
       "PM2.5",
       "CO",
@@ -4570,13 +4581,13 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
-          "NO2": 7.0,
-          "CO": 30.0,
-          "OZONE": 23.0,
           "NH3": 1.0,
           "SO2": 44.0,
-          "PM2.5": 100.0,
-          "PM10": 111.0
+          "PM10": 123.0,
+          "NO2": 8.0,
+          "OZONE": 20.0,
+          "PM2.5": 114.0,
+          "CO": 35.0
     }
   },
   {
@@ -4587,7 +4598,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 28.5710274,
     "lng": 77.0719006,
-    "aqi": 162,
+    "aqi": 173,
     "pollutants": [
       "PM2.5",
       "OZONE",
@@ -4597,13 +4608,13 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
-          "PM2.5": 94.0,
-          "NH3": 14.0,
+          "PM10": 173.0,
+          "NO2": 68.0,
+          "CO": 57.0,
           "SO2": 18.0,
-          "NO2": 67.0,
-          "PM10": 162.0,
-          "OZONE": 87.0,
-          "CO": 41.0
+          "OZONE": 63.0,
+          "NH3": 14.0,
+          "PM2.5": 109.0
     }
   },
   {
@@ -4614,7 +4625,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 28.6811736,
     "lng": 77.3025234,
-    "aqi": 146,
+    "aqi": 166,
     "pollutants": [
       "PM2.5",
       "NH3",
@@ -4624,13 +4635,13 @@ export const STATIONS_DATA = [
       "NO2"
     ],
     "pollutant_values": {
-          "PM10": 100.0,
-          "PM2.5": 146.0,
+          "PM2.5": 166.0,
           "NO2": 51.0,
+          "SO2": 17.0,
+          "CO": 70.0,
+          "PM10": 108.0,
           "NH3": 5.0,
-          "SO2": 16.0,
-          "CO": 72.0,
-          "OZONE": 81.0
+          "OZONE": 55.0
     }
   },
   {
@@ -4641,7 +4652,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 28.570173,
     "lng": 76.933762,
-    "aqi": 116,
+    "aqi": 122,
     "pollutants": [
       "NO2",
       "SO2",
@@ -4652,13 +4663,13 @@ export const STATIONS_DATA = [
       "NH3"
     ],
     "pollutant_values": {
-          "PM2.5": 76.0,
-          "PM10": 116.0,
+          "SO2": 27.0,
+          "OZONE": 53.0,
+          "PM2.5": 82.0,
           "NO2": 38.0,
-          "NH3": 9.0,
-          "SO2": 26.0,
-          "CO": 53.0,
-          "OZONE": 74.0
+          "CO": 62.0,
+          "PM10": 122.0,
+          "NH3": 10.0
     }
   },
   {
@@ -4669,19 +4680,16 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 28.531346,
     "lng": 77.190156,
-    "aqi": 112,
+    "aqi": 107,
     "pollutants": [
       "CO",
       "OZONE"
     ],
     "pollutant_values": {
-          "PM2.5": 96.0,
-          "NO2": 46.0,
-          "PM10": 112.0,
-          "CO": 37.0,
-          "OZONE": 77.0,
           "NH3": 8.0,
-          "SO2": 20.0
+          "SO2": 20.0,
+          "PM2.5": 107.0,
+          "OZONE": 49.0
     }
   },
   {
@@ -4722,13 +4730,13 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "PM10": 85.0,
-          "NH3": 3.0,
-          "CO": 27.0,
-          "PM2.5": 42.0,
-          "SO2": 32.0,
-          "OZONE": 13.0,
-          "NO2": 106.0
+          "OZONE": 11.0,
+          "CO": 30.0,
+          "PM2.5": 44.0,
+          "NO2": 106.0,
+          "SO2": 34.0,
+          "PM10": 88.0,
+          "NH3": 3.0
     }
   },
   {
@@ -4739,16 +4747,16 @@ export const STATIONS_DATA = [
     "region": "East India",
     "lat": 23.80569,
     "lng": 86.44268,
-    "aqi": 99,
+    "aqi": 111,
     "pollutants": [
       "OZONE",
       "CO"
     ],
     "pollutant_values": {
-          "NO2": 99.0,
-          "CO": 90.0,
-          "PM10": 94.0,
-          "OZONE": 67.0
+          "PM10": 111.0,
+          "NO2": 97.0,
+          "CO": 55.0,
+          "OZONE": 62.0
     }
   },
   {
@@ -4759,7 +4767,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 28.2068,
     "lng": 76.7997,
-    "aqi": 124,
+    "aqi": 143,
     "pollutants": [
       "PM2.5",
       "CO",
@@ -4770,13 +4778,11 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
+          "PM2.5": 143.0,
           "NO2": 36.0,
-          "SO2": 11.0,
-          "NH3": 20.0,
-          "PM2.5": 124.0,
-          "OZONE": 47.0,
-          "PM10": 102.0,
-          "CO": 88.0
+          "OZONE": 28.0,
+          "PM10": 108.0,
+          "NH3": 20.0
     }
   },
   {
@@ -4787,7 +4793,7 @@ export const STATIONS_DATA = [
     "region": "South India",
     "lat": 15.459706,
     "lng": 75.008381,
-    "aqi": 95,
+    "aqi": 93,
     "pollutants": [
       "SO2",
       "PM10",
@@ -4798,13 +4804,13 @@ export const STATIONS_DATA = [
       "NO2"
     ],
     "pollutant_values": {
-          "SO2": 7.0,
+          "NH3": 6.0,
+          "NO2": 27.0,
+          "SO2": 6.0,
           "OZONE": 27.0,
-          "NO2": 28.0,
-          "CO": 54.0,
-          "PM10": 95.0,
-          "PM2.5": 69.0,
-          "NH3": 7.0
+          "PM2.5": 68.0,
+          "PM10": 93.0,
+          "CO": 63.0
     }
   },
   {
@@ -4824,13 +4830,13 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
-          "NH3": 12.0,
-          "SO2": 11.0,
-          "CO": 28.0,
-          "PM10": 47.0,
-          "NO2": 16.0,
+          "PM2.5": 37.0,
           "OZONE": 52.0,
-          "PM2.5": 37.0
+          "SO2": 11.0,
+          "NH3": 12.0,
+          "CO": 28.0,
+          "PM10": 48.0,
+          "NO2": 18.0
     }
   },
   {
@@ -4841,7 +4847,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 20.918946,
     "lng": 74.776388,
-    "aqi": 98,
+    "aqi": 102,
     "pollutants": [
       "PM10",
       "PM2.5",
@@ -4852,13 +4858,12 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "NO2": 9.0,
-          "OZONE": 31.0,
-          "PM2.5": 48.0,
-          "PM10": 98.0,
           "NH3": 1.0,
-          "SO2": 6.0,
-          "CO": 4.0
+          "OZONE": 31.0,
+          "PM10": 102.0,
+          "SO2": 5.0,
+          "NO2": 9.0,
+          "PM2.5": 50.0
     }
   },
   {
@@ -4869,7 +4874,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 19.2268427,
     "lng": 73.0788456,
-    "aqi": 44,
+    "aqi": 34,
     "pollutants": [
       "NO2",
       "CO",
@@ -4880,13 +4885,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "PM2.5": 22.0,
-          "SO2": 11.0,
+          "PM10": 34.0,
+          "NO2": 17.0,
+          "CO": 17.0,
           "NH3": 1.0,
-          "CO": 18.0,
-          "OZONE": 44.0,
-          "PM10": 36.0,
-          "NO2": 17.0
+          "SO2": 11.0,
+          "PM2.5": 21.0,
+          "OZONE": 23.0
     }
   },
   {
@@ -4897,7 +4902,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 23.837789,
     "lng": 73.714926,
-    "aqi": 85,
+    "aqi": 83,
     "pollutants": [
       "PM10",
       "SO2",
@@ -4909,12 +4914,12 @@ export const STATIONS_DATA = [
     ],
     "pollutant_values": {
           "PM2.5": 55.0,
-          "SO2": 7.0,
-          "OZONE": 66.0,
+          "PM10": 83.0,
           "NO2": 7.0,
-          "PM10": 85.0,
-          "NH3": 12.0,
-          "CO": 32.0
+          "NH3": 11.0,
+          "OZONE": 53.0,
+          "SO2": 7.0,
+          "CO": 33.0
     }
   },
   {
@@ -4925,7 +4930,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 23.508764,
     "lng": 87.35444,
-    "aqi": 58,
+    "aqi": 64,
     "pollutants": [
       "SO2",
       "NH3",
@@ -4936,13 +4941,13 @@ export const STATIONS_DATA = [
       "NO2"
     ],
     "pollutant_values": {
-          "NH3": 4.0,
-          "PM10": 58.0,
+          "NO2": 59.0,
           "SO2": 10.0,
-          "OZONE": 6.0,
-          "PM2.5": 52.0,
-          "NO2": 58.0,
-          "CO": 23.0
+          "NH3": 4.0,
+          "PM2.5": 57.0,
+          "OZONE": 2.0,
+          "PM10": 64.0,
+          "CO": 31.0
     }
   },
   {
@@ -4953,7 +4958,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 23.549395,
     "lng": 87.300496,
-    "aqi": 80,
+    "aqi": 81,
     "pollutants": [
       "NO2",
       "OZONE",
@@ -4964,13 +4969,13 @@ export const STATIONS_DATA = [
       "NH3"
     ],
     "pollutant_values": {
-          "SO2": 12.0,
-          "OZONE": 59.0,
-          "PM2.5": 75.0,
-          "PM10": 80.0,
-          "CO": 28.0,
+          "NH3": 5.0,
+          "PM10": 81.0,
           "NO2": 30.0,
-          "NH3": 5.0
+          "SO2": 12.0,
+          "CO": 32.0,
+          "PM2.5": 74.0,
+          "OZONE": 44.0
     }
   },
   {
@@ -4981,7 +4986,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 23.567923,
     "lng": 87.306843,
-    "aqi": 96,
+    "aqi": 97,
     "pollutants": [
       "PM10",
       "PM2.5",
@@ -4992,13 +4997,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "PM2.5": 59.0,
-          "NO2": 17.0,
+          "PM2.5": 60.0,
+          "PM10": 77.0,
+          "NO2": 18.0,
           "NH3": 1.0,
-          "SO2": 28.0,
-          "CO": 96.0,
-          "PM10": 74.0,
-          "OZONE": 67.0
+          "OZONE": 55.0,
+          "SO2": 29.0,
+          "CO": 97.0
     }
   },
   {
@@ -5009,7 +5014,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 16.711754,
     "lng": 81.092095,
-    "aqi": 61,
+    "aqi": 62,
     "pollutants": [
       "SO2",
       "CO",
@@ -5020,13 +5025,13 @@ export const STATIONS_DATA = [
       "PM10"
     ],
     "pollutant_values": {
-          "NH3": 3.0,
+          "NO2": 23.0,
+          "PM2.5": 62.0,
           "PM10": 61.0,
-          "PM2.5": 61.0,
-          "NO2": 20.0,
-          "OZONE": 38.0,
+          "NH3": 3.0,
           "SO2": 14.0,
-          "CO": 29.0
+          "CO": 33.0,
+          "OZONE": 25.0
     }
   },
   {
@@ -5048,13 +5053,13 @@ export const STATIONS_DATA = [
       "NH3"
     ],
     "pollutant_values": {
-          "PM2.5": 171.0,
-          "NO2": 25.0,
-          "NH3": 11.0,
           "PM10": 186.0,
+          "NH3": 11.0,
+          "PM2.5": 171.0,
+          "SO2": 9.0,
           "OZONE": 23.0,
-          "CO": 26.0,
-          "SO2": 10.0
+          "NO2": 25.0,
+          "CO": 29.0
     }
   },
   {
@@ -5065,7 +5070,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 28.376058,
     "lng": 77.315741,
-    "aqi": 180,
+    "aqi": 197,
     "pollutants": [
       "NO2",
       "NH3",
@@ -5076,13 +5081,9 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "NH3": 10.0,
+          "PM2.5": 197.0,
           "SO2": 9.0,
-          "CO": 61.0,
-          "PM2.5": 180.0,
-          "PM10": 166.0,
-          "OZONE": 15.0,
-          "NO2": 31.0
+          "CO": 65.0
     }
   },
   {
@@ -5093,7 +5094,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 28.4417,
     "lng": 77.3217,
-    "aqi": 212,
+    "aqi": 214,
     "pollutants": [
       "SO2",
       "NH3",
@@ -5104,13 +5105,13 @@ export const STATIONS_DATA = [
       "NO2"
     ],
     "pollutant_values": {
-          "PM10": 166.0,
-          "NH3": 11.0,
-          "SO2": 6.0,
           "OZONE": 10.0,
-          "CO": 59.0,
-          "PM2.5": 212.0,
-          "NO2": 38.0
+          "PM10": 166.0,
+          "SO2": 6.0,
+          "CO": 61.0,
+          "PM2.5": 214.0,
+          "NO2": 38.0,
+          "NH3": 11.0
     }
   },
   {
@@ -5121,7 +5122,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 27.1594,
     "lng": 78.3953,
-    "aqi": 60,
+    "aqi": 62,
     "pollutants": [
       "PM10",
       "NO2",
@@ -5131,13 +5132,13 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
-          "NH3": 2.0,
+          "SO2": 8.0,
+          "PM2.5": 43.0,
+          "PM10": 62.0,
+          "NO2": 15.0,
           "CO": 38.0,
           "OZONE": 1.0,
-          "PM2.5": 42.0,
-          "SO2": 8.0,
-          "PM10": 60.0,
-          "NO2": 15.0
+          "NH3": 2.0
     }
   },
   {
@@ -5148,7 +5149,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 27.168897,
     "lng": 78.37696,
-    "aqi": 52,
+    "aqi": 54,
     "pollutants": [
       "NH3",
       "CO",
@@ -5159,13 +5160,13 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
-          "NH3": 2.0,
-          "PM10": 52.0,
+          "SO2": 29.0,
+          "PM2.5": 38.0,
+          "PM10": 54.0,
           "NO2": 17.0,
-          "PM2.5": 37.0,
-          "OZONE": 10.0,
-          "SO2": 30.0,
-          "CO": 25.0
+          "NH3": 2.0,
+          "CO": 19.0,
+          "OZONE": 8.0
     }
   },
   {
@@ -5176,7 +5177,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 23.243639,
     "lng": 72.68994,
-    "aqi": 108,
+    "aqi": 110,
     "pollutants": [
       "OZONE",
       "CO",
@@ -5187,13 +5188,13 @@ export const STATIONS_DATA = [
       "PM2.5"
     ],
     "pollutant_values": {
-          "PM2.5": 48.0,
-          "PM10": 108.0,
-          "CO": 2.0,
           "NH3": 1.0,
+          "OZONE": 5.0,
+          "PM2.5": 47.0,
           "SO2": 3.0,
-          "NO2": 11.0,
-          "OZONE": 7.0
+          "CO": 2.0,
+          "PM10": 110.0,
+          "NO2": 10.0
     }
   },
   {
@@ -5204,7 +5205,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 23.163798,
     "lng": 72.677768,
-    "aqi": 96,
+    "aqi": 100,
     "pollutants": [
       "CO",
       "SO2",
@@ -5215,12 +5216,12 @@ export const STATIONS_DATA = [
       "NH3"
     ],
     "pollutant_values": {
-          "CO": 36.0,
-          "OZONE": 59.0,
-          "NO2": 28.0,
-          "PM10": 96.0,
-          "SO2": 6.0,
-          "NH3": 7.0
+          "OZONE": 45.0,
+          "SO2": 7.0,
+          "PM10": 100.0,
+          "CO": 25.0,
+          "NO2": 27.0,
+          "NH3": 6.0
     }
   },
   {
@@ -5231,7 +5232,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 23.221714,
     "lng": 72.654328,
-    "aqi": 84,
+    "aqi": 89,
     "pollutants": [
       "NH3",
       "PM10",
@@ -5242,13 +5243,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "NO2": 25.0,
-          "PM10": 84.0,
-          "SO2": 3.0,
-          "OZONE": 21.0,
-          "NH3": 1.0,
-          "PM2.5": 54.0,
-          "CO": 34.0
+          "PM2.5": 55.0,
+          "SO2": 4.0,
+          "CO": 32.0,
+          "NO2": 24.0,
+          "OZONE": 17.0,
+          "PM10": 89.0,
+          "NH3": 1.0
     }
   },
   {
@@ -5259,7 +5260,7 @@ export const STATIONS_DATA = [
     "region": "East India",
     "lat": 27.33853,
     "lng": 88.614099,
-    "aqi": 46,
+    "aqi": 43,
     "pollutants": [
       "NH3",
       "SO2",
@@ -5270,13 +5271,13 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "PM2.5": 45.0,
-          "PM10": 46.0,
+          "PM10": 43.0,
           "SO2": 1.0,
-          "CO": 8.0,
-          "NH3": 1.0,
+          "PM2.5": 43.0,
           "NO2": 8.0,
-          "OZONE": 24.0
+          "NH3": 1.0,
+          "CO": 8.0,
+          "OZONE": 22.0
     }
   },
   {
@@ -5287,7 +5288,7 @@ export const STATIONS_DATA = [
     "region": "East India",
     "lat": 24.792403,
     "lng": 84.992416,
-    "aqi": 109,
+    "aqi": 128,
     "pollutants": [
       "PM10",
       "NO2",
@@ -5298,13 +5299,13 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
+          "PM10": 128.0,
+          "SO2": 39.0,
           "NH3": 1.0,
-          "CO": 28.0,
-          "NO2": 12.0,
-          "OZONE": 109.0,
-          "PM2.5": 60.0,
-          "SO2": 40.0,
-          "PM10": 102.0
+          "CO": 30.0,
+          "OZONE": 62.0,
+          "PM2.5": 91.0,
+          "NO2": 12.0
     }
   },
   {
@@ -5315,7 +5316,7 @@ export const STATIONS_DATA = [
     "region": "East India",
     "lat": 24.762518,
     "lng": 84.982348,
-    "aqi": 54,
+    "aqi": 55,
     "pollutants": [
       "OZONE",
       "PM10",
@@ -5326,13 +5327,13 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
-          "PM10": 54.0,
-          "NH3": 3.0,
           "SO2": 7.0,
-          "OZONE": 47.0,
-          "NO2": 20.0,
-          "CO": 18.0,
-          "PM2.5": 44.0
+          "PM2.5": 44.0,
+          "PM10": 55.0,
+          "NO2": 21.0,
+          "NH3": 4.0,
+          "CO": 31.0,
+          "OZONE": 28.0
     }
   },
   {
@@ -5361,7 +5362,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 28.694528,
     "lng": 77.494705,
-    "aqi": 153,
+    "aqi": 141,
     "pollutants": [
       "NO2",
       "NH3",
@@ -5372,13 +5373,13 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
+          "NO2": 55.0,
+          "SO2": 15.0,
+          "PM2.5": 77.0,
+          "PM10": 141.0,
           "NH3": 12.0,
-          "OZONE": 153.0,
-          "PM2.5": 73.0,
-          "CO": 32.0,
-          "PM10": 138.0,
-          "NO2": 57.0,
-          "SO2": 14.0
+          "CO": 44.0,
+          "OZONE": 100.0
     }
   },
   {
@@ -5389,7 +5390,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 28.646233,
     "lng": 77.358075,
-    "aqi": 152,
+    "aqi": 161,
     "pollutants": [
       "PM2.5",
       "SO2",
@@ -5400,13 +5401,13 @@ export const STATIONS_DATA = [
       "NO2"
     ],
     "pollutant_values": {
-          "NH3": 7.0,
-          "PM10": 152.0,
-          "NO2": 44.0,
+          "OZONE": 24.0,
+          "PM2.5": 103.0,
+          "NO2": 47.0,
           "SO2": 18.0,
-          "OZONE": 34.0,
-          "CO": 45.0,
-          "PM2.5": 99.0
+          "PM10": 161.0,
+          "NH3": 7.0,
+          "CO": 59.0
     }
   },
   {
@@ -5417,7 +5418,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 28.6603346,
     "lng": 77.3572563,
-    "aqi": 161,
+    "aqi": 114,
     "pollutants": [
       "NH3",
       "PM2.5",
@@ -5428,8 +5429,8 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "CO": 45.0,
-          "OZONE": 161.0
+          "OZONE": 114.0,
+          "CO": 37.0
     }
   },
   {
@@ -5468,7 +5469,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 28.757294,
     "lng": 77.278792,
-    "aqi": 219,
+    "aqi": 237,
     "pollutants": [
       "OZONE",
       "PM10",
@@ -5479,13 +5480,13 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "CO": 74.0,
-          "PM10": 219.0,
-          "PM2.5": 153.0,
+          "PM2.5": 170.0,
           "SO2": 21.0,
           "NO2": 60.0,
+          "OZONE": 61.0,
           "NH3": 5.0,
-          "OZONE": 81.0
+          "CO": 76.0,
+          "PM10": 237.0
     }
   },
   {
@@ -5496,7 +5497,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 28.685382,
     "lng": 77.453839,
-    "aqi": 136,
+    "aqi": 146,
     "pollutants": [
       "PM10",
       "NO2",
@@ -5507,13 +5508,13 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
-          "SO2": 18.0,
-          "PM2.5": 90.0,
+          "SO2": 19.0,
+          "OZONE": 56.0,
+          "CO": 59.0,
+          "PM2.5": 99.0,
           "NH3": 18.0,
-          "OZONE": 108.0,
-          "NO2": 56.0,
-          "PM10": 136.0,
-          "CO": 43.0
+          "PM10": 146.0,
+          "NO2": 61.0
     }
   },
   {
@@ -5524,7 +5525,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 26.730136,
     "lng": 83.433859,
-    "aqi": 74,
+    "aqi": 73,
     "pollutants": [
       "PM10",
       "NH3",
@@ -5535,13 +5536,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "NO2": 11.0,
+          "PM10": 73.0,
           "CO": 6.0,
-          "OZONE": 14.0,
           "NH3": 1.0,
           "SO2": 37.0,
           "PM2.5": 56.0,
-          "PM10": 74.0
+          "NO2": 11.0,
+          "OZONE": 9.0
     }
   },
   {
@@ -5552,7 +5553,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 28.47272,
     "lng": 77.482,
-    "aqi": 173,
+    "aqi": 145,
     "pollutants": [
       "PM10",
       "NO2",
@@ -5563,13 +5564,13 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "OZONE": 173.0,
-          "NO2": 36.0,
-          "NH3": 9.0,
-          "PM2.5": 77.0,
-          "PM10": 139.0,
-          "SO2": 11.0,
-          "CO": 38.0
+          "SO2": 12.0,
+          "NO2": 38.0,
+          "PM2.5": 82.0,
+          "CO": 37.0,
+          "PM10": 145.0,
+          "OZONE": 92.0,
+          "NH3": 9.0
     }
   },
   {
@@ -5580,7 +5581,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 28.557054,
     "lng": 77.453663,
-    "aqi": 178,
+    "aqi": 181,
     "pollutants": [
       "SO2",
       "NO2",
@@ -5591,13 +5592,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "PM2.5": 132.0,
-          "NO2": 50.0,
+          "PM10": 181.0,
+          "NO2": 47.0,
           "SO2": 21.0,
-          "OZONE": 164.0,
-          "PM10": 178.0,
+          "CO": 43.0,
+          "PM2.5": 132.0,
           "NH3": 10.0,
-          "CO": 25.0
+          "OZONE": 109.0
     }
   },
   {
@@ -5608,7 +5609,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 13.4127,
     "lng": 80.1081,
-    "aqi": 88,
+    "aqi": 92,
     "pollutants": [
       "PM10",
       "NO2",
@@ -5619,9 +5620,9 @@ export const STATIONS_DATA = [
     "pollutant_values": {
           "NO2": 22.0,
           "NH3": 1.0,
-          "PM10": 88.0,
-          "SO2": 20.0,
-          "PM2.5": 61.0
+          "SO2": 21.0,
+          "PM2.5": 73.0,
+          "PM10": 92.0
     }
   },
   {
@@ -5632,7 +5633,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 16.316553,
     "lng": 80.413302,
-    "aqi": 80,
+    "aqi": 77,
     "pollutants": [
       "NO2",
       "SO2",
@@ -5643,13 +5644,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "PM2.5": 80.0,
-          "PM10": 72.0,
-          "OZONE": 47.0,
-          "SO2": 13.0,
-          "CO": 30.0,
+          "NO2": 39.0,
           "NH3": 8.0,
-          "NO2": 41.0
+          "SO2": 14.0,
+          "OZONE": 39.0,
+          "CO": 27.0,
+          "PM2.5": 77.0,
+          "PM10": 69.0
     }
   },
   {
@@ -5660,7 +5661,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 28.4227,
     "lng": 77.0667,
-    "aqi": 141,
+    "aqi": 138,
     "pollutants": [
       "PM2.5",
       "NH3",
@@ -5671,13 +5672,13 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "NO2": 6.0,
-          "CO": 25.0,
-          "PM2.5": 136.0,
-          "NH3": 8.0,
+          "OZONE": 39.0,
+          "PM10": 138.0,
           "SO2": 16.0,
-          "OZONE": 42.0,
-          "PM10": 141.0
+          "PM2.5": 129.0,
+          "NO2": 6.0,
+          "NH3": 8.0,
+          "CO": 25.0
     }
   },
   {
@@ -5688,7 +5689,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 28.4275,
     "lng": 77.1465,
-    "aqi": 20,
+    "aqi": 24,
     "pollutants": [
       "PM2.5",
       "PM10",
@@ -5698,8 +5699,8 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
-          "CO": 5.0,
-          "OZONE": 20.0
+          "OZONE": 17.0,
+          "CO": 24.0
     }
   },
   {
@@ -5710,7 +5711,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 28.4501238,
     "lng": 77.0263051,
-    "aqi": 139,
+    "aqi": 162,
     "pollutants": [
       "CO",
       "SO2",
@@ -5720,11 +5721,11 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "CO": 90.0,
-          "PM10": 139.0,
-          "OZONE": 25.0,
-          "PM2.5": 53.0,
+          "PM10": 162.0,
+          "OZONE": 15.0,
           "SO2": 5.0,
+          "CO": 98.0,
+          "PM2.5": 53.0,
           "NO2": 26.0
     }
   },
@@ -5771,13 +5772,13 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
-          "PM10": 50.0,
           "NO2": 1.0,
-          "NH3": 5.0,
           "SO2": 35.0,
-          "OZONE": 25.0,
-          "PM2.5": 44.0,
-          "CO": 8.0
+          "NH3": 5.0,
+          "OZONE": 11.0,
+          "PM2.5": 45.0,
+          "PM10": 50.0,
+          "CO": 9.0
     }
   },
   {
@@ -5788,7 +5789,7 @@ export const STATIONS_DATA = [
     "region": "East India",
     "lat": 26.181742,
     "lng": 91.78063,
-    "aqi": 76,
+    "aqi": 79,
     "pollutants": [
       "SO2",
       "OZONE",
@@ -5798,10 +5799,10 @@ export const STATIONS_DATA = [
       "NH3"
     ],
     "pollutant_values": {
-          "PM2.5": 71.0,
-          "PM10": 76.0,
-          "SO2": 36.0,
-          "NH3": 1.0
+          "PM2.5": 74.0,
+          "PM10": 79.0,
+          "NH3": 1.0,
+          "SO2": 36.0
     }
   },
   {
@@ -5812,7 +5813,7 @@ export const STATIONS_DATA = [
     "region": "East India",
     "lat": 26.10887,
     "lng": 91.589544,
-    "aqi": 65,
+    "aqi": 72,
     "pollutants": [
       "OZONE",
       "PM10",
@@ -5823,13 +5824,13 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "CO": 41.0,
-          "PM10": 44.0,
-          "NO2": 15.0,
-          "PM2.5": 65.0,
-          "SO2": 11.0,
-          "NH3": 4.0,
-          "OZONE": 32.0
+          "NO2": 20.0,
+          "SO2": 10.0,
+          "PM10": 48.0,
+          "PM2.5": 72.0,
+          "CO": 46.0,
+          "OZONE": 33.0,
+          "NH3": 4.0
     }
   },
   {
@@ -5840,14 +5841,14 @@ export const STATIONS_DATA = [
     "region": "East India",
     "lat": 26.1875,
     "lng": 91.744194,
-    "aqi": 24,
+    "aqi": 32,
     "pollutants": [
       "CO",
       "OZONE"
     ],
     "pollutant_values": {
-          "CO": 24.0,
-          "OZONE": 22.0
+          "CO": 32.0,
+          "OZONE": 19.0
     }
   },
   {
@@ -5858,7 +5859,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 26.259242,
     "lng": 78.216432,
-    "aqi": 117,
+    "aqi": 105,
     "pollutants": [
       "SO2",
       "PM10",
@@ -5869,13 +5870,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "CO": 22.0,
+          "CO": 26.0,
+          "PM2.5": 55.0,
+          "NO2": 29.0,
+          "PM10": 101.0,
           "NH3": 6.0,
-          "PM10": 117.0,
-          "NO2": 33.0,
-          "SO2": 6.0,
-          "OZONE": 105.0,
-          "PM2.5": 61.0
+          "SO2": 7.0,
+          "OZONE": 105.0
     }
   },
   {
@@ -5886,7 +5887,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 26.200388,
     "lng": 78.147714,
-    "aqi": 125,
+    "aqi": 93,
     "pollutants": [
       "PM2.5",
       "CO",
@@ -5896,13 +5897,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "NO2": 68.0,
+          "PM2.5": 50.0,
           "NH3": 6.0,
-          "PM2.5": 47.0,
-          "CO": 31.0,
-          "OZONE": 125.0,
-          "PM10": 91.0,
-          "SO2": 11.0
+          "CO": 40.0,
+          "SO2": 9.0,
+          "PM10": 93.0,
+          "OZONE": 92.0,
+          "NO2": 62.0
     }
   },
   {
@@ -5913,7 +5914,7 @@ export const STATIONS_DATA = [
     "region": "East India",
     "lat": 25.697189,
     "lng": 85.2459,
-    "aqi": 138,
+    "aqi": 104,
     "pollutants": [
       "NH3",
       "SO2",
@@ -5924,13 +5925,13 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "SO2": 6.0,
-          "PM2.5": 93.0,
-          "NH3": 18.0,
-          "PM10": 110.0,
+          "PM10": 104.0,
           "NO2": 16.0,
-          "CO": 19.0,
-          "OZONE": 138.0
+          "SO2": 6.0,
+          "PM2.5": 92.0,
+          "CO": 23.0,
+          "OZONE": 75.0,
+          "NH3": 18.0
     }
   },
   {
@@ -5941,7 +5942,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 22.06047,
     "lng": 88.109737,
-    "aqi": 66,
+    "aqi": 64,
     "pollutants": [
       "PM10",
       "SO2",
@@ -5952,13 +5953,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
+          "OZONE": 60.0,
+          "PM2.5": 37.0,
+          "NO2": 9.0,
           "CO": 24.0,
-          "OZONE": 66.0,
-          "NO2": 10.0,
+          "PM10": 64.0,
           "SO2": 10.0,
-          "PM10": 66.0,
-          "NH3": 4.0,
-          "PM2.5": 38.0
+          "NH3": 4.0
     }
   },
   {
@@ -5969,7 +5970,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 29.61075,
     "lng": 74.283608,
-    "aqi": 112,
+    "aqi": 95,
     "pollutants": [
       "PM2.5",
       "PM10",
@@ -5980,13 +5981,13 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "SO2": 4.0,
           "NH3": 8.0,
-          "PM2.5": 31.0,
-          "PM10": 93.0,
-          "NO2": 30.0,
-          "CO": 24.0,
-          "OZONE": 112.0
+          "SO2": 4.0,
+          "PM10": 95.0,
+          "PM2.5": 30.0,
+          "NO2": 29.0,
+          "CO": 31.0,
+          "OZONE": 82.0
     }
   },
   {
@@ -5997,7 +5998,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 28.725645,
     "lng": 77.749675,
-    "aqi": 144,
+    "aqi": 140,
     "pollutants": [
       "NO2",
       "PM10",
@@ -6008,13 +6009,13 @@ export const STATIONS_DATA = [
       "PM2.5"
     ],
     "pollutant_values": {
-          "NO2": 50.0,
-          "PM10": 123.0,
-          "NH3": 15.0,
-          "CO": 37.0,
-          "PM2.5": 144.0,
-          "SO2": 27.0,
-          "OZONE": 96.0
+          "PM2.5": 140.0,
+          "PM10": 127.0,
+          "NH3": 14.0,
+          "CO": 43.0,
+          "NO2": 45.0,
+          "OZONE": 83.0,
+          "SO2": 26.0
     }
   },
   {
@@ -6025,7 +6026,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 19.710842,
     "lng": 77.151824,
-    "aqi": 122,
+    "aqi": 102,
     "pollutants": [
       "PM2.5",
       "CO",
@@ -6036,13 +6037,13 @@ export const STATIONS_DATA = [
       "NH3"
     ],
     "pollutant_values": {
-          "SO2": 2.0,
-          "PM2.5": 27.0,
-          "PM10": 45.0,
-          "OZONE": 122.0,
-          "NO2": 19.0,
+          "PM10": 43.0,
           "CO": 13.0,
-          "NH3": 3.0
+          "OZONE": 102.0,
+          "PM2.5": 24.0,
+          "SO2": 2.0,
+          "NH3": 3.0,
+          "NO2": 16.0
     }
   },
   {
@@ -6092,13 +6093,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "NO2": 53.0,
-          "PM2.5": 68.0,
-          "PM10": 99.0,
           "NH3": 5.0,
-          "SO2": 8.0,
-          "OZONE": 39.0,
-          "CO": 24.0
+          "SO2": 7.0,
+          "PM10": 99.0,
+          "OZONE": 15.0,
+          "PM2.5": 69.0,
+          "NO2": 49.0,
+          "CO": 23.0
     }
   },
   {
@@ -6122,11 +6123,11 @@ export const STATIONS_DATA = [
     "pollutant_values": {
           "PM10": 60.0,
           "SO2": 8.0,
-          "NO2": 11.0,
+          "CO": 12.0,
+          "OZONE": 15.0,
+          "PM2.5": 47.0,
           "NH3": 1.0,
-          "OZONE": 26.0,
-          "PM2.5": 46.0,
-          "CO": 13.0
+          "NO2": 9.0
     }
   },
   {
@@ -6137,7 +6138,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 22.6025571,
     "lng": 88.3105664,
-    "aqi": 97,
+    "aqi": 52,
     "pollutants": [
       "PM2.5",
       "NO2",
@@ -6147,13 +6148,13 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "CO": 33.0,
-          "PM2.5": 36.0,
-          "PM10": 47.0,
           "NO2": 12.0,
-          "NH3": 1.0,
+          "PM2.5": 36.0,
           "SO2": 6.0,
-          "OZONE": 97.0
+          "NH3": 1.0,
+          "CO": 30.0,
+          "OZONE": 52.0,
+          "PM10": 47.0
     }
   },
   {
@@ -6164,7 +6165,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 22.611968,
     "lng": 88.347422,
-    "aqi": 97,
+    "aqi": 100,
     "pollutants": [
       "SO2",
       "NO2",
@@ -6175,13 +6176,13 @@ export const STATIONS_DATA = [
       "PM2.5"
     ],
     "pollutant_values": {
-          "PM2.5": 86.0,
-          "PM10": 97.0,
-          "NO2": 43.0,
-          "OZONE": 17.0,
-          "NH3": 2.0,
+          "PM2.5": 89.0,
+          "NO2": 42.0,
           "SO2": 10.0,
-          "CO": 38.0
+          "CO": 38.0,
+          "PM10": 100.0,
+          "NH3": 2.0,
+          "OZONE": 16.0
     }
   },
   {
@@ -6192,7 +6193,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 22.5687319,
     "lng": 88.2797276,
-    "aqi": 59,
+    "aqi": 72,
     "pollutants": [
       "NH3",
       "CO",
@@ -6203,13 +6204,13 @@ export const STATIONS_DATA = [
       "PM10"
     ],
     "pollutant_values": {
-          "PM2.5": 40.0,
-          "PM10": 47.0,
+          "NO2": 28.0,
           "SO2": 18.0,
-          "CO": 59.0,
+          "PM2.5": 41.0,
+          "PM10": 45.0,
           "NH3": 8.0,
-          "NO2": 27.0,
-          "OZONE": 39.0
+          "CO": 72.0,
+          "OZONE": 27.0
     }
   },
   {
@@ -6231,13 +6232,13 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
-          "PM2.5": 37.0,
-          "PM10": 54.0,
           "NH3": 2.0,
           "SO2": 2.0,
-          "CO": 13.0,
+          "CO": 14.0,
+          "NO2": 9.0,
+          "PM10": 54.0,
           "OZONE": 18.0,
-          "NO2": 10.0
+          "PM2.5": 36.0
     }
   },
   {
@@ -6248,7 +6249,7 @@ export const STATIONS_DATA = [
     "region": "South India",
     "lat": 17.460103,
     "lng": 78.334361,
-    "aqi": 14,
+    "aqi": 17,
     "pollutants": [
       "PM2.5",
       "PM10",
@@ -6259,8 +6260,8 @@ export const STATIONS_DATA = [
       "NH3"
     ],
     "pollutant_values": {
-          "CO": 14.0,
-          "OZONE": 10.0
+          "OZONE": 10.0,
+          "CO": 17.0
     }
   },
   {
@@ -6271,7 +6272,7 @@ export const STATIONS_DATA = [
     "region": "South India",
     "lat": 17.470431,
     "lng": 78.566959,
-    "aqi": 80,
+    "aqi": 79,
     "pollutants": [
       "PM2.5",
       "SO2",
@@ -6282,13 +6283,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
+          "PM10": 79.0,
+          "OZONE": 32.0,
           "PM2.5": 52.0,
-          "NO2": 14.0,
           "NH3": 4.0,
-          "CO": 25.0,
-          "OZONE": 29.0,
-          "PM10": 80.0,
-          "SO2": 12.0
+          "SO2": 12.0,
+          "CO": 27.0,
+          "NO2": 15.0
     }
   },
   {
@@ -6299,7 +6300,7 @@ export const STATIONS_DATA = [
     "region": "South India",
     "lat": 17.5184,
     "lng": 78.278777,
-    "aqi": 86,
+    "aqi": 61,
     "pollutants": [
       "OZONE",
       "NO2",
@@ -6310,13 +6311,13 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "NH3": 2.0,
-          "NO2": 16.0,
-          "PM2.5": 30.0,
-          "PM10": 62.0,
-          "CO": 21.0,
           "SO2": 10.0,
-          "OZONE": 86.0
+          "CO": 23.0,
+          "PM2.5": 27.0,
+          "NH3": 2.0,
+          "PM10": 52.0,
+          "NO2": 13.0,
+          "OZONE": 61.0
     }
   },
   {
@@ -6327,7 +6328,7 @@ export const STATIONS_DATA = [
     "region": "South India",
     "lat": 17.5316895,
     "lng": 78.218939,
-    "aqi": 58,
+    "aqi": 51,
     "pollutants": [
       "OZONE",
       "NH3",
@@ -6338,13 +6339,13 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "PM2.5": 56.0,
-          "PM10": 58.0,
-          "NO2": 25.0,
-          "SO2": 12.0,
-          "OZONE": 47.0,
+          "SO2": 13.0,
           "NH3": 1.0,
-          "CO": 8.0
+          "CO": 22.0,
+          "NO2": 28.0,
+          "PM2.5": 49.0,
+          "PM10": 51.0,
+          "OZONE": 48.0
     }
   },
   {
@@ -6355,7 +6356,7 @@ export const STATIONS_DATA = [
     "region": "South India",
     "lat": 17.349694,
     "lng": 78.451437,
-    "aqi": 51,
+    "aqi": 42,
     "pollutants": [
       "NH3",
       "SO2",
@@ -6366,13 +6367,13 @@ export const STATIONS_DATA = [
       "PM10"
     ],
     "pollutant_values": {
-          "NO2": 5.0,
-          "PM2.5": 37.0,
-          "CO": 18.0,
+          "PM10": 42.0,
+          "CO": 13.0,
+          "PM2.5": 30.0,
+          "NO2": 4.0,
           "NH3": 3.0,
           "SO2": 2.0,
-          "PM10": 51.0,
-          "OZONE": 24.0
+          "OZONE": 23.0
     }
   },
   {
@@ -6383,7 +6384,7 @@ export const STATIONS_DATA = [
     "region": "South India",
     "lat": 17.585705,
     "lng": 78.126199,
-    "aqi": 73,
+    "aqi": 70,
     "pollutants": [
       "SO2",
       "PM2.5",
@@ -6394,12 +6395,11 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "PM2.5": 64.0,
+          "PM2.5": 70.0,
+          "CO": 29.0,
           "NH3": 5.0,
-          "PM10": 73.0,
           "NO2": 14.0,
-          "CO": 37.0,
-          "OZONE": 25.0,
+          "OZONE": 20.0,
           "SO2": 14.0
     }
   },
@@ -6411,7 +6411,7 @@ export const STATIONS_DATA = [
     "region": "South India",
     "lat": 17.37206,
     "lng": 78.50864,
-    "aqi": 81,
+    "aqi": 83,
     "pollutants": [
       "PM2.5",
       "NH3",
@@ -6422,13 +6422,11 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "PM10": 81.0,
+          "PM2.5": 65.0,
+          "OZONE": 26.0,
+          "PM10": 83.0,
           "NO2": 14.0,
-          "NH3": 2.0,
-          "CO": 38.0,
-          "PM2.5": 63.0,
-          "SO2": 20.0,
-          "OZONE": 36.0
+          "CO": 39.0
     }
   },
   {
@@ -6439,7 +6437,7 @@ export const STATIONS_DATA = [
     "region": "South India",
     "lat": 17.528544,
     "lng": 78.286195,
-    "aqi": 84,
+    "aqi": 81,
     "pollutants": [
       "SO2",
       "PM2.5",
@@ -6450,13 +6448,11 @@ export const STATIONS_DATA = [
       "NH3"
     ],
     "pollutant_values": {
+          "PM10": 81.0,
           "NH3": 5.0,
-          "SO2": 17.0,
-          "PM2.5": 52.0,
-          "PM10": 84.0,
-          "CO": 23.0,
-          "NO2": 16.0,
-          "OZONE": 35.0
+          "PM2.5": 49.0,
+          "OZONE": 28.0,
+          "SO2": 20.0
     }
   },
   {
@@ -6467,7 +6463,7 @@ export const STATIONS_DATA = [
     "region": "South India",
     "lat": 17.417094,
     "lng": 78.457437,
-    "aqi": 67,
+    "aqi": 65,
     "pollutants": [
       "PM2.5",
       "CO",
@@ -6478,13 +6474,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "OZONE": 18.0,
-          "NO2": 14.0,
-          "PM10": 67.0,
+          "PM10": 65.0,
+          "NO2": 15.0,
+          "NH3": 4.0,
           "SO2": 21.0,
-          "CO": 32.0,
-          "PM2.5": 47.0,
-          "NH3": 4.0
+          "CO": 35.0,
+          "PM2.5": 42.0,
+          "OZONE": 18.0
     }
   },
   {
@@ -6495,7 +6491,7 @@ export const STATIONS_DATA = [
     "region": "South India",
     "lat": 17.544899,
     "lng": 78.486949,
-    "aqi": 81,
+    "aqi": 82,
     "pollutants": [
       "PM10",
       "OZONE",
@@ -6506,13 +6502,12 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "OZONE": 32.0,
-          "PM10": 81.0,
-          "NH3": 3.0,
+          "PM10": 82.0,
+          "OZONE": 34.0,
+          "PM2.5": 44.0,
           "NO2": 15.0,
-          "SO2": 10.0,
-          "CO": 15.0,
-          "PM2.5": 43.0
+          "NH3": 3.0,
+          "SO2": 8.0
     }
   },
   {
@@ -6523,7 +6518,7 @@ export const STATIONS_DATA = [
     "region": "South India",
     "lat": 17.429398,
     "lng": 78.569354,
-    "aqi": 37,
+    "aqi": 23,
     "pollutants": [
       "NO2",
       "CO",
@@ -6534,8 +6529,7 @@ export const STATIONS_DATA = [
       "PM10"
     ],
     "pollutant_values": {
-          "CO": 37.0,
-          "OZONE": 29.0
+          "OZONE": 23.0
     }
   },
   {
@@ -6546,7 +6540,7 @@ export const STATIONS_DATA = [
     "region": "South India",
     "lat": 17.393559,
     "lng": 78.339194,
-    "aqi": 84,
+    "aqi": 87,
     "pollutants": [
       "PM2.5",
       "NO2",
@@ -6557,13 +6551,11 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "OZONE": 35.0,
-          "PM10": 84.0,
-          "NO2": 14.0,
-          "CO": 38.0,
-          "PM2.5": 61.0,
-          "NH3": 2.0,
-          "SO2": 13.0
+          "PM10": 87.0,
+          "CO": 39.0,
+          "PM2.5": 65.0,
+          "NO2": 15.0,
+          "SO2": 14.0
     }
   },
   {
@@ -6580,11 +6572,11 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "PM2.5": 41.0,
-          "NO2": 52.0,
           "SO2": 8.0,
           "OZONE": 16.0,
-          "CO": 39.0
+          "NO2": 52.0,
+          "CO": 39.0,
+          "PM2.5": 36.0
     }
   },
   {
@@ -6595,7 +6587,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 22.431,
     "lng": 75.5213,
-    "aqi": 116,
+    "aqi": 113,
     "pollutants": [
       "NH3",
       "SO2",
@@ -6606,13 +6598,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "PM10": 94.0,
-          "OZONE": 17.0,
-          "NH3": 11.0,
-          "SO2": 8.0,
-          "NO2": 116.0,
-          "CO": 97.0,
-          "PM2.5": 51.0
+          "NH3": 12.0,
+          "OZONE": 13.0,
+          "NO2": 113.0,
+          "PM10": 95.0,
+          "CO": 108.0,
+          "PM2.5": 49.0,
+          "SO2": 8.0
     }
   },
   {
@@ -6634,12 +6626,13 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "NH3": 7.0,
+          "NH3": 5.0,
+          "OZONE": 8.0,
           "CO": 100.0,
+          "PM2.5": 39.0,
+          "PM10": 34.0,
           "NO2": 26.0,
-          "SO2": 26.0,
-          "PM2.5": 37.0,
-          "OZONE": 9.0
+          "SO2": 26.0
     }
   },
   {
@@ -6676,7 +6669,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 22.7524,
     "lng": 75.8872,
-    "aqi": 41,
+    "aqi": 43,
     "pollutants": [
       "NO2",
       "PM2.5",
@@ -6686,12 +6679,12 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "PM2.5": 36.0,
-          "PM10": 41.0,
-          "CO": 33.0,
-          "NO2": 2.0,
-          "OZONE": 14.0,
-          "SO2": 21.0
+          "NO2": 3.0,
+          "OZONE": 13.0,
+          "PM10": 43.0,
+          "SO2": 21.0,
+          "PM2.5": 37.0,
+          "CO": 35.0
     }
   },
   {
@@ -6702,7 +6695,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 22.7084,
     "lng": 75.8815,
-    "aqi": 60,
+    "aqi": 61,
     "pollutants": [
       "PM2.5",
       "SO2",
@@ -6711,12 +6704,12 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "PM10": 60.0,
           "NO2": 1.0,
+          "CO": 26.0,
+          "OZONE": 12.0,
           "PM2.5": 52.0,
-          "SO2": 3.0,
-          "CO": 22.0,
-          "OZONE": 13.0
+          "PM10": 61.0,
+          "SO2": 3.0
     }
   },
   {
@@ -6727,7 +6720,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 23.168606,
     "lng": 79.932247,
-    "aqi": 85,
+    "aqi": 100,
     "pollutants": [
       "OZONE",
       "NH3",
@@ -6747,7 +6740,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 23.218135,
     "lng": 79.95777,
-    "aqi": 68,
+    "aqi": 81,
     "pollutants": [
       "NH3",
       "CO",
@@ -6758,11 +6751,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "NO2": 37.0,
-          "NH3": 3.0,
-          "PM10": 48.0,
+          "OZONE": 35.0,
+          "CO": 81.0,
+          "PM2.5": 37.0,
           "SO2": 10.0,
-          "OZONE": 68.0
+          "PM10": 47.0,
+          "NO2": 37.0,
+          "NH3": 3.0
     }
   },
   {
@@ -6773,7 +6768,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 23.142888,
     "lng": 79.916147,
-    "aqi": 54,
+    "aqi": 50,
     "pollutants": [
       "CO",
       "OZONE",
@@ -6784,8 +6779,8 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
-          "CO": 46.0,
-          "OZONE": 54.0
+          "CO": 50.0,
+          "OZONE": 49.0
     }
   },
   {
@@ -6807,13 +6802,13 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
-          "PM2.5": 37.0,
+          "PM10": 42.0,
+          "PM2.5": 39.0,
+          "OZONE": 33.0,
           "NH3": 3.0,
-          "PM10": 41.0,
-          "OZONE": 43.0,
-          "NO2": 11.0,
-          "CO": 32.0,
-          "SO2": 3.0
+          "SO2": 2.0,
+          "CO": 43.0,
+          "NO2": 11.0
     }
   },
   {
@@ -6852,7 +6847,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 26.9502929,
     "lng": 75.730943,
-    "aqi": 125,
+    "aqi": 128,
     "pollutants": [
       "OZONE",
       "NO2",
@@ -6863,13 +6858,13 @@ export const STATIONS_DATA = [
       "PM10"
     ],
     "pollutant_values": {
-          "PM10": 125.0,
-          "NO2": 67.0,
-          "NH3": 14.0,
+          "PM2.5": 109.0,
+          "OZONE": 31.0,
+          "PM10": 128.0,
+          "CO": 62.0,
           "SO2": 10.0,
-          "CO": 53.0,
-          "PM2.5": 90.0,
-          "OZONE": 37.0
+          "NO2": 69.0,
+          "NH3": 14.0
     }
   },
   {
@@ -6880,7 +6875,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 26.843698,
     "lng": 75.766894,
-    "aqi": 144,
+    "aqi": 123,
     "pollutants": [
       "PM2.5",
       "CO",
@@ -6889,13 +6884,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "NO2": 21.0,
-          "PM10": 119.0,
-          "NH3": 11.0,
-          "PM2.5": 48.0,
-          "CO": 21.0,
+          "PM10": 123.0,
           "SO2": 3.0,
-          "OZONE": 144.0
+          "OZONE": 113.0,
+          "NO2": 21.0,
+          "PM2.5": 52.0,
+          "NH3": 11.0,
+          "CO": 30.0
     }
   },
   {
@@ -6906,7 +6901,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 26.9164092,
     "lng": 75.7994901,
-    "aqi": 107,
+    "aqi": 108,
     "pollutants": [
       "PM10",
       "SO2",
@@ -6917,13 +6912,13 @@ export const STATIONS_DATA = [
       "PM2.5"
     ],
     "pollutant_values": {
-          "PM2.5": 77.0,
-          "CO": 63.0,
-          "NO2": 106.0,
+          "NO2": 107.0,
           "SO2": 27.0,
+          "CO": 65.0,
           "NH3": 14.0,
-          "PM10": 107.0,
-          "OZONE": 55.0
+          "PM10": 108.0,
+          "OZONE": 49.0,
+          "PM2.5": 81.0
     }
   },
   {
@@ -6934,7 +6929,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 26.960669,
     "lng": 75.771817,
-    "aqi": 128,
+    "aqi": 132,
     "pollutants": [
       "CO",
       "PM10",
@@ -6945,13 +6940,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "NO2": 13.0,
           "NH3": 9.0,
-          "OZONE": 71.0,
-          "PM2.5": 89.0,
-          "PM10": 128.0,
+          "PM2.5": 94.0,
+          "NO2": 13.0,
+          "PM10": 132.0,
           "SO2": 2.0,
-          "CO": 42.0
+          "CO": 47.0,
+          "OZONE": 54.0
     }
   },
   {
@@ -6962,7 +6957,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 26.786682,
     "lng": 75.827928,
-    "aqi": 126,
+    "aqi": 129,
     "pollutants": [
       "NH3",
       "CO",
@@ -6973,13 +6968,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "PM2.5": 71.0,
-          "CO": 26.0,
-          "OZONE": 88.0,
-          "PM10": 126.0,
-          "NO2": 35.0,
+          "NO2": 34.0,
+          "CO": 29.0,
+          "PM2.5": 74.0,
           "NH3": 2.0,
-          "SO2": 2.0
+          "PM10": 129.0,
+          "SO2": 2.0,
+          "OZONE": 78.0
     }
   },
   {
@@ -7000,13 +6995,13 @@ export const STATIONS_DATA = [
       "NO2"
     ],
     "pollutant_values": {
-          "NO2": 19.0,
-          "OZONE": 84.0,
-          "PM2.5": 156.0,
+          "OZONE": 72.0,
           "PM10": 227.0,
+          "PM2.5": 144.0,
+          "NO2": 16.0,
           "NH3": 13.0,
           "SO2": 1.0,
-          "CO": 14.0
+          "CO": 16.0
     }
   },
   {
@@ -7017,7 +7012,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 31.321907,
     "lng": 75.578914,
-    "aqi": 71,
+    "aqi": 68,
     "pollutants": [
       "NH3",
       "SO2",
@@ -7028,13 +7023,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "SO2": 14.0,
-          "CO": 56.0,
-          "NH3": 6.0,
-          "PM2.5": 62.0,
-          "NO2": 15.0,
           "OZONE": 45.0,
-          "PM10": 71.0
+          "NO2": 16.0,
+          "NH3": 6.0,
+          "PM10": 68.0,
+          "CO": 57.0,
+          "PM2.5": 60.0,
+          "SO2": 14.0
     }
   },
   {
@@ -7045,7 +7040,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 21.001264,
     "lng": 75.565602,
-    "aqi": 65,
+    "aqi": 74,
     "pollutants": [
       "NO2",
       "PM2.5",
@@ -7056,13 +7051,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "CO": 33.0,
-          "NH3": 4.0,
-          "NO2": 13.0,
+          "OZONE": 51.0,
+          "NH3": 5.0,
+          "PM10": 74.0,
           "SO2": 6.0,
-          "PM2.5": 42.0,
-          "PM10": 65.0,
-          "OZONE": 55.0
+          "PM2.5": 46.0,
+          "NO2": 13.0,
+          "CO": 31.0
     }
   },
   {
@@ -7083,13 +7078,13 @@ export const STATIONS_DATA = [
       "NH3"
     ],
     "pollutant_values": {
-          "PM2.5": 30.0,
+          "SO2": 2.0,
+          "OZONE": 31.0,
+          "PM2.5": 32.0,
           "NO2": 19.0,
           "NH3": 4.0,
-          "PM10": 42.0,
-          "SO2": 2.0,
-          "CO": 14.0,
-          "OZONE": 43.0
+          "PM10": 43.0,
+          "CO": 21.0
     }
   },
   {
@@ -7100,7 +7095,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 25.344694,
     "lng": 72.626208,
-    "aqi": 159,
+    "aqi": 160,
     "pollutants": [
       "PM2.5",
       "NO2",
@@ -7111,13 +7106,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "PM2.5": 53.0,
-          "SO2": 7.0,
-          "OZONE": 101.0,
-          "CO": 26.0,
-          "NO2": 24.0,
+          "PM2.5": 54.0,
+          "PM10": 160.0,
+          "NO2": 19.0,
           "NH3": 8.0,
-          "PM10": 159.0
+          "SO2": 6.0,
+          "CO": 23.0,
+          "OZONE": 74.0
     }
   },
   {
@@ -7128,7 +7123,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 24.588397,
     "lng": 76.172782,
-    "aqi": 153,
+    "aqi": 155,
     "pollutants": [
       "NO2",
       "SO2",
@@ -7139,13 +7134,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "PM10": 75.0,
+          "NO2": 18.0,
+          "OZONE": 155.0,
           "NH3": 8.0,
-          "OZONE": 153.0,
-          "SO2": 6.0,
-          "NO2": 26.0,
-          "CO": 80.0,
-          "PM2.5": 47.0
+          "PM2.5": 49.0,
+          "PM10": 77.0,
+          "SO2": 4.0,
+          "CO": 86.0
     }
   },
   {
@@ -7156,7 +7151,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 25.4547,
     "lng": 78.6039,
-    "aqi": 46,
+    "aqi": 48,
     "pollutants": [
       "CO",
       "OZONE",
@@ -7167,13 +7162,13 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
-          "PM2.5": 32.0,
-          "NO2": 6.0,
-          "OZONE": 11.0,
           "NH3": 4.0,
-          "CO": 6.0,
+          "CO": 9.0,
+          "PM10": 48.0,
+          "PM2.5": 32.0,
           "SO2": 18.0,
-          "PM10": 46.0
+          "OZONE": 8.0,
+          "NO2": 6.0
     }
   },
   {
@@ -7184,7 +7179,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 28.108988,
     "lng": 75.386577,
-    "aqi": 97,
+    "aqi": 98,
     "pollutants": [
       "NH3",
       "CO",
@@ -7195,13 +7190,13 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
-          "NO2": 23.0,
-          "OZONE": 90.0,
-          "SO2": 4.0,
-          "PM2.5": 50.0,
           "NH3": 10.0,
-          "CO": 17.0,
-          "PM10": 97.0
+          "PM2.5": 45.0,
+          "PM10": 98.0,
+          "SO2": 5.0,
+          "OZONE": 68.0,
+          "CO": 28.0,
+          "NO2": 26.0
     }
   },
   {
@@ -7212,7 +7207,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 29.307814,
     "lng": 76.337619,
-    "aqi": 178,
+    "aqi": 173,
     "pollutants": [
       "PM10",
       "NH3",
@@ -7223,13 +7218,13 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "PM10": 109.0,
-          "SO2": 1.0,
-          "OZONE": 45.0,
-          "CO": 18.0,
-          "PM2.5": 178.0,
           "NO2": 17.0,
-          "NH3": 5.0
+          "NH3": 5.0,
+          "PM10": 107.0,
+          "CO": 14.0,
+          "PM2.5": 173.0,
+          "SO2": 1.0,
+          "OZONE": 34.0
     }
   },
   {
@@ -7240,7 +7235,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 26.215415,
     "lng": 73.070156,
-    "aqi": 243,
+    "aqi": 239,
     "pollutants": [
       "CO",
       "NH3",
@@ -7251,12 +7246,13 @@ export const STATIONS_DATA = [
       "NO2"
     ],
     "pollutant_values": {
-          "PM2.5": 124.0,
-          "PM10": 243.0,
-          "SO2": 2.0,
-          "NO2": 20.0,
-          "CO": 6.0,
-          "OZONE": 80.0
+          "OZONE": 70.0,
+          "PM2.5": 118.0,
+          "PM10": 239.0,
+          "NO2": 16.0,
+          "CO": 7.0,
+          "NH3": 14.0,
+          "SO2": 2.0
     }
   },
   {
@@ -7267,7 +7263,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 26.253384,
     "lng": 72.976571,
-    "aqi": 15,
+    "aqi": 100,
     "pollutants": [
       "NO2",
       "SO2",
@@ -7278,7 +7274,8 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "CO": 15.0
+          "CO": 17.0,
+          "OZONE": 100.0
     }
   },
   {
@@ -7289,7 +7286,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 26.268249,
     "lng": 73.0193853,
-    "aqi": 243,
+    "aqi": 236,
     "pollutants": [
       "PM10",
       "NH3",
@@ -7300,13 +7297,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "PM10": 242.0,
-          "NO2": 23.0,
-          "NH3": 10.0,
-          "PM2.5": 243.0,
-          "CO": 32.0,
-          "OZONE": 39.0,
-          "SO2": 6.0
+          "SO2": 6.0,
+          "CO": 29.0,
+          "PM10": 236.0,
+          "OZONE": 38.0,
+          "NO2": 22.0,
+          "NH3": 9.0,
+          "PM2.5": 229.0
     }
   },
   {
@@ -7317,7 +7314,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 26.358805,
     "lng": 73.047444,
-    "aqi": 227,
+    "aqi": 215,
     "pollutants": [
       "NO2",
       "PM10",
@@ -7328,10 +7325,13 @@ export const STATIONS_DATA = [
       "NH3"
     ],
     "pollutant_values": {
-          "NH3": 8.0,
-          "OZONE": 96.0,
-          "PM10": 227.0,
-          "NO2": 23.0
+          "NH3": 7.0,
+          "OZONE": 90.0,
+          "PM2.5": 121.0,
+          "CO": 16.0,
+          "PM10": 215.0,
+          "NO2": 15.0,
+          "SO2": 2.0
     }
   },
   {
@@ -7342,7 +7342,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 26.29581,
     "lng": 73.082283,
-    "aqi": 255,
+    "aqi": 256,
     "pollutants": [
       "PM2.5",
       "NO2",
@@ -7353,11 +7353,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "PM10": 255.0,
-          "NO2": 19.0,
-          "CO": 40.0,
-          "PM2.5": 100.0,
-          "NH3": 8.0
+          "PM10": 256.0,
+          "PM2.5": 102.0,
+          "CO": 23.0,
+          "NO2": 17.0,
+          "SO2": 5.0,
+          "NH3": 8.0,
+          "OZONE": 82.0
     }
   },
   {
@@ -7368,7 +7370,7 @@ export const STATIONS_DATA = [
     "region": "East India",
     "lat": 23.707909,
     "lng": 86.41467,
-    "aqi": 87,
+    "aqi": 86,
     "pollutants": [
       "CO",
       "NH3",
@@ -7378,13 +7380,13 @@ export const STATIONS_DATA = [
       "PM10"
     ],
     "pollutant_values": {
+          "CO": 39.0,
+          "PM10": 86.0,
+          "NH3": 3.0,
+          "OZONE": 4.0,
           "PM2.5": 63.0,
           "NO2": 8.0,
-          "NH3": 3.0,
-          "OZONE": 5.0,
-          "PM10": 87.0,
-          "SO2": 4.0,
-          "CO": 40.0
+          "SO2": 4.0
     }
   },
   {
@@ -7395,7 +7397,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 14.465052,
     "lng": 78.824187,
-    "aqi": 50,
+    "aqi": 49,
     "pollutants": [
       "CO",
       "NH3",
@@ -7406,13 +7408,13 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
-          "OZONE": 44.0,
-          "PM10": 50.0,
+          "NO2": 22.0,
           "NH3": 4.0,
-          "SO2": 12.0,
-          "PM2.5": 45.0,
-          "NO2": 24.0,
-          "CO": 28.0
+          "PM10": 49.0,
+          "PM2.5": 43.0,
+          "CO": 33.0,
+          "SO2": 13.0,
+          "OZONE": 47.0
     }
   },
   {
@@ -7423,7 +7425,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 29.8006,
     "lng": 76.4155,
-    "aqi": 131,
+    "aqi": 153,
     "pollutants": [
       "PM10",
       "NO2",
@@ -7434,13 +7436,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "NO2": 32.0,
-          "PM2.5": 131.0,
-          "OZONE": 20.0,
-          "PM10": 122.0,
+          "PM10": 134.0,
           "NH3": 6.0,
-          "SO2": 34.0,
-          "CO": 21.0
+          "CO": 48.0,
+          "PM2.5": 153.0,
+          "SO2": 31.0,
+          "OZONE": 18.0,
+          "NO2": 32.0
     }
   },
   {
@@ -7451,7 +7453,7 @@ export const STATIONS_DATA = [
     "region": "South India",
     "lat": 17.336318,
     "lng": 76.847397,
-    "aqi": 35,
+    "aqi": 36,
     "pollutants": [
       "PM10",
       "NH3",
@@ -7461,13 +7463,13 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "PM10": 26.0,
-          "NO2": 13.0,
-          "NH3": 3.0,
-          "OZONE": 18.0,
-          "CO": 35.0,
+          "NH3": 2.0,
+          "CO": 36.0,
+          "SO2": 4.0,
           "PM2.5": 20.0,
-          "SO2": 3.0
+          "PM10": 25.0,
+          "OZONE": 15.0,
+          "NO2": 12.0
     }
   },
   {
@@ -7500,7 +7502,7 @@ export const STATIONS_DATA = [
     "region": "South India",
     "lat": 11.875,
     "lng": 75.3732,
-    "aqi": 74,
+    "aqi": 66,
     "pollutants": [
       "CO",
       "PM10",
@@ -7512,12 +7514,12 @@ export const STATIONS_DATA = [
     ],
     "pollutant_values": {
           "NH3": 1.0,
-          "PM2.5": 74.0,
+          "CO": 9.0,
           "NO2": 13.0,
           "SO2": 4.0,
-          "CO": 9.0,
           "OZONE": 30.0,
-          "PM10": 60.0
+          "PM2.5": 66.0,
+          "PM10": 58.0
     }
   },
   {
@@ -7528,7 +7530,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 26.4703136,
     "lng": 80.3229863,
-    "aqi": 61,
+    "aqi": 63,
     "pollutants": [
       "NO2",
       "SO2",
@@ -7538,12 +7540,12 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "SO2": 12.0,
-          "PM2.5": 61.0,
-          "CO": 52.0,
+          "PM2.5": 63.0,
+          "CO": 50.0,
           "NO2": 44.0,
-          "OZONE": 20.0,
-          "PM10": 55.0
+          "OZONE": 5.0,
+          "SO2": 12.0,
+          "PM10": 57.0
     }
   },
   {
@@ -7554,7 +7556,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 26.428282,
     "lng": 80.327067,
-    "aqi": 78,
+    "aqi": 81,
     "pollutants": [
       "PM2.5",
       "OZONE",
@@ -7565,13 +7567,13 @@ export const STATIONS_DATA = [
       "PM10"
     ],
     "pollutant_values": {
-          "PM10": 78.0,
-          "OZONE": 13.0,
-          "PM2.5": 59.0,
-          "SO2": 38.0,
+          "SO2": 34.0,
+          "CO": 40.0,
+          "PM2.5": 62.0,
           "NO2": 26.0,
-          "NH3": 3.0,
-          "CO": 34.0
+          "PM10": 81.0,
+          "OZONE": 13.0,
+          "NH3": 3.0
     }
   },
   {
@@ -7582,7 +7584,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 26.509954,
     "lng": 80.249612,
-    "aqi": 79,
+    "aqi": 74,
     "pollutants": [
       "NO2",
       "SO2",
@@ -7593,12 +7595,12 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "PM10": 79.0,
-          "NO2": 28.0,
-          "OZONE": 20.0,
+          "PM2.5": 48.0,
           "NH3": 2.0,
-          "CO": 21.0,
-          "PM2.5": 50.0
+          "PM10": 74.0,
+          "NO2": 28.0,
+          "CO": 26.0,
+          "OZONE": 20.0
     }
   },
   {
@@ -7609,7 +7611,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 26.506177,
     "lng": 77.025989,
-    "aqi": 84,
+    "aqi": 80,
     "pollutants": [
       "NO2",
       "PM10",
@@ -7620,13 +7622,13 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "PM2.5": 39.0,
-          "PM10": 84.0,
+          "PM10": 80.0,
+          "NH3": 4.0,
           "CO": 19.0,
-          "SO2": 6.0,
-          "NO2": 39.0,
-          "NH3": 5.0,
-          "OZONE": 68.0
+          "OZONE": 43.0,
+          "SO2": 7.0,
+          "NO2": 38.0,
+          "PM2.5": 36.0
     }
   },
   {
@@ -7637,7 +7639,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 29.6953,
     "lng": 77.0027,
-    "aqi": 115,
+    "aqi": 122,
     "pollutants": [
       "NH3",
       "PM2.5",
@@ -7648,13 +7650,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "NH3": 6.0,
-          "OZONE": 84.0,
+          "PM2.5": 122.0,
+          "CO": 13.0,
+          "OZONE": 53.0,
           "NO2": 6.0,
-          "SO2": 5.0,
-          "PM2.5": 115.0,
-          "PM10": 92.0,
-          "CO": 14.0
+          "PM10": 95.0,
+          "NH3": 6.0,
+          "SO2": 4.0
     }
   },
   {
@@ -7665,18 +7667,14 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 29.2124114,
     "lng": 78.9611753,
-    "aqi": 88,
+    "aqi": 12,
     "pollutants": [
       "NH3",
       "CO",
       "NO2"
     ],
     "pollutant_values": {
-          "SO2": 4.0,
-          "NO2": 12.0,
-          "PM2.5": 88.0,
-          "PM10": 83.0,
-          "NH3": 4.0
+          "CO": 12.0
     }
   },
   {
@@ -7687,19 +7685,19 @@ export const STATIONS_DATA = [
     "region": "East India",
     "lat": 25.560083,
     "lng": 87.553265,
-    "aqi": 95,
+    "aqi": 94,
     "pollutants": [
       "OZONE",
       "CO"
     ],
     "pollutant_values": {
-          "SO2": 24.0,
-          "NO2": 9.0,
-          "CO": 95.0,
-          "OZONE": 57.0,
+          "CO": 94.0,
           "PM2.5": 38.0,
           "PM10": 39.0,
-          "NH3": 1.0
+          "NH3": 1.0,
+          "OZONE": 42.0,
+          "NO2": 9.0,
+          "SO2": 23.0
     }
   },
   {
@@ -7710,7 +7708,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 23.50016,
     "lng": 80.23284,
-    "aqi": 82,
+    "aqi": 89,
     "pollutants": [
       "PM10",
       "NO2",
@@ -7721,13 +7719,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "OZONE": 78.0,
-          "SO2": 44.0,
-          "CO": 26.0,
-          "PM2.5": 54.0,
-          "NH3": 5.0,
-          "PM10": 82.0,
-          "NO2": 18.0
+          "PM10": 89.0,
+          "OZONE": 53.0,
+          "NO2": 19.0,
+          "SO2": 50.0,
+          "CO": 38.0,
+          "PM2.5": 56.0,
+          "NH3": 5.0
     }
   },
   {
@@ -7750,12 +7748,12 @@ export const STATIONS_DATA = [
     ],
     "pollutant_values": {
           "SO2": 8.0,
-          "OZONE": 30.0,
+          "OZONE": 26.0,
           "PM10": 62.0,
           "NO2": 16.0,
           "NH3": 2.0,
-          "PM2.5": 54.0,
-          "CO": 27.0
+          "CO": 29.0,
+          "PM2.5": 52.0
     }
   },
   {
@@ -7766,7 +7764,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 30.736056,
     "lng": 76.209694,
-    "aqi": 57,
+    "aqi": 56,
     "pollutants": [
       "PM10",
       "NH3",
@@ -7777,8 +7775,8 @@ export const STATIONS_DATA = [
       "PM2.5"
     ],
     "pollutant_values": {
-          "OZONE": 33.0,
-          "CO": 57.0
+          "OZONE": 31.0,
+          "CO": 56.0
     }
   },
   {
@@ -7789,7 +7787,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 28.61119,
     "lng": 77.34206,
-    "aqi": 257,
+    "aqi": 197,
     "pollutants": [
       "NH3",
       "CO",
@@ -7800,12 +7798,12 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "NO2": 36.0,
-          "PM10": 183.0,
+          "PM10": 197.0,
           "NH3": 10.0,
-          "CO": 32.0,
-          "OZONE": 257.0,
-          "PM2.5": 118.0,
+          "CO": 43.0,
+          "PM2.5": 123.0,
+          "NO2": 37.0,
+          "OZONE": 160.0,
           "SO2": 12.0
     }
   },
@@ -7828,13 +7826,13 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "SO2": 10.0,
-          "OZONE": 18.0,
           "PM10": 78.0,
+          "NO2": 13.0,
           "NH3": 1.0,
-          "CO": 18.0,
-          "PM2.5": 56.0,
-          "NO2": 13.0
+          "SO2": 10.0,
+          "CO": 44.0,
+          "OZONE": 20.0,
+          "PM2.5": 57.0
     }
   },
   {
@@ -7845,7 +7843,7 @@ export const STATIONS_DATA = [
     "region": "East India",
     "lat": 26.0881305,
     "lng": 87.93840336,
-    "aqi": 150,
+    "aqi": 147,
     "pollutants": [
       "CO",
       "NH3",
@@ -7856,13 +7854,13 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
-          "PM2.5": 150.0,
           "CO": 14.0,
-          "PM10": 108.0,
-          "OZONE": 33.0,
+          "PM2.5": 147.0,
+          "PM10": 107.0,
           "NO2": 8.0,
-          "NH3": 3.0,
-          "SO2": 10.0
+          "SO2": 10.0,
+          "OZONE": 33.0,
+          "NH3": 3.0
     }
   },
   {
@@ -7873,7 +7871,7 @@ export const STATIONS_DATA = [
     "region": "East India",
     "lat": 25.6635413,
     "lng": 94.0989878,
-    "aqi": 38,
+    "aqi": 36,
     "pollutants": [
       "NH3",
       "CO",
@@ -7882,13 +7880,12 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "NO2": 4.0,
-          "CO": 6.0,
-          "OZONE": 1.0,
-          "PM2.5": 38.0,
-          "PM10": 36.0,
+          "PM10": 33.0,
           "NH3": 1.0,
-          "SO2": 36.0
+          "PM2.5": 36.0,
+          "NO2": 4.0,
+          "SO2": 36.0,
+          "CO": 8.0
     }
   },
   {
@@ -7899,7 +7896,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 16.6870449,
     "lng": 74.2505872,
-    "aqi": 36,
+    "aqi": 33,
     "pollutants": [
       "CO",
       "NO2",
@@ -7909,13 +7906,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "CO": 15.0,
-          "PM2.5": 21.0,
-          "PM10": 36.0,
-          "SO2": 5.0,
           "NO2": 14.0,
+          "PM10": 33.0,
+          "OZONE": 32.0,
           "NH3": 3.0,
-          "OZONE": 33.0
+          "SO2": 5.0,
+          "PM2.5": 21.0,
+          "CO": 16.0
     }
   },
   {
@@ -7945,7 +7942,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 22.5367507,
     "lng": 88.3638022,
-    "aqi": 53,
+    "aqi": 55,
     "pollutants": [
       "NH3",
       "PM2.5",
@@ -7956,13 +7953,13 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
-          "NO2": 23.0,
           "NH3": 7.0,
-          "SO2": 11.0,
-          "PM2.5": 46.0,
-          "CO": 20.0,
-          "PM10": 53.0,
-          "OZONE": 33.0
+          "PM2.5": 47.0,
+          "CO": 18.0,
+          "PM10": 55.0,
+          "OZONE": 23.0,
+          "NO2": 23.0,
+          "SO2": 11.0
     }
   },
   {
@@ -7973,7 +7970,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 22.58157048,
     "lng": 88.41002457,
-    "aqi": 62,
+    "aqi": 61,
     "pollutants": [
       "PM2.5",
       "SO2",
@@ -7984,13 +7981,13 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "OZONE": 62.0,
-          "PM2.5": 41.0,
-          "NO2": 13.0,
+          "SO2": 10.0,
           "NH3": 5.0,
+          "NO2": 13.0,
+          "OZONE": 48.0,
+          "PM2.5": 41.0,
           "PM10": 61.0,
-          "SO2": 8.0,
-          "CO": 35.0
+          "CO": 33.0
     }
   },
   {
@@ -8001,7 +7998,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 22.55664,
     "lng": 88.342674,
-    "aqi": 62,
+    "aqi": 65,
     "pollutants": [
       "CO",
       "PM2.5",
@@ -8012,13 +8009,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "CO": 21.0,
-          "PM2.5": 59.0,
-          "PM10": 62.0,
-          "OZONE": 36.0,
-          "SO2": 4.0,
+          "PM2.5": 61.0,
+          "CO": 18.0,
+          "OZONE": 20.0,
           "NO2": 20.0,
-          "NH3": 9.0
+          "NH3": 9.0,
+          "PM10": 65.0,
+          "SO2": 5.0
     }
   },
   {
@@ -8029,7 +8026,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 22.49929,
     "lng": 88.36917,
-    "aqi": 51,
+    "aqi": 53,
     "pollutants": [
       "OZONE",
       "PM2.5",
@@ -8040,13 +8037,13 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
-          "PM10": 50.0,
-          "PM2.5": 51.0,
+          "NO2": 12.0,
+          "PM2.5": 52.0,
+          "OZONE": 31.0,
           "NH3": 7.0,
-          "OZONE": 42.0,
-          "NO2": 6.0,
+          "PM10": 53.0,
           "SO2": 4.0,
-          "CO": 28.0
+          "CO": 27.0
     }
   },
   {
@@ -8057,7 +8054,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 22.51106,
     "lng": 88.35142,
-    "aqi": 54,
+    "aqi": 50,
     "pollutants": [
       "PM10",
       "NH3",
@@ -8068,13 +8065,13 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
-          "PM2.5": 31.0,
+          "SO2": 5.0,
           "NO2": 50.0,
-          "CO": 20.0,
-          "PM10": 40.0,
-          "OZONE": 54.0,
-          "NH3": 8.0,
-          "SO2": 5.0
+          "OZONE": 33.0,
+          "PM2.5": 32.0,
+          "PM10": 42.0,
+          "CO": 18.0,
+          "NH3": 8.0
     }
   },
   {
@@ -8085,7 +8082,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 22.5448082,
     "lng": 88.3403691,
-    "aqi": 100,
+    "aqi": 101,
     "pollutants": [
       "SO2",
       "OZONE",
@@ -8096,12 +8093,12 @@ export const STATIONS_DATA = [
       "NH3"
     ],
     "pollutant_values": {
-          "PM2.5": 82.0,
-          "PM10": 100.0,
-          "NH3": 9.0,
+          "CO": 21.0,
           "SO2": 8.0,
-          "OZONE": 41.0,
-          "CO": 25.0,
+          "PM10": 101.0,
+          "NH3": 9.0,
+          "PM2.5": 83.0,
+          "OZONE": 32.0,
           "NO2": 23.0
     }
   },
@@ -8113,7 +8110,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 22.627847,
     "lng": 88.380669,
-    "aqi": 64,
+    "aqi": 67,
     "pollutants": [
       "NO2",
       "CO",
@@ -8124,13 +8121,13 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
-          "PM10": 64.0,
-          "PM2.5": 63.0,
-          "NO2": 51.0,
-          "NH3": 7.0,
-          "CO": 39.0,
-          "OZONE": 64.0,
-          "SO2": 10.0
+          "NH3": 6.0,
+          "SO2": 11.0,
+          "PM2.5": 67.0,
+          "OZONE": 42.0,
+          "NO2": 48.0,
+          "PM10": 65.0,
+          "CO": 35.0
     }
   },
   {
@@ -8141,7 +8138,7 @@ export const STATIONS_DATA = [
     "region": "South India",
     "lat": 8.8787,
     "lng": 76.6073,
-    "aqi": 76,
+    "aqi": 77,
     "pollutants": [
       "OZONE",
       "CO"
@@ -8156,15 +8153,15 @@ export const STATIONS_DATA = [
     "region": "South India",
     "lat": 15.34763,
     "lng": 76.181767,
-    "aqi": 50,
+    "aqi": 48,
     "pollutants": [
       "NO2",
       "PM10",
       "NH3"
     ],
     "pollutant_values": {
-          "CO": 49.0,
-          "OZONE": 50.0
+          "OZONE": 40.0,
+          "CO": 48.0
     }
   },
   {
@@ -8175,7 +8172,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 22.368195,
     "lng": 82.746431,
-    "aqi": 20,
+    "aqi": 38,
     "pollutants": [
       "OZONE",
       "PM2.5",
@@ -8185,7 +8182,12 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "CO": 20.0
+          "PM2.5": 21.0,
+          "NO2": 21.0,
+          "OZONE": 38.0,
+          "SO2": 3.0,
+          "CO": 18.0,
+          "PM10": 30.0
     }
   },
   {
@@ -8224,7 +8226,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 25.16409,
     "lng": 75.858137,
-    "aqi": 79,
+    "aqi": 42,
     "pollutants": [
       "PM10",
       "PM2.5",
@@ -8235,11 +8237,11 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "OZONE": 79.0,
-          "PM10": 59.0,
-          "NH3": 10.0,
-          "NO2": 43.0,
-          "CO": 18.0
+          "CO": 22.0,
+          "PM2.5": 42.0,
+          "SO2": 21.0,
+          "NO2": 31.0,
+          "NH3": 9.0
     }
   },
   {
@@ -8250,7 +8252,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 25.196024,
     "lng": 75.855668,
-    "aqi": 100,
+    "aqi": 98,
     "pollutants": [
       "NO2",
       "SO2",
@@ -8261,10 +8263,12 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "NH3": 6.0,
-          "NO2": 36.0,
-          "OZONE": 100.0,
-          "PM10": 100.0
+          "PM10": 91.0,
+          "NO2": 24.0,
+          "NH3": 4.0,
+          "PM2.5": 64.0,
+          "SO2": 14.0,
+          "OZONE": 98.0
     }
   },
   {
@@ -8275,7 +8279,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 25.14389,
     "lng": 75.821256,
-    "aqi": 79,
+    "aqi": 74,
     "pollutants": [
       "CO",
       "SO2",
@@ -8286,11 +8290,12 @@ export const STATIONS_DATA = [
       "NH3"
     ],
     "pollutant_values": {
-          "PM2.5": 59.0,
-          "OZONE": 10.0,
-          "PM10": 79.0,
-          "NH3": 8.0,
-          "SO2": 11.0
+          "NH3": 7.0,
+          "CO": 27.0,
+          "PM10": 74.0,
+          "SO2": 11.0,
+          "NO2": 14.0,
+          "OZONE": 11.0
     }
   },
   {
@@ -8301,7 +8306,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 22.12665,
     "lng": 83.483212,
-    "aqi": 55,
+    "aqi": 58,
     "pollutants": [
       "CO",
       "PM2.5",
@@ -8312,13 +8317,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "PM2.5": 33.0,
-          "OZONE": 49.0,
-          "CO": 35.0,
-          "NO2": 34.0,
-          "PM10": 55.0,
+          "NO2": 36.0,
+          "SO2": 12.0,
+          "OZONE": 36.0,
           "NH3": 2.0,
-          "SO2": 12.0
+          "PM2.5": 35.0,
+          "PM10": 58.0,
+          "CO": 35.0
     }
   },
   {
@@ -8329,7 +8334,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 29.966942,
     "lng": 76.875879,
-    "aqi": 108,
+    "aqi": 114,
     "pollutants": [
       "PM2.5",
       "OZONE",
@@ -8340,13 +8345,13 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "SO2": 3.0,
-          "CO": 17.0,
-          "PM10": 108.0,
+          "CO": 21.0,
+          "PM10": 114.0,
           "NH3": 5.0,
+          "PM2.5": 79.0,
           "NO2": 19.0,
-          "OZONE": 60.0,
-          "PM2.5": 74.0
+          "OZONE": 48.0,
+          "SO2": 2.0
     }
   },
   {
@@ -8368,12 +8373,13 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
-          "NO2": 24.0,
-          "NH3": 7.0,
-          "OZONE": 23.0,
-          "PM2.5": 39.0,
-          "SO2": 5.0,
-          "PM10": 55.0
+          "NO2": 20.0,
+          "NH3": 6.0,
+          "OZONE": 16.0,
+          "PM2.5": 40.0,
+          "SO2": 4.0,
+          "PM10": 55.0,
+          "CO": 27.0
     }
   },
   {
@@ -8384,7 +8390,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 26.906111,
     "lng": 80.948222,
-    "aqi": 99,
+    "aqi": 98,
     "pollutants": [
       "NO2",
       "PM10",
@@ -8395,13 +8401,13 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "CO": 45.0,
-          "NH3": 16.0,
-          "OZONE": 98.0,
-          "PM2.5": 88.0,
-          "PM10": 99.0,
           "NO2": 27.0,
-          "SO2": 9.0
+          "PM2.5": 88.0,
+          "OZONE": 67.0,
+          "PM10": 98.0,
+          "NH3": 16.0,
+          "CO": 43.0,
+          "SO2": 10.0
     }
   },
   {
@@ -8412,7 +8418,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 26.90723,
     "lng": 80.98579,
-    "aqi": 74,
+    "aqi": 76,
     "pollutants": [
       "OZONE",
       "PM2.5",
@@ -8423,13 +8429,13 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
+          "CO": 14.0,
           "SO2": 3.0,
-          "PM10": 74.0,
+          "PM10": 75.0,
           "NO2": 32.0,
-          "NH3": 6.0,
-          "CO": 16.0,
-          "PM2.5": 74.0,
-          "OZONE": 65.0
+          "OZONE": 54.0,
+          "PM2.5": 76.0,
+          "NH3": 6.0
     }
   },
   {
@@ -8440,7 +8446,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 26.8458805,
     "lng": 80.9365541,
-    "aqi": 84,
+    "aqi": 85,
     "pollutants": [
       "CO",
       "NH3",
@@ -8451,13 +8457,13 @@ export const STATIONS_DATA = [
       "NO2"
     ],
     "pollutant_values": {
-          "PM10": 84.0,
-          "PM2.5": 64.0,
-          "NO2": 33.0,
+          "PM2.5": 80.0,
           "SO2": 5.0,
+          "PM10": 85.0,
+          "NO2": 34.0,
+          "OZONE": 45.0,
           "NH3": 15.0,
-          "OZONE": 57.0,
-          "CO": 18.0
+          "CO": 20.0
     }
   },
   {
@@ -8468,7 +8474,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 26.766433,
     "lng": 80.927299,
-    "aqi": 96,
+    "aqi": 98,
     "pollutants": [
       "OZONE",
       "NO2",
@@ -8479,13 +8485,13 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
-          "PM10": 96.0,
-          "NH3": 3.0,
-          "OZONE": 70.0,
           "NO2": 12.0,
+          "SO2": 30.0,
+          "PM2.5": 87.0,
+          "PM10": 98.0,
+          "NH3": 3.0,
           "CO": 21.0,
-          "PM2.5": 88.0,
-          "SO2": 30.0
+          "OZONE": 40.0
     }
   },
   {
@@ -8496,7 +8502,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 26.86812,
     "lng": 81.005119,
-    "aqi": 133,
+    "aqi": 136,
     "pollutants": [
       "NO2",
       "OZONE",
@@ -8506,12 +8512,12 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
-          "NO2": 11.0,
+          "PM10": 102.0,
+          "PM2.5": 136.0,
+          "CO": 44.0,
           "SO2": 12.0,
-          "PM10": 101.0,
-          "CO": 45.0,
-          "OZONE": 53.0,
-          "PM2.5": 133.0
+          "OZONE": 50.0,
+          "NO2": 11.0
     }
   },
   {
@@ -8522,7 +8528,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 26.83399722,
     "lng": 80.8917361,
-    "aqi": 78,
+    "aqi": 76,
     "pollutants": [
       "NH3",
       "CO",
@@ -8532,13 +8538,13 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
-          "PM10": 75.0,
-          "NH3": 12.0,
-          "CO": 26.0,
-          "OZONE": 78.0,
-          "PM2.5": 76.0,
-          "SO2": 6.0,
-          "NO2": 57.0
+          "SO2": 8.0,
+          "NH3": 13.0,
+          "PM2.5": 75.0,
+          "PM10": 76.0,
+          "NO2": 57.0,
+          "CO": 27.0,
+          "OZONE": 41.0
     }
   },
   {
@@ -8549,7 +8555,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 30.9028,
     "lng": 75.8086,
-    "aqi": 92,
+    "aqi": 94,
     "pollutants": [
       "OZONE",
       "CO",
@@ -8560,13 +8566,13 @@ export const STATIONS_DATA = [
       "NH3"
     ],
     "pollutant_values": {
+          "OZONE": 52.0,
+          "PM2.5": 80.0,
+          "NH3": 13.0,
           "NO2": 50.0,
-          "PM10": 92.0,
-          "OZONE": 56.0,
-          "PM2.5": 79.0,
-          "CO": 29.0,
-          "NH3": 12.0,
-          "SO2": 20.0
+          "PM10": 94.0,
+          "SO2": 19.0,
+          "CO": 32.0
     }
   },
   {
@@ -8577,7 +8583,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 16.186555,
     "lng": 81.13219,
-    "aqi": 84,
+    "aqi": 80,
     "pollutants": [
       "NO2",
       "PM2.5",
@@ -8588,13 +8594,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
+          "CO": 29.0,
           "NO2": 15.0,
-          "PM2.5": 84.0,
-          "NH3": 5.0,
-          "OZONE": 33.0,
-          "PM10": 77.0,
-          "CO": 30.0,
-          "SO2": 18.0
+          "PM10": 73.0,
+          "SO2": 17.0,
+          "NH3": 4.0,
+          "PM2.5": 80.0,
+          "OZONE": 20.0
     }
   },
   {
@@ -8605,7 +8611,7 @@ export const STATIONS_DATA = [
     "region": "South India",
     "lat": 12.415911,
     "lng": 75.73505,
-    "aqi": 23,
+    "aqi": 22,
     "pollutants": [
       "PM10",
       "OZONE",
@@ -8614,11 +8620,11 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "PM2.5": 21.0,
-          "PM10": 23.0,
-          "CO": 14.0,
-          "OZONE": 3.0,
-          "SO2": 7.0
+          "SO2": 7.0,
+          "PM2.5": 19.0,
+          "PM10": 22.0,
+          "CO": 15.0,
+          "OZONE": 3.0
     }
   },
   {
@@ -8629,12 +8635,16 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 9.865935,
     "lng": 78.022669,
-    "aqi": 1,
+    "aqi": 56,
     "pollutants": [
       "CO"
     ],
     "pollutant_values": {
-          "OZONE": 1.0
+          "CO": 27.0,
+          "OZONE": 1.0,
+          "NH3": 9.0,
+          "SO2": 56.0,
+          "PM10": 22.0
     }
   },
   {
@@ -8645,7 +8655,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 18.1023399,
     "lng": 73.4783687,
-    "aqi": 38,
+    "aqi": 55,
     "pollutants": [
       "NH3",
       "PM2.5",
@@ -8656,7 +8666,8 @@ export const STATIONS_DATA = [
       "NO2"
     ],
     "pollutant_values": {
-          "CO": 38.0
+          "CO": 35.0,
+          "OZONE": 55.0
     }
   },
   {
@@ -8694,8 +8705,8 @@ export const STATIONS_DATA = [
       "NO2"
     ],
     "pollutant_values": {
-          "OZONE": 38.0,
-          "CO": 8.0
+          "CO": 8.0,
+          "OZONE": 38.0
     }
   },
   {
@@ -8734,7 +8745,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 23.10844,
     "lng": 77.511428,
-    "aqi": 81,
+    "aqi": 116,
     "pollutants": [
       "NO2",
       "PM10",
@@ -8745,12 +8756,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "PM2.5": 81.0,
+          "PM10": 82.0,
+          "SO2": 44.0,
+          "PM2.5": 116.0,
+          "NO2": 58.0,
           "NH3": 7.0,
-          "OZONE": 76.0,
-          "PM10": 64.0,
-          "NO2": 48.0,
-          "CO": 28.0
+          "OZONE": 59.0,
+          "CO": 45.0
     }
   },
   {
@@ -8761,7 +8773,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 27.9002,
     "lng": 76.9938,
-    "aqi": 93,
+    "aqi": 102,
     "pollutants": [
       "CO",
       "PM2.5",
@@ -8772,13 +8784,13 @@ export const STATIONS_DATA = [
       "NH3"
     ],
     "pollutant_values": {
-          "PM2.5": 70.0,
-          "NO2": 21.0,
-          "PM10": 75.0,
-          "OZONE": 56.0,
+          "PM2.5": 77.0,
           "NH3": 10.0,
           "SO2": 26.0,
-          "CO": 93.0
+          "PM10": 82.0,
+          "OZONE": 56.0,
+          "NO2": 21.0,
+          "CO": 102.0
     }
   },
   {
@@ -8789,7 +8801,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 28.360699,
     "lng": 76.93609,
-    "aqi": 96,
+    "aqi": 108,
     "pollutants": [
       "NH3",
       "PM2.5",
@@ -8800,12 +8812,10 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "PM10": 85.0,
-          "NH3": 13.0,
-          "OZONE": 30.0,
+          "OZONE": 14.0,
+          "PM2.5": 108.0,
           "NO2": 34.0,
-          "PM2.5": 96.0,
-          "SO2": 7.0
+          "CO": 25.0
     }
   },
   {
@@ -8834,7 +8844,7 @@ export const STATIONS_DATA = [
     "region": "East India",
     "lat": 27.308328,
     "lng": 84.531742,
-    "aqi": 28,
+    "aqi": 29,
     "pollutants": [
       "NH3",
       "OZONE",
@@ -8844,9 +8854,8 @@ export const STATIONS_DATA = [
     ],
     "pollutant_values": {
           "SO2": 16.0,
-          "NH3": 1.0,
           "NO2": 4.0,
-          "CO": 28.0,
+          "CO": 29.0,
           "OZONE": 11.0
     }
   },
@@ -8858,7 +8867,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 28.9535882,
     "lng": 77.7622941,
-    "aqi": 144,
+    "aqi": 143,
     "pollutants": [
       "PM10",
       "NO2",
@@ -8869,13 +8878,13 @@ export const STATIONS_DATA = [
       "PM2.5"
     ],
     "pollutant_values": {
-          "PM2.5": 81.0,
-          "CO": 44.0,
-          "PM10": 144.0,
-          "SO2": 7.0,
           "NO2": 12.0,
+          "SO2": 7.0,
+          "PM10": 143.0,
           "NH3": 1.0,
-          "OZONE": 120.0
+          "CO": 52.0,
+          "OZONE": 83.0,
+          "PM2.5": 76.0
     }
   },
   {
@@ -8886,7 +8895,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 29.06351,
     "lng": 77.709723,
-    "aqi": 119,
+    "aqi": 122,
     "pollutants": [
       "OZONE",
       "PM10",
@@ -8897,13 +8906,13 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "CO": 26.0,
+          "PM10": 122.0,
+          "OZONE": 88.0,
+          "CO": 29.0,
+          "PM2.5": 81.0,
           "NH3": 10.0,
-          "PM10": 119.0,
           "NO2": 32.0,
-          "OZONE": 100.0,
-          "SO2": 25.0,
-          "PM2.5": 75.0
+          "SO2": 21.0
     }
   },
   {
@@ -8914,7 +8923,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 28.999264,
     "lng": 77.7590354,
-    "aqi": 153,
+    "aqi": 143,
     "pollutants": [
       "PM10",
       "NO2",
@@ -8925,13 +8934,13 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "SO2": 31.0,
+          "NO2": 42.0,
           "NH3": 10.0,
-          "PM10": 130.0,
-          "NO2": 44.0,
-          "OZONE": 153.0,
+          "OZONE": 143.0,
+          "PM10": 134.0,
+          "CO": 59.0,
           "PM2.5": 78.0,
-          "CO": 51.0
+          "SO2": 29.0
     }
   },
   {
@@ -8970,7 +8979,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 23.59315,
     "lng": 72.372792,
-    "aqi": 179,
+    "aqi": 212,
     "pollutants": [
       "CO",
       "PM2.5",
@@ -8981,13 +8990,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "NO2": 24.0,
-          "SO2": 11.0,
-          "PM2.5": 76.0,
-          "PM10": 179.0,
           "NH3": 2.0,
-          "OZONE": 18.0,
-          "CO": 70.0
+          "SO2": 11.0,
+          "PM2.5": 90.0,
+          "PM10": 212.0,
+          "NO2": 24.0,
+          "CO": 72.0,
+          "OZONE": 14.0
     }
   },
   {
@@ -8998,7 +9007,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 19.296481,
     "lng": 72.840923,
-    "aqi": 31,
+    "aqi": 29,
     "pollutants": [
       "CO",
       "PM2.5",
@@ -9009,13 +9018,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "NH3": 4.0,
-          "OZONE": 29.0,
-          "SO2": 7.0,
+          "OZONE": 21.0,
+          "NO2": 10.0,
+          "SO2": 8.0,
           "PM2.5": 19.0,
-          "CO": 10.0,
-          "PM10": 31.0,
-          "NO2": 10.0
+          "PM10": 29.0,
+          "NH3": 4.0,
+          "CO": 10.0
     }
   },
   {
@@ -9054,7 +9063,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 28.840739,
     "lng": 78.697531,
-    "aqi": 126,
+    "aqi": 119,
     "pollutants": [
       "NO2",
       "CO",
@@ -9065,13 +9074,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "PM2.5": 87.0,
-          "PM10": 126.0,
-          "CO": 13.0,
-          "OZONE": 107.0,
           "NO2": 9.0,
+          "PM10": 119.0,
+          "OZONE": 50.0,
+          "PM2.5": 82.0,
           "NH3": 3.0,
-          "SO2": 11.0
+          "SO2": 10.0,
+          "CO": 11.0
     }
   },
   {
@@ -9082,7 +9091,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 28.88528,
     "lng": 78.7388,
-    "aqi": 87,
+    "aqi": 88,
     "pollutants": [
       "PM2.5",
       "OZONE",
@@ -9093,13 +9102,13 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
-          "PM10": 87.0,
-          "NH3": 4.0,
           "SO2": 32.0,
+          "PM10": 88.0,
           "NO2": 20.0,
-          "OZONE": 52.0,
-          "PM2.5": 66.0,
-          "CO": 29.0
+          "CO": 10.0,
+          "NH3": 4.0,
+          "PM2.5": 65.0,
+          "OZONE": 48.0
     }
   },
   {
@@ -9110,7 +9119,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 28.849399,
     "lng": 78.742362,
-    "aqi": 80,
+    "aqi": 79,
     "pollutants": [
       "NH3",
       "PM2.5",
@@ -9120,13 +9129,13 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "PM2.5": 62.0,
-          "CO": 33.0,
-          "NO2": 25.0,
-          "SO2": 48.0,
-          "PM10": 80.0,
           "NH3": 4.0,
-          "OZONE": 68.0
+          "SO2": 55.0,
+          "CO": 44.0,
+          "NO2": 25.0,
+          "PM10": 79.0,
+          "PM2.5": 61.0,
+          "OZONE": 54.0
     }
   },
   {
@@ -9137,7 +9146,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 28.802625,
     "lng": 78.753728,
-    "aqi": 92,
+    "aqi": 60,
     "pollutants": [
       "PM10",
       "PM2.5",
@@ -9148,13 +9157,12 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
-          "SO2": 30.0,
-          "PM10": 92.0,
           "NH3": 5.0,
-          "CO": 55.0,
-          "OZONE": 38.0,
-          "PM2.5": 57.0,
-          "NO2": 24.0
+          "SO2": 30.0,
+          "PM2.5": 60.0,
+          "OZONE": 34.0,
+          "NO2": 24.0,
+          "CO": 53.0
     }
   },
   {
@@ -9165,7 +9173,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 28.83526,
     "lng": 78.7446,
-    "aqi": 82,
+    "aqi": 78,
     "pollutants": [
       "PM2.5",
       "CO",
@@ -9176,13 +9184,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "NH3": 5.0,
-          "PM2.5": 49.0,
-          "NO2": 29.0,
-          "CO": 17.0,
-          "PM10": 82.0,
+          "PM10": 78.0,
+          "OZONE": 59.0,
+          "CO": 31.0,
           "SO2": 24.0,
-          "OZONE": 53.0
+          "PM2.5": 46.0,
+          "NO2": 29.0,
+          "NH3": 5.0
     }
   },
   {
@@ -9193,7 +9201,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 28.856664,
     "lng": 78.772638,
-    "aqi": 83,
+    "aqi": 82,
     "pollutants": [
       "PM2.5",
       "NH3",
@@ -9203,13 +9211,13 @@ export const STATIONS_DATA = [
       "NO2"
     ],
     "pollutant_values": {
-          "PM2.5": 43.0,
-          "NO2": 25.0,
-          "NH3": 6.0,
-          "PM10": 83.0,
           "CO": 40.0,
-          "SO2": 58.0,
-          "OZONE": 21.0
+          "OZONE": 19.0,
+          "PM10": 82.0,
+          "NO2": 25.0,
+          "PM2.5": 43.0,
+          "NH3": 6.0,
+          "SO2": 58.0
     }
   },
   {
@@ -9243,7 +9251,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 19.11074,
     "lng": 72.86084,
-    "aqi": 51,
+    "aqi": 41,
     "pollutants": [
       "OZONE",
       "NO2",
@@ -9254,13 +9262,13 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
-          "PM10": 47.0,
-          "CO": 22.0,
-          "PM2.5": 27.0,
-          "NO2": 24.0,
+          "PM10": 41.0,
           "NH3": 7.0,
-          "OZONE": 51.0,
-          "SO2": 9.0
+          "SO2": 11.0,
+          "OZONE": 38.0,
+          "PM2.5": 25.0,
+          "CO": 26.0,
+          "NO2": 25.0
     }
   },
   {
@@ -9271,7 +9279,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 19.0364585,
     "lng": 72.8954371,
-    "aqi": 49,
+    "aqi": 48,
     "pollutants": [
       "PM2.5",
       "NO2",
@@ -9282,13 +9290,13 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "CO": 39.0,
-          "SO2": 9.0,
           "PM2.5": 28.0,
-          "PM10": 49.0,
-          "NO2": 25.0,
-          "NH3": 14.0,
-          "OZONE": 31.0
+          "SO2": 9.0,
+          "OZONE": 20.0,
+          "PM10": 48.0,
+          "NO2": 24.0,
+          "NH3": 13.0,
+          "CO": 39.0
     }
   },
   {
@@ -9321,7 +9329,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 19.04946,
     "lng": 72.923,
-    "aqi": 49,
+    "aqi": 53,
     "pollutants": [
       "PM10",
       "CO",
@@ -9331,8 +9339,8 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "OZONE": 25.0,
-          "CO": 49.0
+          "CO": 53.0,
+          "OZONE": 14.0
     }
   },
   {
@@ -9343,7 +9351,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 19.083694,
     "lng": 72.920967,
-    "aqi": 73,
+    "aqi": 72,
     "pollutants": [
       "PM10",
       "PM2.5",
@@ -9354,13 +9362,13 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
-          "OZONE": 41.0,
-          "NH3": 9.0,
-          "SO2": 5.0,
-          "PM2.5": 45.0,
-          "PM10": 73.0,
           "NO2": 17.0,
-          "CO": 26.0
+          "SO2": 5.0,
+          "OZONE": 36.0,
+          "PM2.5": 45.0,
+          "PM10": 72.0,
+          "CO": 26.0,
+          "NH3": 9.0
     }
   },
   {
@@ -9371,7 +9379,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 19.065931,
     "lng": 72.862131,
-    "aqi": 54,
+    "aqi": 55,
     "pollutants": [
       "PM2.5",
       "CO",
@@ -9382,13 +9390,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "SO2": 3.0,
-          "CO": 10.0,
-          "PM10": 54.0,
-          "OZONE": 41.0,
           "PM2.5": 32.0,
+          "OZONE": 24.0,
+          "PM10": 55.0,
           "NH3": 2.0,
-          "NO2": 31.0
+          "NO2": 31.0,
+          "SO2": 3.0,
+          "CO": 9.0
     }
   },
   {
@@ -9399,7 +9407,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 19.23241,
     "lng": 72.86895,
-    "aqi": 77,
+    "aqi": 63,
     "pollutants": [
       "NH3",
       "OZONE",
@@ -9409,10 +9417,10 @@ export const STATIONS_DATA = [
       "NO2"
     ],
     "pollutant_values": {
-          "PM10": 55.0,
-          "PM2.5": 32.0,
-          "OZONE": 77.0,
-          "CO": 33.0
+          "CO": 24.0,
+          "PM10": 52.0,
+          "PM2.5": 28.0,
+          "OZONE": 63.0
     }
   },
   {
@@ -9447,7 +9455,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 18.96702,
     "lng": 72.84214,
-    "aqi": 65,
+    "aqi": 64,
     "pollutants": [
       "PM2.5",
       "OZONE",
@@ -9458,13 +9466,13 @@ export const STATIONS_DATA = [
       "PM10"
     ],
     "pollutant_values": {
-          "PM2.5": 39.0,
-          "PM10": 65.0,
-          "NO2": 17.0,
-          "SO2": 8.0,
-          "CO": 54.0,
+          "NO2": 18.0,
+          "SO2": 6.0,
+          "CO": 48.0,
+          "OZONE": 29.0,
           "NH3": 2.0,
-          "OZONE": 40.0
+          "PM2.5": 40.0,
+          "PM10": 64.0
     }
   },
   {
@@ -9498,7 +9506,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 19.1375,
     "lng": 72.915056,
-    "aqi": 32,
+    "aqi": 30,
     "pollutants": [
       "PM10",
       "OZONE",
@@ -9508,11 +9516,11 @@ export const STATIONS_DATA = [
       "NH3"
     ],
     "pollutant_values": {
-          "PM10": 32.0,
-          "PM2.5": 21.0,
           "NO2": 6.0,
-          "SO2": 14.0,
-          "NH3": 2.0
+          "NH3": 2.0,
+          "SO2": 13.0,
+          "PM2.5": 20.0,
+          "PM10": 30.0
     }
   },
   {
@@ -9534,13 +9542,13 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "OZONE": 19.0,
-          "PM2.5": 37.0,
-          "CO": 9.0,
+          "PM2.5": 38.0,
+          "NO2": 31.0,
+          "OZONE": 16.0,
           "PM10": 66.0,
-          "SO2": 4.0,
-          "NO2": 30.0,
-          "NH3": 9.0
+          "CO": 10.0,
+          "NH3": 9.0,
+          "SO2": 4.0
     }
   },
   {
@@ -9551,7 +9559,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 19.060498,
     "lng": 72.923356,
-    "aqi": 91,
+    "aqi": 90,
     "pollutants": [
       "PM10",
       "PM2.5",
@@ -9562,13 +9570,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "PM10": 91.0,
           "NH3": 6.0,
-          "PM2.5": 39.0,
-          "CO": 14.0,
+          "SO2": 3.0,
+          "NO2": 22.0,
+          "CO": 22.0,
+          "PM10": 90.0,
           "OZONE": 40.0,
-          "SO2": 6.0,
-          "NO2": 22.0
+          "PM2.5": 39.0
     }
   },
   {
@@ -9603,7 +9611,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 18.994218,
     "lng": 72.8158167,
-    "aqi": 39,
+    "aqi": 37,
     "pollutants": [
       "PM2.5",
       "NO2",
@@ -9614,12 +9622,12 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "SO2": 31.0,
-          "PM10": 39.0,
-          "OZONE": 31.0,
-          "NO2": 19.0,
-          "NH3": 3.0,
-          "CO": 10.0
+          "PM10": 37.0,
+          "OZONE": 25.0,
+          "NO2": 20.0,
+          "SO2": 32.0,
+          "CO": 11.0,
+          "NH3": 3.0
     }
   },
   {
@@ -9630,7 +9638,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 19.0632143,
     "lng": 72.8456324,
-    "aqi": 46,
+    "aqi": 44,
     "pollutants": [
       "PM2.5",
       "PM10",
@@ -9641,13 +9649,13 @@ export const STATIONS_DATA = [
       "NH3"
     ],
     "pollutant_values": {
-          "NO2": 10.0,
-          "NH3": 4.0,
           "SO2": 3.0,
-          "CO": 16.0,
-          "OZONE": 15.0,
-          "PM2.5": 20.0,
-          "PM10": 46.0
+          "CO": 20.0,
+          "NO2": 9.0,
+          "OZONE": 8.0,
+          "PM2.5": 22.0,
+          "NH3": 5.0,
+          "PM10": 44.0
     }
   },
   {
@@ -9658,7 +9666,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 19.1653323,
     "lng": 72.922099,
-    "aqi": 47,
+    "aqi": 41,
     "pollutants": [
       "SO2",
       "NO2",
@@ -9669,13 +9677,13 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "PM10": 46.0,
-          "CO": 18.0,
-          "PM2.5": 11.0,
-          "NO2": 18.0,
-          "OZONE": 47.0,
-          "NH3": 17.0,
-          "SO2": 11.0
+          "NO2": 19.0,
+          "OZONE": 29.0,
+          "PM10": 41.0,
+          "SO2": 11.0,
+          "NH3": 13.0,
+          "CO": 19.0,
+          "PM2.5": 11.0
     }
   },
   {
@@ -9686,19 +9694,19 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 19.0863,
     "lng": 72.8888,
-    "aqi": 62,
+    "aqi": 60,
     "pollutants": [
       "OZONE",
       "CO"
     ],
     "pollutant_values": {
-          "CO": 14.0,
-          "PM2.5": 54.0,
-          "PM10": 62.0,
+          "PM10": 60.0,
           "NO2": 6.0,
-          "OZONE": 28.0,
+          "NH3": 2.0,
           "SO2": 29.0,
-          "NH3": 2.0
+          "OZONE": 28.0,
+          "PM2.5": 52.0,
+          "CO": 15.0
     }
   },
   {
@@ -9709,7 +9717,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 19.19709,
     "lng": 72.82204,
-    "aqi": 64,
+    "aqi": 67,
     "pollutants": [
       "PM10",
       "NH3",
@@ -9720,13 +9728,13 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
+          "CO": 48.0,
+          "OZONE": 13.0,
           "NH3": 2.0,
-          "PM2.5": 17.0,
+          "PM10": 67.0,
           "NO2": 36.0,
-          "CO": 47.0,
-          "PM10": 64.0,
-          "SO2": 10.0,
-          "OZONE": 26.0
+          "PM2.5": 7.0,
+          "SO2": 11.0
     }
   },
   {
@@ -9737,14 +9745,13 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 19.175,
     "lng": 72.9419,
-    "aqi": 44,
+    "aqi": 16,
     "pollutants": [
       "NO2",
       "PM2.5"
     ],
     "pollutant_values": {
-          "PM10": 44.0,
-          "PM2.5": 14.0,
+          "PM2.5": 16.0,
           "NO2": 14.0,
           "NH3": 5.0
     }
@@ -9757,7 +9764,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 18.897756,
     "lng": 72.81332,
-    "aqi": 50,
+    "aqi": 47,
     "pollutants": [
       "OZONE",
       "PM2.5",
@@ -9766,11 +9773,11 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "PM2.5": 27.0,
-          "SO2": 7.0,
+          "PM10": 47.0,
+          "PM2.5": 26.0,
+          "SO2": 8.0,
           "CO": 26.0,
-          "OZONE": 28.0,
-          "PM10": 50.0
+          "OZONE": 25.0
     }
   },
   {
@@ -9781,17 +9788,17 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 19.000083,
     "lng": 72.813993,
-    "aqi": 54,
+    "aqi": 53,
     "pollutants": [
       "CO",
       "OZONE"
     ],
     "pollutant_values": {
-          "OZONE": 22.0,
-          "NO2": 27.0,
-          "PM2.5": 24.0,
-          "PM10": 54.0,
-          "CO": 16.0,
+          "OZONE": 20.0,
+          "CO": 17.0,
+          "PM10": 53.0,
+          "PM2.5": 23.0,
+          "NO2": 28.0,
           "NH3": 2.0
     }
   },
@@ -9813,11 +9820,11 @@ export const STATIONS_DATA = [
       "NO2"
     ],
     "pollutant_values": {
+          "CO": 15.0,
           "PM2.5": 56.0,
-          "NH3": 7.0,
           "PM10": 67.0,
-          "NO2": 36.0,
-          "CO": 14.0,
+          "NO2": 35.0,
+          "NH3": 7.0,
           "OZONE": 30.0
     }
   },
@@ -9829,7 +9836,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 19.053536,
     "lng": 72.84643,
-    "aqi": 10,
+    "aqi": 22,
     "pollutants": [
       "CO",
       "OZONE",
@@ -9840,8 +9847,8 @@ export const STATIONS_DATA = [
       "NH3"
     ],
     "pollutant_values": {
-          "CO": 4.0,
-          "OZONE": 10.0
+          "OZONE": 12.0,
+          "CO": 22.0
     }
   },
   {
@@ -9852,7 +9859,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 18.9767,
     "lng": 72.838,
-    "aqi": 70,
+    "aqi": 69,
     "pollutants": [
       "PM2.5",
       "CO",
@@ -9863,13 +9870,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "PM2.5": 26.0,
+          "SO2": 2.0,
+          "OZONE": 18.0,
+          "PM10": 69.0,
           "NH3": 2.0,
-          "SO2": 3.0,
-          "OZONE": 24.0,
-          "NO2": 22.0,
-          "PM10": 70.0,
-          "CO": 57.0
+          "CO": 57.0,
+          "PM2.5": 26.0,
+          "NO2": 22.0
     }
   },
   {
@@ -9880,7 +9887,7 @@ export const STATIONS_DATA = [
     "region": "East India",
     "lat": 25.376776,
     "lng": 86.471523,
-    "aqi": 66,
+    "aqi": 68,
     "pollutants": [
       "PM2.5",
       "NO2",
@@ -9891,13 +9898,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "NO2": 7.0,
+          "PM2.5": 68.0,
+          "PM10": 55.0,
           "NH3": 3.0,
-          "SO2": 44.0,
-          "PM10": 54.0,
           "CO": 19.0,
-          "PM2.5": 66.0,
-          "OZONE": 2.0
+          "OZONE": 2.0,
+          "NO2": 7.0,
+          "SO2": 44.0
     }
   },
   {
@@ -9908,7 +9915,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 29.4723508,
     "lng": 77.7194031,
-    "aqi": 118,
+    "aqi": 119,
     "pollutants": [
       "PM10",
       "PM2.5",
@@ -9919,13 +9926,13 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "NO2": 39.0,
+          "PM10": 119.0,
+          "NO2": 38.0,
           "NH3": 3.0,
-          "SO2": 24.0,
-          "CO": 38.0,
+          "SO2": 23.0,
           "PM2.5": 82.0,
-          "OZONE": 103.0,
-          "PM10": 118.0
+          "CO": 46.0,
+          "OZONE": 81.0
     }
   },
   {
@@ -9936,7 +9943,7 @@ export const STATIONS_DATA = [
     "region": "East India",
     "lat": 26.1209,
     "lng": 85.3647,
-    "aqi": 68,
+    "aqi": 70,
     "pollutants": [
       "PM2.5",
       "NO2",
@@ -9945,10 +9952,10 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "CO": 38.0,
-          "OZONE": 64.0,
-          "PM2.5": 68.0,
-          "SO2": 6.0
+          "OZONE": 40.0,
+          "CO": 28.0,
+          "SO2": 6.0,
+          "PM2.5": 70.0
     }
   },
   {
@@ -9959,7 +9966,7 @@ export const STATIONS_DATA = [
     "region": "East India",
     "lat": 26.11442,
     "lng": 85.39813,
-    "aqi": 133,
+    "aqi": 134,
     "pollutants": [
       "NO2",
       "NH3",
@@ -9970,13 +9977,13 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
-          "PM2.5": 117.0,
-          "CO": 30.0,
+          "NH3": 9.0,
+          "PM10": 134.0,
+          "CO": 40.0,
           "SO2": 6.0,
-          "OZONE": 103.0,
-          "PM10": 133.0,
-          "NO2": 26.0,
-          "NH3": 9.0
+          "OZONE": 81.0,
+          "PM2.5": 121.0,
+          "NO2": 26.0
     }
   },
   {
@@ -9987,7 +9994,7 @@ export const STATIONS_DATA = [
     "region": "East India",
     "lat": 26.1403345,
     "lng": 85.3650192,
-    "aqi": 62,
+    "aqi": 66,
     "pollutants": [
       "OZONE",
       "NO2",
@@ -9999,11 +10006,11 @@ export const STATIONS_DATA = [
     ],
     "pollutant_values": {
           "NO2": 6.0,
+          "CO": 32.0,
+          "PM10": 61.0,
           "SO2": 10.0,
-          "PM10": 59.0,
           "PM2.5": 59.0,
-          "CO": 34.0,
-          "OZONE": 62.0
+          "OZONE": 66.0
     }
   },
   {
@@ -10014,7 +10021,7 @@ export const STATIONS_DATA = [
     "region": "South India",
     "lat": 12.21041,
     "lng": 76.37376,
-    "aqi": 30,
+    "aqi": 23,
     "pollutants": [
       "CO",
       "NH3",
@@ -10025,8 +10032,8 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
-          "CO": 21.0,
-          "OZONE": 30.0
+          "OZONE": 19.0,
+          "CO": 23.0
     }
   },
   {
@@ -10037,7 +10044,7 @@ export const STATIONS_DATA = [
     "region": "East India",
     "lat": 26.349082,
     "lng": 92.68449,
-    "aqi": 17,
+    "aqi": 16,
     "pollutants": [
       "NO2",
       "SO2",
@@ -10048,8 +10055,8 @@ export const STATIONS_DATA = [
       "PM10"
     ],
     "pollutant_values": {
-          "CO": 17.0,
-          "OZONE": 10.0
+          "CO": 16.0,
+          "OZONE": 9.0
     }
   },
   {
@@ -10060,7 +10067,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 27.213494,
     "lng": 73.734444,
-    "aqi": 84,
+    "aqi": 257,
     "pollutants": [
       "PM10",
       "NH3",
@@ -10071,10 +10078,12 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
+          "NO2": 14.0,
+          "PM10": 257.0,
+          "NH3": 12.0,
           "SO2": 6.0,
-          "PM2.5": 84.0,
-          "OZONE": 58.0,
-          "CO": 15.0
+          "CO": 18.0,
+          "OZONE": 56.0
     }
   },
   {
@@ -10085,7 +10094,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 21.121801,
     "lng": 79.04952,
-    "aqi": 70,
+    "aqi": 73,
     "pollutants": [
       "NO2",
       "OZONE",
@@ -10096,13 +10105,13 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
-          "CO": 9.0,
-          "PM10": 70.0,
-          "PM2.5": 55.0,
-          "NO2": 20.0,
-          "OZONE": 69.0,
-          "NH3": 3.0,
-          "SO2": 9.0
+          "PM2.5": 60.0,
+          "NH3": 4.0,
+          "OZONE": 44.0,
+          "SO2": 10.0,
+          "CO": 29.0,
+          "PM10": 73.0,
+          "NO2": 22.0
     }
   },
   {
@@ -10113,7 +10122,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 21.14472,
     "lng": 79.107595,
-    "aqi": 105,
+    "aqi": 82,
     "pollutants": [
       "SO2",
       "PM10",
@@ -10124,13 +10133,13 @@ export const STATIONS_DATA = [
       "PM2.5"
     ],
     "pollutant_values": {
-          "SO2": 50.0,
-          "PM2.5": 65.0,
-          "PM10": 81.0,
-          "NO2": 31.0,
+          "OZONE": 72.0,
+          "PM2.5": 66.0,
+          "NO2": 29.0,
           "NH3": 7.0,
-          "CO": 46.0,
-          "OZONE": 105.0
+          "PM10": 82.0,
+          "SO2": 49.0,
+          "CO": 65.0
     }
   },
   {
@@ -10141,7 +10150,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 21.143383,
     "lng": 79.048912,
-    "aqi": 74,
+    "aqi": 76,
     "pollutants": [
       "OZONE",
       "PM2.5",
@@ -10152,13 +10161,13 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "SO2": 10.0,
+          "OZONE": 48.0,
+          "PM2.5": 68.0,
+          "PM10": 76.0,
           "NH3": 4.0,
-          "PM2.5": 64.0,
-          "PM10": 74.0,
-          "OZONE": 58.0,
-          "CO": 10.0,
-          "NO2": 11.0
+          "CO": 14.0,
+          "NO2": 11.0,
+          "SO2": 9.0
     }
   },
   {
@@ -10178,13 +10187,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "NH3": 3.0,
-          "PM2.5": 48.0,
-          "NO2": 16.0,
-          "CO": 44.0,
-          "OZONE": 56.0,
           "PM10": 76.0,
-          "SO2": 10.0
+          "NO2": 16.0,
+          "SO2": 11.0,
+          "OZONE": 36.0,
+          "NH3": 3.0,
+          "PM2.5": 49.0,
+          "CO": 50.0
     }
   },
   {
@@ -10195,7 +10204,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 27.103358,
     "lng": 93.679645,
-    "aqi": 16,
+    "aqi": 22,
     "pollutants": [
       "PM2.5",
       "PM10",
@@ -10206,8 +10215,12 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "CO": 16.0,
-          "OZONE": 6.0
+          "OZONE": 6.0,
+          "SO2": 11.0,
+          "PM2.5": 22.0,
+          "NO2": 8.0,
+          "NH3": 1.0,
+          "CO": 18.0
     }
   },
   {
@@ -10218,7 +10231,7 @@ export const STATIONS_DATA = [
     "region": "East India",
     "lat": 26.446912,
     "lng": 91.439057,
-    "aqi": 51,
+    "aqi": 58,
     "pollutants": [
       "NO2",
       "OZONE",
@@ -10229,13 +10242,13 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
+          "NH3": 6.0,
+          "OZONE": 13.0,
+          "PM10": 38.0,
+          "SO2": 7.0,
           "NO2": 14.0,
-          "SO2": 8.0,
-          "CO": 19.0,
-          "PM2.5": 51.0,
-          "OZONE": 16.0,
-          "PM10": 33.0,
-          "NH3": 6.0
+          "PM2.5": 58.0,
+          "CO": 19.0
     }
   },
   {
@@ -10246,7 +10259,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 19.173852,
     "lng": 77.296291,
-    "aqi": 92,
+    "aqi": 73,
     "pollutants": [
       "PM2.5",
       "CO",
@@ -10257,12 +10270,12 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
-          "CO": 23.0,
-          "PM2.5": 38.0,
-          "PM10": 57.0,
+          "PM2.5": 36.0,
           "NH3": 4.0,
-          "SO2": 9.0,
-          "OZONE": 92.0
+          "SO2": 8.0,
+          "CO": 23.0,
+          "PM10": 54.0,
+          "OZONE": 73.0
     }
   },
   {
@@ -10273,7 +10286,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 22.410802,
     "lng": 73.097923,
-    "aqi": 112,
+    "aqi": 92,
     "pollutants": [
       "PM10",
       "NO2",
@@ -10282,11 +10295,11 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "PM2.5": 112.0,
           "SO2": 3.0,
-          "PM10": 101.0,
-          "NO2": 30.0,
-          "CO": 36.0
+          "PM10": 91.0,
+          "NO2": 29.0,
+          "CO": 43.0,
+          "PM2.5": 92.0
     }
   },
   {
@@ -10297,7 +10310,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 28.060249,
     "lng": 76.113115,
-    "aqi": 54,
+    "aqi": 58,
     "pollutants": [
       "OZONE",
       "PM10",
@@ -10308,12 +10321,10 @@ export const STATIONS_DATA = [
       "PM2.5"
     ],
     "pollutant_values": {
-          "PM10": 54.0,
+          "PM10": 58.0,
           "NO2": 26.0,
           "SO2": 3.0,
-          "PM2.5": 54.0,
-          "NH3": 5.0,
-          "CO": 50.0
+          "CO": 52.0
     }
   },
   {
@@ -10324,7 +10335,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 19.9591346,
     "lng": 73.7788008,
-    "aqi": 39,
+    "aqi": 41,
     "pollutants": [
       "OZONE",
       "SO2",
@@ -10336,12 +10347,12 @@ export const STATIONS_DATA = [
     ],
     "pollutant_values": {
           "PM2.5": 37.0,
-          "PM10": 39.0,
-          "NO2": 15.0,
-          "NH3": 3.0,
           "SO2": 2.0,
-          "CO": 15.0,
-          "OZONE": 33.0
+          "NH3": 3.0,
+          "OZONE": 31.0,
+          "PM10": 41.0,
+          "NO2": 13.0,
+          "CO": 16.0
     }
   },
   {
@@ -10352,7 +10363,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 20.021503,
     "lng": 73.813844,
-    "aqi": 60,
+    "aqi": 53,
     "pollutants": [
       "SO2",
       "PM10",
@@ -10363,11 +10374,11 @@ export const STATIONS_DATA = [
       "NH3"
     ],
     "pollutant_values": {
-          "PM2.5": 41.0,
-          "SO2": 11.0,
-          "OZONE": 60.0,
-          "PM10": 48.0,
-          "CO": 28.0
+          "PM2.5": 37.0,
+          "OZONE": 53.0,
+          "PM10": 44.0,
+          "CO": 30.0,
+          "SO2": 8.0
     }
   },
   {
@@ -10378,7 +10389,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 20.0073285,
     "lng": 73.7762427,
-    "aqi": 37,
+    "aqi": 39,
     "pollutants": [
       "NO2",
       "SO2",
@@ -10389,10 +10400,12 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "CO": 22.0,
-          "OZONE": 18.0,
           "PM2.5": 37.0,
-          "NH3": 3.0
+          "PM10": 39.0,
+          "NH3": 3.0,
+          "NO2": 5.0,
+          "CO": 22.0,
+          "OZONE": 12.0
     }
   },
   {
@@ -10403,7 +10416,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 19.95022,
     "lng": 73.73148,
-    "aqi": 64,
+    "aqi": 35,
     "pollutants": [
       "PM2.5",
       "NH3",
@@ -10414,13 +10427,8 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "PM2.5": 41.0,
-          "PM10": 64.0,
-          "CO": 16.0,
-          "NO2": 10.0,
-          "OZONE": 34.0,
-          "SO2": 3.0,
-          "NH3": 2.0
+          "CO": 9.0,
+          "OZONE": 35.0
     }
   },
   {
@@ -10431,7 +10439,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 19.1135051,
     "lng": 73.008978,
-    "aqi": 82,
+    "aqi": 76,
     "pollutants": [
       "PM10",
       "NH3",
@@ -10441,11 +10449,12 @@ export const STATIONS_DATA = [
       "NO2"
     ],
     "pollutant_values": {
+          "NH3": 1.0,
+          "PM10": 76.0,
+          "PM2.5": 42.0,
+          "NO2": 43.0,
           "SO2": 16.0,
-          "OZONE": 11.0,
-          "PM2.5": 45.0,
-          "PM10": 82.0,
-          "NO2": 43.0
+          "OZONE": 12.0
     }
   },
   {
@@ -10488,8 +10497,9 @@ export const STATIONS_DATA = [
       "PM2.5"
     ],
     "pollutant_values": {
-          "PM2.5": 27.0,
-          "NO2": 60.0
+          "NO2": 60.0,
+          "NH3": 7.0,
+          "PM10": 38.0
     }
   },
   {
@@ -10528,7 +10538,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 19.090337,
     "lng": 73.014232,
-    "aqi": 101,
+    "aqi": 100,
     "pollutants": [
       "OZONE",
       "PM2.5",
@@ -10539,12 +10549,12 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
+          "CO": 24.0,
+          "PM10": 100.0,
           "NO2": 15.0,
-          "PM10": 101.0,
-          "PM2.5": 59.0,
           "NH3": 9.0,
-          "CO": 26.0,
-          "OZONE": 53.0,
+          "OZONE": 40.0,
+          "PM2.5": 59.0,
           "SO2": 10.0
     }
   },
@@ -10584,7 +10594,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 14.438164,
     "lng": 79.966814,
-    "aqi": 58,
+    "aqi": 56,
     "pollutants": [
       "NH3",
       "NO2",
@@ -10595,13 +10605,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "NO2": 29.0,
-          "PM10": 56.0,
-          "PM2.5": 58.0,
-          "OZONE": 40.0,
+          "PM2.5": 56.0,
+          "OZONE": 37.0,
+          "PM10": 54.0,
+          "NO2": 30.0,
+          "CO": 35.0,
           "NH3": 6.0,
-          "SO2": 12.0,
-          "CO": 34.0
+          "SO2": 11.0
     }
   },
   {
@@ -10636,7 +10646,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 28.5898,
     "lng": 77.3101,
-    "aqi": 203,
+    "aqi": 154,
     "pollutants": [
       "NH3",
       "PM2.5",
@@ -10647,13 +10657,13 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
-          "PM10": 145.0,
-          "OZONE": 203.0,
+          "PM10": 154.0,
           "NH3": 10.0,
-          "NO2": 50.0,
-          "CO": 26.0,
-          "PM2.5": 100.0,
-          "SO2": 12.0
+          "SO2": 13.0,
+          "OZONE": 139.0,
+          "PM2.5": 104.0,
+          "NO2": 47.0,
+          "CO": 34.0
     }
   },
   {
@@ -10664,7 +10674,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 28.5447608,
     "lng": 77.3231257,
-    "aqi": 202,
+    "aqi": 209,
     "pollutants": [
       "PM10",
       "PM2.5",
@@ -10675,13 +10685,13 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
-          "PM2.5": 135.0,
-          "CO": 30.0,
-          "NH3": 24.0,
-          "OZONE": 128.0,
-          "NO2": 47.0,
+          "PM2.5": 142.0,
           "SO2": 7.0,
-          "PM10": 202.0
+          "CO": 43.0,
+          "NO2": 47.0,
+          "PM10": 209.0,
+          "NH3": 24.0,
+          "OZONE": 89.0
     }
   },
   {
@@ -10692,7 +10702,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 28.56923,
     "lng": 77.393848,
-    "aqi": 175,
+    "aqi": 169,
     "pollutants": [
       "CO",
       "SO2",
@@ -10703,13 +10713,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "OZONE": 175.0,
-          "PM2.5": 119.0,
-          "CO": 51.0,
-          "PM10": 165.0,
-          "NO2": 52.0,
-          "NH3": 15.0,
-          "SO2": 17.0
+          "PM2.5": 122.0,
+          "PM10": 169.0,
+          "NO2": 54.0,
+          "SO2": 17.0,
+          "CO": 68.0,
+          "OZONE": 125.0,
+          "NH3": 15.0
     }
   },
   {
@@ -10744,7 +10754,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 25.771061,
     "lng": 73.340227,
-    "aqi": 179,
+    "aqi": 188,
     "pollutants": [
       "OZONE",
       "SO2",
@@ -10755,10 +10765,10 @@ export const STATIONS_DATA = [
       "PM10"
     ],
     "pollutant_values": {
-          "PM2.5": 97.0,
-          "PM10": 179.0,
-          "CO": 25.0,
+          "CO": 28.0,
           "NH3": 1.0,
+          "OZONE": 16.0,
+          "PM10": 188.0,
           "SO2": 9.0
     }
   },
@@ -10770,7 +10780,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 28.1485564,
     "lng": 77.3320667,
-    "aqi": 83,
+    "aqi": 262,
     "pollutants": [
       "PM10",
       "OZONE",
@@ -10782,10 +10792,8 @@ export const STATIONS_DATA = [
     ],
     "pollutant_values": {
           "PM10": 83.0,
-          "CO": 81.0,
           "NH3": 9.0,
-          "NO2": 24.0,
-          "SO2": 12.0
+          "OZONE": 262.0
     }
   },
   {
@@ -10796,7 +10804,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 34.031606,
     "lng": 75.009712,
-    "aqi": 34,
+    "aqi": 36,
     "pollutants": [
       "NO2",
       "SO2",
@@ -10804,10 +10812,10 @@ export const STATIONS_DATA = [
       "PM10"
     ],
     "pollutant_values": {
-          "PM2.5": 24.0,
-          "PM10": 34.0,
-          "SO2": 5.0,
-          "NO2": 21.0
+          "PM2.5": 25.0,
+          "PM10": 36.0,
+          "NO2": 22.0,
+          "SO2": 5.0
     }
   },
   {
@@ -10818,7 +10826,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 28.3153,
     "lng": 76.9143,
-    "aqi": 159,
+    "aqi": 102,
     "pollutants": [
       "OZONE",
       "PM10",
@@ -10829,12 +10837,12 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
-          "NO2": 26.0,
-          "NH3": 25.0,
-          "PM2.5": 80.0,
+          "NO2": 28.0,
           "SO2": 12.0,
-          "CO": 21.0,
-          "OZONE": 159.0
+          "OZONE": 95.0,
+          "PM2.5": 102.0,
+          "CO": 38.0,
+          "PM10": 78.0
     }
   },
   {
@@ -10845,7 +10853,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 30.7057778,
     "lng": 76.8531805555555,
-    "aqi": 73,
+    "aqi": 50,
     "pollutants": [
       "CO",
       "SO2",
@@ -10854,10 +10862,10 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "OZONE": 60.0,
-          "PM2.5": 73.0,
           "SO2": 14.0,
-          "CO": 2.0
+          "NO2": 24.0,
+          "CO": 6.0,
+          "OZONE": 50.0
     }
   },
   {
@@ -10879,12 +10887,8 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "CO": 33.0,
-          "SO2": 19.0,
-          "PM10": 115.0,
           "NO2": 31.0,
           "PM2.5": 162.0,
-          "NH3": 3.0,
           "OZONE": 30.0
     }
   },
@@ -10896,7 +10900,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 19.265594,
     "lng": 76.761463,
-    "aqi": 124,
+    "aqi": 57,
     "pollutants": [
       "NH3",
       "PM2.5",
@@ -10907,12 +10911,10 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
-          "NO2": 52.0,
-          "SO2": 16.0,
-          "CO": 11.0,
-          "PM10": 51.0,
           "NH3": 4.0,
-          "OZONE": 124.0
+          "OZONE": 57.0,
+          "SO2": 19.0,
+          "CO": 11.0
     }
   },
   {
@@ -10923,7 +10925,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 30.349388,
     "lng": 76.366642,
-    "aqi": 75,
+    "aqi": 77,
     "pollutants": [
       "PM2.5",
       "OZONE",
@@ -10934,13 +10936,13 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "CO": 25.0,
-          "PM2.5": 37.0,
-          "NH3": 6.0,
-          "PM10": 75.0,
           "NO2": 18.0,
-          "OZONE": 41.0,
-          "SO2": 22.0
+          "CO": 38.0,
+          "PM10": 77.0,
+          "PM2.5": 38.0,
+          "NH3": 6.0,
+          "SO2": 25.0,
+          "OZONE": 28.0
     }
   },
   {
@@ -10951,7 +10953,7 @@ export const STATIONS_DATA = [
     "region": "East India",
     "lat": 25.586562,
     "lng": 85.043586,
-    "aqi": 129,
+    "aqi": 130,
     "pollutants": [
       "OZONE",
       "PM10",
@@ -10962,13 +10964,13 @@ export const STATIONS_DATA = [
       "NH3"
     ],
     "pollutant_values": {
-          "PM10": 129.0,
-          "NO2": 31.0,
+          "PM10": 130.0,
           "SO2": 7.0,
           "NH3": 9.0,
-          "OZONE": 19.0,
-          "CO": 37.0,
-          "PM2.5": 74.0
+          "PM2.5": 75.0,
+          "NO2": 32.0,
+          "OZONE": 6.0,
+          "CO": 51.0
     }
   },
   {
@@ -10979,7 +10981,7 @@ export const STATIONS_DATA = [
     "region": "East India",
     "lat": 25.619651,
     "lng": 85.147382,
-    "aqi": 115,
+    "aqi": 119,
     "pollutants": [
       "SO2",
       "NO2",
@@ -10990,13 +10992,13 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "SO2": 12.0,
-          "PM2.5": 77.0,
           "NH3": 5.0,
-          "OZONE": 77.0,
-          "PM10": 115.0,
           "CO": 51.0,
-          "NO2": 3.0
+          "OZONE": 46.0,
+          "PM2.5": 77.0,
+          "PM10": 119.0,
+          "NO2": 3.0,
+          "SO2": 12.0
     }
   },
   {
@@ -11007,7 +11009,7 @@ export const STATIONS_DATA = [
     "region": "East India",
     "lat": 25.596727,
     "lng": 85.085624,
-    "aqi": 102,
+    "aqi": 103,
     "pollutants": [
       "NH3",
       "PM10",
@@ -11018,13 +11020,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "PM2.5": 75.0,
+          "PM10": 103.0,
           "NH3": 5.0,
-          "OZONE": 37.0,
+          "PM2.5": 76.0,
           "NO2": 18.0,
           "SO2": 5.0,
-          "PM10": 102.0,
-          "CO": 25.0
+          "OZONE": 30.0,
+          "CO": 26.0
     }
   },
   {
@@ -11046,13 +11048,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "PM10": 103.0,
-          "NH3": 5.0,
-          "OZONE": 77.0,
-          "NO2": 19.0,
+          "CO": 68.0,
           "PM2.5": 62.0,
-          "CO": 45.0,
-          "SO2": 9.0
+          "PM10": 103.0,
+          "OZONE": 54.0,
+          "NH3": 6.0,
+          "SO2": 9.0,
+          "NO2": 22.0
     }
   },
   {
@@ -11063,7 +11065,7 @@ export const STATIONS_DATA = [
     "region": "East India",
     "lat": 25.599486,
     "lng": 85.113666,
-    "aqi": 76,
+    "aqi": 94,
     "pollutants": [
       "NH3",
       "SO2",
@@ -11074,12 +11076,12 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "SO2": 10.0,
-          "PM10": 66.0,
+          "SO2": 12.0,
+          "PM10": 68.0,
+          "NH3": 3.0,
+          "CO": 94.0,
           "PM2.5": 54.0,
           "NO2": 31.0,
-          "NH3": 3.0,
-          "CO": 76.0,
           "OZONE": 30.0
     }
   },
@@ -11091,7 +11093,7 @@ export const STATIONS_DATA = [
     "region": "East India",
     "lat": 25.610369,
     "lng": 85.132568,
-    "aqi": 59,
+    "aqi": 60,
     "pollutants": [
       "NO2",
       "SO2",
@@ -11100,11 +11102,11 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "PM2.5": 53.0,
           "NO2": 2.0,
-          "SO2": 22.0,
+          "OZONE": 60.0,
           "CO": 36.0,
-          "OZONE": 59.0
+          "PM2.5": 56.0,
+          "SO2": 22.0
     }
   },
   {
@@ -11115,7 +11117,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 11.258242,
     "lng": 77.552761,
-    "aqi": 25,
+    "aqi": 28,
     "pollutants": [
       "PM10",
       "OZONE",
@@ -11126,12 +11128,13 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
-          "NH3": 1.0,
           "SO2": 15.0,
-          "CO": 25.0,
+          "NH3": 1.0,
+          "CO": 24.0,
+          "OZONE": 20.0,
           "PM2.5": 17.0,
-          "OZONE": 17.0,
-          "NO2": 11.0
+          "PM10": 28.0,
+          "NO2": 10.0
     }
   },
   {
@@ -11142,7 +11145,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 18.640051,
     "lng": 73.848956,
-    "aqi": 56,
+    "aqi": 59,
     "pollutants": [
       "PM10",
       "CO",
@@ -11169,11 +11172,10 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "NO2": 23.0,
-          "OZONE": 22.0,
-          "PM2.5": 41.0,
-          "PM10": 49.0,
-          "CO": 26.0
+          "CO": 28.0,
+          "NO2": 22.0,
+          "PM2.5": 36.0,
+          "PM10": 49.0
     }
   },
   {
@@ -11184,7 +11186,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 18.614767,
     "lng": 73.799516,
-    "aqi": 57,
+    "aqi": 54,
     "pollutants": [
       "PM2.5",
       "NO2",
@@ -11193,11 +11195,11 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "PM10": 57.0,
-          "CO": 35.0,
-          "OZONE": 28.0,
-          "PM2.5": 24.0,
-          "NO2": 19.0
+          "CO": 34.0,
+          "PM10": 54.0,
+          "NO2": 18.0,
+          "OZONE": 23.0,
+          "PM2.5": 26.0
     }
   },
   {
@@ -11208,7 +11210,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 18.616318,
     "lng": 73.765797,
-    "aqi": 91,
+    "aqi": 15,
     "pollutants": [
       "NH3",
       "CO",
@@ -11219,12 +11221,8 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
-          "CO": 39.0,
-          "OZONE": 47.0,
-          "PM10": 91.0,
           "NH3": 12.0,
-          "PM2.5": 52.0,
-          "NO2": 16.0
+          "NO2": 15.0
     }
   },
   {
@@ -11235,7 +11233,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 18.63673,
     "lng": 73.82487,
-    "aqi": 80,
+    "aqi": 37,
     "pollutants": [
       "NO2",
       "NH3",
@@ -11246,10 +11244,9 @@ export const STATIONS_DATA = [
       "PM10"
     ],
     "pollutant_values": {
-          "PM10": 80.0,
-          "OZONE": 25.0,
           "PM2.5": 37.0,
-          "CO": 8.0
+          "CO": 10.0,
+          "OZONE": 17.0
     }
   },
   {
@@ -11260,7 +11257,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 18.664282,
     "lng": 73.763966,
-    "aqi": 54,
+    "aqi": 51,
     "pollutants": [
       "PM2.5",
       "OZONE",
@@ -11269,11 +11266,9 @@ export const STATIONS_DATA = [
       "NO2"
     ],
     "pollutant_values": {
-          "PM10": 54.0,
-          "CO": 18.0,
-          "PM2.5": 19.0,
-          "NO2": 16.0,
-          "OZONE": 27.0
+          "OZONE": 25.0,
+          "PM10": 51.0,
+          "NO2": 16.0
     }
   },
   {
@@ -11284,7 +11279,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 18.59051,
     "lng": 73.77946,
-    "aqi": 45,
+    "aqi": 44,
     "pollutants": [
       "CO",
       "NH3",
@@ -11295,12 +11290,12 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
-          "PM10": 45.0,
-          "NO2": 19.0,
-          "OZONE": 40.0,
           "PM2.5": 29.0,
-          "NH3": 3.0,
-          "CO": 10.0
+          "SO2": 1.0,
+          "OZONE": 31.0,
+          "PM10": 44.0,
+          "NO2": 18.0,
+          "NH3": 3.0
     }
   },
   {
@@ -11311,7 +11306,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 22.624758,
     "lng": 75.675238,
-    "aqi": 127,
+    "aqi": 120,
     "pollutants": [
       "PM10",
       "CO",
@@ -11322,10 +11317,10 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "PM2.5": 67.0,
-          "OZONE": 127.0,
-          "PM10": 111.0,
-          "CO": 15.0
+          "OZONE": 98.0,
+          "PM2.5": 72.0,
+          "PM10": 120.0,
+          "CO": 16.0
     }
   },
   {
@@ -11336,7 +11331,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 24.041198,
     "lng": 74.780702,
-    "aqi": 115,
+    "aqi": 99,
     "pollutants": [
       "OZONE",
       "PM10",
@@ -11347,9 +11342,11 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "NH3": 3.0,
-          "CO": 21.0,
-          "OZONE": 115.0
+          "CO": 20.0,
+          "PM10": 85.0,
+          "NO2": 21.0,
+          "SO2": 3.0,
+          "OZONE": 99.0
     }
   },
   {
@@ -11360,7 +11357,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 25.425602,
     "lng": 81.917152,
-    "aqi": 54,
+    "aqi": 60,
     "pollutants": [
       "SO2",
       "NH3",
@@ -11371,13 +11368,13 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "PM2.5": 42.0,
-          "OZONE": 44.0,
-          "PM10": 54.0,
-          "CO": 11.0,
+          "CO": 19.0,
+          "OZONE": 40.0,
+          "PM10": 60.0,
           "NO2": 6.0,
           "NH3": 6.0,
-          "SO2": 29.0
+          "SO2": 32.0,
+          "PM2.5": 47.0
     }
   },
   {
@@ -11388,7 +11385,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 25.44919916,
     "lng": 81.82735986,
-    "aqi": 47,
+    "aqi": 48,
     "pollutants": [
       "NO2",
       "PM2.5",
@@ -11399,13 +11396,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "PM10": 47.0,
-          "NH3": 9.0,
+          "CO": 25.0,
           "OZONE": 14.0,
-          "PM2.5": 33.0,
-          "CO": 17.0,
+          "PM10": 48.0,
+          "PM2.5": 34.0,
+          "SO2": 36.0,
           "NO2": 5.0,
-          "SO2": 38.0
+          "NH3": 10.0
     }
   },
   {
@@ -11416,7 +11413,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 25.494,
     "lng": 81.863,
-    "aqi": 88,
+    "aqi": 90,
     "pollutants": [
       "PM2.5",
       "PM10",
@@ -11427,12 +11424,12 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "SO2": 24.0,
-          "PM2.5": 41.0,
-          "PM10": 88.0,
-          "OZONE": 52.0,
-          "CO": 10.0,
+          "CO": 22.0,
+          "PM2.5": 42.0,
+          "OZONE": 32.0,
+          "PM10": 90.0,
           "NO2": 12.0,
+          "SO2": 24.0,
           "NH3": 8.0
     }
   },
@@ -11444,7 +11441,7 @@ export const STATIONS_DATA = [
     "region": "South India",
     "lat": 11.9309,
     "lng": 79.8027,
-    "aqi": 59,
+    "aqi": 38,
     "pollutants": [
       "PM2.5",
       "PM10",
@@ -11455,13 +11452,13 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
-          "PM10": 24.0,
-          "NH3": 3.0,
+          "PM2.5": 16.0,
+          "PM10": 28.0,
+          "NO2": 11.0,
           "SO2": 7.0,
-          "PM2.5": 13.0,
-          "NO2": 8.0,
-          "CO": 20.0,
-          "OZONE": 59.0
+          "OZONE": 38.0,
+          "NH3": 3.0,
+          "CO": 26.0
     }
   },
   {
@@ -11472,7 +11469,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 18.459883,
     "lng": 73.852193,
-    "aqi": 90,
+    "aqi": 100,
     "pollutants": [
       "PM2.5",
       "PM10",
@@ -11481,11 +11478,9 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "PM2.5": 22.0,
-          "NO2": 22.0,
-          "CO": 90.0,
-          "OZONE": 14.0,
-          "PM10": 63.0
+          "CO": 100.0,
+          "OZONE": 6.0,
+          "PM10": 68.0
     }
   },
   {
@@ -11503,11 +11498,9 @@ export const STATIONS_DATA = [
     ],
     "pollutant_values": {
           "PM10": 52.0,
-          "OZONE": 20.0,
+          "NO2": 21.0,
           "SO2": 24.0,
-          "CO": 30.0,
-          "PM2.5": 34.0,
-          "NO2": 21.0
+          "CO": 37.0
     }
   },
   {
@@ -11518,7 +11511,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 18.57304,
     "lng": 73.927715,
-    "aqi": 63,
+    "aqi": 65,
     "pollutants": [
       "PM10",
       "CO",
@@ -11527,10 +11520,10 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "PM10": 63.0,
-          "CO": 28.0,
-          "NO2": 38.0,
-          "OZONE": 24.0
+          "NO2": 46.0,
+          "OZONE": 24.0,
+          "CO": 32.0,
+          "PM10": 65.0
     }
   },
   {
@@ -11541,7 +11534,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 18.536457,
     "lng": 73.805454,
-    "aqi": 58,
+    "aqi": 59,
     "pollutants": [
       "PM2.5",
       "PM10",
@@ -11550,11 +11543,10 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "OZONE": 14.0,
-          "PM2.5": 24.0,
-          "PM10": 58.0,
+          "PM10": 59.0,
           "NO2": 11.0,
-          "CO": 32.0
+          "OZONE": 10.0,
+          "PM2.5": 23.0
     }
   },
   {
@@ -11565,7 +11557,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 18.547056,
     "lng": 73.826908,
-    "aqi": 38,
+    "aqi": 37,
     "pollutants": [
       "CO",
       "NH3",
@@ -11576,13 +11568,12 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "PM10": 38.0,
+          "PM10": 37.0,
+          "NO2": 7.0,
           "SO2": 4.0,
-          "CO": 25.0,
-          "PM2.5": 24.0,
-          "NO2": 8.0,
           "OZONE": 13.0,
-          "NH3": 1.0
+          "PM2.5": 24.0,
+          "CO": 28.0
     }
   },
   {
@@ -11628,13 +11619,13 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
-          "NO2": 6.0,
-          "NH3": 2.0,
-          "PM2.5": 68.0,
-          "PM10": 54.0,
           "SO2": 16.0,
+          "PM10": 54.0,
+          "PM2.5": 68.0,
+          "NO2": 5.0,
+          "NH3": 2.0,
           "CO": 56.0,
-          "OZONE": 41.0
+          "OZONE": 54.0
     }
   },
   {
@@ -11645,7 +11636,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 21.219665,
     "lng": 81.630094,
-    "aqi": 56,
+    "aqi": 58,
     "pollutants": [
       "PM2.5",
       "PM10",
@@ -11656,13 +11647,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "NH3": 2.0,
-          "PM10": 56.0,
+          "PM2.5": 41.0,
+          "PM10": 58.0,
+          "CO": 27.0,
+          "OZONE": 5.0,
           "NO2": 12.0,
-          "SO2": 11.0,
-          "CO": 26.0,
-          "OZONE": 7.0,
-          "PM2.5": 40.0
+          "NH3": 2.0,
+          "SO2": 11.0
     }
   },
   {
@@ -11673,19 +11664,19 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 21.237755,
     "lng": 81.705301,
-    "aqi": 72,
+    "aqi": 65,
     "pollutants": [
       "CO",
       "OZONE"
     ],
     "pollutant_values": {
-          "CO": 13.0,
+          "NO2": 12.0,
           "SO2": 25.0,
-          "OZONE": 72.0,
-          "PM2.5": 59.0,
-          "PM10": 67.0,
-          "NO2": 15.0,
-          "NH3": 2.0
+          "PM10": 65.0,
+          "CO": 12.0,
+          "NH3": 2.0,
+          "OZONE": 49.0,
+          "PM2.5": 57.0
     }
   },
   {
@@ -11696,7 +11687,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 21.371751,
     "lng": 81.664929,
-    "aqi": 97,
+    "aqi": 95,
     "pollutants": [
       "PM10",
       "NH3",
@@ -11707,13 +11698,12 @@ export const STATIONS_DATA = [
       "PM2.5"
     ],
     "pollutant_values": {
+          "OZONE": 19.0,
+          "PM2.5": 69.0,
+          "PM10": 95.0,
           "NH3": 3.0,
-          "PM2.5": 68.0,
-          "NO2": 10.0,
-          "CO": 17.0,
-          "OZONE": 27.0,
-          "PM10": 97.0,
-          "SO2": 13.0
+          "SO2": 17.0,
+          "CO": 17.0
     }
   },
   {
@@ -11724,7 +11714,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 21.258815,
     "lng": 81.578979,
-    "aqi": 77,
+    "aqi": 74,
     "pollutants": [
       "NO2",
       "OZONE",
@@ -11735,13 +11725,13 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "NO2": 12.0,
-          "PM10": 77.0,
-          "CO": 25.0,
-          "OZONE": 29.0,
-          "PM2.5": 69.0,
           "NH3": 4.0,
-          "SO2": 6.0
+          "CO": 26.0,
+          "NO2": 11.0,
+          "OZONE": 25.0,
+          "SO2": 6.0,
+          "PM2.5": 67.0,
+          "PM10": 74.0
     }
   },
   {
@@ -11763,13 +11753,13 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "SO2": 11.0,
-          "OZONE": 30.0,
-          "CO": 14.0,
-          "PM2.5": 41.0,
-          "PM10": 79.0,
           "NO2": 6.0,
-          "NH3": 3.0
+          "NH3": 3.0,
+          "SO2": 11.0,
+          "PM2.5": 42.0,
+          "CO": 17.0,
+          "PM10": 79.0,
+          "OZONE": 19.0
     }
   },
   {
@@ -11792,7 +11782,7 @@ export const STATIONS_DATA = [
     ],
     "pollutant_values": {
           "CO": 35.0,
-          "OZONE": 28.0
+          "OZONE": 22.0
     }
   },
   {
@@ -11803,7 +11793,7 @@ export const STATIONS_DATA = [
     "region": "East India",
     "lat": 25.0328,
     "lng": 85.41948,
-    "aqi": 61,
+    "aqi": 67,
     "pollutants": [
       "SO2",
       "NO2",
@@ -11814,13 +11804,13 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "PM2.5": 61.0,
           "NH3": 3.0,
-          "SO2": 3.0,
-          "PM10": 58.0,
+          "CO": 43.0,
+          "OZONE": 28.0,
           "NO2": 14.0,
-          "CO": 42.0,
-          "OZONE": 25.0
+          "PM2.5": 67.0,
+          "PM10": 65.0,
+          "SO2": 3.0
     }
   },
   {
@@ -11842,13 +11832,13 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "PM2.5": 52.0,
           "PM10": 139.0,
+          "PM2.5": 51.0,
+          "OZONE": 9.0,
+          "NO2": 87.0,
           "NH3": 2.0,
-          "NO2": 88.0,
-          "SO2": 7.0,
           "CO": 76.0,
-          "OZONE": 8.0
+          "SO2": 7.0
     }
   },
   {
@@ -11859,7 +11849,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 25.03636,
     "lng": 73.883502,
-    "aqi": 103,
+    "aqi": 46,
     "pollutants": [
       "CO",
       "PM2.5",
@@ -11870,13 +11860,12 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
-          "NH3": 8.0,
+          "NO2": 20.0,
           "SO2": 5.0,
-          "CO": 12.0,
-          "OZONE": 64.0,
-          "PM2.5": 61.0,
-          "PM10": 103.0,
-          "NO2": 24.0
+          "OZONE": 46.0,
+          "PM2.5": 45.0,
+          "NH3": 7.0,
+          "CO": 11.0
     }
   },
   {
@@ -11887,7 +11876,7 @@ export const STATIONS_DATA = [
     "region": "South India",
     "lat": 12.733409,
     "lng": 77.298051,
-    "aqi": 31,
+    "aqi": 30,
     "pollutants": [
       "CO",
       "PM10",
@@ -11898,11 +11887,11 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
-          "PM2.5": 24.0,
-          "OZONE": 31.0,
-          "SO2": 16.0,
+          "PM2.5": 22.0,
           "CO": 26.0,
-          "PM10": 27.0
+          "SO2": 15.0,
+          "PM10": 25.0,
+          "OZONE": 30.0
     }
   },
   {
@@ -11933,7 +11922,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 23.331731,
     "lng": 75.045981,
-    "aqi": 79,
+    "aqi": 82,
     "pollutants": [
       "PM10",
       "PM2.5",
@@ -11941,10 +11930,10 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
-          "PM10": 79.0,
-          "NO2": 14.0,
-          "SO2": 60.0,
-          "PM2.5": 48.0
+          "PM2.5": 47.0,
+          "PM10": 82.0,
+          "NO2": 13.0,
+          "SO2": 60.0
     }
   },
   {
@@ -11955,7 +11944,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 30.075911,
     "lng": 78.2859547,
-    "aqi": 40,
+    "aqi": 37,
     "pollutants": [
       "NH3",
       "CO",
@@ -11966,13 +11955,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
+          "NO2": 6.0,
+          "OZONE": 34.0,
           "PM10": 16.0,
-          "CO": 37.0,
           "SO2": 1.0,
-          "NH3": 16.0,
+          "NH3": 18.0,
           "PM2.5": 2.0,
-          "OZONE": 40.0,
-          "NO2": 7.0
+          "CO": 37.0
     }
   },
   {
@@ -11983,7 +11972,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 28.52123,
     "lng": 76.37138,
-    "aqi": 88,
+    "aqi": 64,
     "pollutants": [
       "PM2.5",
       "NO2",
@@ -11993,12 +11982,10 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
-          "NO2": 8.0,
-          "CO": 24.0,
-          "PM2.5": 61.0,
-          "SO2": 12.0,
-          "OZONE": 44.0,
-          "PM10": 88.0
+          "PM2.5": 64.0,
+          "OZONE": 15.0,
+          "CO": 25.0,
+          "NO2": 8.0
     }
   },
   {
@@ -12009,14 +11996,15 @@ export const STATIONS_DATA = [
     "region": "East India",
     "lat": 22.18972222,
     "lng": 84.86277778,
-    "aqi": 73,
+    "aqi": 72,
     "pollutants": [
       "PM2.5"
     ],
     "pollutant_values": {
-          "CO": 19.0,
-          "PM2.5": 62.0,
-          "PM10": 73.0
+          "PM10": 72.0,
+          "PM2.5": 61.0,
+          "CO": 18.0,
+          "SO2": 12.0
     }
   },
   {
@@ -12027,7 +12015,7 @@ export const STATIONS_DATA = [
     "region": "East India",
     "lat": 22.220833,
     "lng": 84.809444,
-    "aqi": 97,
+    "aqi": 96,
     "pollutants": [
       "CO",
       "PM10",
@@ -12038,13 +12026,13 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
-          "PM10": 97.0,
-          "CO": 40.0,
-          "PM2.5": 94.0,
-          "NO2": 15.0,
           "NH3": 1.0,
-          "OZONE": 17.0,
-          "SO2": 6.0
+          "OZONE": 14.0,
+          "PM2.5": 91.0,
+          "SO2": 6.0,
+          "PM10": 96.0,
+          "CO": 46.0,
+          "NO2": 15.0
     }
   },
   {
@@ -12063,10 +12051,10 @@ export const STATIONS_DATA = [
       "NO2"
     ],
     "pollutant_values": {
-          "PM2.5": 36.0,
-          "CO": 27.0,
+          "PM10": 75.0,
           "NO2": 10.0,
-          "PM10": 75.0
+          "PM2.5": 36.0,
+          "CO": 27.0
     }
   },
   {
@@ -12077,7 +12065,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 31.0325454,
     "lng": 76.5623046,
-    "aqi": 159,
+    "aqi": 116,
     "pollutants": [
       "NO2",
       "PM2.5",
@@ -12086,11 +12074,11 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
-          "CO": 37.0,
-          "NO2": 27.0,
-          "PM10": 143.0,
-          "PM2.5": 159.0,
-          "SO2": 15.0
+          "PM10": 110.0,
+          "CO": 41.0,
+          "SO2": 15.0,
+          "PM2.5": 116.0,
+          "NO2": 27.0
     }
   },
   {
@@ -12101,7 +12089,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 23.838586,
     "lng": 78.759431,
-    "aqi": 63,
+    "aqi": 62,
     "pollutants": [
       "PM10",
       "PM2.5",
@@ -12112,13 +12100,13 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "PM10": 63.0,
-          "NO2": 15.0,
+          "PM2.5": 32.0,
+          "PM10": 62.0,
+          "OZONE": 30.0,
           "NH3": 3.0,
-          "OZONE": 48.0,
-          "PM2.5": 30.0,
-          "SO2": 8.0,
-          "CO": 34.0
+          "CO": 37.0,
+          "NO2": 13.0,
+          "SO2": 8.0
     }
   },
   {
@@ -12129,7 +12117,7 @@ export const STATIONS_DATA = [
     "region": "East India",
     "lat": 25.892357,
     "lng": 86.590325,
-    "aqi": 133,
+    "aqi": 108,
     "pollutants": [
       "NH3",
       "NO2",
@@ -12140,13 +12128,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "SO2": 15.0,
-          "PM10": 96.0,
-          "NO2": 7.0,
-          "OZONE": 29.0,
-          "PM2.5": 133.0,
-          "CO": 39.0,
-          "NH3": 4.0
+          "OZONE": 18.0,
+          "NO2": 8.0,
+          "PM2.5": 108.0,
+          "PM10": 88.0,
+          "NH3": 4.0,
+          "SO2": 17.0,
+          "CO": 39.0
     }
   },
   {
@@ -12157,17 +12145,17 @@ export const STATIONS_DATA = [
     "region": "East India",
     "lat": 25.859655,
     "lng": 85.77944,
-    "aqi": 33,
+    "aqi": 44,
     "pollutants": [
       "OZONE",
       "CO"
     ],
     "pollutant_values": {
+          "PM10": 44.0,
+          "PM2.5": 37.0,
           "OZONE": 8.0,
-          "PM2.5": 27.0,
-          "PM10": 33.0,
-          "NO2": 8.0,
-          "NH3": 1.0
+          "NH3": 1.0,
+          "NO2": 8.0
     }
   },
   {
@@ -12178,7 +12166,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 16.5038,
     "lng": 74.3623,
-    "aqi": 43,
+    "aqi": 40,
     "pollutants": [
       "CO",
       "SO2",
@@ -12189,13 +12177,11 @@ export const STATIONS_DATA = [
       "PM2.5"
     ],
     "pollutant_values": {
-          "PM2.5": 32.0,
-          "NO2": 12.0,
-          "OZONE": 30.0,
-          "NH3": 4.0,
-          "CO": 25.0,
-          "PM10": 43.0,
-          "SO2": 5.0
+          "PM2.5": 31.0,
+          "CO": 22.0,
+          "PM10": 40.0,
+          "SO2": 5.0,
+          "OZONE": 26.0
     }
   },
   {
@@ -12206,7 +12192,7 @@ export const STATIONS_DATA = [
     "region": "East India",
     "lat": 24.952822,
     "lng": 84.002396,
-    "aqi": 48,
+    "aqi": 42,
     "pollutants": [
       "NH3",
       "CO",
@@ -12216,11 +12202,11 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "CO": 48.0,
+          "SO2": 3.0,
           "NO2": 3.0,
-          "OZONE": 20.0,
           "NH3": 3.0,
-          "SO2": 3.0
+          "CO": 42.0,
+          "OZONE": 19.0
     }
   },
   {
@@ -12242,13 +12228,12 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "CO": 12.0,
+          "NO2": 6.0,
           "PM10": 57.0,
           "NH3": 2.0,
           "SO2": 2.0,
-          "PM2.5": 30.0,
-          "NO2": 7.0,
-          "OZONE": 50.0
+          "PM2.5": 32.0,
+          "OZONE": 47.0
     }
   },
   {
@@ -12268,11 +12253,11 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
+          "SO2": 19.0,
           "PM2.5": 50.0,
-          "OZONE": 56.0,
+          "OZONE": 52.0,
           "PM10": 70.0,
-          "NO2": 12.0,
-          "SO2": 19.0
+          "NO2": 12.0
     }
   },
   {
@@ -12283,7 +12268,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 26.031443,
     "lng": 76.359327,
-    "aqi": 94,
+    "aqi": 69,
     "pollutants": [
       "OZONE",
       "NH3",
@@ -12294,13 +12279,12 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "PM10": 92.0,
+          "NO2": 9.0,
+          "NH3": 5.0,
           "SO2": 8.0,
-          "CO": 17.0,
-          "OZONE": 94.0,
-          "NH3": 6.0,
-          "PM2.5": 26.0,
-          "NO2": 12.0
+          "CO": 21.0,
+          "OZONE": 69.0,
+          "PM2.5": 26.0
     }
   },
   {
@@ -12332,7 +12316,7 @@ export const STATIONS_DATA = [
     "region": "East India",
     "lat": 25.5803419,
     "lng": 91.8942571,
-    "aqi": 38,
+    "aqi": 39,
     "pollutants": [
       "NO2",
       "CO",
@@ -12341,8 +12325,8 @@ export const STATIONS_DATA = [
     ],
     "pollutant_values": {
           "SO2": 29.0,
-          "CO": 13.0,
-          "NO2": 38.0
+          "NO2": 39.0,
+          "CO": 16.0
     }
   },
   {
@@ -12353,7 +12337,7 @@ export const STATIONS_DATA = [
     "region": "South India",
     "lat": 13.94,
     "lng": 75.555917,
-    "aqi": 38,
+    "aqi": 37,
     "pollutants": [
       "PM10",
       "OZONE",
@@ -12364,13 +12348,13 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "PM10": 38.0,
-          "NH3": 3.0,
-          "PM2.5": 31.0,
-          "CO": 18.0,
-          "OZONE": 21.0,
+          "PM2.5": 29.0,
+          "PM10": 37.0,
+          "SO2": 4.0,
           "NO2": 27.0,
-          "SO2": 3.0
+          "CO": 27.0,
+          "OZONE": 21.0,
+          "NH3": 3.0
     }
   },
   {
@@ -12381,7 +12365,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 27.608912,
     "lng": 75.153302,
-    "aqi": 131,
+    "aqi": 148,
     "pollutants": [
       "NO2",
       "PM2.5",
@@ -12392,13 +12376,12 @@ export const STATIONS_DATA = [
       "NH3"
     ],
     "pollutant_values": {
-          "PM10": 131.0,
-          "SO2": 3.0,
-          "CO": 13.0,
-          "OZONE": 95.0,
-          "NO2": 21.0,
-          "NH3": 15.0,
-          "PM2.5": 50.0
+          "PM10": 148.0,
+          "NO2": 27.0,
+          "NH3": 14.0,
+          "OZONE": 68.0,
+          "PM2.5": 52.0,
+          "CO": 36.0
     }
   },
   {
@@ -12409,7 +12392,7 @@ export const STATIONS_DATA = [
     "region": "East India",
     "lat": 24.82827,
     "lng": 92.79525,
-    "aqi": 55,
+    "aqi": 56,
     "pollutants": [
       "PM10",
       "OZONE",
@@ -12420,13 +12403,13 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "OZONE": 3.0,
-          "PM2.5": 31.0,
-          "PM10": 50.0,
-          "NO2": 16.0,
-          "CO": 55.0,
           "NH3": 1.0,
-          "SO2": 6.0
+          "PM10": 49.0,
+          "CO": 56.0,
+          "PM2.5": 29.0,
+          "NO2": 16.0,
+          "SO2": 6.0,
+          "OZONE": 2.0
     }
   },
   {
@@ -12437,7 +12420,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 26.6879226,
     "lng": 88.4152495,
-    "aqi": 56,
+    "aqi": 48,
     "pollutants": [
       "OZONE",
       "SO2",
@@ -12448,8 +12431,8 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "OZONE": 56.0,
-          "CO": 34.0
+          "OZONE": 48.0,
+          "CO": 41.0
     }
   },
   {
@@ -12460,7 +12443,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 24.10897,
     "lng": 82.64558,
-    "aqi": 148,
+    "aqi": 173,
     "pollutants": [
       "NH3",
       "PM10",
@@ -12471,12 +12454,12 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "PM2.5": 148.0,
-          "PM10": 147.0,
-          "SO2": 60.0,
-          "OZONE": 41.0,
+          "CO": 55.0,
           "NH3": 2.0,
-          "CO": 38.0
+          "PM2.5": 173.0,
+          "PM10": 169.0,
+          "SO2": 60.0,
+          "OZONE": 24.0
     }
   },
   {
@@ -12487,7 +12470,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 24.885261,
     "lng": 72.857549,
-    "aqi": 92,
+    "aqi": 72,
     "pollutants": [
       "NO2",
       "NH3",
@@ -12498,13 +12481,11 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "SO2": 2.0,
-          "CO": 16.0,
-          "NH3": 2.0,
-          "PM10": 92.0,
-          "PM2.5": 25.0,
-          "NO2": 13.0,
-          "OZONE": 90.0
+          "NO2": 9.0,
+          "NH3": 3.0,
+          "CO": 15.0,
+          "PM2.5": 27.0,
+          "OZONE": 72.0
     }
   },
   {
@@ -12515,7 +12496,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 29.5364,
     "lng": 75.0158,
-    "aqi": 100,
+    "aqi": 90,
     "pollutants": [
       "PM2.5",
       "PM10",
@@ -12527,12 +12508,8 @@ export const STATIONS_DATA = [
     ],
     "pollutant_values": {
           "SO2": 13.0,
-          "CO": 84.0,
-          "OZONE": 100.0,
           "PM10": 90.0,
-          "NO2": 18.0,
-          "PM2.5": 52.0,
-          "NH3": 13.0
+          "CO": 89.0
     }
   },
   {
@@ -12543,7 +12520,7 @@ export const STATIONS_DATA = [
     "region": "East India",
     "lat": 26.987634,
     "lng": 94.636574,
-    "aqi": 61,
+    "aqi": 51,
     "pollutants": [
       "OZONE",
       "SO2",
@@ -12554,13 +12531,13 @@ export const STATIONS_DATA = [
       "NH3"
     ],
     "pollutant_values": {
-          "PM10": 39.0,
-          "OZONE": 61.0,
-          "PM2.5": 35.0,
+          "OZONE": 51.0,
           "NO2": 9.0,
-          "NH3": 8.0,
+          "PM2.5": 33.0,
+          "PM10": 37.0,
+          "NH3": 7.0,
           "SO2": 8.0,
-          "CO": 17.0
+          "CO": 19.0
     }
   },
   {
@@ -12571,7 +12548,7 @@ export const STATIONS_DATA = [
     "region": "East India",
     "lat": 26.2271665,
     "lng": 84.3570427,
-    "aqi": 104,
+    "aqi": 108,
     "pollutants": [
       "OZONE",
       "NH3",
@@ -12582,13 +12559,13 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
-          "PM2.5": 46.0,
-          "SO2": 8.0,
-          "CO": 104.0,
-          "PM10": 45.0,
+          "PM10": 59.0,
+          "PM2.5": 65.0,
+          "NO2": 2.0,
           "NH3": 1.0,
-          "OZONE": 12.0,
-          "NO2": 2.0
+          "SO2": 9.0,
+          "OZONE": 14.0,
+          "CO": 108.0
     }
   },
   {
@@ -12599,7 +12576,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 17.6336264,
     "lng": 75.9132495,
-    "aqi": 28,
+    "aqi": 24,
     "pollutants": [
       "PM10",
       "NH3",
@@ -12610,9 +12587,8 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "SO2": 4.0,
-          "OZONE": 25.0,
-          "CO": 28.0
+          "CO": 24.0,
+          "OZONE": 20.0
     }
   },
   {
@@ -12623,7 +12599,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 17.65439,
     "lng": 75.90649,
-    "aqi": 61,
+    "aqi": 58,
     "pollutants": [
       "PM10",
       "CO",
@@ -12634,12 +12610,10 @@ export const STATIONS_DATA = [
       "NH3"
     ],
     "pollutant_values": {
-          "PM10": 61.0,
-          "NO2": 34.0,
-          "OZONE": 24.0,
-          "PM2.5": 30.0,
-          "SO2": 3.0,
-          "CO": 24.0,
+          "PM2.5": 27.0,
+          "PM10": 58.0,
+          "OZONE": 17.0,
+          "NO2": 31.0,
           "NH3": 4.0
     }
   },
@@ -12662,13 +12636,12 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "PM2.5": 108.0,
-          "NH3": 10.0,
-          "CO": 40.0,
-          "NO2": 31.0,
           "PM10": 145.0,
+          "NO2": 31.0,
           "SO2": 13.0,
-          "OZONE": 50.0
+          "OZONE": 50.0,
+          "NH3": 10.0,
+          "CO": 40.0
     }
   },
   {
@@ -12679,7 +12652,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 29.931624,
     "lng": 73.864511,
-    "aqi": 113,
+    "aqi": 110,
     "pollutants": [
       "NH3",
       "PM2.5",
@@ -12690,13 +12663,13 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
+          "PM10": 110.0,
           "PM2.5": 40.0,
-          "OZONE": 89.0,
-          "PM10": 113.0,
-          "NO2": 60.0,
           "NH3": 6.0,
+          "NO2": 52.0,
+          "OZONE": 73.0,
           "SO2": 3.0,
-          "CO": 52.0
+          "CO": 56.0
     }
   },
   {
@@ -12716,11 +12689,11 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "PM10": 44.0,
-          "PM2.5": 28.0,
-          "OZONE": 2.0,
           "SO2": 3.0,
-          "CO": 13.0
+          "PM2.5": 28.0,
+          "PM10": 44.0,
+          "CO": 13.0,
+          "OZONE": 1.0
     }
   },
   {
@@ -12731,7 +12704,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 34.06313,
     "lng": 74.96017,
-    "aqi": 49,
+    "aqi": 48,
     "pollutants": [
       "NO2",
       "SO2",
@@ -12739,7 +12712,7 @@ export const STATIONS_DATA = [
       "PM10"
     ],
     "pollutant_values": {
-          "PM10": 49.0,
+          "PM10": 48.0,
           "SO2": 5.0,
           "PM2.5": 20.0
     }
@@ -12752,7 +12725,7 @@ export const STATIONS_DATA = [
     "region": "East India",
     "lat": 21.606865,
     "lng": 85.510538,
-    "aqi": 70,
+    "aqi": 67,
     "pollutants": [
       "CO",
       "PM2.5",
@@ -12763,13 +12736,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "PM2.5": 50.0,
-          "OZONE": 40.0,
-          "NH3": 4.0,
-          "SO2": 5.0,
-          "PM10": 70.0,
+          "PM10": 67.0,
+          "CO": 11.0,
           "NO2": 10.0,
-          "CO": 6.0
+          "SO2": 5.0,
+          "PM2.5": 47.0,
+          "NH3": 4.0,
+          "OZONE": 32.0
     }
   },
   {
@@ -12780,7 +12753,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 21.217779,
     "lng": 72.834787,
-    "aqi": 126,
+    "aqi": 127,
     "pollutants": [
       "NO2",
       "NH3",
@@ -12792,12 +12765,12 @@ export const STATIONS_DATA = [
     ],
     "pollutant_values": {
           "NH3": 1.0,
-          "PM10": 107.0,
-          "SO2": 6.0,
-          "PM2.5": 126.0,
+          "CO": 35.0,
+          "OZONE": 12.0,
+          "PM10": 105.0,
           "NO2": 14.0,
-          "CO": 34.0,
-          "OZONE": 12.0
+          "PM2.5": 127.0,
+          "SO2": 6.0
     }
   },
   {
@@ -12817,8 +12790,9 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "PM10": 36.0,
+          "PM2.5": 32.0,
           "SO2": 15.0,
+          "PM10": 38.0,
           "CO": 50.0,
           "NO2": 15.0
     }
@@ -12831,7 +12805,7 @@ export const STATIONS_DATA = [
     "region": "East India",
     "lat": 20.9360711,
     "lng": 85.1707021,
-    "aqi": 82,
+    "aqi": 72,
     "pollutants": [
       "NO2",
       "NH3",
@@ -12842,13 +12816,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "PM10": 68.0,
-          "NH3": 6.0,
-          "PM2.5": 82.0,
-          "OZONE": 22.0,
           "NO2": 24.0,
-          "SO2": 38.0,
-          "CO": 50.0
+          "NH3": 6.0,
+          "SO2": 37.0,
+          "CO": 53.0,
+          "OZONE": 20.0,
+          "PM2.5": 72.0,
+          "PM10": 68.0
     }
   },
   {
@@ -12859,17 +12833,16 @@ export const STATIONS_DATA = [
     "region": "East India",
     "lat": 21.869985,
     "lng": 85.167016,
-    "aqi": 54,
+    "aqi": 58,
     "pollutants": [
       "PM2.5",
       "OZONE",
       "CO"
     ],
     "pollutant_values": {
-          "CO": 20.0,
-          "SO2": 54.0,
-          "PM2.5": 32.0,
-          "PM10": 42.0
+          "PM2.5": 31.0,
+          "SO2": 58.0,
+          "PM10": 40.0
     }
   },
   {
@@ -12880,7 +12853,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 19.222279,
     "lng": 72.957979,
-    "aqi": 73,
+    "aqi": 72,
     "pollutants": [
       "PM10",
       "CO",
@@ -12891,13 +12864,12 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "NH3": 3.0,
-          "PM2.5": 49.0,
-          "OZONE": 47.0,
-          "CO": 59.0,
-          "PM10": 73.0,
+          "PM10": 72.0,
           "NO2": 18.0,
-          "SO2": 10.0
+          "NH3": 3.0,
+          "OZONE": 43.0,
+          "SO2": 10.0,
+          "CO": 62.0
     }
   },
   {
@@ -12908,19 +12880,18 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 19.26777,
     "lng": 72.97182,
-    "aqi": 73,
+    "aqi": 62,
     "pollutants": [
       "OZONE",
       "CO"
     ],
     "pollutant_values": {
-          "OZONE": 31.0,
-          "PM10": 73.0,
-          "NO2": 59.0,
+          "NO2": 62.0,
+          "OZONE": 22.0,
+          "PM2.5": 47.0,
           "NH3": 3.0,
           "SO2": 2.0,
-          "CO": 10.0,
-          "PM2.5": 48.0
+          "CO": 10.0
     }
   },
   {
@@ -12931,7 +12902,7 @@ export const STATIONS_DATA = [
     "region": "South India",
     "lat": 8.5149093,
     "lng": 76.9435879,
-    "aqi": 19,
+    "aqi": 16,
     "pollutants": [
       "PM10",
       "CO",
@@ -12940,11 +12911,11 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
-          "OZONE": 19.0,
-          "PM2.5": 9.0,
-          "PM10": 14.0,
-          "SO2": 15.0,
-          "CO": 15.0
+          "PM10": 15.0,
+          "CO": 10.0,
+          "OZONE": 14.0,
+          "PM2.5": 10.0,
+          "SO2": 16.0
     }
   },
   {
@@ -12955,18 +12926,18 @@ export const STATIONS_DATA = [
     "region": "South India",
     "lat": 8.5637,
     "lng": 76.8865,
-    "aqi": 46,
+    "aqi": 51,
     "pollutants": [
       "CO",
       "OZONE"
     ],
     "pollutant_values": {
-          "PM10": 46.0,
+          "PM10": 51.0,
+          "OZONE": 30.0,
           "NO2": 6.0,
           "CO": 21.0,
-          "PM2.5": 42.0,
           "SO2": 10.0,
-          "OZONE": 31.0
+          "PM2.5": 42.0
     }
   },
   {
@@ -12977,7 +12948,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 8.816428,
     "lng": 78.099039,
-    "aqi": 43,
+    "aqi": 45,
     "pollutants": [
       "PM10",
       "CO",
@@ -12986,11 +12957,11 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "CO": 25.0,
           "OZONE": 31.0,
-          "SO2": 10.0,
-          "PM10": 43.0,
-          "NO2": 16.0
+          "PM10": 45.0,
+          "NO2": 17.0,
+          "SO2": 13.0,
+          "CO": 25.0
     }
   },
   {
@@ -13001,7 +12972,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 13.67,
     "lng": 79.35,
-    "aqi": 54,
+    "aqi": 83,
     "pollutants": [
       "NO2",
       "NH3",
@@ -13012,12 +12983,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
+          "NH3": 3.0,
           "SO2": 5.0,
-          "PM2.5": 37.0,
-          "NO2": 54.0,
-          "OZONE": 31.0,
-          "CO": 20.0,
-          "NH3": 3.0
+          "PM10": 83.0,
+          "NO2": 56.0,
+          "OZONE": 25.0,
+          "PM2.5": 36.0,
+          "CO": 24.0
     }
   },
   {
@@ -13028,7 +13000,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 13.615387,
     "lng": 79.40923,
-    "aqi": 44,
+    "aqi": 57,
     "pollutants": [
       "OZONE",
       "CO",
@@ -13039,8 +13011,13 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
-          "CO": 22.0,
-          "OZONE": 44.0
+          "PM10": 57.0,
+          "NH3": 6.0,
+          "OZONE": 43.0,
+          "PM2.5": 42.0,
+          "NO2": 34.0,
+          "CO": 20.0,
+          "SO2": 17.0
     }
   },
   {
@@ -13051,7 +13028,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 26.159933,
     "lng": 75.780517,
-    "aqi": 169,
+    "aqi": 146,
     "pollutants": [
       "PM2.5",
       "CO",
@@ -13062,13 +13039,13 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
-          "PM2.5": 169.0,
-          "PM10": 146.0,
-          "NH3": 18.0,
+          "NH3": 16.0,
+          "PM2.5": 146.0,
+          "NO2": 2.0,
+          "OZONE": 67.0,
+          "PM10": 133.0,
           "SO2": 2.0,
-          "NO2": 3.0,
-          "CO": 14.0,
-          "OZONE": 34.0
+          "CO": 17.0
     }
   },
   {
@@ -13079,7 +13056,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 22.06631475,
     "lng": 83.33820077,
-    "aqi": 156,
+    "aqi": 178,
     "pollutants": [
       "PM10",
       "SO2",
@@ -13090,13 +13067,13 @@ export const STATIONS_DATA = [
       "NH3"
     ],
     "pollutant_values": {
-          "NO2": 49.0,
-          "CO": 33.0,
-          "OZONE": 156.0,
+          "PM2.5": 49.0,
+          "PM10": 41.0,
+          "OZONE": 178.0,
+          "CO": 37.0,
+          "NH3": 2.0,
           "SO2": 7.0,
-          "PM10": 33.0,
-          "PM2.5": 44.0,
-          "NH3": 2.0
+          "NO2": 56.0
     }
   },
   {
@@ -13107,7 +13084,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 24.5886166,
     "lng": 73.6321397,
-    "aqi": 108,
+    "aqi": 111,
     "pollutants": [
       "PM2.5",
       "OZONE",
@@ -13118,13 +13095,13 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "PM2.5": 74.0,
+          "NO2": 29.0,
           "NH3": 5.0,
-          "PM10": 108.0,
-          "SO2": 7.0,
-          "NO2": 31.0,
-          "CO": 28.0,
-          "OZONE": 66.0
+          "OZONE": 34.0,
+          "SO2": 8.0,
+          "PM2.5": 86.0,
+          "PM10": 111.0,
+          "CO": 38.0
     }
   },
   {
@@ -13135,7 +13112,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 23.1633321,
     "lng": 75.800225,
-    "aqi": 76,
+    "aqi": 79,
     "pollutants": [
       "NH3",
       "PM2.5",
@@ -13146,13 +13123,13 @@ export const STATIONS_DATA = [
       "CO"
     ],
     "pollutant_values": {
-          "PM2.5": 54.0,
-          "CO": 23.0,
+          "PM2.5": 53.0,
           "SO2": 4.0,
-          "NH3": 8.0,
-          "OZONE": 65.0,
-          "PM10": 76.0,
-          "NO2": 37.0
+          "PM10": 79.0,
+          "CO": 30.0,
+          "OZONE": 74.0,
+          "NO2": 34.0,
+          "NH3": 8.0
     }
   },
   {
@@ -13163,7 +13140,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 19.235581,
     "lng": 73.159121,
-    "aqi": 60,
+    "aqi": 44,
     "pollutants": [
       "NO2",
       "PM10",
@@ -13174,13 +13151,12 @@ export const STATIONS_DATA = [
       "PM2.5"
     ],
     "pollutant_values": {
-          "NH3": 5.0,
-          "OZONE": 49.0,
           "PM2.5": 44.0,
-          "PM10": 60.0,
-          "NO2": 19.0,
+          "OZONE": 21.0,
+          "CO": 19.0,
+          "NH3": 5.0,
           "SO2": 5.0,
-          "CO": 17.0
+          "NO2": 18.0
     }
   },
   {
@@ -13202,13 +13178,13 @@ export const STATIONS_DATA = [
       "PM2.5"
     ],
     "pollutant_values": {
-          "PM2.5": 16.0,
+          "PM10": 32.0,
           "NH3": 2.0,
-          "SO2": 7.0,
-          "PM10": 33.0,
-          "CO": 30.0,
-          "NO2": 21.0,
-          "OZONE": 30.0
+          "OZONE": 17.0,
+          "PM2.5": 16.0,
+          "CO": 33.0,
+          "NO2": 20.0,
+          "SO2": 8.0
     }
   },
   {
@@ -13219,7 +13195,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 22.320153,
     "lng": 73.216285,
-    "aqi": 80,
+    "aqi": 82,
     "pollutants": [
       "PM2.5",
       "CO",
@@ -13230,12 +13206,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "NO2": 9.0,
-          "PM2.5": 70.0,
-          "PM10": 80.0,
+          "PM2.5": 69.0,
           "SO2": 6.0,
-          "CO": 80.0,
-          "OZONE": 6.0
+          "OZONE": 5.0,
+          "CO": 82.0,
+          "PM10": 79.0,
+          "NO2": 9.0,
+          "NH3": 3.0
     }
   },
   {
@@ -13256,11 +13233,12 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
-          "NO2": 16.0,
-          "NH3": 6.0,
-          "PM2.5": 85.0,
           "PM10": 93.0,
-          "SO2": 20.0
+          "OZONE": 15.0,
+          "SO2": 22.0,
+          "PM2.5": 85.0,
+          "NH3": 6.0,
+          "NO2": 16.0
     }
   },
   {
@@ -13271,7 +13249,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 25.3505986,
     "lng": 82.9083074,
-    "aqi": 88,
+    "aqi": 96,
     "pollutants": [
       "CO",
       "PM10",
@@ -13281,12 +13259,12 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
-          "PM2.5": 69.0,
+          "PM2.5": 75.0,
           "NO2": 41.0,
-          "OZONE": 25.0,
           "SO2": 14.0,
+          "OZONE": 23.0,
           "CO": 19.0,
-          "PM10": 88.0
+          "PM10": 96.0
     }
   },
   {
@@ -13297,7 +13275,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 25.301778,
     "lng": 82.996789,
-    "aqi": 85,
+    "aqi": 95,
     "pollutants": [
       "OZONE",
       "PM2.5",
@@ -13308,13 +13286,13 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
-          "NO2": 8.0,
+          "PM10": 95.0,
           "NH3": 1.0,
           "SO2": 26.0,
-          "CO": 14.0,
-          "PM10": 85.0,
-          "PM2.5": 36.0,
-          "OZONE": 15.0
+          "NO2": 8.0,
+          "PM2.5": 40.0,
+          "CO": 13.0,
+          "OZONE": 14.0
     }
   },
   {
@@ -13325,7 +13303,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 25.32393,
     "lng": 82.99687,
-    "aqi": 61,
+    "aqi": 68,
     "pollutants": [
       "NO2",
       "CO",
@@ -13335,12 +13313,12 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "CO": 13.0,
           "NO2": 3.0,
-          "SO2": 28.0,
-          "PM10": 60.0,
-          "OZONE": 16.0,
-          "PM2.5": 61.0
+          "CO": 22.0,
+          "OZONE": 10.0,
+          "PM2.5": 67.0,
+          "PM10": 68.0,
+          "SO2": 28.0
     }
   },
   {
@@ -13351,7 +13329,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 25.262326,
     "lng": 82.995408,
-    "aqi": 63,
+    "aqi": 73,
     "pollutants": [
       "SO2",
       "OZONE",
@@ -13361,13 +13339,13 @@ export const STATIONS_DATA = [
       "PM10"
     ],
     "pollutant_values": {
-          "PM10": 63.0,
-          "CO": 4.0,
-          "NH3": 2.0,
-          "PM2.5": 32.0,
+          "PM10": 73.0,
+          "PM2.5": 34.0,
+          "NO2": 2.0,
           "SO2": 21.0,
-          "OZONE": 7.0,
-          "NO2": 2.0
+          "CO": 6.0,
+          "NH3": 2.0,
+          "OZONE": 5.0
     }
   },
   {
@@ -13378,7 +13356,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 22.969611,
     "lng": 72.6435,
-    "aqi": 141,
+    "aqi": 123,
     "pollutants": [
       "CO",
       "NH3",
@@ -13389,8 +13367,13 @@ export const STATIONS_DATA = [
       "NO2"
     ],
     "pollutant_values": {
-          "NH3": 2.0,
-          "PM2.5": 141.0
+          "SO2": 29.0,
+          "NO2": 29.0,
+          "PM2.5": 112.0,
+          "CO": 37.0,
+          "OZONE": 29.0,
+          "PM10": 123.0,
+          "NH3": 2.0
     }
   },
   {
@@ -13412,13 +13395,13 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
-          "NO2": 11.0,
-          "CO": 19.0,
-          "PM2.5": 30.0,
           "PM10": 39.0,
+          "NO2": 11.0,
           "NH3": 4.0,
+          "CO": 20.0,
+          "OZONE": 16.0,
           "SO2": 3.0,
-          "OZONE": 16.0
+          "PM2.5": 30.0
     }
   },
   {
@@ -13440,13 +13423,13 @@ export const STATIONS_DATA = [
       "SO2"
     ],
     "pollutant_values": {
-          "NO2": 21.0,
-          "OZONE": 34.0,
-          "PM2.5": 74.0,
-          "SO2": 14.0,
           "CO": 31.0,
-          "PM10": 71.0,
-          "NH3": 4.0
+          "OZONE": 22.0,
+          "NO2": 20.0,
+          "SO2": 15.0,
+          "PM10": 72.0,
+          "NH3": 4.0,
+          "PM2.5": 74.0
     }
   },
   {
@@ -13457,20 +13440,20 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 16.486692,
     "lng": 80.699436,
-    "aqi": 68,
+    "aqi": 67,
     "pollutants": [
       "OZONE",
       "SO2",
       "CO"
     ],
     "pollutant_values": {
-          "SO2": 16.0,
-          "PM2.5": 68.0,
-          "PM10": 63.0,
-          "OZONE": 34.0,
-          "NO2": 30.0,
-          "CO": 34.0,
-          "NH3": 6.0
+          "NO2": 28.0,
+          "SO2": 15.0,
+          "OZONE": 21.0,
+          "PM10": 62.0,
+          "PM2.5": 67.0,
+          "NH3": 5.0,
+          "CO": 29.0
     }
   },
   {
@@ -13481,7 +13464,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 16.509717,
     "lng": 80.612222,
-    "aqi": 68,
+    "aqi": 67,
     "pollutants": [
       "PM10",
       "NO2",
@@ -13492,13 +13475,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "PM2.5": 64.0,
-          "NO2": 37.0,
+          "PM10": 67.0,
+          "NO2": 33.0,
+          "CO": 34.0,
           "NH3": 5.0,
-          "SO2": 13.0,
-          "OZONE": 36.0,
-          "PM10": 68.0,
-          "CO": 34.0
+          "SO2": 12.0,
+          "OZONE": 27.0,
+          "PM2.5": 62.0
     }
   },
   {
@@ -13509,18 +13492,18 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 16.554731,
     "lng": 80.64911,
-    "aqi": 63,
+    "aqi": 72,
     "pollutants": [
       "OZONE",
       "CO"
     ],
     "pollutant_values": {
-          "NO2": 19.0,
-          "CO": 18.0,
-          "PM2.5": 63.0,
-          "PM10": 62.0,
+          "OZONE": 19.0,
           "NH3": 3.0,
-          "OZONE": 35.0
+          "PM2.5": 72.0,
+          "CO": 8.0,
+          "NO2": 16.0,
+          "PM10": 66.0
     }
   },
   {
@@ -13531,7 +13514,7 @@ export const STATIONS_DATA = [
     "region": "West India",
     "lat": 19.445821,
     "lng": 72.7988231,
-    "aqi": 58,
+    "aqi": 63,
     "pollutants": [
       "SO2",
       "NH3",
@@ -13542,13 +13525,13 @@ export const STATIONS_DATA = [
       "NO2"
     ],
     "pollutant_values": {
-          "NO2": 16.0,
+          "PM2.5": 37.0,
+          "CO": 63.0,
+          "NO2": 17.0,
           "NH3": 6.0,
-          "PM10": 58.0,
-          "CO": 44.0,
-          "PM2.5": 39.0,
-          "SO2": 3.0,
-          "OZONE": 16.0
+          "PM10": 55.0,
+          "OZONE": 15.0,
+          "SO2": 3.0
     }
   },
   {
@@ -13559,7 +13542,7 @@ export const STATIONS_DATA = [
     "region": "Central India",
     "lat": 17.72,
     "lng": 83.3,
-    "aqi": 122,
+    "aqi": 120,
     "pollutants": [
       "PM10",
       "PM2.5",
@@ -13570,13 +13553,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "NO2": 48.0,
+          "CO": 18.0,
+          "OZONE": 24.0,
           "SO2": 9.0,
-          "OZONE": 31.0,
-          "PM2.5": 64.0,
-          "PM10": 122.0,
-          "NH3": 3.0,
-          "CO": 16.0
+          "PM2.5": 65.0,
+          "NO2": 47.0,
+          "PM10": 120.0,
+          "NH3": 3.0
     }
   },
   {
@@ -13598,13 +13581,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
+          "CO": 15.0,
           "NH3": 8.0,
-          "OZONE": 15.0,
           "PM10": 60.0,
-          "CO": 16.0,
-          "PM2.5": 35.0,
+          "SO2": 27.0,
           "NO2": 27.0,
-          "SO2": 28.0
+          "OZONE": 15.0,
+          "PM2.5": 35.0
     }
   },
   {
@@ -13641,7 +13624,7 @@ export const STATIONS_DATA = [
     "region": "North India",
     "lat": 30.1480566,
     "lng": 77.2893471,
-    "aqi": 119,
+    "aqi": 127,
     "pollutants": [
       "PM2.5",
       "SO2",
@@ -13652,13 +13635,13 @@ export const STATIONS_DATA = [
       "OZONE"
     ],
     "pollutant_values": {
-          "PM10": 119.0,
           "NH3": 4.0,
-          "CO": 44.0,
-          "PM2.5": 67.0,
+          "PM10": 127.0,
           "NO2": 15.0,
+          "PM2.5": 73.0,
           "SO2": 12.0,
-          "OZONE": 77.0
+          "CO": 50.0,
+          "OZONE": 57.0
     }
   }
 ];
