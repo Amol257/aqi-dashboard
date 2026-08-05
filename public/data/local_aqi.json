@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-05T03:17:58.177594+00:00",
+  "fetchedAt": "2026-08-05T06:34:35.726672+00:00",
   "stations": [
     {
       "id": "1",
@@ -204,19 +204,19 @@
         "CO",
         "NH3",
         "NO2",
-        "OZONE",
         "PM2.5",
-        "SO2",
-        "PM10"
+        "OZONE",
+        "PM10",
+        "SO2"
       ],
       "pollutant_values": {
         "CO": 27.0,
         "NH3": 3.0,
         "NO2": 7.0,
-        "OZONE": 14.0,
         "PM2.5": 128.0,
-        "SO2": 29.0,
-        "PM10": 81.0
+        "OZONE": 14.0,
+        "PM10": 81.0,
+        "SO2": 29.0
       }
     },
     {
@@ -419,18 +419,18 @@
       "pollutants": [
         "PM2.5",
         "CO",
+        "NO2",
         "SO2",
         "OZONE",
-        "NO2",
         "NH3",
         "PM10"
       ],
       "pollutant_values": {
         "PM2.5": 50.0,
         "CO": 18.0,
+        "NO2": 1.0,
         "SO2": 11.0,
         "OZONE": 10.0,
-        "NO2": 1.0,
         "NH3": 4.0,
         "PM10": 44.0
       }
@@ -477,18 +477,18 @@
         "NH3",
         "OZONE",
         "SO2",
+        "CO",
         "PM2.5",
-        "PM10",
-        "CO"
+        "PM10"
       ],
       "pollutant_values": {
         "NO2": 7.0,
         "NH3": 2.0,
         "OZONE": 8.0,
         "SO2": 5.0,
+        "CO": 53.0,
         "PM2.5": 11.0,
-        "PM10": 13.0,
-        "CO": 53.0
+        "PM10": 13.0
       }
     },
     {
@@ -614,8 +614,8 @@
         "NH3",
         "CO",
         "OZONE",
-        "NO2",
-        "SO2"
+        "SO2",
+        "NO2"
       ],
       "pollutant_values": {
         "PM2.5": 43.0,
@@ -623,8 +623,8 @@
         "NH3": 3.0,
         "CO": 10.0,
         "OZONE": 14.0,
-        "NO2": 57.0,
-        "SO2": 7.0
+        "SO2": 7.0,
+        "NO2": 57.0
       }
     },
     {
@@ -796,8 +796,8 @@
         "OZONE",
         "SO2",
         "NO2",
-        "NH3",
-        "PM2.5"
+        "PM2.5",
+        "NH3"
       ],
       "pollutant_values": {
         "PM10": 58.0,
@@ -805,8 +805,8 @@
         "OZONE": 35.0,
         "SO2": 16.0,
         "NO2": 32.0,
-        "NH3": 7.0,
-        "PM2.5": 55.0
+        "PM2.5": 55.0,
+        "NH3": 7.0
       }
     },
     {
@@ -931,7 +931,6 @@
       "pollutants": [
         "SO2",
         "PM10",
-        "PM10",
         "NO2",
         "OZONE",
         "PM2.5",
@@ -1019,7 +1018,6 @@
         "PM10",
         "CO",
         "SO2",
-        "SO2",
         "NO2",
         "OZONE"
       ],
@@ -1048,7 +1046,6 @@
         "PM2.5",
         "CO",
         "NO2",
-        "NO2",
         "PM10",
         "OZONE"
       ],
@@ -1075,19 +1072,18 @@
         "NH3",
         "OZONE",
         "SO2",
-        "SO2",
+        "PM2.5",
         "PM10",
         "CO",
-        "PM2.5",
         "NO2"
       ],
       "pollutant_values": {
         "NH3": 4.0,
         "OZONE": 26.0,
         "SO2": 41.0,
+        "PM2.5": 32.0,
         "PM10": 63.0,
         "CO": 53.0,
-        "PM2.5": 32.0,
         "NO2": 27.0
       }
     },
@@ -1549,11 +1545,6 @@
         "NH3",
         "SO2",
         "CO",
-        "PM10",
-        "NO2",
-        "NH3",
-        "SO2",
-        "CO",
         "OZONE"
       ],
       "pollutant_values": {
@@ -1609,6 +1600,7 @@
         "PM2.5",
         "PM10",
         "NH3",
+        "OZONE",
         "CO"
       ],
       "pollutant_values": {
@@ -1617,6 +1609,7 @@
         "PM2.5": 33.0,
         "PM10": 57.0,
         "NH3": 11.0,
+        "OZONE": 2.0,
         "CO": 49.0
       }
     },
@@ -1633,6 +1626,7 @@
         "PM10",
         "NO2",
         "SO2",
+        "NH3",
         "CO",
         "OZONE"
       ],
@@ -1640,6 +1634,7 @@
         "PM10": 26.0,
         "NO2": 17.0,
         "SO2": 26.0,
+        "NH3": 10.0,
         "CO": 14.0,
         "OZONE": 12.0
       }
@@ -1744,8 +1739,6 @@
         "OZONE",
         "NO2",
         "SO2",
-        "NO2",
-        "SO2",
         "CO"
       ],
       "pollutant_values": {
@@ -1770,20 +1763,20 @@
       "pollutants": [
         "NO2",
         "PM10",
-        "PM2.5",
         "NH3",
         "SO2",
         "CO",
-        "OZONE"
+        "OZONE",
+        "PM2.5"
       ],
       "pollutant_values": {
         "NO2": 40.0,
         "PM10": 68.0,
-        "PM2.5": 26.0,
         "NH3": 9.0,
         "SO2": 7.0,
         "CO": 37.0,
-        "OZONE": 1.0
+        "OZONE": 1.0,
+        "PM2.5": 26.0
       }
     },
     {
@@ -2008,7 +2001,6 @@
         "PM10",
         "NO2",
         "CO",
-        "PM2.5",
         "PM2.5",
         "NH3",
         "OZONE"
@@ -2675,14 +2667,18 @@
         "OZONE",
         "PM2.5",
         "NO2",
-        "PM10"
+        "PM10",
+        "NH3",
+        "SO2"
       ],
       "pollutant_values": {
         "CO": 8.0,
         "OZONE": 5.0,
         "PM2.5": 31.0,
         "NO2": 18.0,
-        "PM10": 46.0
+        "PM10": 46.0,
+        "NH3": 1.0,
+        "SO2": 7.0
       }
     },
     {
@@ -2700,7 +2696,8 @@
         "PM2.5",
         "PM10",
         "NH3",
-        "OZONE"
+        "OZONE",
+        "SO2"
       ],
       "pollutant_values": {
         "CO": 22.0,
@@ -2708,7 +2705,8 @@
         "PM2.5": 28.0,
         "PM10": 42.0,
         "NH3": 2.0,
-        "OZONE": 25.0
+        "OZONE": 25.0,
+        "SO2": 4.0
       }
     },
     {
@@ -3097,18 +3095,18 @@
       "pollutants": [
         "OZONE",
         "CO",
+        "SO2",
         "PM2.5",
         "PM10",
-        "NO2",
-        "SO2"
+        "NO2"
       ],
       "pollutant_values": {
         "OZONE": 8.0,
         "CO": 42.0,
+        "SO2": 10.0,
         "PM2.5": 63.0,
         "PM10": 89.0,
-        "NO2": 12.0,
-        "SO2": 10.0
+        "NO2": 12.0
       }
     },
     {
@@ -3502,6 +3500,8 @@
       "aqi": 58,
       "pollutants": [
         "NH3",
+        "PM2.5",
+        "NO2",
         "PM10",
         "SO2",
         "CO",
@@ -3509,6 +3509,8 @@
       ],
       "pollutant_values": {
         "NH3": 36.0,
+        "PM2.5": 23.0,
+        "NO2": 15.0,
         "PM10": 28.0,
         "SO2": 11.0,
         "CO": 58.0,
@@ -3529,6 +3531,8 @@
         "SO2",
         "PM10",
         "NO2",
+        "NH3",
+        "OZONE",
         "CO"
       ],
       "pollutant_values": {
@@ -3536,6 +3540,8 @@
         "SO2": 7.0,
         "PM10": 40.0,
         "NO2": 9.0,
+        "NH3": 11.0,
+        "OZONE": 9.0,
         "CO": 33.0
       }
     },
@@ -3552,6 +3558,8 @@
         "OZONE",
         "PM10",
         "SO2",
+        "NO2",
+        "NH3",
         "CO",
         "PM2.5"
       ],
@@ -3559,6 +3567,8 @@
         "OZONE": 8.0,
         "PM10": 106.0,
         "SO2": 3.0,
+        "NO2": 39.0,
+        "NH3": 2.0,
         "CO": 48.0,
         "PM2.5": 34.0
       }
@@ -3743,7 +3753,6 @@
         "SO2",
         "NO2",
         "CO",
-        "NH3",
         "NH3"
       ],
       "pollutant_values": {
@@ -3772,7 +3781,6 @@
         "OZONE",
         "NH3",
         "SO2",
-        "PM10",
         "PM10"
       ],
       "pollutant_values": {
@@ -3801,7 +3809,6 @@
         "SO2",
         "PM2.5",
         "NH3",
-        "NO2",
         "NO2"
       ],
       "pollutant_values": {
@@ -3827,7 +3834,6 @@
         "NO2",
         "CO",
         "PM10",
-        "SO2",
         "SO2"
       ],
       "pollutant_values": {
@@ -3852,8 +3858,6 @@
         "PM10",
         "NO2",
         "SO2",
-        "PM2.5",
-        "CO",
         "PM2.5",
         "CO"
       ],
@@ -3880,10 +3884,6 @@
         "SO2",
         "OZONE",
         "PM10",
-        "PM2.5",
-        "NO2",
-        "NH3",
-        "CO",
         "PM2.5",
         "NO2",
         "NH3",
@@ -3942,7 +3942,6 @@
         "CO",
         "OZONE",
         "SO2",
-        "PM10",
         "PM10"
       ],
       "pollutant_values": {
@@ -3967,7 +3966,6 @@
         "PM2.5",
         "PM10",
         "OZONE",
-        "CO",
         "CO"
       ],
       "pollutant_values": {
@@ -4049,7 +4047,6 @@
         "CO",
         "NH3",
         "OZONE",
-        "PM10",
         "PM10"
       ],
       "pollutant_values": {
@@ -4078,7 +4075,6 @@
         "NO2",
         "OZONE",
         "SO2",
-        "PM10",
         "PM10"
       ],
       "pollutant_values": {
@@ -4107,7 +4103,6 @@
         "NH3",
         "SO2",
         "OZONE",
-        "PM10",
         "PM10"
       ],
       "pollutant_values": {
@@ -4191,8 +4186,6 @@
         "OZONE",
         "PM10",
         "NH3",
-        "NO2",
-        "CO",
         "NO2",
         "CO"
       ],
@@ -4406,8 +4399,6 @@
         "CO",
         "SO2",
         "NO2",
-        "NH3",
-        "NO2",
         "NH3"
       ],
       "pollutant_values": {
@@ -4545,8 +4536,6 @@
         "NO2",
         "SO2",
         "PM2.5",
-        "CO",
-        "OZONE",
         "PM10",
         "CO",
         "OZONE"
@@ -4555,9 +4544,9 @@
         "NO2": 17.0,
         "SO2": 10.0,
         "PM2.5": 57.0,
+        "PM10": 53.0,
         "CO": 39.0,
-        "OZONE": 5.0,
-        "PM10": 53.0
+        "OZONE": 5.0
       }
     },
     {
@@ -4574,7 +4563,6 @@
         "SO2",
         "CO",
         "OZONE",
-        "PM2.5",
         "PM2.5"
       ],
       "pollutant_values": {
@@ -4600,8 +4588,8 @@
         "PM2.5",
         "CO",
         "NO2",
-        "PM10",
-        "SO2"
+        "SO2",
+        "PM10"
       ],
       "pollutant_values": {
         "NH3": 2.0,
@@ -4609,8 +4597,8 @@
         "PM2.5": 23.0,
         "CO": 3.0,
         "NO2": 14.0,
-        "PM10": 26.0,
-        "SO2": 38.0
+        "SO2": 38.0,
+        "PM10": 26.0
       }
     },
     {
@@ -4627,7 +4615,6 @@
         "OZONE",
         "PM10",
         "CO",
-        "SO2",
         "SO2"
       ],
       "pollutant_values": {
@@ -4654,7 +4641,6 @@
         "NO2",
         "NH3",
         "SO2",
-        "OZONE",
         "OZONE"
       ],
       "pollutant_values": {
@@ -4857,14 +4843,18 @@
         "NO2",
         "OZONE",
         "PM2.5",
-        "SO2"
+        "SO2",
+        "PM10",
+        "NH3"
       ],
       "pollutant_values": {
         "CO": 35.0,
         "NO2": 14.0,
         "OZONE": 13.0,
         "PM2.5": 25.0,
-        "SO2": 4.0
+        "SO2": 4.0,
+        "PM10": 34.0,
+        "NH3": 2.0
       }
     },
     {
@@ -4882,7 +4872,8 @@
         "CO",
         "PM2.5",
         "PM10",
-        "OZONE"
+        "OZONE",
+        "NO2"
       ],
       "pollutant_values": {
         "SO2": 20.0,
@@ -4890,7 +4881,8 @@
         "CO": 39.0,
         "PM2.5": 34.0,
         "PM10": 39.0,
-        "OZONE": 15.0
+        "OZONE": 15.0,
+        "NO2": 27.0
       }
     },
     {
@@ -4953,18 +4945,20 @@
       "region": "South India",
       "lat": 12.733409,
       "lng": 77.298051,
-      "aqi": 31,
+      "aqi": 41,
       "pollutants": [
         "OZONE",
         "PM2.5",
         "CO",
-        "SO2"
+        "SO2",
+        "PM10"
       ],
       "pollutant_values": {
         "OZONE": 29.0,
         "PM2.5": 15.0,
         "CO": 31.0,
-        "SO2": 16.0
+        "SO2": 16.0,
+        "PM10": 41.0
       }
     },
     {
@@ -4982,7 +4976,8 @@
         "CO",
         "PM2.5",
         "NO2",
-        "NH3"
+        "NH3",
+        "SO2"
       ],
       "pollutant_values": {
         "PM10": 43.0,
@@ -4990,7 +4985,8 @@
         "CO": 22.0,
         "PM2.5": 27.0,
         "NO2": 11.0,
-        "NH3": 4.0
+        "NH3": 4.0,
+        "SO2": 3.0
       }
     },
     {
@@ -5001,20 +4997,22 @@
       "region": "South India",
       "lat": 8.5637,
       "lng": 76.8865,
-      "aqi": 30,
+      "aqi": 55,
       "pollutants": [
         "PM2.5",
         "SO2",
         "OZONE",
         "NO2",
-        "CO"
+        "CO",
+        "PM10"
       ],
       "pollutant_values": {
         "PM2.5": 18.0,
         "SO2": 5.0,
         "OZONE": 30.0,
         "NO2": 6.0,
-        "CO": 21.0
+        "CO": 21.0,
+        "PM10": 55.0
       }
     },
     {
@@ -5028,11 +5026,15 @@
       "aqi": 43,
       "pollutants": [
         "NO2",
-        "PM10"
+        "PM10",
+        "CO",
+        "OZONE"
       ],
       "pollutant_values": {
         "NO2": 8.0,
-        "PM10": 43.0
+        "PM10": 43.0,
+        "CO": 8.0,
+        "OZONE": 30.0
       }
     },
     {
@@ -5050,7 +5052,8 @@
         "SO2",
         "OZONE",
         "PM2.5",
-        "NO2"
+        "NO2",
+        "CO"
       ],
       "pollutant_values": {
         "NH3": 6.0,
@@ -5058,7 +5061,8 @@
         "SO2": 20.0,
         "OZONE": 21.0,
         "PM2.5": 38.0,
-        "NO2": 16.0
+        "NO2": 16.0,
+        "CO": 26.0
       }
     },
     {
@@ -5407,16 +5411,12 @@
       "region": "East India",
       "lat": 22.1166054,
       "lng": 85.3945546,
-      "aqi": 55,
+      "aqi": 50,
       "pollutants": [
         "NO2",
         "CO",
         "SO2",
         "PM10",
-        "NH3",
-        "PM2.5",
-        "PM2.5",
-        "NH3",
         "OZONE"
       ],
       "pollutant_values": {
@@ -5424,8 +5424,6 @@
         "CO": 18.0,
         "SO2": 9.0,
         "PM10": 50.0,
-        "NH3": 2.0,
-        "PM2.5": 55.0,
         "OZONE": 17.0
       }
     },
@@ -5471,19 +5469,13 @@
         "CO",
         "NH3",
         "SO2",
-        "PM10",
-        "NO2",
-        "OZONE",
-        "PM10",
-        "NO2"
+        "OZONE"
       ],
       "pollutant_values": {
         "PM2.5": 29.0,
         "CO": 37.0,
         "NH3": 7.0,
         "SO2": 8.0,
-        "PM10": 31.0,
-        "NO2": 20.0,
         "OZONE": 19.0
       }
     },
@@ -5893,20 +5885,14 @@
         "PM10",
         "NH3",
         "CO",
-        "OZONE",
-        "NO2",
-        "SO2",
-        "NO2",
-        "SO2"
+        "OZONE"
       ],
       "pollutant_values": {
         "PM2.5": 27.0,
         "PM10": 37.0,
         "NH3": 3.0,
         "CO": 18.0,
-        "OZONE": 8.0,
-        "NO2": 10.0,
-        "SO2": 1.0
+        "OZONE": 8.0
       }
     },
     {
@@ -5921,21 +5907,12 @@
       "pollutants": [
         "PM10",
         "NH3",
-        "PM2.5",
-        "NO2",
-        "CO",
-        "PM2.5",
-        "NO2",
-        "CO",
         "SO2",
         "OZONE"
       ],
       "pollutant_values": {
         "PM10": 39.0,
         "NH3": 2.0,
-        "PM2.5": 21.0,
-        "NO2": 32.0,
-        "CO": 9.0,
         "SO2": 1.0,
         "OZONE": 9.0
       }
@@ -5977,16 +5954,13 @@
         "CO",
         "PM2.5",
         "PM10",
-        "NO2",
-        "OZONE",
-        "OZONE"
+        "NO2"
       ],
       "pollutant_values": {
         "CO": 7.0,
         "PM2.5": 31.0,
         "PM10": 80.0,
-        "NO2": 28.0,
-        "OZONE": 12.0
+        "NO2": 28.0
       }
     },
     {
@@ -6003,8 +5977,6 @@
         "PM10",
         "NO2",
         "NH3",
-        "OZONE",
-        "OZONE",
         "PM2.5",
         "CO"
       ],
@@ -6013,7 +5985,6 @@
         "PM10": 37.0,
         "NO2": 8.0,
         "NH3": 1.0,
-        "OZONE": 12.0,
         "PM2.5": 19.0,
         "CO": 30.0
       }
@@ -6026,12 +5997,10 @@
       "region": "West India",
       "lat": 18.530085,
       "lng": 73.849598,
-      "aqi": 58,
+      "aqi": 50,
       "pollutants": [
         "PM2.5",
         "OZONE",
-        "CO",
-        "CO",
         "PM10",
         "NO2",
         "SO2"
@@ -6039,7 +6008,6 @@
       "pollutant_values": {
         "PM2.5": 41.0,
         "OZONE": 10.0,
-        "CO": 58.0,
         "PM10": 50.0,
         "NO2": 19.0,
         "SO2": 11.0
@@ -6177,6 +6145,8 @@
         "NO2",
         "PM10",
         "OZONE",
+        "PM2.5",
+        "PM2.5",
         "NH3",
         "SO2"
       ],
@@ -6185,6 +6155,7 @@
         "NO2": 35.0,
         "PM10": 39.0,
         "OZONE": 41.0,
+        "PM2.5": 41.0,
         "NH3": 4.0,
         "SO2": 18.0
       }
@@ -6204,6 +6175,8 @@
         "PM10",
         "NH3",
         "SO2",
+        "CO",
+        "CO",
         "PM2.5"
       ],
       "pollutant_values": {
@@ -6212,6 +6185,7 @@
         "PM10": 75.0,
         "NH3": 7.0,
         "SO2": 15.0,
+        "CO": 46.0,
         "PM2.5": 51.0
       }
     },
@@ -6247,20 +6221,17 @@
       "region": "West India",
       "lat": 18.536457,
       "lng": 73.805454,
-      "aqi": 54,
+      "aqi": 31,
       "pollutants": [
         "PM2.5",
         "OZONE",
         "CO",
-        "PM10",
-        "PM10",
         "NO2"
       ],
       "pollutant_values": {
         "PM2.5": 31.0,
         "OZONE": 5.0,
         "CO": 21.0,
-        "PM10": 54.0,
         "NO2": 8.0
       }
     },
@@ -6277,10 +6248,6 @@
         "PM2.5",
         "NH3",
         "SO2",
-        "NO2",
-        "CO",
-        "NO2",
-        "CO",
         "PM10",
         "OZONE"
       ],
@@ -6288,8 +6255,6 @@
         "PM2.5": 22.0,
         "NH3": 2.0,
         "SO2": 9.0,
-        "NO2": 5.0,
-        "CO": 15.0,
         "PM10": 42.0,
         "OZONE": 15.0
       }
@@ -6393,9 +6358,7 @@
         "PM10",
         "SO2",
         "NO2",
-        "NH3",
-        "OZONE",
-        "OZONE"
+        "NH3"
       ],
       "pollutant_values": {
         "CO": 26.0,
@@ -6403,8 +6366,7 @@
         "PM10": 61.0,
         "SO2": 5.0,
         "NO2": 10.0,
-        "NH3": 2.0,
-        "OZONE": 9.0
+        "NH3": 2.0
       }
     },
     {
@@ -6420,16 +6382,13 @@
         "NH3",
         "PM2.5",
         "PM10",
-        "OZONE",
-        "SO2",
-        "SO2"
+        "OZONE"
       ],
       "pollutant_values": {
         "NH3": 6.0,
         "PM2.5": 17.0,
         "PM10": 31.0,
-        "OZONE": 17.0,
-        "SO2": 3.0
+        "OZONE": 17.0
       }
     },
     {
@@ -6440,14 +6399,12 @@
       "region": "West India",
       "lat": 19.235581,
       "lng": 73.159121,
-      "aqi": 12,
+      "aqi": 11,
       "pollutants": [
         "PM10",
         "NO2",
         "SO2",
         "PM2.5",
-        "CO",
-        "CO",
         "OZONE"
       ],
       "pollutant_values": {
@@ -6455,7 +6412,6 @@
         "NO2": 2.0,
         "SO2": 2.0,
         "PM2.5": 10.0,
-        "CO": 12.0,
         "OZONE": 2.0
       }
     },
@@ -6474,9 +6430,7 @@
         "PM2.5",
         "NO2",
         "NH3",
-        "SO2",
-        "CO",
-        "CO"
+        "SO2"
       ],
       "pollutant_values": {
         "PM10": 38.0,
@@ -6484,8 +6438,7 @@
         "PM2.5": 19.0,
         "NO2": 20.0,
         "NH3": 6.0,
-        "SO2": 2.0,
-        "CO": 31.0
+        "SO2": 2.0
       }
     },
     {
@@ -6502,17 +6455,14 @@
         "PM10",
         "SO2",
         "CO",
-        "OZONE",
-        "NH3",
-        "NH3"
+        "OZONE"
       ],
       "pollutant_values": {
         "NO2": 7.0,
         "PM10": 15.0,
         "SO2": 28.0,
         "CO": 50.0,
-        "OZONE": 26.0,
-        "NH3": 4.0
+        "OZONE": 26.0
       }
     },
     {
@@ -6523,20 +6473,14 @@
       "region": "Central India",
       "lat": 23.7176342,
       "lng": 92.7192841,
-      "aqi": 14,
+      "aqi": 3,
       "pollutants": [
         "CO",
-        "PM10",
-        "SO2",
-        "PM10",
-        "SO2",
         "NO2",
         "OZONE"
       ],
       "pollutant_values": {
         "CO": 3.0,
-        "PM10": 14.0,
-        "SO2": 14.0,
         "NO2": 1.0,
         "OZONE": 1.0
       }
@@ -6549,25 +6493,16 @@
       "region": "Central India",
       "lat": 25.6635413,
       "lng": 94.0989878,
-      "aqi": 49,
+      "aqi": 11,
       "pollutants": [
         "PM2.5",
         "NH3",
-        "NO2",
-        "PM10",
-        "SO2",
-        "CO",
-        "PM10",
-        "SO2",
-        "CO"
+        "NO2"
       ],
       "pollutant_values": {
         "PM2.5": 11.0,
         "NH3": 1.0,
-        "NO2": 4.0,
-        "PM10": 10.0,
-        "SO2": 49.0,
-        "CO": 5.0
+        "NO2": 4.0
       }
     },
     {
@@ -6584,8 +6519,6 @@
         "NO2",
         "NH3",
         "PM10",
-        "SO2",
-        "SO2",
         "PM2.5",
         "OZONE"
       ],
@@ -6594,7 +6527,6 @@
         "NO2": 4.0,
         "NH3": 2.0,
         "PM10": 51.0,
-        "SO2": 11.0,
         "PM2.5": 44.0,
         "OZONE": 11.0
       }
@@ -6742,13 +6674,19 @@
         "NH3",
         "SO2",
         "PM10",
-        "OZONE"
+        "OZONE",
+        "PM2.5",
+        "NO2",
+        "CO"
       ],
       "pollutant_values": {
         "NH3": 2.0,
         "SO2": 4.0,
         "PM10": 64.0,
-        "OZONE": 8.0
+        "OZONE": 8.0,
+        "PM2.5": 40.0,
+        "NO2": 8.0,
+        "CO": 39.0
       }
     },
     {
@@ -6761,10 +6699,12 @@
       "lng": 72.87462,
       "aqi": 26,
       "pollutants": [
-        "NO2"
+        "NO2",
+        "SO2"
       ],
       "pollutant_values": {
-        "NO2": 26.0
+        "NO2": 26.0,
+        "SO2": 7.0
       }
     },
     {
@@ -6775,16 +6715,18 @@
       "region": "West India",
       "lat": 19.175,
       "lng": 72.9419,
-      "aqi": 13,
+      "aqi": 21,
       "pollutants": [
         "NO2",
         "NH3",
-        "CO"
+        "CO",
+        "PM2.5"
       ],
       "pollutant_values": {
         "NO2": 13.0,
         "NH3": 5.0,
-        "CO": 10.0
+        "CO": 10.0,
+        "PM2.5": 21.0
       }
     },
     {
@@ -6795,14 +6737,16 @@
       "region": "West India",
       "lat": 19.000084,
       "lng": 72.85673,
-      "aqi": 13,
+      "aqi": 28,
       "pollutants": [
         "PM2.5",
-        "NH3"
+        "NH3",
+        "PM10"
       ],
       "pollutant_values": {
         "PM2.5": 13.0,
-        "NH3": 3.0
+        "NH3": 3.0,
+        "PM10": 28.0
       }
     },
     {
@@ -7297,6 +7241,10 @@
         "SO2",
         "CO",
         "NH3",
+        "NO2",
+        "OZONE",
+        "NO2",
+        "OZONE",
         "PM2.5"
       ],
       "pollutant_values": {
@@ -7304,6 +7252,8 @@
         "SO2": 10.0,
         "CO": 20.0,
         "NH3": 7.0,
+        "NO2": 33.0,
+        "OZONE": 25.0,
         "PM2.5": 48.0
       }
     },
@@ -7315,12 +7265,16 @@
       "region": "North India",
       "lat": 30.649961,
       "lng": 76.331442,
-      "aqi": 106,
+      "aqi": 116,
       "pollutants": [
         "PM2.5",
         "CO",
         "NO2",
         "NH3",
+        "PM10",
+        "OZONE",
+        "PM10",
+        "OZONE",
         "SO2"
       ],
       "pollutant_values": {
@@ -7328,6 +7282,8 @@
         "CO": 63.0,
         "NO2": 24.0,
         "NH3": 5.0,
+        "PM10": 116.0,
+        "OZONE": 36.0,
         "SO2": 30.0
       }
     },
@@ -7343,6 +7299,10 @@
       "pollutants": [
         "OZONE",
         "PM2.5",
+        "NH3",
+        "SO2",
+        "NH3",
+        "SO2",
         "PM10",
         "NO2",
         "CO"
@@ -7350,6 +7310,8 @@
       "pollutant_values": {
         "OZONE": 18.0,
         "PM2.5": 12.0,
+        "NH3": 6.0,
+        "SO2": 14.0,
         "PM10": 18.0,
         "NO2": 18.0,
         "CO": 30.0
@@ -7367,12 +7329,18 @@
       "pollutants": [
         "PM2.5",
         "SO2",
-        "CO"
+        "CO",
+        "PM10",
+        "NO2",
+        "PM10",
+        "NO2"
       ],
       "pollutant_values": {
         "PM2.5": 39.0,
         "SO2": 11.0,
-        "CO": 58.0
+        "CO": 58.0,
+        "PM10": 36.0,
+        "NO2": 26.0
       }
     },
     {
@@ -7389,6 +7357,8 @@
         "NO2",
         "OZONE",
         "NH3",
+        "PM2.5",
+        "PM2.5",
         "CO",
         "PM10"
       ],
@@ -7397,6 +7367,7 @@
         "NO2": 47.0,
         "OZONE": 33.0,
         "NH3": 8.0,
+        "PM2.5": 58.0,
         "CO": 63.0,
         "PM10": 90.0
       }
@@ -8875,18 +8846,18 @@
         "PM10",
         "SO2",
         "OZONE",
+        "CO",
         "PM2.5",
         "NO2",
-        "CO",
         "NH3"
       ],
       "pollutant_values": {
         "PM10": 31.0,
         "SO2": 32.0,
         "OZONE": 9.0,
+        "CO": 30.0,
         "PM2.5": 33.0,
         "NO2": 8.0,
-        "CO": 30.0,
         "NH3": 1.0
       }
     },
@@ -9975,18 +9946,18 @@
       "aqi": 61,
       "pollutants": [
         "OZONE",
+        "CO",
         "PM10",
         "NH3",
-        "CO",
         "PM2.5",
         "NO2",
         "SO2"
       ],
       "pollutant_values": {
         "OZONE": 29.0,
+        "CO": 35.0,
         "PM10": 61.0,
         "NH3": 6.0,
-        "CO": 35.0,
         "PM2.5": 43.0,
         "NO2": 6.0,
         "SO2": 12.0
@@ -10084,19 +10055,19 @@
       "pollutants": [
         "PM2.5",
         "NH3",
+        "OZONE",
         "PM10",
         "NO2",
         "CO",
-        "OZONE",
         "SO2"
       ],
       "pollutant_values": {
         "PM2.5": 57.0,
         "NH3": 3.0,
+        "OZONE": 32.0,
         "PM10": 60.0,
         "NO2": 19.0,
         "CO": 23.0,
-        "OZONE": 32.0,
         "SO2": 15.0
       }
     },
@@ -10192,6 +10163,7 @@
       "pollutants": [
         "NH3",
         "CO",
+        "SO2",
         "OZONE",
         "PM2.5",
         "PM10",
@@ -10200,6 +10172,7 @@
       "pollutant_values": {
         "NH3": 6.0,
         "CO": 46.0,
+        "SO2": 6.0,
         "OZONE": 11.0,
         "PM2.5": 60.0,
         "PM10": 84.0,
@@ -10214,11 +10187,13 @@
       "region": "North India",
       "lat": 28.530785,
       "lng": 77.271255,
-      "aqi": 38,
+      "aqi": 58,
       "pollutants": [
         "PM2.5",
         "NO2",
         "OZONE",
+        "NH3",
+        "CO",
         "SO2",
         "PM10"
       ],
@@ -10226,6 +10201,8 @@
         "PM2.5": 33.0,
         "NO2": 30.0,
         "OZONE": 4.0,
+        "NH3": 7.0,
+        "CO": 58.0,
         "SO2": 8.0,
         "PM10": 38.0
       }
@@ -10242,12 +10219,18 @@
       "pollutants": [
         "NO2",
         "SO2",
+        "PM2.5",
+        "PM10",
+        "OZONE",
         "NH3",
         "CO"
       ],
       "pollutant_values": {
         "NO2": 9.0,
         "SO2": 10.0,
+        "PM2.5": 32.0,
+        "PM10": 62.0,
+        "OZONE": 6.0,
         "NH3": 5.0,
         "CO": 92.0
       }
@@ -10263,6 +10246,7 @@
       "aqi": 56,
       "pollutants": [
         "NO2",
+        "PM10",
         "PM2.5",
         "NH3",
         "CO",
@@ -10271,6 +10255,7 @@
       ],
       "pollutant_values": {
         "NO2": 10.0,
+        "PM10": 35.0,
         "PM2.5": 12.0,
         "NH3": 2.0,
         "CO": 56.0,
@@ -10291,7 +10276,6 @@
         "PM2.5",
         "NH3",
         "NO2",
-        "OZONE",
         "OZONE",
         "PM10",
         "SO2",
@@ -10320,9 +10304,6 @@
         "PM10",
         "NO2",
         "OZONE",
-        "SO2",
-        "CO",
-        "PM2.5",
         "PM2.5",
         "SO2",
         "CO",
@@ -10332,9 +10313,9 @@
         "PM10": 31.0,
         "NO2": 34.0,
         "OZONE": 24.0,
+        "PM2.5": 33.0,
         "SO2": 13.0,
         "CO": 25.0,
-        "PM2.5": 33.0,
         "NH3": 9.0
       }
     },
@@ -10431,6 +10412,7 @@
       "aqi": 101,
       "pollutants": [
         "CO",
+        "PM2.5",
         "PM10",
         "NH3",
         "SO2",
@@ -10439,6 +10421,7 @@
       ],
       "pollutant_values": {
         "CO": 49.0,
+        "PM2.5": 87.0,
         "PM10": 101.0,
         "NH3": 6.0,
         "SO2": 14.0,
@@ -10533,13 +10516,19 @@
         "PM10",
         "CO",
         "PM2.5",
-        "NO2"
+        "NO2",
+        "NH3",
+        "SO2",
+        "OZONE"
       ],
       "pollutant_values": {
         "PM10": 13.0,
         "CO": 11.0,
         "PM2.5": 9.0,
-        "NO2": 2.0
+        "NO2": 2.0,
+        "NH3": 1.0,
+        "SO2": 7.0,
+        "OZONE": 2.0
       }
     },
     {
@@ -10553,11 +10542,17 @@
       "aqi": 129,
       "pollutants": [
         "PM2.5",
-        "CO"
+        "CO",
+        "PM10",
+        "NO2",
+        "OZONE"
       ],
       "pollutant_values": {
         "PM2.5": 35.0,
-        "CO": 129.0
+        "CO": 129.0,
+        "PM10": 65.0,
+        "NO2": 6.0,
+        "OZONE": 12.0
       }
     },
     {
@@ -10574,14 +10569,16 @@
         "NO2",
         "NH3",
         "PM2.5",
-        "CO"
+        "CO",
+        "OZONE"
       ],
       "pollutant_values": {
         "PM10": 45.0,
         "NO2": 11.0,
         "NH3": 1.0,
         "PM2.5": 34.0,
-        "CO": 13.0
+        "CO": 13.0,
+        "OZONE": 28.0
       }
     },
     {
@@ -10766,8 +10763,8 @@
         "SO2",
         "NH3",
         "CO",
-        "PM10",
         "OZONE",
+        "PM10",
         "NO2"
       ],
       "pollutant_values": {
@@ -10775,8 +10772,8 @@
         "SO2": 11.0,
         "NH3": 3.0,
         "CO": 38.0,
-        "PM10": 101.0,
         "OZONE": 14.0,
+        "PM10": 101.0,
         "NO2": 16.0
       }
     },
@@ -10795,7 +10792,6 @@
         "NO2",
         "OZONE",
         "SO2",
-        "CO",
         "CO"
       ],
       "pollutant_values": {
@@ -10878,9 +10874,6 @@
         "OZONE",
         "PM2.5",
         "PM10",
-        "NO2",
-        "PM2.5",
-        "PM10",
         "NO2"
       ],
       "pollutant_values": {
@@ -10903,8 +10896,6 @@
       "aqi": 44,
       "pollutants": [
         "PM2.5",
-        "NO2",
-        "SO2",
         "NO2",
         "SO2"
       ],
@@ -11006,18 +10997,24 @@
       "region": "West India",
       "lat": 19.053536,
       "lng": 72.84643,
-      "aqi": 33,
+      "aqi": 64,
       "pollutants": [
         "PM2.5",
         "CO",
         "NH3",
-        "OZONE"
+        "OZONE",
+        "PM10",
+        "NO2",
+        "SO2"
       ],
       "pollutant_values": {
         "PM2.5": 33.0,
         "CO": 14.0,
         "NH3": 3.0,
-        "OZONE": 11.0
+        "OZONE": 11.0,
+        "PM10": 64.0,
+        "NO2": 5.0,
+        "SO2": 4.0
       }
     },
     {
@@ -11033,13 +11030,19 @@
         "PM10",
         "PM2.5",
         "CO",
-        "NO2"
+        "NO2",
+        "NH3",
+        "SO2",
+        "OZONE"
       ],
       "pollutant_values": {
         "PM10": 47.0,
         "PM2.5": 31.0,
         "CO": 14.0,
-        "NO2": 8.0
+        "NO2": 8.0,
+        "NH3": 2.0,
+        "SO2": 2.0,
+        "OZONE": 13.0
       }
     },
     {
@@ -11104,8 +11107,6 @@
         "OZONE",
         "PM10",
         "SO2",
-        "CO",
-        "SO2",
         "CO"
       ],
       "pollutant_values": {
@@ -11129,19 +11130,18 @@
         "SO2",
         "NO2",
         "NH3",
-        "OZONE",
         "PM10",
         "CO",
-        "PM2.5",
+        "OZONE",
         "PM2.5"
       ],
       "pollutant_values": {
         "SO2": 3.0,
         "NO2": 5.0,
         "NH3": 1.0,
-        "OZONE": 12.0,
         "PM10": 42.0,
         "CO": 28.0,
+        "OZONE": 12.0,
         "PM2.5": 31.0
       }
     },
@@ -11235,12 +11235,18 @@
       "pollutants": [
         "NO2",
         "SO2",
+        "PM2.5",
+        "CO",
+        "PM2.5",
+        "CO",
         "PM10",
         "OZONE"
       ],
       "pollutant_values": {
         "NO2": 25.0,
         "SO2": 3.0,
+        "PM2.5": 75.0,
+        "CO": 32.0,
         "PM10": 157.0,
         "OZONE": 4.0
       }
@@ -11256,11 +11262,14 @@
       "aqi": 29,
       "pollutants": [
         "NH3",
+        "NO2",
+        "NO2",
         "PM2.5",
         "PM10"
       ],
       "pollutant_values": {
         "NH3": 5.0,
+        "NO2": 4.0,
         "PM2.5": 22.0,
         "PM10": 29.0
       }
@@ -11279,14 +11288,17 @@
         "CO",
         "PM2.5",
         "PM10",
-        "SO2"
+        "SO2",
+        "NO2",
+        "NO2"
       ],
       "pollutant_values": {
         "NH3": 9.0,
         "CO": 38.0,
         "PM2.5": 77.0,
         "PM10": 104.0,
-        "SO2": 18.0
+        "SO2": 18.0,
+        "NO2": 33.0
       }
     },
     {
@@ -11323,16 +11335,19 @@
       "region": "West India",
       "lat": 26.786682,
       "lng": 75.827928,
-      "aqi": 24,
+      "aqi": 98,
       "pollutants": [
         "NO2",
         "NH3",
-        "OZONE"
+        "OZONE",
+        "PM10",
+        "PM10"
       ],
       "pollutant_values": {
         "NO2": 24.0,
         "NH3": 3.0,
-        "OZONE": 15.0
+        "OZONE": 15.0,
+        "PM10": 98.0
       }
     },
     {
@@ -11347,12 +11362,18 @@
       "pollutants": [
         "PM10",
         "CO",
+        "NH3",
+        "SO2",
+        "NH3",
+        "SO2",
         "NO2",
         "OZONE"
       ],
       "pollutant_values": {
         "PM10": 90.0,
         "CO": 56.0,
+        "NH3": 44.0,
+        "SO2": 35.0,
         "NO2": 27.0,
         "OZONE": 26.0
       }
@@ -11371,6 +11392,8 @@
         "PM2.5",
         "PM10",
         "CO",
+        "SO2",
+        "SO2",
         "NH3"
       ],
       "pollutant_values": {
@@ -11378,6 +11401,7 @@
         "PM2.5": 49.0,
         "PM10": 87.0,
         "CO": 33.0,
+        "SO2": 24.0,
         "NH3": 8.0
       }
     },
@@ -11446,6 +11470,10 @@
         "PM10",
         "PM2.5",
         "NO2",
+        "SO2",
+        "CO",
+        "SO2",
+        "CO",
         "NH3",
         "OZONE"
       ],
@@ -11453,6 +11481,8 @@
         "PM10": 71.0,
         "PM2.5": 63.0,
         "NO2": 15.0,
+        "SO2": 18.0,
+        "CO": 35.0,
         "NH3": 5.0,
         "OZONE": 19.0
       }
@@ -11471,6 +11501,8 @@
         "NH3",
         "OZONE",
         "SO2",
+        "PM2.5",
+        "PM2.5",
         "PM10",
         "CO"
       ],
@@ -11479,6 +11511,7 @@
         "NH3": 7.0,
         "OZONE": 7.0,
         "SO2": 10.0,
+        "PM2.5": 52.0,
         "PM10": 99.0,
         "CO": 25.0
       }
@@ -11777,16 +11810,16 @@
         "NH3",
         "CO",
         "OZONE",
-        "PM10",
-        "NO2"
+        "NO2",
+        "PM10"
       ],
       "pollutant_values": {
         "PM2.5": 29.0,
         "NH3": 3.0,
         "CO": 34.0,
         "OZONE": 19.0,
-        "PM10": 64.0,
-        "NO2": 17.0
+        "NO2": 17.0,
+        "PM10": 64.0
       }
     },
     {
@@ -12722,18 +12755,18 @@
         "PM2.5",
         "PM10",
         "SO2",
+        "NH3",
         "CO",
         "OZONE",
-        "NH3",
         "NO2"
       ],
       "pollutant_values": {
         "PM2.5": 37.0,
         "PM10": 37.0,
         "SO2": 3.0,
+        "NH3": 1.0,
         "CO": 13.0,
         "OZONE": 42.0,
-        "NH3": 1.0,
         "NO2": 4.0
       }
     },
@@ -12748,10 +12781,19 @@
       "aqi": 39,
       "pollutants": [
         "PM10",
+        "NO2",
+        "SO2",
+        "CO",
+        "NO2",
+        "SO2",
+        "CO",
         "OZONE"
       ],
       "pollutant_values": {
         "PM10": 33.0,
+        "NO2": 4.0,
+        "SO2": 5.0,
+        "CO": 21.0,
         "OZONE": 39.0
       }
     },
@@ -12763,13 +12805,25 @@
       "region": "West India",
       "lat": 26.699557,
       "lng": 77.898881,
-      "aqi": 23,
+      "aqi": 435,
       "pollutants": [
         "CO",
+        "PM2.5",
+        "NH3",
+        "SO2",
+        "OZONE",
+        "PM2.5",
+        "NH3",
+        "SO2",
+        "OZONE",
         "NO2"
       ],
       "pollutant_values": {
         "CO": 23.0,
+        "PM2.5": 435.0,
+        "NH3": 4.0,
+        "SO2": 3.0,
+        "OZONE": 13.0,
         "NO2": 10.0
       }
     },
@@ -12918,7 +12972,7 @@
       "peakAqi": 44,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 38,
+      "density": 40,
       "pollutants": {
         "SO2": {
           "value": 6,
@@ -12957,7 +13011,7 @@
         }
       },
       "respiratoryAdmissions": 550,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Kishanganj": {
       "name": "Kishanganj",
@@ -12966,7 +13020,7 @@
       "peakAqi": 60,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 38,
+      "density": 50,
       "pollutants": {
         "CO": {
           "value": 13,
@@ -13005,7 +13059,7 @@
         }
       },
       "respiratoryAdmissions": 750,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Munger": {
       "name": "Munger",
@@ -13014,7 +13068,7 @@
       "peakAqi": 45,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 46,
+      "density": 31,
       "pollutants": {
         "NH3": {
           "value": 3,
@@ -13043,7 +13097,7 @@
         }
       },
       "respiratoryAdmissions": 562,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Muzaffarpur": {
       "name": "Muzaffarpur",
@@ -13052,7 +13106,7 @@
       "peakAqi": 42,
       "category": "Tier 2",
       "stationsCount": 2,
-      "density": 40,
+      "density": 30,
       "pollutants": {
         "PM2.5": {
           "value": 32,
@@ -13091,7 +13145,7 @@
         }
       },
       "respiratoryAdmissions": 525,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Begusarai": {
       "name": "Begusarai",
@@ -13100,7 +13154,7 @@
       "peakAqi": 26,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 42,
+      "density": 39,
       "pollutants": {
         "SO2": {
           "value": 19,
@@ -13139,7 +13193,7 @@
         }
       },
       "respiratoryAdmissions": 325,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Bhagalpur": {
       "name": "Bhagalpur",
@@ -13148,7 +13202,7 @@
       "peakAqi": 135,
       "category": "Tier 2",
       "stationsCount": 2,
-      "density": 32,
+      "density": 42,
       "pollutants": {
         "CO": {
           "value": 24,
@@ -13187,7 +13241,7 @@
         }
       },
       "respiratoryAdmissions": 1688,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Gaya": {
       "name": "Gaya",
@@ -13196,7 +13250,7 @@
       "peakAqi": 213,
       "category": "Tier 2",
       "stationsCount": 3,
-      "density": 49,
+      "density": 31,
       "pollutants": {
         "PM2.5": {
           "value": 92,
@@ -13235,7 +13289,7 @@
         }
       },
       "respiratoryAdmissions": 2662,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Patna": {
       "name": "Patna",
@@ -13244,7 +13298,7 @@
       "peakAqi": 76,
       "category": "Tier 2",
       "stationsCount": 5,
-      "density": 40,
+      "density": 46,
       "pollutants": {
         "SO2": {
           "value": 13,
@@ -13283,7 +13337,7 @@
         }
       },
       "respiratoryAdmissions": 950,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Nagaon": {
       "name": "Nagaon",
@@ -13292,7 +13346,7 @@
       "peakAqi": 50,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 34,
+      "density": 44,
       "pollutants": {
         "PM2.5": {
           "value": 50,
@@ -13304,6 +13358,11 @@
           "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
+        "NO2": {
+          "value": 1,
+          "station": "Avg of 1 stations",
+          "lastUpdate": "05-08-2026 05:00:00"
+        },
         "SO2": {
           "value": 11,
           "station": "Avg of 1 stations",
@@ -13311,11 +13370,6 @@
         },
         "OZONE": {
           "value": 10,
-          "station": "Avg of 1 stations",
-          "lastUpdate": "05-08-2026 05:00:00"
-        },
-        "NO2": {
-          "value": 1,
           "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
@@ -13331,7 +13385,7 @@
         }
       },
       "respiratoryAdmissions": 625,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Silchar": {
       "name": "Silchar",
@@ -13340,7 +13394,7 @@
       "peakAqi": 57,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 44,
+      "density": 37,
       "pollutants": {
         "NO2": {
           "value": 17,
@@ -13379,7 +13433,7 @@
         }
       },
       "respiratoryAdmissions": 712,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Arrah": {
       "name": "Arrah",
@@ -13388,7 +13442,7 @@
       "peakAqi": 53,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 48,
+      "density": 40,
       "pollutants": {
         "NO2": {
           "value": 7,
@@ -13410,6 +13464,11 @@
           "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
+        "CO": {
+          "value": 53,
+          "station": "Avg of 1 stations",
+          "lastUpdate": "05-08-2026 05:00:00"
+        },
         "PM2.5": {
           "value": 11,
           "station": "Avg of 1 stations",
@@ -13419,15 +13478,10 @@
           "value": 13,
           "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
-        },
-        "CO": {
-          "value": 53,
-          "station": "Avg of 1 stations",
-          "lastUpdate": "05-08-2026 05:00:00"
         }
       },
       "respiratoryAdmissions": 662,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Machilipatnam": {
       "name": "Machilipatnam",
@@ -13436,7 +13490,7 @@
       "peakAqi": 65,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 49,
+      "density": 38,
       "pollutants": {
         "SO2": {
           "value": 18,
@@ -13465,7 +13519,7 @@
         }
       },
       "respiratoryAdmissions": 812,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Nellore": {
       "name": "Nellore",
@@ -13474,7 +13528,7 @@
       "peakAqi": 58,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 44,
+      "density": 33,
       "pollutants": {
         "PM10": {
           "value": 58,
@@ -13513,7 +13567,7 @@
         }
       },
       "respiratoryAdmissions": 725,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Rajamahendravaram": {
       "name": "Rajamahendravaram",
@@ -13522,7 +13576,7 @@
       "peakAqi": 30,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 46,
+      "density": 39,
       "pollutants": {
         "PM10": {
           "value": 30,
@@ -13561,7 +13615,7 @@
         }
       },
       "respiratoryAdmissions": 375,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Vijayawada": {
       "name": "Vijayawada",
@@ -13570,7 +13624,7 @@
       "peakAqi": 64,
       "category": "Tier 2",
       "stationsCount": 3,
-      "density": 30,
+      "density": 39,
       "pollutants": {
         "SO2": {
           "value": 14,
@@ -13609,7 +13663,7 @@
         }
       },
       "respiratoryAdmissions": 800,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Visakhapatnam": {
       "name": "Visakhapatnam",
@@ -13618,7 +13672,7 @@
       "peakAqi": 98,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 39,
+      "density": 40,
       "pollutants": {
         "PM2.5": {
           "value": 43,
@@ -13645,19 +13699,19 @@
           "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
-        "NO2": {
-          "value": 57,
+        "SO2": {
+          "value": 7,
           "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
-        "SO2": {
-          "value": 7,
+        "NO2": {
+          "value": 57,
           "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         }
       },
       "respiratoryAdmissions": 1225,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Naharlagun": {
       "name": "Naharlagun",
@@ -13666,7 +13720,7 @@
       "peakAqi": 14,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 37,
+      "density": 49,
       "pollutants": {
         "SO2": {
           "value": 11,
@@ -13705,7 +13759,7 @@
         }
       },
       "respiratoryAdmissions": 175,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Byrnihat": {
       "name": "Byrnihat",
@@ -13714,7 +13768,7 @@
       "peakAqi": 84,
       "category": "Tier 2",
       "stationsCount": 2,
-      "density": 46,
+      "density": 50,
       "pollutants": {
         "SO2": {
           "value": 26,
@@ -13748,7 +13802,7 @@
         }
       },
       "respiratoryAdmissions": 1050,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Guwahati": {
       "name": "Guwahati",
@@ -13757,7 +13811,7 @@
       "peakAqi": 62,
       "category": "Tier 2",
       "stationsCount": 3,
-      "density": 45,
+      "density": 47,
       "pollutants": {
         "PM2.5": {
           "value": 62,
@@ -13796,7 +13850,7 @@
         }
       },
       "respiratoryAdmissions": 775,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Amaravati": {
       "name": "Amaravati",
@@ -13805,7 +13859,7 @@
       "peakAqi": 66,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 46,
+      "density": 34,
       "pollutants": {
         "CO": {
           "value": 23,
@@ -13844,7 +13898,7 @@
         }
       },
       "respiratoryAdmissions": 825,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Anantapur": {
       "name": "Anantapur",
@@ -13853,7 +13907,7 @@
       "peakAqi": 27,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 35,
+      "density": 48,
       "pollutants": {
         "OZONE": {
           "value": 27,
@@ -13882,7 +13936,7 @@
         }
       },
       "respiratoryAdmissions": 338,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Chittoor": {
       "name": "Chittoor",
@@ -13891,7 +13945,7 @@
       "peakAqi": 58,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 43,
+      "density": 41,
       "pollutants": {
         "PM10": {
           "value": 58,
@@ -13918,19 +13972,19 @@
           "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
-        "NH3": {
-          "value": 7,
+        "PM2.5": {
+          "value": 55,
           "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
-        "PM2.5": {
-          "value": 55,
+        "NH3": {
+          "value": 7,
           "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         }
       },
       "respiratoryAdmissions": 725,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Tirupati": {
       "name": "Tirupati",
@@ -13939,7 +13993,7 @@
       "peakAqi": 68,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 48,
+      "density": 45,
       "pollutants": {
         "NH3": {
           "value": 4,
@@ -13978,7 +14032,7 @@
         }
       },
       "respiratoryAdmissions": 850,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Eluru": {
       "name": "Eluru",
@@ -13987,7 +14041,7 @@
       "peakAqi": 53,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 48,
+      "density": 36,
       "pollutants": {
         "NH3": {
           "value": 4,
@@ -14026,7 +14080,7 @@
         }
       },
       "respiratoryAdmissions": 662,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Raipur": {
       "name": "Raipur",
@@ -14035,7 +14089,7 @@
       "peakAqi": 61,
       "category": "Tier 2",
       "stationsCount": 4,
-      "density": 31,
+      "density": 37,
       "pollutants": {
         "SO2": {
           "value": 4,
@@ -14053,8 +14107,8 @@
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "PM10": {
-          "value": 38,
-          "station": "Avg of 4 stations",
+          "value": 40,
+          "station": "Avg of 3 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "NH3": {
@@ -14074,7 +14128,7 @@
         }
       },
       "respiratoryAdmissions": 762,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Tumidih": {
       "name": "Tumidih",
@@ -14083,7 +14137,7 @@
       "peakAqi": 49,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 37,
+      "density": 48,
       "pollutants": {
         "PM2.5": {
           "value": 45,
@@ -14122,7 +14176,7 @@
         }
       },
       "respiratoryAdmissions": 612,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Delhi": {
       "name": "Delhi",
@@ -14131,46 +14185,46 @@
       "peakAqi": 141,
       "category": "Tier 1",
       "stationsCount": 43,
-      "density": 100,
+      "density": 82,
       "pollutants": {
         "NH3": {
           "value": 8,
-          "station": "Avg of 30 stations",
+          "station": "Avg of 33 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "SO2": {
-          "value": 15,
-          "station": "Avg of 37 stations",
+          "value": 13,
+          "station": "Avg of 34 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "PM10": {
           "value": 51,
-          "station": "Avg of 39 stations",
+          "station": "Avg of 41 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "OZONE": {
           "value": 11,
-          "station": "Avg of 40 stations",
+          "station": "Avg of 43 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "CO": {
-          "value": 49,
+          "value": 50,
           "station": "Avg of 43 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "NO2": {
           "value": 28,
-          "station": "Avg of 44 stations",
+          "station": "Avg of 43 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "PM2.5": {
-          "value": 33,
-          "station": "Avg of 39 stations",
+          "value": 34,
+          "station": "Avg of 41 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         }
       },
       "respiratoryAdmissions": 1762,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Purnia": {
       "name": "Purnia",
@@ -14179,7 +14233,7 @@
       "peakAqi": 56,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 38,
+      "density": 33,
       "pollutants": {
         "NO2": {
           "value": 6,
@@ -14213,7 +14267,7 @@
         }
       },
       "respiratoryAdmissions": 700,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Saharsa": {
       "name": "Saharsa",
@@ -14222,7 +14276,7 @@
       "peakAqi": 56,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 37,
+      "density": 36,
       "pollutants": {
         "NO2": {
           "value": 7,
@@ -14261,7 +14315,7 @@
         }
       },
       "respiratoryAdmissions": 700,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Samastipur": {
       "name": "Samastipur",
@@ -14270,7 +14324,7 @@
       "peakAqi": 42,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 36,
+      "density": 48,
       "pollutants": {
         "PM2.5": {
           "value": 42,
@@ -14309,7 +14363,7 @@
         }
       },
       "respiratoryAdmissions": 525,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Sasaram": {
       "name": "Sasaram",
@@ -14318,7 +14372,7 @@
       "peakAqi": 21,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 34,
+      "density": 43,
       "pollutants": {
         "NO2": {
           "value": 2,
@@ -14347,7 +14401,7 @@
         }
       },
       "respiratoryAdmissions": 262,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Siwan": {
       "name": "Siwan",
@@ -14356,7 +14410,7 @@
       "peakAqi": 105,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 34,
+      "density": 43,
       "pollutants": {
         "OZONE": {
           "value": 11,
@@ -14395,7 +14449,7 @@
         }
       },
       "respiratoryAdmissions": 1312,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Chandigarh": {
       "name": "Chandigarh",
@@ -14404,7 +14458,7 @@
       "peakAqi": 51,
       "category": "Tier 2",
       "stationsCount": 3,
-      "density": 30,
+      "density": 44,
       "pollutants": {
         "NO2": {
           "value": 13,
@@ -14438,7 +14492,7 @@
         }
       },
       "respiratoryAdmissions": 638,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Bhilai": {
       "name": "Bhilai",
@@ -14447,7 +14501,7 @@
       "peakAqi": 35,
       "category": "Tier 2",
       "stationsCount": 3,
-      "density": 39,
+      "density": 33,
       "pollutants": {
         "PM2.5": {
           "value": 20,
@@ -14481,12 +14535,12 @@
         },
         "OZONE": {
           "value": 13,
-          "station": "Avg of 4 stations",
+          "station": "Avg of 3 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         }
       },
       "respiratoryAdmissions": 438,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Bilaspur": {
       "name": "Bilaspur",
@@ -14495,7 +14549,7 @@
       "peakAqi": 45,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 50,
+      "density": 43,
       "pollutants": {
         "PM10": {
           "value": 45,
@@ -14524,7 +14578,7 @@
         }
       },
       "respiratoryAdmissions": 562,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Chhal": {
       "name": "Chhal",
@@ -14533,7 +14587,7 @@
       "peakAqi": 59,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 32,
+      "density": 50,
       "pollutants": {
         "PM2.5": {
           "value": 58,
@@ -14542,27 +14596,27 @@
         },
         "PM10": {
           "value": 59,
-          "station": "Avg of 2 stations",
+          "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "NO2": {
           "value": 6,
-          "station": "Avg of 2 stations",
+          "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "NH3": {
           "value": 2,
-          "station": "Avg of 2 stations",
+          "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "SO2": {
           "value": 8,
-          "station": "Avg of 2 stations",
+          "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "CO": {
           "value": 21,
-          "station": "Avg of 2 stations",
+          "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "OZONE": {
@@ -14572,7 +14626,7 @@
         }
       },
       "respiratoryAdmissions": 738,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Korba": {
       "name": "Korba",
@@ -14581,7 +14635,7 @@
       "peakAqi": 45,
       "category": "Tier 2",
       "stationsCount": 2,
-      "density": 35,
+      "density": 37,
       "pollutants": {
         "SO2": {
           "value": 18,
@@ -14589,8 +14643,8 @@
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "PM2.5": {
-          "value": 19,
-          "station": "Avg of 3 stations",
+          "value": 17,
+          "station": "Avg of 2 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "NO2": {
@@ -14620,7 +14674,7 @@
         }
       },
       "respiratoryAdmissions": 562,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Kunjemura": {
       "name": "Kunjemura",
@@ -14629,7 +14683,7 @@
       "peakAqi": 56,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 50,
+      "density": 36,
       "pollutants": {
         "OZONE": {
           "value": 6,
@@ -14668,7 +14722,7 @@
         }
       },
       "respiratoryAdmissions": 700,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Sonipat": {
       "name": "Sonipat",
@@ -14677,7 +14731,7 @@
       "peakAqi": 131,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 34,
+      "density": 48,
       "pollutants": {
         "PM10": {
           "value": 131,
@@ -14716,7 +14770,7 @@
         }
       },
       "respiratoryAdmissions": 1638,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Baddi": {
       "name": "Baddi",
@@ -14725,7 +14779,7 @@
       "peakAqi": 113,
       "category": "Industrial",
       "stationsCount": 1,
-      "density": 68,
+      "density": 67,
       "pollutants": {
         "PM10": {
           "value": 113,
@@ -14764,7 +14818,7 @@
         }
       },
       "respiratoryAdmissions": 1412,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Pampore": {
       "name": "Pampore",
@@ -14773,7 +14827,7 @@
       "peakAqi": 52,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 40,
+      "density": 50,
       "pollutants": {
         "PM10": {
           "value": 52,
@@ -14797,7 +14851,7 @@
         }
       },
       "respiratoryAdmissions": 650,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Srinagar": {
       "name": "Srinagar",
@@ -14806,7 +14860,7 @@
       "peakAqi": 56,
       "category": "Tier 2",
       "stationsCount": 2,
-      "density": 43,
+      "density": 34,
       "pollutants": {
         "PM10": {
           "value": 45,
@@ -14840,7 +14894,7 @@
         }
       },
       "respiratoryAdmissions": 700,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Jorapokhar": {
       "name": "Jorapokhar",
@@ -14849,7 +14903,7 @@
       "peakAqi": 82,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 45,
+      "density": 47,
       "pollutants": {
         "PM2.5": {
           "value": 58,
@@ -14888,7 +14942,7 @@
         }
       },
       "respiratoryAdmissions": 1025,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Charkhi Dadri": {
       "name": "Charkhi Dadri",
@@ -14897,7 +14951,7 @@
       "peakAqi": 130,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 36,
+      "density": 48,
       "pollutants": {
         "PM2.5": {
           "value": 130,
@@ -14936,7 +14990,7 @@
         }
       },
       "respiratoryAdmissions": 1625,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Dharuhera": {
       "name": "Dharuhera",
@@ -14945,7 +14999,7 @@
       "peakAqi": 101,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 41,
+      "density": 34,
       "pollutants": {
         "NH3": {
           "value": 12,
@@ -14984,7 +15038,7 @@
         }
       },
       "respiratoryAdmissions": 1262,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Faridabad": {
       "name": "Faridabad",
@@ -14993,7 +15047,7 @@
       "peakAqi": 132,
       "category": "Tier 2",
       "stationsCount": 3,
-      "density": 47,
+      "density": 32,
       "pollutants": {
         "NO2": {
           "value": 31,
@@ -15032,7 +15086,7 @@
         }
       },
       "respiratoryAdmissions": 1650,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Fatehabad": {
       "name": "Fatehabad",
@@ -15041,7 +15095,7 @@
       "peakAqi": 53,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 46,
+      "density": 50,
       "pollutants": {
         "NH3": {
           "value": 14,
@@ -15080,7 +15134,7 @@
         }
       },
       "respiratoryAdmissions": 662,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Gurugram": {
       "name": "Gurugram",
@@ -15089,7 +15143,7 @@
       "peakAqi": 101,
       "category": "Tier 2",
       "stationsCount": 4,
-      "density": 35,
+      "density": 44,
       "pollutants": {
         "OZONE": {
           "value": 7,
@@ -15128,7 +15182,7 @@
         }
       },
       "respiratoryAdmissions": 1262,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Bagalkot": {
       "name": "Bagalkot",
@@ -15137,7 +15191,7 @@
       "peakAqi": 51,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 41,
+      "density": 39,
       "pollutants": {
         "PM10": {
           "value": 51,
@@ -15176,7 +15230,7 @@
         }
       },
       "respiratoryAdmissions": 638,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Bengaluru": {
       "name": "Bengaluru",
@@ -15185,7 +15239,7 @@
       "peakAqi": 71,
       "category": "Tier 1",
       "stationsCount": 6,
-      "density": 95,
+      "density": 87,
       "pollutants": {
         "NO2": {
           "value": 20,
@@ -15208,8 +15262,8 @@
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "SO2": {
-          "value": 18,
-          "station": "Avg of 5 stations",
+          "value": 16,
+          "station": "Avg of 6 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "OZONE": {
@@ -15218,13 +15272,13 @@
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "NH3": {
-          "value": 3,
-          "station": "Avg of 4 stations",
+          "value": 2,
+          "station": "Avg of 5 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         }
       },
       "respiratoryAdmissions": 888,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Chamarajanagar": {
       "name": "Chamarajanagar",
@@ -15233,7 +15287,7 @@
       "peakAqi": 42,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 39,
+      "density": 37,
       "pollutants": {
         "CO": {
           "value": 22,
@@ -15264,10 +15318,15 @@
           "value": 25,
           "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
+        },
+        "SO2": {
+          "value": 4,
+          "station": "Avg of 1 stations",
+          "lastUpdate": "05-08-2026 05:00:00"
         }
       },
       "respiratoryAdmissions": 525,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Chikkaballapur": {
       "name": "Chikkaballapur",
@@ -15315,7 +15374,7 @@
         }
       },
       "respiratoryAdmissions": 288,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Dharwad": {
       "name": "Dharwad",
@@ -15324,7 +15383,7 @@
       "peakAqi": 62,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 50,
+      "density": 33,
       "pollutants": {
         "NO2": {
           "value": 25,
@@ -15363,7 +15422,7 @@
         }
       },
       "respiratoryAdmissions": 775,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Manesar": {
       "name": "Manesar",
@@ -15372,7 +15431,7 @@
       "peakAqi": 32,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 44,
+      "density": 47,
       "pollutants": {
         "NH3": {
           "value": 11,
@@ -15411,7 +15470,7 @@
         }
       },
       "respiratoryAdmissions": 400,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Narnaul": {
       "name": "Narnaul",
@@ -15420,7 +15479,7 @@
       "peakAqi": 67,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 48,
+      "density": 34,
       "pollutants": {
         "NH3": {
           "value": 7,
@@ -15459,7 +15518,7 @@
         }
       },
       "respiratoryAdmissions": 838,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Palwal": {
       "name": "Palwal",
@@ -15468,7 +15527,7 @@
       "peakAqi": 71,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 39,
+      "density": 30,
       "pollutants": {
         "NH3": {
           "value": 6,
@@ -15507,7 +15566,7 @@
         }
       },
       "respiratoryAdmissions": 888,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Panchgaon": {
       "name": "Panchgaon",
@@ -15516,7 +15575,7 @@
       "peakAqi": 42,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 42,
+      "density": 30,
       "pollutants": {
         "PM2.5": {
           "value": 13,
@@ -15550,7 +15609,7 @@
         }
       },
       "respiratoryAdmissions": 525,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Panipat": {
       "name": "Panipat",
@@ -15559,7 +15618,7 @@
       "peakAqi": 57,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 30,
+      "density": 42,
       "pollutants": {
         "OZONE": {
           "value": 57,
@@ -15573,7 +15632,7 @@
         }
       },
       "respiratoryAdmissions": 712,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Rohtak": {
       "name": "Rohtak",
@@ -15582,7 +15641,7 @@
       "peakAqi": 34,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 44,
+      "density": 40,
       "pollutants": {
         "PM2.5": {
           "value": 25,
@@ -15616,7 +15675,7 @@
         }
       },
       "respiratoryAdmissions": 425,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Sirsa": {
       "name": "Sirsa",
@@ -15625,7 +15684,7 @@
       "peakAqi": 89,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 46,
+      "density": 40,
       "pollutants": {
         "PM10": {
           "value": 40,
@@ -15664,7 +15723,7 @@
         }
       },
       "respiratoryAdmissions": 1112,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Bhavnagar": {
       "name": "Bhavnagar",
@@ -15673,7 +15732,7 @@
       "peakAqi": 65,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 30,
+      "density": 42,
       "pollutants": {
         "PM2.5": {
           "value": 36,
@@ -15712,7 +15771,7 @@
         }
       },
       "respiratoryAdmissions": 812,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Gandhinagar": {
       "name": "Gandhinagar",
@@ -15721,7 +15780,7 @@
       "peakAqi": 156,
       "category": "Tier 2",
       "stationsCount": 3,
-      "density": 34,
+      "density": 50,
       "pollutants": {
         "PM2.5": {
           "value": 44,
@@ -15760,7 +15819,7 @@
         }
       },
       "respiratoryAdmissions": 1950,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Mehsana": {
       "name": "Mehsana",
@@ -15769,7 +15828,7 @@
       "peakAqi": 92,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 39,
+      "density": 42,
       "pollutants": {
         "CO": {
           "value": 46,
@@ -15808,7 +15867,7 @@
         }
       },
       "respiratoryAdmissions": 1150,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Nandesari": {
       "name": "Nandesari",
@@ -15817,7 +15876,7 @@
       "peakAqi": 53,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 47,
+      "density": 44,
       "pollutants": {
         "PM2.5": {
           "value": 49,
@@ -15846,7 +15905,7 @@
         }
       },
       "respiratoryAdmissions": 662,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Hisar": {
       "name": "Hisar",
@@ -15855,7 +15914,7 @@
       "peakAqi": 47,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 44,
+      "density": 37,
       "pollutants": {
         "PM10": {
           "value": 47,
@@ -15894,7 +15953,7 @@
         }
       },
       "respiratoryAdmissions": 588,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Jind": {
       "name": "Jind",
@@ -15903,7 +15962,7 @@
       "peakAqi": 44,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 33,
+      "density": 47,
       "pollutants": {
         "SO2": {
           "value": 28,
@@ -15942,7 +16001,7 @@
         }
       },
       "respiratoryAdmissions": 550,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Kaithal": {
       "name": "Kaithal",
@@ -15951,7 +16010,7 @@
       "peakAqi": 103,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 38,
+      "density": 47,
       "pollutants": {
         "PM10": {
           "value": 67,
@@ -15990,7 +16049,7 @@
         }
       },
       "respiratoryAdmissions": 1288,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Karnal": {
       "name": "Karnal",
@@ -16038,7 +16097,7 @@
         }
       },
       "respiratoryAdmissions": 638,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Kurukshetra": {
       "name": "Kurukshetra",
@@ -16047,7 +16106,7 @@
       "peakAqi": 39,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 40,
+      "density": 34,
       "pollutants": {
         "CO": {
           "value": 24,
@@ -16086,7 +16145,7 @@
         }
       },
       "respiratoryAdmissions": 488,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Surat": {
       "name": "Surat",
@@ -16095,7 +16154,7 @@
       "peakAqi": 97,
       "category": "Tier 1",
       "stationsCount": 2,
-      "density": 97,
+      "density": 81,
       "pollutants": {
         "NO2": {
           "value": 12,
@@ -16134,7 +16193,7 @@
         }
       },
       "respiratoryAdmissions": 1212,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Vadodara": {
       "name": "Vadodara",
@@ -16143,7 +16202,7 @@
       "peakAqi": 84,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 38,
+      "density": 37,
       "pollutants": {
         "OZONE": {
           "value": 5,
@@ -16182,7 +16241,7 @@
         }
       },
       "respiratoryAdmissions": 1050,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Vatva": {
       "name": "Vatva",
@@ -16191,7 +16250,7 @@
       "peakAqi": 123,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 40,
+      "density": 31,
       "pollutants": {
         "NO2": {
           "value": 35,
@@ -16230,7 +16289,7 @@
         }
       },
       "respiratoryAdmissions": 1538,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Ambala": {
       "name": "Ambala",
@@ -16239,7 +16298,7 @@
       "peakAqi": 74,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 37,
+      "density": 39,
       "pollutants": {
         "NO2": {
           "value": 7,
@@ -16278,7 +16337,7 @@
         }
       },
       "respiratoryAdmissions": 925,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Bahadurgarh": {
       "name": "Bahadurgarh",
@@ -16287,7 +16346,7 @@
       "peakAqi": 38,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 47,
+      "density": 30,
       "pollutants": {
         "NO2": {
           "value": 24,
@@ -16326,7 +16385,7 @@
         }
       },
       "respiratoryAdmissions": 475,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Ahmedabad": {
       "name": "Ahmedabad",
@@ -16335,7 +16394,7 @@
       "peakAqi": 106,
       "category": "Tier 1",
       "stationsCount": 7,
-      "density": 96,
+      "density": 93,
       "pollutants": {
         "OZONE": {
           "value": 10,
@@ -16353,8 +16412,8 @@
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "NH3": {
-          "value": 7,
-          "station": "Avg of 5 stations",
+          "value": 6,
+          "station": "Avg of 6 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "SO2": {
@@ -16368,13 +16427,13 @@
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "NO2": {
-          "value": 24,
-          "station": "Avg of 6 stations",
+          "value": 26,
+          "station": "Avg of 7 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         }
       },
       "respiratoryAdmissions": 1325,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Ankleshwar": {
       "name": "Ankleshwar",
@@ -16383,7 +16442,7 @@
       "peakAqi": 74,
       "category": "Industrial",
       "stationsCount": 1,
-      "density": 78,
+      "density": 71,
       "pollutants": {
         "NH3": {
           "value": 6,
@@ -16422,7 +16481,7 @@
         }
       },
       "respiratoryAdmissions": 925,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Jabalpur": {
       "name": "Jabalpur",
@@ -16431,11 +16490,11 @@
       "peakAqi": 57,
       "category": "Tier 2",
       "stationsCount": 4,
-      "density": 45,
+      "density": 44,
       "pollutants": {
         "OZONE": {
-          "value": 23,
-          "station": "Avg of 5 stations",
+          "value": 22,
+          "station": "Avg of 4 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "CO": {
@@ -16449,13 +16508,13 @@
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "PM10": {
-          "value": 48,
-          "station": "Avg of 5 stations",
+          "value": 47,
+          "station": "Avg of 4 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "SO2": {
           "value": 9,
-          "station": "Avg of 5 stations",
+          "station": "Avg of 4 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "NO2": {
@@ -16465,12 +16524,12 @@
         },
         "NH3": {
           "value": 5,
-          "station": "Avg of 4 stations",
+          "station": "Avg of 3 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         }
       },
       "respiratoryAdmissions": 712,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Katni": {
       "name": "Katni",
@@ -16479,7 +16538,7 @@
       "peakAqi": 77,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 40,
+      "density": 39,
       "pollutants": {
         "PM10": {
           "value": 77,
@@ -16513,12 +16572,12 @@
         },
         "NO2": {
           "value": 11,
-          "station": "Avg of 2 stations",
+          "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         }
       },
       "respiratoryAdmissions": 962,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Mandideep": {
       "name": "Mandideep",
@@ -16527,7 +16586,7 @@
       "peakAqi": 84,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 35,
+      "density": 30,
       "pollutants": {
         "OZONE": {
           "value": 19,
@@ -16556,17 +16615,17 @@
         },
         "PM2.5": {
           "value": 66,
-          "station": "Avg of 2 stations",
+          "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "CO": {
           "value": 19,
-          "station": "Avg of 2 stations",
+          "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         }
       },
       "respiratoryAdmissions": 1050,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Pithampur": {
       "name": "Pithampur",
@@ -16575,7 +16634,7 @@
       "peakAqi": 107,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 38,
+      "density": 37,
       "pollutants": {
         "SO2": {
           "value": 23,
@@ -16594,27 +16653,27 @@
         },
         "PM2.5": {
           "value": 94,
-          "station": "Avg of 2 stations",
+          "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "NO2": {
           "value": 14,
-          "station": "Avg of 2 stations",
+          "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "NH3": {
           "value": 7,
-          "station": "Avg of 2 stations",
+          "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "CO": {
           "value": 24,
-          "station": "Avg of 2 stations",
+          "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         }
       },
       "respiratoryAdmissions": 1338,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Sagar": {
       "name": "Sagar",
@@ -16623,7 +16682,7 @@
       "peakAqi": 35,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 37,
+      "density": 47,
       "pollutants": {
         "PM2.5": {
           "value": 22,
@@ -16662,7 +16721,7 @@
         }
       },
       "respiratoryAdmissions": 438,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Satna": {
       "name": "Satna",
@@ -16671,7 +16730,7 @@
       "peakAqi": 70,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 42,
+      "density": 47,
       "pollutants": {
         "NO2": {
           "value": 13,
@@ -16700,12 +16759,12 @@
         },
         "PM10": {
           "value": 70,
-          "station": "Avg of 2 stations",
+          "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         }
       },
       "respiratoryAdmissions": 875,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Aurangabad": {
       "name": "Aurangabad",
@@ -16714,7 +16773,7 @@
       "peakAqi": 58,
       "category": "Tier 2",
       "stationsCount": 3,
-      "density": 46,
+      "density": 50,
       "pollutants": {
         "PM10": {
           "value": 48,
@@ -16753,7 +16812,7 @@
         }
       },
       "respiratoryAdmissions": 725,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Badlapur": {
       "name": "Badlapur",
@@ -16762,7 +16821,7 @@
       "peakAqi": 43,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 37,
+      "density": 34,
       "pollutants": {
         "PM10": {
           "value": 13,
@@ -16801,7 +16860,7 @@
         }
       },
       "respiratoryAdmissions": 538,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Beed": {
       "name": "Beed",
@@ -16810,7 +16869,7 @@
       "peakAqi": 33,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 43,
+      "density": 31,
       "pollutants": {
         "NO2": {
           "value": 15,
@@ -16844,12 +16903,12 @@
         },
         "PM10": {
           "value": 33,
-          "station": "Avg of 2 stations",
+          "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         }
       },
       "respiratoryAdmissions": 412,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Belapur": {
       "name": "Belapur",
@@ -16858,7 +16917,7 @@
       "peakAqi": 51,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 38,
+      "density": 37,
       "pollutants": {
         "CO": {
           "value": 17,
@@ -16892,12 +16951,12 @@
         },
         "PM10": {
           "value": 51,
-          "station": "Avg of 2 stations",
+          "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         }
       },
       "respiratoryAdmissions": 638,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Boisar": {
       "name": "Boisar",
@@ -16906,7 +16965,7 @@
       "peakAqi": 44,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 49,
+      "density": 46,
       "pollutants": {
         "NO2": {
           "value": 9,
@@ -16940,12 +16999,12 @@
         },
         "PM10": {
           "value": 44,
-          "station": "Avg of 2 stations",
+          "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         }
       },
       "respiratoryAdmissions": 550,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Chandrapur": {
       "name": "Chandrapur",
@@ -16954,7 +17013,7 @@
       "peakAqi": 58,
       "category": "Tier 2",
       "stationsCount": 2,
-      "density": 37,
+      "density": 30,
       "pollutants": {
         "NO2": {
           "value": 14,
@@ -16982,18 +17041,18 @@
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "SO2": {
-          "value": 6,
-          "station": "Avg of 3 stations",
+          "value": 7,
+          "station": "Avg of 2 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "CO": {
-          "value": 34,
-          "station": "Avg of 3 stations",
+          "value": 31,
+          "station": "Avg of 2 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         }
       },
       "respiratoryAdmissions": 725,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Dhule": {
       "name": "Dhule",
@@ -17002,7 +17061,7 @@
       "peakAqi": 47,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 35,
+      "density": 42,
       "pollutants": {
         "NO2": {
           "value": 11,
@@ -17041,7 +17100,7 @@
         }
       },
       "respiratoryAdmissions": 588,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Dombivli": {
       "name": "Dombivli",
@@ -17050,7 +17109,7 @@
       "peakAqi": 28,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 50,
+      "density": 32,
       "pollutants": {
         "PM2.5": {
           "value": 9,
@@ -17079,17 +17138,17 @@
         },
         "NO2": {
           "value": 14,
-          "station": "Avg of 2 stations",
+          "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "CO": {
           "value": 15,
-          "station": "Avg of 2 stations",
+          "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         }
       },
       "respiratoryAdmissions": 350,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Bhopal": {
       "name": "Bhopal",
@@ -17098,7 +17157,7 @@
       "peakAqi": 85,
       "category": "Tier 2",
       "stationsCount": 3,
-      "density": 34,
+      "density": 43,
       "pollutants": {
         "NO2": {
           "value": 15,
@@ -17111,8 +17170,8 @@
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "CO": {
-          "value": 17,
-          "station": "Avg of 2 stations",
+          "value": 20,
+          "station": "Avg of 3 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "OZONE": {
@@ -17137,7 +17196,7 @@
         }
       },
       "respiratoryAdmissions": 1062,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Dewas": {
       "name": "Dewas",
@@ -17146,7 +17205,7 @@
       "peakAqi": 93,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 38,
+      "density": 33,
       "pollutants": {
         "OZONE": {
           "value": 42,
@@ -17175,7 +17234,7 @@
         }
       },
       "respiratoryAdmissions": 1162,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Gwalior": {
       "name": "Gwalior",
@@ -17184,7 +17243,7 @@
       "peakAqi": 56,
       "category": "Tier 2",
       "stationsCount": 3,
-      "density": 35,
+      "density": 48,
       "pollutants": {
         "NH3": {
           "value": 3,
@@ -17223,7 +17282,7 @@
         }
       },
       "respiratoryAdmissions": 700,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Ujjain": {
       "name": "Ujjain",
@@ -17232,7 +17291,7 @@
       "peakAqi": 56,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 35,
+      "density": 44,
       "pollutants": {
         "PM10": {
           "value": 56,
@@ -17261,17 +17320,17 @@
         },
         "NO2": {
           "value": 9,
-          "station": "Avg of 2 stations",
+          "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "NH3": {
           "value": 9,
-          "station": "Avg of 2 stations",
+          "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         }
       },
       "respiratoryAdmissions": 700,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Ahmednagar": {
       "name": "Ahmednagar",
@@ -17319,7 +17378,7 @@
         }
       },
       "respiratoryAdmissions": 675,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Akola": {
       "name": "Akola",
@@ -17328,7 +17387,7 @@
       "peakAqi": 50,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 50,
+      "density": 46,
       "pollutants": {
         "PM10": {
           "value": 50,
@@ -17367,7 +17426,7 @@
         }
       },
       "respiratoryAdmissions": 625,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Amravati": {
       "name": "Amravati",
@@ -17376,7 +17435,7 @@
       "peakAqi": 45,
       "category": "Tier 2",
       "stationsCount": 2,
-      "density": 42,
+      "density": 48,
       "pollutants": {
         "PM10": {
           "value": 44,
@@ -17415,7 +17474,7 @@
         }
       },
       "respiratoryAdmissions": 562,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Indore": {
       "name": "Indore",
@@ -17424,7 +17483,7 @@
       "peakAqi": 95,
       "category": "Tier 2",
       "stationsCount": 5,
-      "density": 41,
+      "density": 49,
       "pollutants": {
         "NO2": {
           "value": 22,
@@ -17447,23 +17506,23 @@
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "OZONE": {
-          "value": 8,
-          "station": "Avg of 6 stations",
+          "value": 9,
+          "station": "Avg of 5 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "CO": {
-          "value": 27,
-          "station": "Avg of 7 stations",
+          "value": 22,
+          "station": "Avg of 5 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "PM2.5": {
-          "value": 39,
-          "station": "Avg of 6 stations",
+          "value": 40,
+          "station": "Avg of 5 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         }
       },
       "respiratoryAdmissions": 1188,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Hingoli": {
       "name": "Hingoli",
@@ -17472,7 +17531,7 @@
       "peakAqi": 40,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 39,
+      "density": 38,
       "pollutants": {
         "NO2": {
           "value": 8,
@@ -17511,7 +17570,7 @@
         }
       },
       "respiratoryAdmissions": 500,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Jalna": {
       "name": "Jalna",
@@ -17520,7 +17579,7 @@
       "peakAqi": 38,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 41,
+      "density": 33,
       "pollutants": {
         "NH3": {
           "value": 4,
@@ -17554,7 +17613,7 @@
         }
       },
       "respiratoryAdmissions": 475,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Kalyan": {
       "name": "Kalyan",
@@ -17563,7 +17622,7 @@
       "peakAqi": 74,
       "category": "Tier 2",
       "stationsCount": 2,
-      "density": 32,
+      "density": 45,
       "pollutants": {
         "CO": {
           "value": 40,
@@ -17602,7 +17661,7 @@
         }
       },
       "respiratoryAdmissions": 925,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Kolhapur": {
       "name": "Kolhapur",
@@ -17611,7 +17670,7 @@
       "peakAqi": 29,
       "category": "Tier 2",
       "stationsCount": 2,
-      "density": 49,
+      "density": 45,
       "pollutants": {
         "CO": {
           "value": 10,
@@ -17650,7 +17709,7 @@
         }
       },
       "respiratoryAdmissions": 362,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Kalaburagi": {
       "name": "Kalaburagi",
@@ -17659,7 +17718,7 @@
       "peakAqi": 35,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 43,
+      "density": 33,
       "pollutants": {
         "CO": {
           "value": 35,
@@ -17685,10 +17744,20 @@
           "value": 4,
           "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
+        },
+        "PM10": {
+          "value": 34,
+          "station": "Avg of 1 stations",
+          "lastUpdate": "05-08-2026 05:00:00"
+        },
+        "NH3": {
+          "value": 2,
+          "station": "Avg of 1 stations",
+          "lastUpdate": "05-08-2026 05:00:00"
         }
       },
       "respiratoryAdmissions": 438,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Karwar": {
       "name": "Karwar",
@@ -17697,7 +17766,7 @@
       "peakAqi": 39,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 32,
+      "density": 36,
       "pollutants": {
         "SO2": {
           "value": 20,
@@ -17728,10 +17797,15 @@
           "value": 15,
           "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
+        },
+        "NO2": {
+          "value": 27,
+          "station": "Avg of 1 stations",
+          "lastUpdate": "05-08-2026 05:00:00"
         }
       },
       "respiratoryAdmissions": 488,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Mangalore": {
       "name": "Mangalore",
@@ -17740,7 +17814,7 @@
       "peakAqi": 48,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 45,
+      "density": 46,
       "pollutants": {
         "PM10": {
           "value": 48,
@@ -17769,7 +17843,7 @@
         }
       },
       "respiratoryAdmissions": 600,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Mysuru": {
       "name": "Mysuru",
@@ -17778,7 +17852,7 @@
       "peakAqi": 52,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 34,
+      "density": 38,
       "pollutants": {
         "PM2.5": {
           "value": 22,
@@ -17817,16 +17891,16 @@
         }
       },
       "respiratoryAdmissions": 650,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Ramanagara": {
       "name": "Ramanagara",
       "state": "Karnataka",
-      "avgAqi": 31,
-      "peakAqi": 31,
+      "avgAqi": 41,
+      "peakAqi": 41,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 43,
+      "density": 35,
       "pollutants": {
         "OZONE": {
           "value": 29,
@@ -17847,10 +17921,15 @@
           "value": 16,
           "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
+        },
+        "PM10": {
+          "value": 41,
+          "station": "Avg of 1 stations",
+          "lastUpdate": "05-08-2026 05:00:00"
         }
       },
-      "respiratoryAdmissions": 388,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "respiratoryAdmissions": 512,
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Vijayapura": {
       "name": "Vijayapura",
@@ -17859,7 +17938,7 @@
       "peakAqi": 43,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 49,
+      "density": 34,
       "pollutants": {
         "PM10": {
           "value": 43,
@@ -17890,19 +17969,24 @@
           "value": 4,
           "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
+        },
+        "SO2": {
+          "value": 3,
+          "station": "Avg of 1 stations",
+          "lastUpdate": "05-08-2026 05:00:00"
         }
       },
       "respiratoryAdmissions": 538,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Thiruvananthapuram": {
       "name": "Thiruvananthapuram",
       "state": "Kerala",
-      "avgAqi": 30,
-      "peakAqi": 30,
+      "avgAqi": 55,
+      "peakAqi": 55,
       "category": "Tier 2",
       "stationsCount": 2,
-      "density": 36,
+      "density": 33,
       "pollutants": {
         "PM2.5": {
           "value": 16,
@@ -17925,8 +18009,8 @@
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "PM10": {
-          "value": 20,
-          "station": "Avg of 1 stations",
+          "value": 38,
+          "station": "Avg of 2 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "NH3": {
@@ -17940,8 +18024,8 @@
           "lastUpdate": "05-08-2026 05:00:00"
         }
       },
-      "respiratoryAdmissions": 375,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "respiratoryAdmissions": 688,
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Thrissur": {
       "name": "Thrissur",
@@ -17950,7 +18034,7 @@
       "peakAqi": 43,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 39,
+      "density": 49,
       "pollutants": {
         "NO2": {
           "value": 8,
@@ -17961,10 +18045,20 @@
           "value": 43,
           "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
+        },
+        "CO": {
+          "value": 8,
+          "station": "Avg of 1 stations",
+          "lastUpdate": "05-08-2026 05:00:00"
+        },
+        "OZONE": {
+          "value": 30,
+          "station": "Avg of 1 stations",
+          "lastUpdate": "05-08-2026 05:00:00"
         }
       },
       "respiratoryAdmissions": 538,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Latur": {
       "name": "Latur",
@@ -17973,7 +18067,7 @@
       "peakAqi": 46,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 33,
+      "density": 34,
       "pollutants": {
         "PM10": {
           "value": 46,
@@ -18012,7 +18106,7 @@
         }
       },
       "respiratoryAdmissions": 575,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Mahad": {
       "name": "Mahad",
@@ -18021,7 +18115,7 @@
       "peakAqi": 52,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 39,
+      "density": 35,
       "pollutants": {
         "PM2.5": {
           "value": 33,
@@ -18060,7 +18154,7 @@
         }
       },
       "respiratoryAdmissions": 650,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Mumbai": {
       "name": "Mumbai",
@@ -18069,55 +18163,55 @@
       "peakAqi": 72,
       "category": "Tier 1",
       "stationsCount": 23,
-      "density": 88,
+      "density": 95,
       "pollutants": {
         "SO2": {
           "value": 8,
-          "station": "Avg of 13 stations",
+          "station": "Avg of 16 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "PM10": {
-          "value": 42,
-          "station": "Avg of 17 stations",
+          "value": 43,
+          "station": "Avg of 19 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "NO2": {
-          "value": 15,
-          "station": "Avg of 15 stations",
+          "value": 14,
+          "station": "Avg of 17 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "CO": {
-          "value": 26,
-          "station": "Avg of 18 stations",
+          "value": 27,
+          "station": "Avg of 19 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "OZONE": {
           "value": 12,
-          "station": "Avg of 17 stations",
+          "station": "Avg of 18 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "NH3": {
           "value": 4,
-          "station": "Avg of 17 stations",
+          "station": "Avg of 18 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "PM2.5": {
-          "value": 26,
-          "station": "Avg of 18 stations",
+          "value": 27,
+          "station": "Avg of 20 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         }
       },
       "respiratoryAdmissions": 900,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Barbil": {
       "name": "Barbil",
       "state": "Odisha",
-      "avgAqi": 55,
-      "peakAqi": 55,
+      "avgAqi": 50,
+      "peakAqi": 50,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 44,
+      "density": 50,
       "pollutants": {
         "NO2": {
           "value": 3,
@@ -18139,24 +18233,14 @@
           "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
-        "NH3": {
-          "value": 2,
-          "station": "Avg of 2 stations",
-          "lastUpdate": "05-08-2026 05:00:00"
-        },
-        "PM2.5": {
-          "value": 55,
-          "station": "Avg of 2 stations",
-          "lastUpdate": "05-08-2026 05:00:00"
-        },
         "OZONE": {
           "value": 17,
           "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         }
       },
-      "respiratoryAdmissions": 688,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "respiratoryAdmissions": 625,
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Baripada": {
       "name": "Baripada",
@@ -18165,7 +18249,7 @@
       "peakAqi": 49,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 31,
+      "density": 49,
       "pollutants": {
         "CO": {
           "value": 5,
@@ -18204,7 +18288,7 @@
         }
       },
       "respiratoryAdmissions": 612,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Bhubaneswar": {
       "name": "Bhubaneswar",
@@ -18213,7 +18297,7 @@
       "peakAqi": 37,
       "category": "Tier 2",
       "stationsCount": 2,
-      "density": 45,
+      "density": 49,
       "pollutants": {
         "PM2.5": {
           "value": 24,
@@ -18236,13 +18320,13 @@
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "PM10": {
-          "value": 32,
-          "station": "Avg of 3 stations",
+          "value": 34,
+          "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "NO2": {
-          "value": 15,
-          "station": "Avg of 3 stations",
+          "value": 6,
+          "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "OZONE": {
@@ -18252,7 +18336,7 @@
         }
       },
       "respiratoryAdmissions": 462,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Bileipada": {
       "name": "Bileipada",
@@ -18261,7 +18345,7 @@
       "peakAqi": 45,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 40,
+      "density": 48,
       "pollutants": {
         "PM2.5": {
           "value": 45,
@@ -18295,7 +18379,7 @@
         }
       },
       "respiratoryAdmissions": 562,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Brajrajnagar": {
       "name": "Brajrajnagar",
@@ -18343,7 +18427,7 @@
         }
       },
       "respiratoryAdmissions": 538,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Byasanagar": {
       "name": "Byasanagar",
@@ -18352,7 +18436,7 @@
       "peakAqi": 45,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 32,
+      "density": 31,
       "pollutants": {
         "NO2": {
           "value": 12,
@@ -18391,7 +18475,7 @@
         }
       },
       "respiratoryAdmissions": 562,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Keonjhar": {
       "name": "Keonjhar",
@@ -18400,7 +18484,7 @@
       "peakAqi": 41,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 33,
+      "density": 34,
       "pollutants": {
         "PM10": {
           "value": 41,
@@ -18439,7 +18523,7 @@
         }
       },
       "respiratoryAdmissions": 512,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Nashik": {
       "name": "Nashik",
@@ -18448,7 +18532,7 @@
       "peakAqi": 59,
       "category": "Tier 2",
       "stationsCount": 4,
-      "density": 49,
+      "density": 47,
       "pollutants": {
         "PM2.5": {
           "value": 32,
@@ -18487,7 +18571,7 @@
         }
       },
       "respiratoryAdmissions": 738,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Navi Mumbai": {
       "name": "Navi Mumbai",
@@ -18496,7 +18580,7 @@
       "peakAqi": 62,
       "category": "Tier 2",
       "stationsCount": 6,
-      "density": 40,
+      "density": 50,
       "pollutants": {
         "CO": {
           "value": 32,
@@ -18535,7 +18619,7 @@
         }
       },
       "respiratoryAdmissions": 775,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Parbhani": {
       "name": "Parbhani",
@@ -18544,7 +18628,7 @@
       "peakAqi": 37,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 41,
+      "density": 37,
       "pollutants": {
         "CO": {
           "value": 12,
@@ -18578,7 +18662,7 @@
         }
       },
       "respiratoryAdmissions": 462,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Pimpri-Chinchwad": {
       "name": "Pimpri-Chinchwad",
@@ -18587,21 +18671,21 @@
       "peakAqi": 80,
       "category": "Tier 2",
       "stationsCount": 6,
-      "density": 45,
+      "density": 30,
       "pollutants": {
         "OZONE": {
-          "value": 12,
-          "station": "Avg of 7 stations",
+          "value": 11,
+          "station": "Avg of 5 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "NO2": {
-          "value": 22,
-          "station": "Avg of 7 stations",
+          "value": 24,
+          "station": "Avg of 3 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "PM2.5": {
-          "value": 27,
-          "station": "Avg of 6 stations",
+          "value": 30,
+          "station": "Avg of 4 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "PM10": {
@@ -18610,8 +18694,8 @@
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "CO": {
-          "value": 24,
-          "station": "Avg of 7 stations",
+          "value": 29,
+          "station": "Avg of 5 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "NH3": {
@@ -18621,12 +18705,12 @@
         },
         "SO2": {
           "value": 1,
-          "station": "Avg of 3 stations",
+          "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         }
       },
       "respiratoryAdmissions": 1000,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Pune": {
       "name": "Pune",
@@ -18635,7 +18719,7 @@
       "peakAqi": 69,
       "category": "Tier 1",
       "stationsCount": 5,
-      "density": 81,
+      "density": 87,
       "pollutants": {
         "SO2": {
           "value": 8,
@@ -18648,18 +18732,18 @@
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "CO": {
-          "value": 41,
-          "station": "Avg of 6 stations",
+          "value": 32,
+          "station": "Avg of 4 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "OZONE": {
-          "value": 10,
-          "station": "Avg of 6 stations",
+          "value": 9,
+          "station": "Avg of 4 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "PM10": {
-          "value": 52,
-          "station": "Avg of 6 stations",
+          "value": 51,
+          "station": "Avg of 4 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "NO2": {
@@ -18674,7 +18758,7 @@
         }
       },
       "respiratoryAdmissions": 862,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Rairangpur": {
       "name": "Rairangpur",
@@ -18683,7 +18767,7 @@
       "peakAqi": 41,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 39,
+      "density": 30,
       "pollutants": {
         "PM10": {
           "value": 41,
@@ -18722,7 +18806,7 @@
         }
       },
       "respiratoryAdmissions": 512,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Rourkela": {
       "name": "Rourkela",
@@ -18731,7 +18815,7 @@
       "peakAqi": 51,
       "category": "Tier 2",
       "stationsCount": 3,
-      "density": 32,
+      "density": 48,
       "pollutants": {
         "CO": {
           "value": 23,
@@ -18770,7 +18854,7 @@
         }
       },
       "respiratoryAdmissions": 638,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Puducherry": {
       "name": "Puducherry",
@@ -18779,7 +18863,7 @@
       "peakAqi": 37,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 41,
+      "density": 38,
       "pollutants": {
         "CO": {
           "value": 16,
@@ -18818,7 +18902,7 @@
         }
       },
       "respiratoryAdmissions": 462,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Bathinda": {
       "name": "Bathinda",
@@ -18827,7 +18911,7 @@
       "peakAqi": 53,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 30,
+      "density": 50,
       "pollutants": {
         "PM2.5": {
           "value": 14,
@@ -18856,7 +18940,7 @@
         }
       },
       "respiratoryAdmissions": 662,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Jalandhar": {
       "name": "Jalandhar",
@@ -18865,7 +18949,7 @@
       "peakAqi": 47,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 37,
+      "density": 40,
       "pollutants": {
         "CO": {
           "value": 47,
@@ -18887,6 +18971,11 @@
           "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
+        "PM2.5": {
+          "value": 41,
+          "station": "Avg of 2 stations",
+          "lastUpdate": "05-08-2026 05:00:00"
+        },
         "NH3": {
           "value": 4,
           "station": "Avg of 1 stations",
@@ -18899,7 +18988,7 @@
         }
       },
       "respiratoryAdmissions": 588,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Khanna": {
       "name": "Khanna",
@@ -18908,7 +18997,7 @@
       "peakAqi": 75,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 31,
+      "density": 42,
       "pollutants": {
         "OZONE": {
           "value": 24,
@@ -18935,6 +19024,11 @@
           "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
+        "CO": {
+          "value": 46,
+          "station": "Avg of 2 stations",
+          "lastUpdate": "05-08-2026 05:00:00"
+        },
         "PM2.5": {
           "value": 51,
           "station": "Avg of 1 stations",
@@ -18942,7 +19036,7 @@
         }
       },
       "respiratoryAdmissions": 938,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Sangli": {
       "name": "Sangli",
@@ -18951,7 +19045,7 @@
       "peakAqi": 42,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 42,
+      "density": 47,
       "pollutants": {
         "PM2.5": {
           "value": 22,
@@ -18968,16 +19062,6 @@
           "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
-        "NO2": {
-          "value": 5,
-          "station": "Avg of 2 stations",
-          "lastUpdate": "05-08-2026 05:00:00"
-        },
-        "CO": {
-          "value": 15,
-          "station": "Avg of 2 stations",
-          "lastUpdate": "05-08-2026 05:00:00"
-        },
         "PM10": {
           "value": 42,
           "station": "Avg of 1 stations",
@@ -18990,7 +19074,7 @@
         }
       },
       "respiratoryAdmissions": 525,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Satara": {
       "name": "Satara",
@@ -18999,7 +19083,7 @@
       "peakAqi": 64,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 35,
+      "density": 31,
       "pollutants": {
         "NH3": {
           "value": 1,
@@ -19038,7 +19122,7 @@
         }
       },
       "respiratoryAdmissions": 800,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Solapur": {
       "name": "Solapur",
@@ -19047,7 +19131,7 @@
       "peakAqi": 58,
       "category": "Tier 2",
       "stationsCount": 2,
-      "density": 34,
+      "density": 41,
       "pollutants": {
         "PM2.5": {
           "value": 34,
@@ -19086,7 +19170,7 @@
         }
       },
       "respiratoryAdmissions": 725,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Thane": {
       "name": "Thane",
@@ -19095,7 +19179,7 @@
       "peakAqi": 61,
       "category": "Tier 2",
       "stationsCount": 2,
-      "density": 45,
+      "density": 37,
       "pollutants": {
         "CO": {
           "value": 26,
@@ -19118,8 +19202,8 @@
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "SO2": {
-          "value": 4,
-          "station": "Avg of 3 stations",
+          "value": 5,
+          "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "NO2": {
@@ -19128,22 +19212,22 @@
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "OZONE": {
-          "value": 12,
-          "station": "Avg of 3 stations",
+          "value": 17,
+          "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         }
       },
       "respiratoryAdmissions": 762,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Ulhasnagar": {
       "name": "Ulhasnagar",
       "state": "Maharashtra",
-      "avgAqi": 12,
-      "peakAqi": 12,
+      "avgAqi": 11,
+      "peakAqi": 11,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 32,
+      "density": 44,
       "pollutants": {
         "PM10": {
           "value": 11,
@@ -19165,19 +19249,14 @@
           "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
-        "CO": {
-          "value": 12,
-          "station": "Avg of 2 stations",
-          "lastUpdate": "05-08-2026 05:00:00"
-        },
         "OZONE": {
           "value": 2,
           "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         }
       },
-      "respiratoryAdmissions": 150,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "respiratoryAdmissions": 138,
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Virar": {
       "name": "Virar",
@@ -19186,7 +19265,7 @@
       "peakAqi": 38,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 32,
+      "density": 48,
       "pollutants": {
         "PM10": {
           "value": 38,
@@ -19217,15 +19296,10 @@
           "value": 2,
           "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
-        },
-        "CO": {
-          "value": 31,
-          "station": "Avg of 2 stations",
-          "lastUpdate": "05-08-2026 05:00:00"
         }
       },
       "respiratoryAdmissions": 475,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Shillong": {
       "name": "Shillong",
@@ -19234,7 +19308,7 @@
       "peakAqi": 50,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 32,
+      "density": 30,
       "pollutants": {
         "NO2": {
           "value": 7,
@@ -19260,38 +19334,23 @@
           "value": 26,
           "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
-        },
-        "NH3": {
-          "value": 4,
-          "station": "Avg of 2 stations",
-          "lastUpdate": "05-08-2026 05:00:00"
         }
       },
       "respiratoryAdmissions": 625,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Aizawl": {
       "name": "Aizawl",
       "state": "Mizoram",
-      "avgAqi": 14,
-      "peakAqi": 14,
+      "avgAqi": 3,
+      "peakAqi": 3,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 31,
+      "density": 35,
       "pollutants": {
         "CO": {
           "value": 3,
           "station": "Avg of 1 stations",
-          "lastUpdate": "05-08-2026 05:00:00"
-        },
-        "PM10": {
-          "value": 14,
-          "station": "Avg of 2 stations",
-          "lastUpdate": "05-08-2026 05:00:00"
-        },
-        "SO2": {
-          "value": 14,
-          "station": "Avg of 2 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "NO2": {
@@ -19305,17 +19364,17 @@
           "lastUpdate": "05-08-2026 05:00:00"
         }
       },
-      "respiratoryAdmissions": 175,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "respiratoryAdmissions": 38,
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Kohima": {
       "name": "Kohima",
       "state": "Nagaland",
-      "avgAqi": 49,
-      "peakAqi": 49,
+      "avgAqi": 11,
+      "peakAqi": 11,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 38,
+      "density": 30,
       "pollutants": {
         "PM2.5": {
           "value": 11,
@@ -19331,25 +19390,10 @@
           "value": 4,
           "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
-        },
-        "PM10": {
-          "value": 10,
-          "station": "Avg of 2 stations",
-          "lastUpdate": "05-08-2026 05:00:00"
-        },
-        "SO2": {
-          "value": 49,
-          "station": "Avg of 2 stations",
-          "lastUpdate": "05-08-2026 05:00:00"
-        },
-        "CO": {
-          "value": 5,
-          "station": "Avg of 2 stations",
-          "lastUpdate": "05-08-2026 05:00:00"
         }
       },
-      "respiratoryAdmissions": 612,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "respiratoryAdmissions": 138,
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Angul": {
       "name": "Angul",
@@ -19380,11 +19424,6 @@
           "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
-        "SO2": {
-          "value": 11,
-          "station": "Avg of 2 stations",
-          "lastUpdate": "05-08-2026 05:00:00"
-        },
         "PM2.5": {
           "value": 44,
           "station": "Avg of 1 stations",
@@ -19397,7 +19436,7 @@
         }
       },
       "respiratoryAdmissions": 838,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Nagpur": {
       "name": "Nagpur",
@@ -19406,7 +19445,7 @@
       "peakAqi": 70,
       "category": "Tier 2",
       "stationsCount": 4,
-      "density": 50,
+      "density": 41,
       "pollutants": {
         "PM2.5": {
           "value": 39,
@@ -19445,7 +19484,7 @@
         }
       },
       "respiratoryAdmissions": 875,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Pratapgarh": {
       "name": "Pratapgarh",
@@ -19454,7 +19493,7 @@
       "peakAqi": 103,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 36,
+      "density": 42,
       "pollutants": {
         "CO": {
           "value": 11,
@@ -19488,7 +19527,7 @@
         }
       },
       "respiratoryAdmissions": 1288,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Sawai Madhopur": {
       "name": "Sawai Madhopur",
@@ -19497,7 +19536,7 @@
       "peakAqi": 84,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 50,
+      "density": 45,
       "pollutants": {
         "PM2.5": {
           "value": 54,
@@ -19536,7 +19575,7 @@
         }
       },
       "respiratoryAdmissions": 1050,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Sikar": {
       "name": "Sikar",
@@ -19545,7 +19584,7 @@
       "peakAqi": 121,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 33,
+      "density": 32,
       "pollutants": {
         "PM10": {
           "value": 121,
@@ -19584,7 +19623,7 @@
         }
       },
       "respiratoryAdmissions": 1512,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Sirohi": {
       "name": "Sirohi",
@@ -19593,7 +19632,7 @@
       "peakAqi": 87,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 33,
+      "density": 32,
       "pollutants": {
         "PM10": {
           "value": 87,
@@ -19632,7 +19671,7 @@
         }
       },
       "respiratoryAdmissions": 1088,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Sri Ganganagar": {
       "name": "Sri Ganganagar",
@@ -19641,7 +19680,7 @@
       "peakAqi": 61,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 42,
+      "density": 46,
       "pollutants": {
         "NO2": {
           "value": 61,
@@ -19670,7 +19709,7 @@
         }
       },
       "respiratoryAdmissions": 762,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Tonk": {
       "name": "Tonk",
@@ -19679,7 +19718,7 @@
       "peakAqi": 130,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 37,
+      "density": 30,
       "pollutants": {
         "NO2": {
           "value": 10,
@@ -19718,7 +19757,7 @@
         }
       },
       "respiratoryAdmissions": 1625,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Udaipur": {
       "name": "Udaipur",
@@ -19727,7 +19766,7 @@
       "peakAqi": 87,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 35,
+      "density": 47,
       "pollutants": {
         "PM2.5": {
           "value": 64,
@@ -19766,7 +19805,7 @@
         }
       },
       "respiratoryAdmissions": 1088,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Gangtok": {
       "name": "Gangtok",
@@ -19775,7 +19814,7 @@
       "peakAqi": 8,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 35,
+      "density": 49,
       "pollutants": {
         "NH3": {
           "value": 3,
@@ -19804,7 +19843,7 @@
         }
       },
       "respiratoryAdmissions": 100,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Chennai": {
       "name": "Chennai",
@@ -19813,7 +19852,7 @@
       "peakAqi": 294,
       "category": "Tier 1",
       "stationsCount": 7,
-      "density": 91,
+      "density": 80,
       "pollutants": {
         "PM10": {
           "value": 67,
@@ -19852,7 +19891,7 @@
         }
       },
       "respiratoryAdmissions": 3675,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Coimbatore": {
       "name": "Coimbatore",
@@ -19895,7 +19934,7 @@
         }
       },
       "respiratoryAdmissions": 325,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Ludhiana": {
       "name": "Ludhiana",
@@ -19904,7 +19943,7 @@
       "peakAqi": 58,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 35,
+      "density": 41,
       "pollutants": {
         "PM10": {
           "value": 58,
@@ -19926,6 +19965,16 @@
           "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
+        "NO2": {
+          "value": 33,
+          "station": "Avg of 2 stations",
+          "lastUpdate": "05-08-2026 05:00:00"
+        },
+        "OZONE": {
+          "value": 25,
+          "station": "Avg of 2 stations",
+          "lastUpdate": "05-08-2026 05:00:00"
+        },
         "PM2.5": {
           "value": 48,
           "station": "Avg of 1 stations",
@@ -19933,16 +19982,16 @@
         }
       },
       "respiratoryAdmissions": 725,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Mandi Gobindgarh": {
       "name": "Mandi Gobindgarh",
       "state": "Punjab",
-      "avgAqi": 106,
-      "peakAqi": 106,
+      "avgAqi": 116,
+      "peakAqi": 116,
       "category": "Industrial",
       "stationsCount": 1,
-      "density": 67,
+      "density": 66,
       "pollutants": {
         "PM2.5": {
           "value": 106,
@@ -19964,14 +20013,24 @@
           "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
+        "PM10": {
+          "value": 116,
+          "station": "Avg of 2 stations",
+          "lastUpdate": "05-08-2026 05:00:00"
+        },
+        "OZONE": {
+          "value": 36,
+          "station": "Avg of 2 stations",
+          "lastUpdate": "05-08-2026 05:00:00"
+        },
         "SO2": {
           "value": 30,
           "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         }
       },
-      "respiratoryAdmissions": 1325,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "respiratoryAdmissions": 1450,
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Patiala": {
       "name": "Patiala",
@@ -19980,7 +20039,7 @@
       "peakAqi": 30,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 48,
+      "density": 45,
       "pollutants": {
         "OZONE": {
           "value": 18,
@@ -19990,6 +20049,16 @@
         "PM2.5": {
           "value": 12,
           "station": "Avg of 1 stations",
+          "lastUpdate": "05-08-2026 05:00:00"
+        },
+        "NH3": {
+          "value": 6,
+          "station": "Avg of 2 stations",
+          "lastUpdate": "05-08-2026 05:00:00"
+        },
+        "SO2": {
+          "value": 14,
+          "station": "Avg of 2 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "PM10": {
@@ -20009,7 +20078,7 @@
         }
       },
       "respiratoryAdmissions": 375,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Alwar": {
       "name": "Alwar",
@@ -20018,7 +20087,7 @@
       "peakAqi": 90,
       "category": "Tier 2",
       "stationsCount": 2,
-      "density": 48,
+      "density": 47,
       "pollutants": {
         "SO2": {
           "value": 22,
@@ -20049,10 +20118,15 @@
           "value": 8,
           "station": "Avg of 2 stations",
           "lastUpdate": "05-08-2026 05:00:00"
+        },
+        "PM2.5": {
+          "value": 58,
+          "station": "Avg of 2 stations",
+          "lastUpdate": "05-08-2026 05:00:00"
         }
       },
       "respiratoryAdmissions": 1125,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Banswara": {
       "name": "Banswara",
@@ -20061,7 +20135,7 @@
       "peakAqi": 57,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 35,
+      "density": 31,
       "pollutants": {
         "CO": {
           "value": 18,
@@ -20100,7 +20174,7 @@
         }
       },
       "respiratoryAdmissions": 712,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Baran": {
       "name": "Baran",
@@ -20109,7 +20183,7 @@
       "peakAqi": 54,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 49,
+      "density": 37,
       "pollutants": {
         "PM10": {
           "value": 54,
@@ -20143,7 +20217,7 @@
         }
       },
       "respiratoryAdmissions": 675,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Gummidipoondi": {
       "name": "Gummidipoondi",
@@ -20152,7 +20226,7 @@
       "peakAqi": 136,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 49,
+      "density": 43,
       "pollutants": {
         "SO2": {
           "value": 19,
@@ -20181,7 +20255,7 @@
         }
       },
       "respiratoryAdmissions": 1700,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Madurai": {
       "name": "Madurai",
@@ -20190,7 +20264,7 @@
       "peakAqi": 32,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 48,
+      "density": 47,
       "pollutants": {
         "SO2": {
           "value": 6,
@@ -20219,7 +20293,7 @@
         }
       },
       "respiratoryAdmissions": 400,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Hyderabad": {
       "name": "Hyderabad",
@@ -20228,7 +20302,7 @@
       "peakAqi": 65,
       "category": "Tier 1",
       "stationsCount": 13,
-      "density": 95,
+      "density": 96,
       "pollutants": {
         "NH3": {
           "value": 3,
@@ -20267,7 +20341,7 @@
         }
       },
       "respiratoryAdmissions": 812,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Dungarpur": {
       "name": "Dungarpur",
@@ -20276,7 +20350,7 @@
       "peakAqi": 88,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 48,
+      "density": 41,
       "pollutants": {
         "PM2.5": {
           "value": 68,
@@ -20305,7 +20379,7 @@
         }
       },
       "respiratoryAdmissions": 1100,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Lucknow": {
       "name": "Lucknow",
@@ -20314,7 +20388,7 @@
       "peakAqi": 80,
       "category": "Tier 2",
       "stationsCount": 6,
-      "density": 33,
+      "density": 42,
       "pollutants": {
         "OZONE": {
           "value": 22,
@@ -20353,7 +20427,7 @@
         }
       },
       "respiratoryAdmissions": 1000,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Mathura": {
       "name": "Mathura",
@@ -20362,7 +20436,7 @@
       "peakAqi": 15,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 31,
+      "density": 32,
       "pollutants": {
         "SO2": {
           "value": 4,
@@ -20386,7 +20460,7 @@
         }
       },
       "respiratoryAdmissions": 188,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Meerut": {
       "name": "Meerut",
@@ -20395,7 +20469,7 @@
       "peakAqi": 54,
       "category": "Tier 2",
       "stationsCount": 3,
-      "density": 50,
+      "density": 42,
       "pollutants": {
         "PM10": {
           "value": 36,
@@ -20434,7 +20508,7 @@
         }
       },
       "respiratoryAdmissions": 675,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Agartala": {
       "name": "Agartala",
@@ -20443,7 +20517,7 @@
       "peakAqi": 66,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 42,
+      "density": 47,
       "pollutants": {
         "PM10": {
           "value": 66,
@@ -20477,7 +20551,7 @@
         }
       },
       "respiratoryAdmissions": 825,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Agra": {
       "name": "Agra",
@@ -20486,7 +20560,7 @@
       "peakAqi": 82,
       "category": "Tier 2",
       "stationsCount": 6,
-      "density": 36,
+      "density": 49,
       "pollutants": {
         "PM10": {
           "value": 50,
@@ -20525,7 +20599,7 @@
         }
       },
       "respiratoryAdmissions": 1025,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Firozabad": {
       "name": "Firozabad",
@@ -20534,7 +20608,7 @@
       "peakAqi": 60,
       "category": "Tier 2",
       "stationsCount": 2,
-      "density": 50,
+      "density": 37,
       "pollutants": {
         "OZONE": {
           "value": 5,
@@ -20573,7 +20647,7 @@
         }
       },
       "respiratoryAdmissions": 750,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Gajraula": {
       "name": "Gajraula",
@@ -20582,7 +20656,7 @@
       "peakAqi": 40,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 48,
+      "density": 49,
       "pollutants": {
         "PM10": {
           "value": 40,
@@ -20596,7 +20670,7 @@
         }
       },
       "respiratoryAdmissions": 500,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Ghaziabad": {
       "name": "Ghaziabad",
@@ -20605,7 +20679,7 @@
       "peakAqi": 113,
       "category": "Tier 2",
       "stationsCount": 7,
-      "density": 48,
+      "density": 39,
       "pollutants": {
         "PM2.5": {
           "value": 25,
@@ -20644,7 +20718,7 @@
         }
       },
       "respiratoryAdmissions": 1412,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Gorakhpur": {
       "name": "Gorakhpur",
@@ -20653,7 +20727,7 @@
       "peakAqi": 63,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 39,
+      "density": 50,
       "pollutants": {
         "NO2": {
           "value": 11,
@@ -20687,7 +20761,7 @@
         }
       },
       "respiratoryAdmissions": 788,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Greater Noida": {
       "name": "Greater Noida",
@@ -20696,7 +20770,7 @@
       "peakAqi": 86,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 31,
+      "density": 46,
       "pollutants": {
         "OZONE": {
           "value": 55,
@@ -20735,7 +20809,7 @@
         }
       },
       "respiratoryAdmissions": 1075,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Hapur": {
       "name": "Hapur",
@@ -20744,7 +20818,7 @@
       "peakAqi": 48,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 50,
+      "density": 31,
       "pollutants": {
         "OZONE": {
           "value": 24,
@@ -20783,7 +20857,7 @@
         }
       },
       "respiratoryAdmissions": 600,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Jhansi": {
       "name": "Jhansi",
@@ -20792,7 +20866,7 @@
       "peakAqi": 66,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 32,
+      "density": 36,
       "pollutants": {
         "OZONE": {
           "value": 6,
@@ -20831,7 +20905,7 @@
         }
       },
       "respiratoryAdmissions": 825,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Kanpur": {
       "name": "Kanpur",
@@ -20840,7 +20914,7 @@
       "peakAqi": 50,
       "category": "Tier 2",
       "stationsCount": 3,
-      "density": 44,
+      "density": 38,
       "pollutants": {
         "CO": {
           "value": 33,
@@ -20879,7 +20953,7 @@
         }
       },
       "respiratoryAdmissions": 625,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Khurja": {
       "name": "Khurja",
@@ -20888,7 +20962,7 @@
       "peakAqi": 41,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 36,
+      "density": 44,
       "pollutants": {
         "PM2.5": {
           "value": 14,
@@ -20927,7 +21001,7 @@
         }
       },
       "respiratoryAdmissions": 512,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Jodhpur": {
       "name": "Jodhpur",
@@ -20936,7 +21010,7 @@
       "peakAqi": 102,
       "category": "Tier 2",
       "stationsCount": 5,
-      "density": 50,
+      "density": 41,
       "pollutants": {
         "NO2": {
           "value": 15,
@@ -20975,7 +21049,7 @@
         }
       },
       "respiratoryAdmissions": 1275,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Karauli": {
       "name": "Karauli",
@@ -20984,7 +21058,7 @@
       "peakAqi": 58,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 50,
+      "density": 48,
       "pollutants": {
         "OZONE": {
           "value": 4,
@@ -21023,7 +21097,7 @@
         }
       },
       "respiratoryAdmissions": 725,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Kota": {
       "name": "Kota",
@@ -21032,7 +21106,7 @@
       "peakAqi": 86,
       "category": "Tier 2",
       "stationsCount": 3,
-      "density": 42,
+      "density": 38,
       "pollutants": {
         "NH3": {
           "value": 5,
@@ -21071,7 +21145,7 @@
         }
       },
       "respiratoryAdmissions": 1075,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Pali": {
       "name": "Pali",
@@ -21080,7 +21154,7 @@
       "peakAqi": 106,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 37,
+      "density": 35,
       "pollutants": {
         "PM10": {
           "value": 70,
@@ -21104,7 +21178,7 @@
         }
       },
       "respiratoryAdmissions": 1325,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Bareilly": {
       "name": "Bareilly",
@@ -21113,7 +21187,7 @@
       "peakAqi": 47,
       "category": "Tier 2",
       "stationsCount": 2,
-      "density": 45,
+      "density": 32,
       "pollutants": {
         "PM10": {
           "value": 39,
@@ -21152,7 +21226,7 @@
         }
       },
       "respiratoryAdmissions": 588,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Modinagar": {
       "name": "Modinagar",
@@ -21161,7 +21235,7 @@
       "peakAqi": 27,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 32,
+      "density": 33,
       "pollutants": {
         "CO": {
           "value": 19,
@@ -21200,7 +21274,7 @@
         }
       },
       "respiratoryAdmissions": 338,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Moradabad": {
       "name": "Moradabad",
@@ -21209,7 +21283,7 @@
       "peakAqi": 61,
       "category": "Tier 2",
       "stationsCount": 6,
-      "density": 37,
+      "density": 40,
       "pollutants": {
         "SO2": {
           "value": 24,
@@ -21248,7 +21322,7 @@
         }
       },
       "respiratoryAdmissions": 762,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Muzaffarnagar": {
       "name": "Muzaffarnagar",
@@ -21257,7 +21331,7 @@
       "peakAqi": 45,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 44,
+      "density": 49,
       "pollutants": {
         "PM10": {
           "value": 45,
@@ -21296,7 +21370,7 @@
         }
       },
       "respiratoryAdmissions": 562,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Noida": {
       "name": "Noida",
@@ -21305,7 +21379,7 @@
       "peakAqi": 69,
       "category": "Tier 2",
       "stationsCount": 4,
-      "density": 44,
+      "density": 50,
       "pollutants": {
         "NO2": {
           "value": 27,
@@ -21344,7 +21418,7 @@
         }
       },
       "respiratoryAdmissions": 862,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Prayagraj": {
       "name": "Prayagraj",
@@ -21353,7 +21427,7 @@
       "peakAqi": 70,
       "category": "Tier 2",
       "stationsCount": 3,
-      "density": 39,
+      "density": 44,
       "pollutants": {
         "SO2": {
           "value": 30,
@@ -21392,7 +21466,7 @@
         }
       },
       "respiratoryAdmissions": 875,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Shamli": {
       "name": "Shamli",
@@ -21401,7 +21475,7 @@
       "peakAqi": 56,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 33,
+      "density": 30,
       "pollutants": {
         "CO": {
           "value": 56,
@@ -21440,7 +21514,7 @@
         }
       },
       "respiratoryAdmissions": 700,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Varanasi": {
       "name": "Varanasi",
@@ -21449,7 +21523,7 @@
       "peakAqi": 41,
       "category": "Tier 2",
       "stationsCount": 3,
-      "density": 35,
+      "density": 34,
       "pollutants": {
         "PM2.5": {
           "value": 25,
@@ -21488,7 +21562,7 @@
         }
       },
       "respiratoryAdmissions": 512,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Rishikesh": {
       "name": "Rishikesh",
@@ -21497,7 +21571,7 @@
       "peakAqi": 37,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 48,
+      "density": 46,
       "pollutants": {
         "CO": {
           "value": 37,
@@ -21536,7 +21610,7 @@
         }
       },
       "respiratoryAdmissions": 462,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Asansol": {
       "name": "Asansol",
@@ -21545,7 +21619,7 @@
       "peakAqi": 76,
       "category": "Tier 2",
       "stationsCount": 4,
-      "density": 37,
+      "density": 50,
       "pollutants": {
         "OZONE": {
           "value": 11,
@@ -21584,7 +21658,7 @@
         }
       },
       "respiratoryAdmissions": 950,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Durgapur": {
       "name": "Durgapur",
@@ -21593,7 +21667,7 @@
       "peakAqi": 80,
       "category": "Tier 2",
       "stationsCount": 3,
-      "density": 40,
+      "density": 49,
       "pollutants": {
         "NO2": {
           "value": 36,
@@ -21632,7 +21706,7 @@
         }
       },
       "respiratoryAdmissions": 1000,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Haldia": {
       "name": "Haldia",
@@ -21641,7 +21715,7 @@
       "peakAqi": 52,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 35,
+      "density": 47,
       "pollutants": {
         "PM2.5": {
           "value": 42,
@@ -21680,7 +21754,7 @@
         }
       },
       "respiratoryAdmissions": 650,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Howrah": {
       "name": "Howrah",
@@ -21689,7 +21763,7 @@
       "peakAqi": 74,
       "category": "Tier 2",
       "stationsCount": 5,
-      "density": 44,
+      "density": 49,
       "pollutants": {
         "PM2.5": {
           "value": 42,
@@ -21728,7 +21802,7 @@
         }
       },
       "respiratoryAdmissions": 925,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Kolkata": {
       "name": "Kolkata",
@@ -21737,7 +21811,7 @@
       "peakAqi": 96,
       "category": "Tier 1",
       "stationsCount": 7,
-      "density": 82,
+      "density": 80,
       "pollutants": {
         "PM2.5": {
           "value": 45,
@@ -21776,7 +21850,7 @@
         }
       },
       "respiratoryAdmissions": 1200,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Siliguri": {
       "name": "Siliguri",
@@ -21785,7 +21859,7 @@
       "peakAqi": 118,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 40,
+      "density": 39,
       "pollutants": {
         "PM10": {
           "value": 26,
@@ -21824,7 +21898,7 @@
         }
       },
       "respiratoryAdmissions": 1475,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Guntur": {
       "name": "Guntur",
@@ -21833,7 +21907,7 @@
       "peakAqi": 59,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 34,
+      "density": 37,
       "pollutants": {
         "PM2.5": {
           "value": 57,
@@ -21872,7 +21946,7 @@
         }
       },
       "respiratoryAdmissions": 738,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Kakinada": {
       "name": "Kakinada",
@@ -21881,7 +21955,7 @@
       "peakAqi": 56,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 40,
+      "density": 42,
       "pollutants": {
         "PM2.5": {
           "value": 34,
@@ -21920,7 +21994,7 @@
         }
       },
       "respiratoryAdmissions": 700,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Kurnool": {
       "name": "Kurnool",
@@ -21929,7 +22003,7 @@
       "peakAqi": 31,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 35,
+      "density": 33,
       "pollutants": {
         "PM2.5": {
           "value": 25,
@@ -21968,7 +22042,7 @@
         }
       },
       "respiratoryAdmissions": 388,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Araria": {
       "name": "Araria",
@@ -21977,7 +22051,7 @@
       "peakAqi": 46,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 42,
+      "density": 50,
       "pollutants": {
         "OZONE": {
           "value": 39,
@@ -22016,7 +22090,7 @@
         }
       },
       "respiratoryAdmissions": 575,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Bettiah": {
       "name": "Bettiah",
@@ -22025,7 +22099,7 @@
       "peakAqi": 21,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 37,
+      "density": 36,
       "pollutants": {
         "OZONE": {
           "value": 21,
@@ -22034,7 +22108,7 @@
         }
       },
       "respiratoryAdmissions": 262,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Tirumala": {
       "name": "Tirumala",
@@ -22043,7 +22117,7 @@
       "peakAqi": 50,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 47,
+      "density": 43,
       "pollutants": {
         "PM10": {
           "value": 50,
@@ -22082,7 +22156,7 @@
         }
       },
       "respiratoryAdmissions": 625,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Panchkula": {
       "name": "Panchkula",
@@ -22091,7 +22165,7 @@
       "peakAqi": 57,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 41,
+      "density": 39,
       "pollutants": {
         "SO2": {
           "value": 11,
@@ -22120,7 +22194,7 @@
         }
       },
       "respiratoryAdmissions": 712,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Madikeri": {
       "name": "Madikeri",
@@ -22129,7 +22203,7 @@
       "peakAqi": 13,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 41,
+      "density": 34,
       "pollutants": {
         "PM10": {
           "value": 13,
@@ -22150,10 +22224,25 @@
           "value": 2,
           "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
+        },
+        "NH3": {
+          "value": 1,
+          "station": "Avg of 1 stations",
+          "lastUpdate": "05-08-2026 05:00:00"
+        },
+        "SO2": {
+          "value": 7,
+          "station": "Avg of 1 stations",
+          "lastUpdate": "05-08-2026 05:00:00"
+        },
+        "OZONE": {
+          "value": 2,
+          "station": "Avg of 1 stations",
+          "lastUpdate": "05-08-2026 05:00:00"
         }
       },
       "respiratoryAdmissions": 162,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Eloor": {
       "name": "Eloor",
@@ -22162,7 +22251,7 @@
       "peakAqi": 129,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 33,
+      "density": 36,
       "pollutants": {
         "PM2.5": {
           "value": 35,
@@ -22173,10 +22262,25 @@
           "value": 129,
           "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
+        },
+        "PM10": {
+          "value": 65,
+          "station": "Avg of 1 stations",
+          "lastUpdate": "05-08-2026 05:00:00"
+        },
+        "NO2": {
+          "value": 6,
+          "station": "Avg of 1 stations",
+          "lastUpdate": "05-08-2026 05:00:00"
+        },
+        "OZONE": {
+          "value": 12,
+          "station": "Avg of 1 stations",
+          "lastUpdate": "05-08-2026 05:00:00"
         }
       },
       "respiratoryAdmissions": 1612,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Kannur": {
       "name": "Kannur",
@@ -22185,7 +22289,7 @@
       "peakAqi": 45,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 33,
+      "density": 43,
       "pollutants": {
         "PM10": {
           "value": 45,
@@ -22211,10 +22315,15 @@
           "value": 13,
           "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
+        },
+        "OZONE": {
+          "value": 28,
+          "station": "Avg of 1 stations",
+          "lastUpdate": "05-08-2026 05:00:00"
         }
       },
       "respiratoryAdmissions": 562,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Ballabgarh": {
       "name": "Ballabgarh",
@@ -22223,7 +22332,7 @@
       "peakAqi": 47,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 35,
+      "density": 31,
       "pollutants": {
         "NO2": {
           "value": 20,
@@ -22262,7 +22371,7 @@
         }
       },
       "respiratoryAdmissions": 588,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Vapi": {
       "name": "Vapi",
@@ -22271,7 +22380,7 @@
       "peakAqi": 39,
       "category": "Industrial",
       "stationsCount": 1,
-      "density": 78,
+      "density": 68,
       "pollutants": {
         "NO2": {
           "value": 20,
@@ -22305,7 +22414,7 @@
         }
       },
       "respiratoryAdmissions": 488,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Yamuna Nagar": {
       "name": "Yamuna Nagar",
@@ -22314,7 +22423,7 @@
       "peakAqi": 101,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 43,
+      "density": 41,
       "pollutants": {
         "PM2.5": {
           "value": 96,
@@ -22336,13 +22445,13 @@
           "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
-        "PM10": {
-          "value": 101,
+        "OZONE": {
+          "value": 14,
           "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
-        "OZONE": {
-          "value": 14,
+        "PM10": {
+          "value": 101,
           "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
@@ -22353,7 +22462,7 @@
         }
       },
       "respiratoryAdmissions": 1262,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Dhanbad": {
       "name": "Dhanbad",
@@ -22362,7 +22471,7 @@
       "peakAqi": 103,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 35,
+      "density": 49,
       "pollutants": {
         "OZONE": {
           "value": 18,
@@ -22376,7 +22485,7 @@
         }
       },
       "respiratoryAdmissions": 1288,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Maihar": {
       "name": "Maihar",
@@ -22385,7 +22494,7 @@
       "peakAqi": 25,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 33,
+      "density": 37,
       "pollutants": {
         "NO2": {
           "value": 7,
@@ -22404,12 +22513,12 @@
         },
         "SO2": {
           "value": 25,
-          "station": "Avg of 2 stations",
+          "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         }
       },
       "respiratoryAdmissions": 312,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Bhiwandi": {
       "name": "Bhiwandi",
@@ -22418,7 +22527,7 @@
       "peakAqi": 51,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 44,
+      "density": 46,
       "pollutants": {
         "NH3": {
           "value": 2,
@@ -22437,22 +22546,22 @@
         },
         "PM2.5": {
           "value": 21,
-          "station": "Avg of 2 stations",
+          "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "PM10": {
           "value": 51,
-          "station": "Avg of 2 stations",
+          "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "NO2": {
           "value": 7,
-          "station": "Avg of 2 stations",
+          "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         }
       },
       "respiratoryAdmissions": 638,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Singrauli": {
       "name": "Singrauli",
@@ -22461,7 +22570,7 @@
       "peakAqi": 49,
       "category": "Industrial",
       "stationsCount": 1,
-      "density": 79,
+      "density": 75,
       "pollutants": {
         "PM2.5": {
           "value": 24,
@@ -22480,12 +22589,12 @@
         },
         "CO": {
           "value": 31,
-          "station": "Avg of 2 stations",
+          "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         }
       },
       "respiratoryAdmissions": 612,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Damoh": {
       "name": "Damoh",
@@ -22494,7 +22603,7 @@
       "peakAqi": 51,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 33,
+      "density": 34,
       "pollutants": {
         "SO2": {
           "value": 51,
@@ -22518,7 +22627,7 @@
         }
       },
       "respiratoryAdmissions": 638,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Nanded": {
       "name": "Nanded",
@@ -22527,7 +22636,7 @@
       "peakAqi": 32,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 44,
+      "density": 38,
       "pollutants": {
         "NH3": {
           "value": 4,
@@ -22566,7 +22675,7 @@
         }
       },
       "respiratoryAdmissions": 400,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Jalgaon": {
       "name": "Jalgaon",
@@ -22575,7 +22684,7 @@
       "peakAqi": 42,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 39,
+      "density": 37,
       "pollutants": {
         "SO2": {
           "value": 3,
@@ -22592,11 +22701,6 @@
           "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
-        "OZONE": {
-          "value": 12,
-          "station": "Avg of 1 stations",
-          "lastUpdate": "05-08-2026 05:00:00"
-        },
         "PM10": {
           "value": 42,
           "station": "Avg of 1 stations",
@@ -22607,14 +22711,19 @@
           "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
+        "OZONE": {
+          "value": 12,
+          "station": "Avg of 1 stations",
+          "lastUpdate": "05-08-2026 05:00:00"
+        },
         "PM2.5": {
           "value": 31,
-          "station": "Avg of 2 stations",
+          "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         }
       },
       "respiratoryAdmissions": 525,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Malegaon": {
       "name": "Malegaon",
@@ -22623,7 +22732,7 @@
       "peakAqi": 56,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 49,
+      "density": 35,
       "pollutants": {
         "CO": {
           "value": 10,
@@ -22652,7 +22761,7 @@
         }
       },
       "respiratoryAdmissions": 700,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Mira-Bhayandar": {
       "name": "Mira-Bhayandar",
@@ -22661,7 +22770,7 @@
       "peakAqi": 34,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 42,
+      "density": 39,
       "pollutants": {
         "PM10": {
           "value": 34,
@@ -22700,7 +22809,7 @@
         }
       },
       "respiratoryAdmissions": 425,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Chittorgarh": {
       "name": "Chittorgarh",
@@ -22709,7 +22818,7 @@
       "peakAqi": 69,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 43,
+      "density": 31,
       "pollutants": {
         "OZONE": {
           "value": 31,
@@ -22743,7 +22852,7 @@
         }
       },
       "respiratoryAdmissions": 862,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Dausa": {
       "name": "Dausa",
@@ -22752,7 +22861,7 @@
       "peakAqi": 157,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 48,
+      "density": 39,
       "pollutants": {
         "NO2": {
           "value": 25,
@@ -22762,6 +22871,16 @@
         "SO2": {
           "value": 3,
           "station": "Avg of 1 stations",
+          "lastUpdate": "05-08-2026 05:00:00"
+        },
+        "PM2.5": {
+          "value": 75,
+          "station": "Avg of 2 stations",
+          "lastUpdate": "05-08-2026 05:00:00"
+        },
+        "CO": {
+          "value": 32,
+          "station": "Avg of 2 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "PM10": {
@@ -22776,7 +22895,7 @@
         }
       },
       "respiratoryAdmissions": 1962,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Hanumangarh": {
       "name": "Hanumangarh",
@@ -22785,11 +22904,16 @@
       "peakAqi": 29,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 39,
+      "density": 35,
       "pollutants": {
         "NH3": {
           "value": 5,
           "station": "Avg of 1 stations",
+          "lastUpdate": "05-08-2026 05:00:00"
+        },
+        "NO2": {
+          "value": 4,
+          "station": "Avg of 2 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "PM2.5": {
@@ -22804,7 +22928,7 @@
         }
       },
       "respiratoryAdmissions": 362,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Jaipur": {
       "name": "Jaipur",
@@ -22816,8 +22940,8 @@
       "density": 39,
       "pollutants": {
         "NH3": {
-          "value": 6,
-          "station": "Avg of 5 stations",
+          "value": 17,
+          "station": "Avg of 7 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "CO": {
@@ -22827,12 +22951,12 @@
         },
         "PM10": {
           "value": 97,
-          "station": "Avg of 5 stations",
+          "station": "Avg of 7 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "SO2": {
-          "value": 10,
-          "station": "Avg of 3 stations",
+          "value": 21,
+          "station": "Avg of 7 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "OZONE": {
@@ -22841,8 +22965,8 @@
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "NO2": {
-          "value": 20,
-          "station": "Avg of 5 stations",
+          "value": 24,
+          "station": "Avg of 7 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "PM2.5": {
@@ -22852,7 +22976,7 @@
         }
       },
       "respiratoryAdmissions": 1612,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Amritsar": {
       "name": "Amritsar",
@@ -22861,7 +22985,7 @@
       "peakAqi": 71,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 43,
+      "density": 30,
       "pollutants": {
         "PM10": {
           "value": 71,
@@ -22878,6 +23002,16 @@
           "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
+        "SO2": {
+          "value": 18,
+          "station": "Avg of 2 stations",
+          "lastUpdate": "05-08-2026 05:00:00"
+        },
+        "CO": {
+          "value": 35,
+          "station": "Avg of 2 stations",
+          "lastUpdate": "05-08-2026 05:00:00"
+        },
         "NH3": {
           "value": 5,
           "station": "Avg of 1 stations",
@@ -22890,7 +23024,7 @@
         }
       },
       "respiratoryAdmissions": 888,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Rupnagar": {
       "name": "Rupnagar",
@@ -22899,7 +23033,7 @@
       "peakAqi": 58,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 46,
+      "density": 41,
       "pollutants": {
         "PM2.5": {
           "value": 39,
@@ -22915,10 +23049,20 @@
           "value": 58,
           "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
+        },
+        "PM10": {
+          "value": 36,
+          "station": "Avg of 2 stations",
+          "lastUpdate": "05-08-2026 05:00:00"
+        },
+        "NO2": {
+          "value": 26,
+          "station": "Avg of 2 stations",
+          "lastUpdate": "05-08-2026 05:00:00"
         }
       },
       "respiratoryAdmissions": 725,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Ajmer": {
       "name": "Ajmer",
@@ -22927,7 +23071,7 @@
       "peakAqi": 99,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 42,
+      "density": 47,
       "pollutants": {
         "NO2": {
           "value": 31,
@@ -22949,6 +23093,11 @@
           "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
+        "PM2.5": {
+          "value": 52,
+          "station": "Avg of 2 stations",
+          "lastUpdate": "05-08-2026 05:00:00"
+        },
         "PM10": {
           "value": 99,
           "station": "Avg of 1 stations",
@@ -22961,7 +23110,7 @@
         }
       },
       "respiratoryAdmissions": 1238,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Cuttack": {
       "name": "Cuttack",
@@ -22970,7 +23119,7 @@
       "peakAqi": 58,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 42,
+      "density": 31,
       "pollutants": {
         "PM10": {
           "value": 40,
@@ -22999,7 +23148,7 @@
         }
       },
       "respiratoryAdmissions": 725,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Balasore": {
       "name": "Balasore",
@@ -23008,7 +23157,7 @@
       "peakAqi": 42,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 50,
+      "density": 32,
       "pollutants": {
         "NO2": {
           "value": 8,
@@ -23047,7 +23196,7 @@
         }
       },
       "respiratoryAdmissions": 525,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Barmer": {
       "name": "Barmer",
@@ -23056,7 +23205,7 @@
       "peakAqi": 83,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 36,
+      "density": 32,
       "pollutants": {
         "NO2": {
           "value": 6,
@@ -23090,7 +23239,7 @@
         }
       },
       "respiratoryAdmissions": 1038,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Bharatpur": {
       "name": "Bharatpur",
@@ -23099,7 +23248,7 @@
       "peakAqi": 26,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 39,
+      "density": 32,
       "pollutants": {
         "NH3": {
           "value": 12,
@@ -23138,7 +23287,7 @@
         }
       },
       "respiratoryAdmissions": 325,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Bhilwara": {
       "name": "Bhilwara",
@@ -23147,7 +23296,7 @@
       "peakAqi": 100,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 31,
+      "density": 32,
       "pollutants": {
         "NO2": {
           "value": 13,
@@ -23176,7 +23325,7 @@
         }
       },
       "respiratoryAdmissions": 1250,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Bhiwadi": {
       "name": "Bhiwadi",
@@ -23185,7 +23334,7 @@
       "peakAqi": 98,
       "category": "Tier 2",
       "stationsCount": 2,
-      "density": 46,
+      "density": 43,
       "pollutants": {
         "OZONE": {
           "value": 20,
@@ -23224,7 +23373,7 @@
         }
       },
       "respiratoryAdmissions": 1225,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Bikaner": {
       "name": "Bikaner",
@@ -23233,7 +23382,7 @@
       "peakAqi": 64,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 32,
+      "density": 38,
       "pollutants": {
         "PM2.5": {
           "value": 29,
@@ -23255,19 +23404,19 @@
           "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
-        "PM10": {
-          "value": 64,
+        "NO2": {
+          "value": 17,
           "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
-        "NO2": {
-          "value": 17,
+        "PM10": {
+          "value": 64,
           "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         }
       },
       "respiratoryAdmissions": 800,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Bundi": {
       "name": "Bundi",
@@ -23276,7 +23425,7 @@
       "peakAqi": 60,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 36,
+      "density": 49,
       "pollutants": {
         "NO2": {
           "value": 28,
@@ -23305,7 +23454,7 @@
         }
       },
       "respiratoryAdmissions": 750,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Jaisalmer": {
       "name": "Jaisalmer",
@@ -23314,7 +23463,7 @@
       "peakAqi": 102,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 39,
+      "density": 30,
       "pollutants": {
         "PM10": {
           "value": 102,
@@ -23348,7 +23497,7 @@
         }
       },
       "respiratoryAdmissions": 1275,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Jalore": {
       "name": "Jalore",
@@ -23357,7 +23506,7 @@
       "peakAqi": 96,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 34,
+      "density": 45,
       "pollutants": {
         "PM2.5": {
           "value": 44,
@@ -23391,7 +23540,7 @@
         }
       },
       "respiratoryAdmissions": 1200,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Jhalawar": {
       "name": "Jhalawar",
@@ -23400,7 +23549,7 @@
       "peakAqi": 64,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 39,
+      "density": 40,
       "pollutants": {
         "NH3": {
           "value": 5,
@@ -23434,7 +23583,7 @@
         }
       },
       "respiratoryAdmissions": 800,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Jhunjhunu": {
       "name": "Jhunjhunu",
@@ -23443,7 +23592,7 @@
       "peakAqi": 54,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 40,
+      "density": 36,
       "pollutants": {
         "NO2": {
           "value": 7,
@@ -23472,7 +23621,7 @@
         }
       },
       "respiratoryAdmissions": 675,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Rajsamand": {
       "name": "Rajsamand",
@@ -23481,7 +23630,7 @@
       "peakAqi": 72,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 50,
+      "density": 40,
       "pollutants": {
         "PM2.5": {
           "value": 39,
@@ -23520,7 +23669,7 @@
         }
       },
       "respiratoryAdmissions": 900,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Thoothukudi": {
       "name": "Thoothukudi",
@@ -23529,7 +23678,7 @@
       "peakAqi": 65,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 31,
+      "density": 34,
       "pollutants": {
         "PM10": {
           "value": 65,
@@ -23558,7 +23707,7 @@
         }
       },
       "respiratoryAdmissions": 812,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Khora": {
       "name": "Khora",
@@ -23567,7 +23716,7 @@
       "peakAqi": 104,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 32,
+      "density": 50,
       "pollutants": {
         "PM2.5": {
           "value": 65,
@@ -23601,7 +23750,7 @@
         }
       },
       "respiratoryAdmissions": 1300,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Baghpat": {
       "name": "Baghpat",
@@ -23610,7 +23759,7 @@
       "peakAqi": 23,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 48,
+      "density": 37,
       "pollutants": {
         "CO": {
           "value": 20,
@@ -23639,7 +23788,7 @@
         }
       },
       "respiratoryAdmissions": 288,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Bulandshahr": {
       "name": "Bulandshahr",
@@ -23648,7 +23797,7 @@
       "peakAqi": 27,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 44,
+      "density": 46,
       "pollutants": {
         "PM2.5": {
           "value": 15,
@@ -23687,7 +23836,7 @@
         }
       },
       "respiratoryAdmissions": 338,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Fatehpur Sikri": {
       "name": "Fatehpur Sikri",
@@ -23696,7 +23845,7 @@
       "peakAqi": 29,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 49,
+      "density": 40,
       "pollutants": {
         "NH3": {
           "value": 2,
@@ -23735,7 +23884,7 @@
         }
       },
       "respiratoryAdmissions": 362,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Raebareli": {
       "name": "Raebareli",
@@ -23744,7 +23893,7 @@
       "peakAqi": 62,
       "category": "Tier 2",
       "stationsCount": 2,
-      "density": 33,
+      "density": 32,
       "pollutants": {
         "CO": {
           "value": 34,
@@ -23778,7 +23927,7 @@
         }
       },
       "respiratoryAdmissions": 775,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Manguraha": {
       "name": "Manguraha",
@@ -23787,7 +23936,7 @@
       "peakAqi": 29,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 31,
+      "density": 47,
       "pollutants": {
         "OZONE": {
           "value": 27,
@@ -23806,7 +23955,7 @@
         }
       },
       "respiratoryAdmissions": 362,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Nalbari": {
       "name": "Nalbari",
@@ -23815,7 +23964,7 @@
       "peakAqi": 69,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 36,
+      "density": 41,
       "pollutants": {
         "PM2.5": {
           "value": 69,
@@ -23854,7 +24003,7 @@
         }
       },
       "respiratoryAdmissions": 862,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Rajkot": {
       "name": "Rajkot",
@@ -23863,7 +24012,7 @@
       "peakAqi": 89,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 49,
+      "density": 41,
       "pollutants": {
         "OZONE": {
           "value": 8,
@@ -23872,6 +24021,11 @@
         },
         "CO": {
           "value": 42,
+          "station": "Avg of 1 stations",
+          "lastUpdate": "05-08-2026 05:00:00"
+        },
+        "SO2": {
+          "value": 10,
           "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
@@ -23889,15 +24043,10 @@
           "value": 12,
           "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
-        },
-        "SO2": {
-          "value": 10,
-          "station": "Avg of 1 stations",
-          "lastUpdate": "05-08-2026 05:00:00"
         }
       },
       "respiratoryAdmissions": 1112,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Churu": {
       "name": "Churu",
@@ -23906,11 +24055,26 @@
       "peakAqi": 39,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 50,
+      "density": 37,
       "pollutants": {
         "PM10": {
           "value": 33,
           "station": "Avg of 1 stations",
+          "lastUpdate": "05-08-2026 05:00:00"
+        },
+        "NO2": {
+          "value": 4,
+          "station": "Avg of 2 stations",
+          "lastUpdate": "05-08-2026 05:00:00"
+        },
+        "SO2": {
+          "value": 5,
+          "station": "Avg of 2 stations",
+          "lastUpdate": "05-08-2026 05:00:00"
+        },
+        "CO": {
+          "value": 21,
+          "station": "Avg of 2 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "OZONE": {
@@ -23920,20 +24084,40 @@
         }
       },
       "respiratoryAdmissions": 488,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Dholpur": {
       "name": "Dholpur",
       "state": "Rajasthan",
-      "avgAqi": 23,
-      "peakAqi": 23,
-      "category": "Tier 2",
+      "avgAqi": 435,
+      "peakAqi": 435,
+      "category": "Industrial",
       "stationsCount": 1,
-      "density": 49,
+      "density": 75,
       "pollutants": {
         "CO": {
           "value": 23,
           "station": "Avg of 1 stations",
+          "lastUpdate": "05-08-2026 05:00:00"
+        },
+        "PM2.5": {
+          "value": 435,
+          "station": "Avg of 2 stations",
+          "lastUpdate": "05-08-2026 05:00:00"
+        },
+        "NH3": {
+          "value": 4,
+          "station": "Avg of 2 stations",
+          "lastUpdate": "05-08-2026 05:00:00"
+        },
+        "SO2": {
+          "value": 3,
+          "station": "Avg of 2 stations",
+          "lastUpdate": "05-08-2026 05:00:00"
+        },
+        "OZONE": {
+          "value": 13,
+          "station": "Avg of 2 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "NO2": {
@@ -23942,8 +24126,8 @@
           "lastUpdate": "05-08-2026 05:00:00"
         }
       },
-      "respiratoryAdmissions": 288,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "respiratoryAdmissions": 5438,
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Nagaur": {
       "name": "Nagaur",
@@ -23952,7 +24136,7 @@
       "peakAqi": 97,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 35,
+      "density": 37,
       "pollutants": {
         "PM2.5": {
           "value": 45,
@@ -23991,7 +24175,7 @@
         }
       },
       "respiratoryAdmissions": 1212,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Vrindavan": {
       "name": "Vrindavan",
@@ -24000,7 +24184,7 @@
       "peakAqi": 38,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 38,
+      "density": 41,
       "pollutants": {
         "PM2.5": {
           "value": 37,
@@ -24039,7 +24223,7 @@
         }
       },
       "respiratoryAdmissions": 475,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Kashipur": {
       "name": "Kashipur",
@@ -24048,7 +24232,7 @@
       "peakAqi": 22,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 41,
+      "density": 33,
       "pollutants": {
         "NO2": {
           "value": 7,
@@ -24067,7 +24251,7 @@
         }
       },
       "respiratoryAdmissions": 275,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Barrackpore": {
       "name": "Barrackpore",
@@ -24076,7 +24260,7 @@
       "peakAqi": 61,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 41,
+      "density": 38,
       "pollutants": {
         "PM2.5": {
           "value": 46,
@@ -24115,7 +24299,7 @@
         }
       },
       "respiratoryAdmissions": 762,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Gadag": {
       "name": "Gadag",
@@ -24124,7 +24308,7 @@
       "peakAqi": 46,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 33,
+      "density": 42,
       "pollutants": {
         "CO": {
           "value": 46,
@@ -24138,7 +24322,7 @@
         }
       },
       "respiratoryAdmissions": 575,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Ratlam": {
       "name": "Ratlam",
@@ -24156,17 +24340,17 @@
         },
         "NO2": {
           "value": 35,
-          "station": "Avg of 2 stations",
+          "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         },
         "SO2": {
           "value": 7,
-          "station": "Avg of 2 stations",
+          "station": "Avg of 1 stations",
           "lastUpdate": "05-08-2026 05:00:00"
         }
       },
       "respiratoryAdmissions": 550,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Motihari": {
       "name": "Motihari",
@@ -24175,7 +24359,7 @@
       "peakAqi": 58,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 45,
+      "density": 42,
       "pollutants": {
         "CO": {
           "value": 13,
@@ -24189,7 +24373,7 @@
         }
       },
       "respiratoryAdmissions": 725,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Tensa": {
       "name": "Tensa",
@@ -24198,7 +24382,7 @@
       "peakAqi": 5,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 46,
+      "density": 38,
       "pollutants": {
         "OZONE": {
           "value": 5,
@@ -24207,7 +24391,7 @@
         }
       },
       "respiratoryAdmissions": 62,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Cuddalore": {
       "name": "Cuddalore",
@@ -24216,7 +24400,7 @@
       "peakAqi": 20,
       "category": "Tier 2",
       "stationsCount": 2,
-      "density": 30,
+      "density": 49,
       "pollutants": {
         "OZONE": {
           "value": 8,
@@ -24230,7 +24414,7 @@
         }
       },
       "respiratoryAdmissions": 250,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     },
     "Khairthal": {
       "name": "Khairthal",
@@ -24239,7 +24423,7 @@
       "peakAqi": 14,
       "category": "Tier 2",
       "stationsCount": 1,
-      "density": 31,
+      "density": 50,
       "pollutants": {
         "OZONE": {
           "value": 14,
@@ -24248,7 +24432,7 @@
         }
       },
       "respiratoryAdmissions": 175,
-      "fetchedAt": "2026-08-05 03:17 UTC"
+      "fetchedAt": "2026-08-05 06:34 UTC"
     }
   }
 }
